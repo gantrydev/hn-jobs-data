@@ -168,6 +168,27 @@
       "remote_pct": 43.5,
       "salary_mentioned_pct": 34.6,
       "ai_ml_mentioned_pct": 64.9
+    },
+    {
+      "date": "2026-06-03",
+      "job_count": 255,
+      "top_techs": [
+        "Python",
+        "TypeScript",
+        "React",
+        "PostgreSQL",
+        "AWS"
+      ],
+      "top_roles": [
+        "Software Engineer",
+        "Full Stack Engineer",
+        "Senior Software Engineer",
+        "Backend Engineer",
+        "Data Engineer"
+      ],
+      "remote_pct": 41.2,
+      "salary_mentioned_pct": 32.2,
+      "ai_ml_mentioned_pct": 71.4
     }
   ]
 }

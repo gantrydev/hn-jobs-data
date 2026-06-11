@@ -1,10 +1,23 @@
 name: HN Jobs Pipeline
 
 on:
+  # A push that touches the data publishes it straight to Pages (deploy-pages
+  # below), without re-running the LLM pipeline.
+  push:
+    branches: [main]
+    paths:
+      - "runs/**"
+      - "indexes/**"
+      - "llms.txt"
   schedule:
     - cron: "0 10 3 * *"  # 3rd of month — thread is posted on first weekday
     - cron: "0 10 28 * *" # 28th of month — catch late postings before month ends
   workflow_dispatch: # Manual trigger
+    inputs:
+      deploy_only:
+        description: "Skip the pipeline and just publish the current data to Pages"
+        type: boolean
+        default: false
 
 concurrency:
   group: pipeline
@@ -12,6 +25,8 @@ concurrency:
 
 jobs:
   run-pipeline:
+    # Skip the fetch/analyze on a push or a deploy_only dispatch — those only publish.
+    if: ${{ github.event_name != 'push' && !(github.event_name == 'workflow_dispatch' && inputs.deploy_only) }}
     runs-on: ubuntu-latest
     permissions:
       contents: write # Needed to commit JSON files
@@ -40,8 +55,11 @@ jobs:
           git push
 
   # Deploy data to this repo's Pages so the site can fetch the fresh JSON.
+  # Runs after a scheduled/dispatched pipeline, or directly on a data push
+  # (where run-pipeline is skipped).
   deploy-pages:
     needs: run-pipeline
+    if: ${{ always() && needs.run-pipeline.result != 'failure' && needs.run-pipeline.result != 'cancelled' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read

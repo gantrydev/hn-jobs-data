@@ -91,9 +91,12 @@ jobs:
       - id: deploy
         uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
 
-  # Only ping the site repo once the new data is live on Pages.
+  # Only ping the site repo once the new data is live on Pages. Use an explicit
+  # condition so a skipped run-pipeline (push / deploy_only) doesn't propagate a
+  # skip down the needs chain.
   trigger-site:
     needs: deploy-pages
+    if: ${{ always() && needs.deploy-pages.result == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0

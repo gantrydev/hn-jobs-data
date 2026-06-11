@@ -6,7 +6,7 @@ import { BatchResponseSchema, type Analysis, type BatchResponse, type Classified
 // ==============================================================================
 
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-const DEFAULT_MODEL = "google/gemini-3.1-flash-lite-preview"
+const DEFAULT_MODEL = "deepseek/deepseek-v4-flash"
 const MODEL = process.env.MODEL ?? DEFAULT_MODEL
 const MAX_CONCURRENT = 5
 
@@ -115,7 +115,11 @@ async function callOpenRouter(jobs: RawJob[]): Promise<BatchResponse> {
 
   let lastError: Error | null = null
 
-  for (let attempt = 1; attempt <= 2; attempt++) {
+  // First attempt is deterministic; retries raise temperature so a model that
+  // botched structured output (truncated/invalid JSON) actually re-rolls
+  // instead of replaying the same bad response.
+  const MAX_ATTEMPTS = 4
+  for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     try {
       if (attempt > 1) console.log(`    Retrying batch...`)
 
@@ -140,8 +144,8 @@ async function callOpenRouter(jobs: RawJob[]): Promise<BatchResponse> {
               schema: batchJsonSchema,
             },
           },
-          temperature: 0,
-          max_tokens: 8192,
+          temperature: attempt === 1 ? 0 : 0.4,
+          max_tokens: 32768,
         }),
       })
 
@@ -162,7 +166,7 @@ async function callOpenRouter(jobs: RawJob[]): Promise<BatchResponse> {
     }
   }
 
-  throw new Error(`Batch failed after 2 attempts: ${lastError?.message}`)
+  throw new Error(`Batch failed after ${MAX_ATTEMPTS} attempts: ${lastError?.message}`)
 }
 
 // ==============================================================================

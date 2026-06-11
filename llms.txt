@@ -1,0 +1,41 @@
+# HN Job Trends — Data
+
+> Monthly tech-hiring trends mined from Hacker News "Who is hiring?" threads. Every job posting is classified (role, technologies, experience level, remote policy, compensation) and aggregated per month. All data is served as JSON; this file indexes it for LLMs.
+
+Latest run: 2026-06-11 — 309 jobs analyzed. Generated 2026-06-11T13:19:07.786Z.
+
+## Latest snapshot
+
+- Jobs analyzed: 309
+- Top technologies: Python (31.1%), TypeScript (23.9%), React (21.7%), PostgreSQL (18.8%), AWS (14.9%), Go (10%), Kubernetes (9.4%), Rust (9.1%)
+- Top roles: Software Engineer (29.1%), Full Stack Engineer (13.9%), Senior Software Engineer (13.9%), Other (11%), Backend Engineer (7.1%), ML Engineer (4.9%)
+- Fully remote: 41.7%
+- Salary mentioned: 34.6%
+- AI/ML mentioned: 59.9%
+
+## Index files
+
+- [manifest.json](/indexes/manifest.json): every run with job counts and titles
+- [history.json](/indexes/history.json): per-run summary metrics for charting
+- [tech-trends.json](/indexes/tech-trends.json): technology counts over time
+- [role-trends.json](/indexes/role-trends.json): role counts over time
+- [latest.json](/indexes/latest.json): full analysis for the most recent run
+
+## Per-run data
+
+Each run exposes `raw.json` (original postings), `classified.json` (per-job labels), and `analysis.json` (aggregated metrics).
+
+- [2026-06-11](/runs/2026-06-11/analysis.json): 309 jobs — Ask HN: Who is hiring? (June 2026)
+- [2026-06-03](/runs/2026-06-03/analysis.json): 247 jobs — Ask HN: Who is hiring? (June 2026)
+- [2026-05-28](/runs/2026-05-28/analysis.json): 337 jobs — Ask HN: Who is hiring? (May 2026)
+- [2026-05-05](/runs/2026-05-05/analysis.json): 278 jobs — Ask HN: Who is hiring? (May 2026)
+- [2026-05-03](/runs/2026-05-03/analysis.json): 211 jobs — Ask HN: Who is hiring? (May 2026)
+- [2026-04-28](/runs/2026-04-28/analysis.json): 354 jobs — Ask HN: Who is hiring? (April 2026)
+- [2026-04-17](/runs/2026-04-17/analysis.json): 363 jobs — Ask HN: Who is hiring? (April 2026)
+- [2026-03-15](/runs/2026-03-15/analysis.json): 328 jobs — Ask HN: Who is hiring? (March 2026)
+- [2026-02-01](/runs/2026-02-01/analysis.json): 416 jobs — Ask HN: Who is hiring? (February 2026)
+- [2026-01-01](/runs/2026-01-01/analysis.json): 253 jobs — Ask HN: Who is hiring? (January 2026)
+
+## Analysis schema
+
+`analysis.json` fields: `job_count`; `technologies[]` and `roles[]` as `{name,count,pct}`; `experience_levels[]` as `{level,count,pct}`; `remote` as `{fully_remote,hybrid,onsite_only,not_mentioned}`; `compensation` as `{salary_mentioned_pct,ranges[],equity_mentioned_pct}`; and `ai_ml_mentioned_pct`. All percentages are over `job_count`.

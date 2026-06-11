@@ -3,10 +3,10 @@
   "runs": [
     {
       "date": "2026-01-01",
-      "job_count": 264,
+      "job_count": 253,
       "top_techs": [
-        "Python",
         "React",
+        "Python",
         "TypeScript",
         "PostgreSQL",
         "AWS"
@@ -15,19 +15,19 @@
         "Software Engineer",
         "Full Stack Engineer",
         "Senior Software Engineer",
-        "Backend Engineer",
-        "Product Manager"
+        "Other",
+        "Backend Engineer"
       ],
-      "remote_pct": 47,
-      "salary_mentioned_pct": 27.7,
-      "ai_ml_mentioned_pct": 67
+      "remote_pct": 49.4,
+      "salary_mentioned_pct": 29.6,
+      "ai_ml_mentioned_pct": 56.9
     },
     {
       "date": "2026-02-01",
-      "job_count": 441,
+      "job_count": 416,
       "top_techs": [
-        "Python",
         "TypeScript",
+        "Python",
         "React",
         "PostgreSQL",
         "AWS"
@@ -36,41 +36,41 @@
         "Software Engineer",
         "Full Stack Engineer",
         "Senior Software Engineer",
-        "Backend Engineer",
-        "Product Manager"
+        "Other",
+        "Backend Engineer"
       ],
-      "remote_pct": 41.7,
-      "salary_mentioned_pct": 31.7,
-      "ai_ml_mentioned_pct": 62.6
+      "remote_pct": 43.3,
+      "salary_mentioned_pct": 29.3,
+      "ai_ml_mentioned_pct": 51.2
     },
     {
       "date": "2026-03-15",
-      "job_count": 343,
+      "job_count": 328,
       "top_techs": [
-        "Python",
         "TypeScript",
+        "Python",
         "React",
         "PostgreSQL",
         "AWS"
       ],
       "top_roles": [
         "Software Engineer",
-        "Senior Software Engineer",
         "Full Stack Engineer",
-        "DevOps / SRE",
-        "Other"
+        "Senior Software Engineer",
+        "Other",
+        "Backend Engineer"
       ],
-      "remote_pct": 43.7,
-      "salary_mentioned_pct": 32.7,
-      "ai_ml_mentioned_pct": 67.1
+      "remote_pct": 45.1,
+      "salary_mentioned_pct": 30.8,
+      "ai_ml_mentioned_pct": 55.2
     },
     {
       "date": "2026-04-17",
-      "job_count": 370,
+      "job_count": 363,
       "top_techs": [
         "Python",
-        "React",
         "TypeScript",
+        "React",
         "PostgreSQL",
         "AWS"
       ],
@@ -78,37 +78,37 @@
         "Software Engineer",
         "Full Stack Engineer",
         "Senior Software Engineer",
-        "Backend Engineer",
-        "Other"
+        "Other",
+        "Backend Engineer"
       ],
-      "remote_pct": 39.7,
-      "salary_mentioned_pct": 30.3,
-      "ai_ml_mentioned_pct": 67
+      "remote_pct": 38.8,
+      "salary_mentioned_pct": 33.9,
+      "ai_ml_mentioned_pct": 60.6
     },
     {
       "date": "2026-04-28",
-      "job_count": 371,
+      "job_count": 354,
       "top_techs": [
         "Python",
-        "React",
         "TypeScript",
+        "React",
         "PostgreSQL",
         "AWS"
       ],
       "top_roles": [
         "Software Engineer",
-        "Full Stack Engineer",
         "Senior Software Engineer",
+        "Full Stack Engineer",
         "Other",
         "Backend Engineer"
       ],
-      "remote_pct": 41,
-      "salary_mentioned_pct": 31.5,
-      "ai_ml_mentioned_pct": 67.9
+      "remote_pct": 41.2,
+      "salary_mentioned_pct": 32.8,
+      "ai_ml_mentioned_pct": 57.6
     },
     {
       "date": "2026-05-03",
-      "job_count": 220,
+      "job_count": 211,
       "top_techs": [
         "Python",
         "React",
@@ -118,22 +118,22 @@
       ],
       "top_roles": [
         "Software Engineer",
-        "Senior Software Engineer",
         "Full Stack Engineer",
-        "Backend Engineer",
-        "Other"
+        "Senior Software Engineer",
+        "Other",
+        "Backend Engineer"
       ],
-      "remote_pct": 43.2,
-      "salary_mentioned_pct": 34.5,
-      "ai_ml_mentioned_pct": 64.1
+      "remote_pct": 39.8,
+      "salary_mentioned_pct": 33.2,
+      "ai_ml_mentioned_pct": 51.7
     },
     {
       "date": "2026-05-05",
-      "job_count": 292,
+      "job_count": 278,
       "top_techs": [
         "Python",
-        "React",
         "TypeScript",
+        "React",
         "AWS",
         "PostgreSQL"
       ],
@@ -144,55 +144,55 @@
         "Other",
         "Backend Engineer"
       ],
-      "remote_pct": 44.5,
-      "salary_mentioned_pct": 33.9,
-      "ai_ml_mentioned_pct": 63.7
+      "remote_pct": 45.7,
+      "salary_mentioned_pct": 34.9,
+      "ai_ml_mentioned_pct": 54.3
     },
     {
       "date": "2026-05-28",
-      "job_count": 356,
+      "job_count": 337,
       "top_techs": [
         "Python",
-        "React",
         "TypeScript",
+        "React",
         "AWS",
         "PostgreSQL"
       ],
       "top_roles": [
         "Software Engineer",
+        "Other",
         "Full Stack Engineer",
         "Senior Software Engineer",
-        "DevOps / SRE",
-        "Other"
+        "Backend Engineer"
       ],
-      "remote_pct": 43.5,
-      "salary_mentioned_pct": 34.6,
-      "ai_ml_mentioned_pct": 64.9
+      "remote_pct": 43.3,
+      "salary_mentioned_pct": 34.1,
+      "ai_ml_mentioned_pct": 53.4
     },
     {
       "date": "2026-06-03",
-      "job_count": 255,
+      "job_count": 247,
       "top_techs": [
         "Python",
-        "TypeScript",
         "React",
+        "TypeScript",
         "PostgreSQL",
         "AWS"
       ],
       "top_roles": [
         "Software Engineer",
         "Full Stack Engineer",
+        "Other",
         "Senior Software Engineer",
-        "Backend Engineer",
-        "Data Engineer"
+        "Backend Engineer"
       ],
-      "remote_pct": 41.2,
-      "salary_mentioned_pct": 32.2,
-      "ai_ml_mentioned_pct": 71.4
+      "remote_pct": 39.7,
+      "salary_mentioned_pct": 31.6,
+      "ai_ml_mentioned_pct": 56.7
     },
     {
       "date": "2026-06-11",
-      "job_count": 322,
+      "job_count": 309,
       "top_techs": [
         "Python",
         "TypeScript",
@@ -204,12 +204,12 @@
         "Software Engineer",
         "Full Stack Engineer",
         "Senior Software Engineer",
-        "Backend Engineer",
-        "Other"
+        "Other",
+        "Backend Engineer"
       ],
-      "remote_pct": 25.5,
-      "salary_mentioned_pct": 24.5,
-      "ai_ml_mentioned_pct": 27
+      "remote_pct": 41.7,
+      "salary_mentioned_pct": 34.6,
+      "ai_ml_mentioned_pct": 59.9
     }
   ]
 }

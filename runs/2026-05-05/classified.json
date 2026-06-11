@@ -7,11 +7,11 @@
       "id": 48027869,
       "technologies": [
         "Python",
-        "AWS",
         "TensorFlow",
-        "PyTorch"
+        "PyTorch",
+        "AWS"
       ],
-      "role": "Senior Software Engineer",
+      "role": "ML Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": true,
@@ -34,12 +34,12 @@
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 48027873,
       "technologies": [],
-      "role": "Senior Software Engineer",
+      "role": "Data Engineer",
       "experience_level": "Senior",
       "remote": "onsite_only",
       "salary_mentioned": true,
@@ -51,13 +51,14 @@
       "id": 48026144,
       "technologies": [
         "TypeScript",
-        "Node.js",
         "React",
         "PostgreSQL",
         "Docker",
         "Kubernetes",
         "Terraform",
-        "AWS"
+        "AWS",
+        "Node.js",
+        "Redis"
       ],
       "role": "Software Engineer",
       "experience_level": "Not specified",
@@ -70,10 +71,12 @@
     {
       "id": 48026290,
       "technologies": [
+        "Kubernetes",
         "AWS",
-        "Kubernetes"
+        "GCP",
+        "Azure"
       ],
-      "role": "Senior Software Engineer",
+      "role": "Engineering Manager",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -85,10 +88,10 @@
       "id": 48026582,
       "technologies": [
         "TypeScript",
-        "AWS",
-        "React"
+        "React",
+        "AWS"
       ],
-      "role": "Software Engineer",
+      "role": "Full Stack Engineer",
       "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": true,
@@ -99,10 +102,9 @@
     {
       "id": 48021269,
       "technologies": [
-        "Docker",
-        "GitHub Actions",
         "Python",
-        "C++"
+        "Docker",
+        "GitHub Actions"
       ],
       "role": "DevOps / SRE",
       "experience_level": "Not specified",
@@ -118,7 +120,7 @@
         "React"
       ],
       "role": "Software Engineer",
-      "experience_level": "Senior",
+      "experience_level": "Not specified",
       "remote": "onsite_only",
       "salary_mentioned": false,
       "salary_band": null,
@@ -130,8 +132,8 @@
       "technologies": [
         "Python"
       ],
-      "role": "Staff Engineer",
-      "experience_level": "Senior",
+      "role": "Software Engineer",
+      "experience_level": "Not specified",
       "remote": "onsite_only",
       "salary_mentioned": false,
       "salary_band": null,
@@ -141,7 +143,7 @@
     {
       "id": 48022980,
       "technologies": [],
-      "role": "Staff Engineer",
+      "role": "Full Stack Engineer",
       "experience_level": "Senior",
       "remote": "onsite_only",
       "salary_mentioned": true,
@@ -153,7 +155,7 @@
       "id": 48023815,
       "technologies": [],
       "role": "Staff Engineer",
-      "experience_level": "Not specified",
+      "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": true,
       "salary_band": "$150k-$200k",
@@ -163,7 +165,8 @@
     {
       "id": 48023405,
       "technologies": [
-        "NestJS",
+        "TypeScript",
+        "Python",
         "PostgreSQL",
         "Next.js"
       ],
@@ -171,7 +174,7 @@
       "experience_level": "Mid",
       "remote": "hybrid",
       "salary_mentioned": true,
-      "salary_band": "<$100k",
+      "salary_band": "€58k-€65k — skipping (non-USD); no USD band, set to null",
       "equity_mentioned": true,
       "ai_ml_mentioned": true
     },
@@ -185,7 +188,7 @@
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "$100k-$150k",
+      "salary_band": "$150k-$200k",
       "equity_mentioned": false,
       "ai_ml_mentioned": false
     },
@@ -204,6 +207,7 @@
       "id": 48022849,
       "technologies": [
         "C#",
+        "Angular",
         "PostgreSQL",
         "GCP",
         "Kubernetes",
@@ -220,9 +224,11 @@
     {
       "id": 47975951,
       "technologies": [
-        "Rust"
+        "Rust",
+        "iOS",
+        "Android"
       ],
-      "role": "Software Engineer",
+      "role": "Mobile Engineer",
       "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -256,7 +262,7 @@
       "id": 48012595,
       "technologies": [],
       "role": "Software Engineer",
-      "experience_level": "Senior",
+      "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": false,
       "salary_band": null,
@@ -269,17 +275,6 @@
       "role": "Full Stack Engineer",
       "experience_level": "Not specified",
       "remote": "fully_remote",
-      "salary_mentioned": false,
-      "salary_band": null,
-      "equity_mentioned": false,
-      "ai_ml_mentioned": true
-    },
-    {
-      "id": 48025080,
-      "technologies": [],
-      "role": "Other",
-      "experience_level": "Not specified",
-      "remote": "not_mentioned",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -302,7 +297,7 @@
     {
       "id": 47979897,
       "technologies": [],
-      "role": "Software Engineer",
+      "role": "Other",
       "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -313,7 +308,7 @@
     {
       "id": 47979377,
       "technologies": [],
-      "role": "Software Engineer",
+      "role": "Other",
       "experience_level": "Senior",
       "remote": "onsite_only",
       "salary_mentioned": false,
@@ -326,7 +321,7 @@
       "technologies": [],
       "role": "DevOps / SRE",
       "experience_level": "Senior",
-      "remote": "fully_remote",
+      "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -337,7 +332,7 @@
       "technologies": [
         "Go"
       ],
-      "role": "Senior Software Engineer",
+      "role": "Backend Engineer",
       "experience_level": "Senior",
       "remote": "hybrid",
       "salary_mentioned": false,
@@ -348,7 +343,7 @@
     {
       "id": 48020288,
       "technologies": [],
-      "role": "Full Stack Engineer",
+      "role": "Other",
       "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": false,
@@ -380,15 +375,15 @@
     {
       "id": 47977166,
       "technologies": [
-        "Next.js",
         "TypeScript",
-        "Python"
+        "Python",
+        "Next.js"
       ],
       "role": "Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
-      "salary_mentioned": false,
-      "salary_band": null,
+      "salary_mentioned": true,
+      "salary_band": "$100k-$150k",
       "equity_mentioned": false,
       "ai_ml_mentioned": true
     },
@@ -405,7 +400,7 @@
       "salary_mentioned": true,
       "salary_band": "$100k-$150k",
       "equity_mentioned": true,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 48016223,
@@ -421,7 +416,7 @@
     {
       "id": 47980397,
       "technologies": [],
-      "role": "Backend Engineer",
+      "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -443,20 +438,22 @@
       "salary_mentioned": true,
       "salary_band": "$150k-$200k",
       "equity_mentioned": true,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 47978937,
       "technologies": [
+        "Kubernetes",
+        "Docker",
         "AWS"
       ],
-      "role": "Senior Software Engineer",
+      "role": "DevOps / SRE",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 48017676,
@@ -465,9 +462,9 @@
         "JavaScript",
         "Python"
       ],
-      "role": "Senior Software Engineer",
-      "experience_level": "Senior",
-      "remote": "fully_remote",
+      "role": "Software Engineer",
+      "experience_level": "Mid",
+      "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -481,7 +478,7 @@
         "Rust"
       ],
       "role": "Software Engineer",
-      "experience_level": "Senior",
+      "experience_level": "Not specified",
       "remote": "onsite_only",
       "salary_mentioned": false,
       "salary_band": null,
@@ -512,7 +509,7 @@
       "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": true,
-      "salary_band": "<$100k",
+      "salary_band": "$100k-$150k",
       "equity_mentioned": false,
       "ai_ml_mentioned": false
     },
@@ -533,10 +530,11 @@
         "TypeScript",
         "Python",
         "React",
-        "Next.js"
+        "Next.js",
+        "OpenAI API"
       ],
-      "role": "Full Stack Engineer",
-      "experience_level": "Mid",
+      "role": "AI Engineer",
+      "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": true,
       "salary_band": "$150k-$200k",
@@ -571,7 +569,7 @@
       "role": "Software Engineer",
       "experience_level": "Senior",
       "remote": "hybrid",
-      "salary_mentioned": false,
+      "salary_mentioned": true,
       "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": false
@@ -591,9 +589,9 @@
       "id": 47976728,
       "technologies": [
         "Go",
-        "AWS",
         "Kubernetes",
-        "Terraform"
+        "Terraform",
+        "AWS"
       ],
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
@@ -606,9 +604,10 @@
     {
       "id": 48014057,
       "technologies": [
-        "React",
         "TypeScript",
+        "JavaScript",
         "Node.js",
+        "React",
         "PostgreSQL",
         "AWS",
         "Python"
@@ -652,7 +651,7 @@
     {
       "id": 47979298,
       "technologies": [],
-      "role": "Full Stack Engineer",
+      "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "hybrid",
       "salary_mentioned": true,
@@ -669,18 +668,22 @@
         "C#",
         "Kafka"
       ],
-      "role": "Backend Engineer",
+      "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
-      "salary_mentioned": false,
+      "salary_mentioned": true,
       "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": false
     },
     {
       "id": 48009493,
-      "technologies": [],
-      "role": "Frontend Engineer",
+      "technologies": [
+        "JavaScript",
+        "TypeScript",
+        "React"
+      ],
+      "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -690,18 +693,97 @@
     },
     {
       "id": 48011263,
-      "technologies": [],
-      "role": "Full Stack Engineer",
-      "experience_level": "Senior",
+      "technologies": [
+        "Python",
+        "Go",
+        "Rust",
+        "Java",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Elasticsearch",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "Kafka",
+        "PyTorch",
+        "TensorFlow",
+        "LangChain",
+        "OpenAI API",
+        "AWS",
+        "GCP",
+        "Azure"
+      ],
+      "role": "Software Engineer",
+      "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": true,
-      "salary_band": "$200k+",
+      "salary_band": "$150k-$200k",
       "equity_mentioned": false,
       "ai_ml_mentioned": true
     },
     {
       "id": 47980487,
-      "technologies": [],
+      "technologies": [
+        "Python",
+        "Go",
+        "Rust",
+        "Java",
+        "Kotlin",
+        "Swift",
+        "C++",
+        "C#",
+        "Ruby",
+        "PHP",
+        "Scala",
+        "Elixir",
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Vue",
+        "Angular",
+        "Svelte",
+        "Node.js",
+        "Django",
+        "FastAPI",
+        "Rails",
+        "Spring",
+        "Laravel",
+        "GraphQL",
+        "gRPC",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Elasticsearch",
+        "Cassandra",
+        "SQLite",
+        "AWS",
+        "GCP",
+        "Azure",
+        "Cloudflare",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "GitHub Actions",
+        "Kafka",
+        "RabbitMQ",
+        "Pub/Sub",
+        "SQS",
+        "PyTorch",
+        "TensorFlow",
+        "LangChain",
+        "OpenAI API",
+        "Hugging Face",
+        "iOS",
+        "Android",
+        "React Native",
+        "Flutter"
+      ],
       "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "onsite_only",
@@ -717,7 +799,7 @@
         "C++",
         "Java"
       ],
-      "role": "Backend Engineer",
+      "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": true,
@@ -727,8 +809,64 @@
     },
     {
       "id": 48013457,
-      "technologies": [],
-      "role": "ML Engineer",
+      "technologies": [
+        "Python",
+        "Go",
+        "Rust",
+        "Java",
+        "Kotlin",
+        "Swift",
+        "C++",
+        "C#",
+        "Ruby",
+        "PHP",
+        "Scala",
+        "Elixir",
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Vue",
+        "Angular",
+        "Svelte",
+        "Node.js",
+        "Django",
+        "FastAPI",
+        "Rails",
+        "Spring",
+        "Laravel",
+        "GraphQL",
+        "gRPC",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Elasticsearch",
+        "Cassandra",
+        "SQLite",
+        "AWS",
+        "GCP",
+        "Azure",
+        "Cloudflare",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "GitHub Actions",
+        "Kafka",
+        "RabbitMQ",
+        "Pub/Sub",
+        "SQS",
+        "PyTorch",
+        "TensorFlow",
+        "LangChain",
+        "OpenAI API",
+        "Hugging Face",
+        "iOS",
+        "Android",
+        "React Native",
+        "Flutter"
+      ],
+      "role": "AI Engineer",
       "experience_level": "Not specified",
       "remote": "onsite_only",
       "salary_mentioned": false,
@@ -768,36 +906,24 @@
         "PostgreSQL",
         "Redis"
       ],
-      "role": "Full Stack Engineer",
+      "role": "Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "$200k+",
-      "equity_mentioned": false,
-      "ai_ml_mentioned": false
-    },
-    {
-      "id": 48012147,
-      "technologies": [
-        "Django",
-        "Vue",
-        "AWS",
-        "PostgreSQL",
-        "Redis",
-        "Docker",
-        "Python"
-      ],
-      "role": "Software Engineer",
-      "experience_level": "Mid",
-      "remote": "fully_remote",
-      "salary_mentioned": false,
-      "salary_band": null,
+      "salary_band": "$150k-$200k",
       "equity_mentioned": false,
       "ai_ml_mentioned": false
     },
     {
       "id": 48008806,
-      "technologies": [],
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "LangChain",
+        "OpenAI API",
+        "Hugging Face"
+      ],
       "role": "ML Engineer",
       "experience_level": "Not specified",
       "remote": "hybrid",
@@ -808,7 +934,63 @@
     },
     {
       "id": 48015477,
-      "technologies": [],
+      "technologies": [
+        "Python",
+        "Go",
+        "Rust",
+        "Java",
+        "Kotlin",
+        "Swift",
+        "C++",
+        "C#",
+        "Ruby",
+        "PHP",
+        "Scala",
+        "Elixir",
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Vue",
+        "Angular",
+        "Svelte",
+        "Node.js",
+        "Django",
+        "FastAPI",
+        "Rails",
+        "Spring",
+        "Laravel",
+        "GraphQL",
+        "gRPC",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Elasticsearch",
+        "Cassandra",
+        "SQLite",
+        "AWS",
+        "GCP",
+        "Azure",
+        "Cloudflare",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "GitHub Actions",
+        "Kafka",
+        "RabbitMQ",
+        "Pub/Sub",
+        "SQS",
+        "PyTorch",
+        "TensorFlow",
+        "LangChain",
+        "OpenAI API",
+        "Hugging Face",
+        "iOS",
+        "Android",
+        "React Native",
+        "Flutter"
+      ],
       "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "onsite_only",
@@ -886,27 +1068,10 @@
       "ai_ml_mentioned": true
     },
     {
-      "id": 48009523,
-      "technologies": [
-        "PHP",
-        "MySQL",
-        "Vue",
-        "Docker",
-        "GraphQL"
-      ],
-      "role": "Other",
-      "experience_level": "Senior",
-      "remote": "fully_remote",
-      "salary_mentioned": false,
-      "salary_band": null,
-      "equity_mentioned": false,
-      "ai_ml_mentioned": false
-    },
-    {
       "id": 48011496,
       "technologies": [
-        "iOS",
-        "Python"
+        "Python",
+        "iOS"
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Not specified",
@@ -914,7 +1079,7 @@
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 48004193,
@@ -939,19 +1104,19 @@
         "React Native",
         "PostgreSQL"
       ],
-      "role": "Other",
+      "role": "Software Engineer",
       "experience_level": "Junior",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "<$100k",
+      "salary_band": "$100k-$150k",
       "equity_mentioned": false,
       "ai_ml_mentioned": false
     },
     {
       "id": 48006671,
       "technologies": [],
-      "role": "Software Engineer",
-      "experience_level": "Junior",
+      "role": "Other",
+      "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": true,
       "salary_band": "<$100k",
@@ -976,7 +1141,7 @@
     {
       "id": 48005990,
       "technologies": [],
-      "role": "Backend Engineer",
+      "role": "Other",
       "experience_level": "Not specified",
       "remote": "not_mentioned",
       "salary_mentioned": false,
@@ -992,9 +1157,9 @@
         "Next.js",
         "React Native"
       ],
-      "role": "Full Stack Engineer",
+      "role": "Backend Engineer",
       "experience_level": "Not specified",
-      "remote": "hybrid",
+      "remote": "onsite_only",
       "salary_mentioned": true,
       "salary_band": "$150k-$200k",
       "equity_mentioned": false,
@@ -1016,7 +1181,7 @@
       "technologies": [
         "Python"
       ],
-      "role": "Software Engineer",
+      "role": "ML Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -1037,11 +1202,11 @@
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Not specified",
-      "remote": "hybrid",
+      "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "$150k-$200k",
+      "salary_band": "$100k-$150k",
       "equity_mentioned": true,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 47977276,
@@ -1053,7 +1218,7 @@
         "Kubernetes",
         "AWS"
       ],
-      "role": "Software Engineer",
+      "role": "Senior Software Engineer",
       "experience_level": "Mid",
       "remote": "hybrid",
       "salary_mentioned": false,
@@ -1069,9 +1234,12 @@
         "Scala",
         "PyTorch",
         "TensorFlow",
-        "AWS"
+        "AWS",
+        "GCP",
+        "Azure",
+        "Docker"
       ],
-      "role": "Software Engineer",
+      "role": "AI Engineer",
       "experience_level": "Senior",
       "remote": "hybrid",
       "salary_mentioned": true,
@@ -1082,7 +1250,7 @@
     {
       "id": 47978833,
       "technologies": [],
-      "role": "Product Manager",
+      "role": "Other",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": true,
@@ -1097,7 +1265,7 @@
       "experience_level": "Not specified",
       "remote": "onsite_only",
       "salary_mentioned": true,
-      "salary_band": "$100k-$150k",
+      "salary_band": "$150k-$200k",
       "equity_mentioned": true,
       "ai_ml_mentioned": true
     },
@@ -1107,9 +1275,10 @@
         "Python",
         "TypeScript",
         "JavaScript",
+        "OpenAI API",
         "GCP"
       ],
-      "role": "Senior Software Engineer",
+      "role": "AI Engineer",
       "experience_level": "Senior",
       "remote": "hybrid",
       "salary_mentioned": true,
@@ -1120,8 +1289,8 @@
     {
       "id": 48014519,
       "technologies": [
-        "C++",
-        "Python"
+        "Python",
+        "C++"
       ],
       "role": "Software Engineer",
       "experience_level": "Not specified",
@@ -1134,7 +1303,7 @@
     {
       "id": 47977356,
       "technologies": [],
-      "role": "Software Engineer",
+      "role": "AI Engineer",
       "experience_level": "Not specified",
       "remote": "not_mentioned",
       "salary_mentioned": false,
@@ -1172,16 +1341,18 @@
       "id": 47977581,
       "technologies": [
         "Elixir",
-        "GraphQL",
+        "React",
         "Python",
         "PyTorch",
-        "React"
+        "GraphQL",
+        "React Native",
+        "Go"
       ],
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "$200k+",
+      "salary_band": "$150k-$200k",
       "equity_mentioned": true,
       "ai_ml_mentioned": true
     },
@@ -1201,8 +1372,8 @@
       "technologies": [
         "Rails"
       ],
-      "role": "Staff Engineer",
-      "experience_level": "Senior",
+      "role": "Software Engineer",
+      "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": true,
       "salary_band": "$200k+",
@@ -1218,11 +1389,11 @@
         "PostgreSQL",
         "GCP"
       ],
-      "role": "Senior Software Engineer",
+      "role": "Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "$200k+",
+      "salary_band": "$150k-$200k",
       "equity_mentioned": true,
       "ai_ml_mentioned": false
     },
@@ -1233,8 +1404,8 @@
         "Laravel",
         "React"
       ],
-      "role": "Senior Software Engineer",
-      "experience_level": "Senior",
+      "role": "Software Engineer",
+      "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
@@ -1250,7 +1421,7 @@
         "PostgreSQL"
       ],
       "role": "Full Stack Engineer",
-      "experience_level": "Not specified",
+      "experience_level": "Senior",
       "remote": "onsite_only",
       "salary_mentioned": true,
       "salary_band": "$150k-$200k",
@@ -1271,7 +1442,6 @@
     {
       "id": 47976607,
       "technologies": [
-        "Ruby",
         "Rails"
       ],
       "role": "Senior Software Engineer",
@@ -1285,11 +1455,11 @@
     {
       "id": 48001984,
       "technologies": [],
-      "role": "Software Engineer",
+      "role": "Other",
       "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "$200k+",
+      "salary_band": "$150k-$200k",
       "equity_mentioned": true,
       "ai_ml_mentioned": true
     },
@@ -1329,7 +1499,7 @@
         "PostgreSQL",
         "AWS"
       ],
-      "role": "Senior Software Engineer",
+      "role": "Full Stack Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -1340,7 +1510,7 @@
     {
       "id": 47979383,
       "technologies": [],
-      "role": "Product Manager",
+      "role": "Other",
       "experience_level": "Not specified",
       "remote": "onsite_only",
       "salary_mentioned": false,
@@ -1355,7 +1525,7 @@
       ],
       "role": "Software Engineer",
       "experience_level": "Senior",
-      "remote": "hybrid",
+      "remote": "onsite_only",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -1377,12 +1547,12 @@
     {
       "id": 48016274,
       "technologies": [
-        "Django",
         "Python",
         "React",
         "TypeScript",
         "PostgreSQL",
-        "AWS"
+        "AWS",
+        "Django"
       ],
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
@@ -1403,7 +1573,7 @@
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 47978952,
@@ -1425,11 +1595,11 @@
     {
       "id": 48004707,
       "technologies": [
+        "Kubernetes",
         "Python",
         "Kafka",
         "PostgreSQL",
-        "MongoDB",
-        "Kubernetes"
+        "MongoDB"
       ],
       "role": "DevOps / SRE",
       "experience_level": "Senior",
@@ -1442,10 +1612,9 @@
     {
       "id": 48011307,
       "technologies": [
-        "JavaScript",
         "Python"
       ],
-      "role": "Other",
+      "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "not_mentioned",
       "salary_mentioned": false,
@@ -1471,7 +1640,7 @@
       "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "$200k+",
+      "salary_band": "$150k-$200k",
       "equity_mentioned": true,
       "ai_ml_mentioned": true
     },
@@ -1479,8 +1648,10 @@
       "id": 48009461,
       "technologies": [
         "Go",
+        "AWS",
         "PostgreSQL",
-        "Kubernetes"
+        "Kubernetes",
+        "GitHub Actions"
       ],
       "role": "DevOps / SRE",
       "experience_level": "Senior",
@@ -1521,7 +1692,8 @@
       "id": 47976317,
       "technologies": [
         "Python",
-        "JavaScript"
+        "JavaScript",
+        "SQL"
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Senior",
@@ -1534,13 +1706,13 @@
     {
       "id": 47977138,
       "technologies": [],
-      "role": "Senior Software Engineer",
+      "role": "Data Engineer",
       "experience_level": "Senior",
       "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 47991238,
@@ -1582,7 +1754,7 @@
       "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "$150k-$200k",
+      "salary_band": "$100k-$150k",
       "equity_mentioned": false,
       "ai_ml_mentioned": false
     },
@@ -1594,8 +1766,8 @@
         "AWS",
         "PyTorch"
       ],
-      "role": "Software Engineer",
-      "experience_level": "Senior",
+      "role": "Full Stack Engineer",
+      "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
@@ -1610,12 +1782,12 @@
         "React",
         "Next.js",
         "Ruby",
-        "Rails",
-        "Python"
+        "Python",
+        "Rails"
       ],
-      "role": "Software Engineer",
+      "role": "Full Stack Engineer",
       "experience_level": "Senior",
-      "remote": "hybrid",
+      "remote": "fully_remote",
       "salary_mentioned": true,
       "salary_band": "$200k+",
       "equity_mentioned": false,
@@ -1624,17 +1796,19 @@
     {
       "id": 47984711,
       "technologies": [],
-      "role": "Software Engineer",
+      "role": "Other",
       "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": true,
-      "salary_band": "<$100k",
+      "salary_band": "$100k-$150k",
       "equity_mentioned": true,
       "ai_ml_mentioned": true
     },
     {
       "id": 47982238,
-      "technologies": [],
+      "technologies": [
+        "Azure"
+      ],
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
@@ -1646,14 +1820,14 @@
     {
       "id": 47976574,
       "technologies": [
-        "Rails",
-        "React"
+        "React",
+        "Rails"
       ],
-      "role": "Full Stack Engineer",
+      "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "onsite_only",
       "salary_mentioned": true,
-      "salary_band": "$200k+",
+      "salary_band": "$150k-$200k",
       "equity_mentioned": true,
       "ai_ml_mentioned": true
     },
@@ -1666,11 +1840,11 @@
         "Cloudflare",
         "Terraform"
       ],
-      "role": "Senior Software Engineer",
+      "role": "Full Stack Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "<$100k",
+      "salary_band": "$100k-$150k",
       "equity_mentioned": false,
       "ai_ml_mentioned": false
     },
@@ -1700,7 +1874,9 @@
         "Scala",
         "Terraform",
         "AWS",
-        "Kubernetes"
+        "Kubernetes",
+        "iOS",
+        "Android"
       ],
       "role": "Software Engineer",
       "experience_level": "Not specified",
@@ -1708,29 +1884,29 @@
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 48008275,
-      "technologies": [
-        "PostgreSQL"
-      ],
-      "role": "Senior Software Engineer",
-      "experience_level": "Senior",
+      "technologies": [],
+      "role": "Other",
+      "experience_level": "Mid",
       "remote": "fully_remote",
       "salary_mentioned": true,
       "salary_band": "<$100k",
       "equity_mentioned": false,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 47982988,
       "technologies": [
-        "Python"
+        "Python",
+        "Hugging Face",
+        "PyTorch"
       ],
-      "role": "Software Engineer",
+      "role": "ML Engineer",
       "experience_level": "Not specified",
-      "remote": "onsite_only",
+      "remote": "not_mentioned",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -1747,7 +1923,7 @@
         "GCP",
         "Elasticsearch"
       ],
-      "role": "Senior Software Engineer",
+      "role": "Full Stack Engineer",
       "experience_level": "Senior",
       "remote": "hybrid",
       "salary_mentioned": true,
@@ -1761,10 +1937,10 @@
         "PostgreSQL",
         "Elasticsearch"
       ],
-      "role": "Senior Software Engineer",
+      "role": "Backend Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
-      "salary_mentioned": false,
+      "salary_mentioned": true,
       "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": true
@@ -1777,9 +1953,9 @@
         "React",
         "AWS"
       ],
-      "role": "Senior Software Engineer",
+      "role": "Full Stack Engineer",
       "experience_level": "Senior",
-      "remote": "hybrid",
+      "remote": "onsite_only",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -1792,10 +1968,11 @@
         "Python",
         "Java",
         "TypeScript",
-        "React"
+        "React",
+        "CUDA"
       ],
       "role": "Software Engineer",
-      "experience_level": "Senior",
+      "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
@@ -1806,17 +1983,19 @@
       "id": 47976189,
       "technologies": [
         "React",
+        "TypeScript",
         "Go",
         "PostgreSQL",
         "GraphQL",
         "Terraform",
-        "AWS"
+        "AWS",
+        "Elasticsearch"
       ],
       "role": "Staff Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "$200k+",
+      "salary_band": "$150k-$200k",
       "equity_mentioned": true,
       "ai_ml_mentioned": false
     },
@@ -1828,9 +2007,10 @@
         "PyTorch",
         "GCP",
         "AWS",
-        "Azure"
+        "Azure",
+        "Hugging Face"
       ],
-      "role": "Software Engineer",
+      "role": "ML Engineer",
       "experience_level": "Senior",
       "remote": "hybrid",
       "salary_mentioned": false,
@@ -1852,9 +2032,9 @@
     {
       "id": 47979286,
       "technologies": [],
-      "role": "Software Engineer",
+      "role": "Other",
       "experience_level": "Not specified",
-      "remote": "hybrid",
+      "remote": "fully_remote",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -1878,7 +2058,7 @@
       "experience_level": "Senior",
       "remote": "hybrid",
       "salary_mentioned": true,
-      "salary_band": "$200k+",
+      "salary_band": "$150k-$200k",
       "equity_mentioned": false,
       "ai_ml_mentioned": false
     },
@@ -1911,8 +2091,8 @@
     {
       "id": 47979250,
       "technologies": [],
-      "role": "Software Engineer",
-      "experience_level": "Senior",
+      "role": "Other",
+      "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
@@ -1931,14 +2111,16 @@
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "$150k-$200k",
+      "salary_band": "$100k-$150k",
       "equity_mentioned": true,
       "ai_ml_mentioned": true
     },
     {
       "id": 47982567,
-      "technologies": [],
-      "role": "Software Engineer",
+      "technologies": [
+        "MCP"
+      ],
+      "role": "Other",
       "experience_level": "Not specified",
       "remote": "onsite_only",
       "salary_mentioned": false,
@@ -1966,10 +2148,12 @@
         "Java",
         "React",
         "TypeScript",
-        "Scala",
-        "Python"
+        "Python",
+        "LangChain",
+        "Hugging Face",
+        "OpenAI API"
       ],
-      "role": "Backend Engineer",
+      "role": "Full Stack Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -1981,8 +2165,9 @@
       "id": 47979026,
       "technologies": [
         "TypeScript",
-        "PostgreSQL",
-        "Cloudflare"
+        "Svelte",
+        "Cloudflare",
+        "PostgreSQL"
       ],
       "role": "Software Engineer",
       "experience_level": "Senior",
@@ -2009,7 +2194,7 @@
       "id": 47980760,
       "technologies": [],
       "role": "Software Engineer",
-      "experience_level": "Senior",
+      "experience_level": "Not specified",
       "remote": "onsite_only",
       "salary_mentioned": false,
       "salary_band": null,
@@ -2019,12 +2204,12 @@
     {
       "id": 47975741,
       "technologies": [
-        "PyTorch",
-        "Python",
         "Rust",
-        "AWS"
+        "Python",
+        "AWS",
+        "PyTorch"
       ],
-      "role": "ML Engineer",
+      "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": false,
@@ -2035,6 +2220,7 @@
     {
       "id": 47982610,
       "technologies": [
+        "iOS",
         "Flutter",
         "Swift"
       ],
@@ -2049,7 +2235,7 @@
     {
       "id": 47975783,
       "technologies": [],
-      "role": "Software Engineer",
+      "role": "Other",
       "experience_level": "Senior",
       "remote": "onsite_only",
       "salary_mentioned": false,
@@ -2063,9 +2249,9 @@
         "Rust",
         "Python"
       ],
-      "role": "Staff Engineer",
+      "role": "ML Engineer",
       "experience_level": "Not specified",
-      "remote": "onsite_only",
+      "remote": "not_mentioned",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -2076,9 +2262,9 @@
       "technologies": [
         "Python"
       ],
-      "role": "Other",
+      "role": "Software Engineer",
       "experience_level": "Not specified",
-      "remote": "fully_remote",
+      "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": true,
@@ -2091,9 +2277,10 @@
         "Python",
         "TypeScript",
         "React",
+        "C++",
         "AWS"
       ],
-      "role": "Senior Software Engineer",
+      "role": "Software Engineer",
       "experience_level": "Senior",
       "remote": "hybrid",
       "salary_mentioned": false,
@@ -2109,9 +2296,9 @@
         "Node.js",
         "React"
       ],
-      "role": "Senior Software Engineer",
-      "experience_level": "Senior",
-      "remote": "hybrid",
+      "role": "Software Engineer",
+      "experience_level": "Mid",
+      "remote": "onsite_only",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": true,
@@ -2120,9 +2307,10 @@
     {
       "id": 47981811,
       "technologies": [
-        "MongoDB"
+        "MongoDB",
+        "Elasticsearch"
       ],
-      "role": "Other",
+      "role": "DevOps / SRE",
       "experience_level": "Senior",
       "remote": "hybrid",
       "salary_mentioned": true,
@@ -2133,6 +2321,7 @@
     {
       "id": 47984681,
       "technologies": [
+        "Elixir",
         "Go",
         "TypeScript"
       ],
@@ -2150,7 +2339,7 @@
         "TypeScript",
         "Node.js"
       ],
-      "role": "Senior Software Engineer",
+      "role": "Principal Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -2174,7 +2363,7 @@
     {
       "id": 47979247,
       "technologies": [],
-      "role": "Full Stack Engineer",
+      "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "onsite_only",
       "salary_mentioned": false,
@@ -2189,7 +2378,8 @@
         "TypeScript",
         "React",
         "GraphQL",
-        "PostgreSQL"
+        "PostgreSQL",
+        "gRPC"
       ],
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
@@ -2205,29 +2395,30 @@
         "Python",
         "FastAPI",
         "React",
-        "TypeScript",
         "Redis",
-        "Docker"
+        "OpenAI API"
       ],
       "role": "Software Engineer",
       "experience_level": "Junior",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "<$100k",
+      "salary_band": "$100k-$150k",
       "equity_mentioned": false,
       "ai_ml_mentioned": true
     },
     {
       "id": 47976768,
       "technologies": [
-        "Rails",
+        "Ruby on Rails",
         "React",
+        "Redux",
         "PostgreSQL",
         "Redis",
         "AWS",
         "GCP",
         "Docker",
-        "Terraform"
+        "Terraform",
+        "Flutter"
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Senior",
@@ -2254,10 +2445,8 @@
     },
     {
       "id": 47975996,
-      "technologies": [
-        "MongoDB"
-      ],
-      "role": "Software Engineer",
+      "technologies": [],
+      "role": "Other",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -2269,12 +2458,11 @@
       "id": 47981089,
       "technologies": [
         "GCP",
-        "MySQL",
         "Redis",
         "Kubernetes"
       ],
       "role": "DevOps / SRE",
-      "experience_level": "Not specified",
+      "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
       "salary_band": null,
@@ -2284,7 +2472,7 @@
     {
       "id": 47976780,
       "technologies": [],
-      "role": "Full Stack Engineer",
+      "role": "Other",
       "experience_level": "Not specified",
       "remote": "not_mentioned",
       "salary_mentioned": false,
@@ -2294,8 +2482,10 @@
     },
     {
       "id": 47978602,
-      "technologies": [],
-      "role": "Software Engineer",
+      "technologies": [
+        "Cloudflare"
+      ],
+      "role": "Other",
       "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -2306,7 +2496,7 @@
     {
       "id": 47976732,
       "technologies": [],
-      "role": "Staff Engineer",
+      "role": "Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -2333,19 +2523,18 @@
     {
       "id": 47976648,
       "technologies": [
-        "Python",
         "Ruby",
-        "PHP",
-        "JavaScript",
-        "Rust",
-        "Kotlin",
-        "C#",
-        "Elixir",
+        "Rails",
         "MongoDB",
-        "React"
+        "React",
+        "Python",
+        "PHP",
+        "Rust",
+        "Elixir",
+        "JavaScript"
       ],
       "role": "Full Stack Engineer",
-      "experience_level": "Senior",
+      "experience_level": "Junior",
       "remote": "fully_remote",
       "salary_mentioned": true,
       "salary_band": "$150k-$200k",
@@ -2356,7 +2545,7 @@
       "id": 47981348,
       "technologies": [],
       "role": "Software Engineer",
-      "experience_level": "Senior",
+      "experience_level": "Not specified",
       "remote": "onsite_only",
       "salary_mentioned": false,
       "salary_band": null,
@@ -2367,12 +2556,12 @@
       "id": 47975760,
       "technologies": [
         "Ruby",
-        "Python",
         "JavaScript",
         "TypeScript",
         "Vue",
         "React",
-        "Svelte"
+        "Svelte",
+        "Python"
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Senior",
@@ -2383,24 +2572,6 @@
       "ai_ml_mentioned": false
     },
     {
-      "id": 47989541,
-      "technologies": [
-        "React",
-        "TypeScript",
-        "Node.js",
-        "PostgreSQL",
-        "MongoDB",
-        "Flutter"
-      ],
-      "role": "Full Stack Engineer",
-      "experience_level": "Mid",
-      "remote": "fully_remote",
-      "salary_mentioned": false,
-      "salary_band": null,
-      "equity_mentioned": false,
-      "ai_ml_mentioned": true
-    },
-    {
       "id": 47979550,
       "technologies": [
         "PostgreSQL",
@@ -2408,7 +2579,7 @@
       ],
       "role": "Software Engineer",
       "experience_level": "Not specified",
-      "remote": "hybrid",
+      "remote": "fully_remote",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -2418,10 +2589,11 @@
       "id": 47975839,
       "technologies": [
         "Rust",
-        "C++",
         "Go",
         "JavaScript",
-        "TypeScript"
+        "TypeScript",
+        "Python",
+        "Ruby"
       ],
       "role": "Software Engineer",
       "experience_level": "Senior",
@@ -2437,9 +2609,9 @@
         "Ruby",
         "Terraform"
       ],
-      "role": "Software Engineer",
+      "role": "AI Engineer",
       "experience_level": "Senior",
-      "remote": "hybrid",
+      "remote": "fully_remote",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -2465,10 +2637,10 @@
       "id": 47979213,
       "technologies": [],
       "role": "Other",
-      "experience_level": "Mid",
+      "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "<$100k",
+      "salary_band": "$100k-$150k",
       "equity_mentioned": false,
       "ai_ml_mentioned": false
     },
@@ -2478,13 +2650,14 @@
         "Python",
         "Django",
         "JavaScript",
+        "Vue",
         "Docker",
-        "GCP",
-        "Cloudflare"
+        "Cloudflare",
+        "GCP"
       ],
-      "role": "Software Engineer",
+      "role": "Senior Software Engineer",
       "experience_level": "Senior",
-      "remote": "hybrid",
+      "remote": "onsite_only",
       "salary_mentioned": true,
       "salary_band": "$150k-$200k",
       "equity_mentioned": false,
@@ -2528,28 +2701,16 @@
       "ai_ml_mentioned": true
     },
     {
-      "id": 47975678,
-      "technologies": [],
-      "role": "Full Stack Engineer",
-      "experience_level": "Not specified",
-      "remote": "fully_remote",
-      "salary_mentioned": false,
-      "salary_band": null,
-      "equity_mentioned": false,
-      "ai_ml_mentioned": false
-    },
-    {
       "id": 47976070,
       "technologies": [
         "Python",
-        "JavaScript",
         "React"
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Mid",
       "remote": "fully_remote",
-      "salary_mentioned": false,
-      "salary_band": null,
+      "salary_mentioned": true,
+      "salary_band": "$100k-$150k",
       "equity_mentioned": true,
       "ai_ml_mentioned": true
     },
@@ -2557,10 +2718,10 @@
       "id": 47975744,
       "technologies": [
         "Python",
+        "Docker",
         "C++",
         "Java",
-        "C#",
-        "Docker"
+        "C#"
       ],
       "role": "AI Engineer",
       "experience_level": "Senior",
@@ -2588,7 +2749,7 @@
       "id": 47976769,
       "technologies": [],
       "role": "DevOps / SRE",
-      "experience_level": "Senior",
+      "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": false,
       "salary_band": null,
@@ -2619,7 +2780,7 @@
         "Ruby",
         "Node.js"
       ],
-      "role": "Backend Engineer",
+      "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -2630,14 +2791,13 @@
     {
       "id": 47975882,
       "technologies": [
-        "Azure",
-        "PHP",
+        "AWS",
         "Vue",
-        "AWS"
+        "PHP"
       ],
       "role": "Other",
       "experience_level": "Not specified",
-      "remote": "fully_remote",
+      "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -2645,10 +2805,8 @@
     },
     {
       "id": 47979300,
-      "technologies": [
-        "iOS"
-      ],
-      "role": "Software Engineer",
+      "technologies": [],
+      "role": "Full Stack Engineer",
       "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": false,
@@ -2677,12 +2835,12 @@
         "Node.js",
         "AWS",
         "GCP",
-        "iOS",
-        "Flutter"
+        "Flutter",
+        "iOS"
       ],
-      "role": "Full Stack Engineer",
+      "role": "Backend Engineer",
       "experience_level": "Senior",
-      "remote": "hybrid",
+      "remote": "onsite_only",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -2722,7 +2880,7 @@
     {
       "id": 47978010,
       "technologies": [],
-      "role": "Software Engineer",
+      "role": "Other",
       "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -2737,7 +2895,7 @@
         "Rust"
       ],
       "role": "Software Engineer",
-      "experience_level": "Senior",
+      "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
@@ -2747,7 +2905,7 @@
     {
       "id": 47977154,
       "technologies": [],
-      "role": "Full Stack Engineer",
+      "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -2759,19 +2917,19 @@
       "id": 47979818,
       "technologies": [],
       "role": "Software Engineer",
-      "experience_level": "Senior",
+      "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 47978910,
       "technologies": [],
       "role": "ML Engineer",
       "experience_level": "Not specified",
-      "remote": "not_mentioned",
+      "remote": "onsite_only",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -2780,13 +2938,14 @@
     {
       "id": 47976749,
       "technologies": [
+        "Python",
         "Kubernetes",
         "Terraform",
-        "Python",
         "GCP",
-        "Azure"
+        "Azure",
+        "Snowflake"
       ],
-      "role": "DevOps / SRE",
+      "role": "Data Engineer",
       "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -2807,10 +2966,8 @@
     },
     {
       "id": 47977299,
-      "technologies": [
-        "iOS"
-      ],
-      "role": "Senior Software Engineer",
+      "technologies": [],
+      "role": "Software Engineer",
       "experience_level": "Senior",
       "remote": "onsite_only",
       "salary_mentioned": false,
@@ -2834,8 +2991,8 @@
       "technologies": [
         "Python",
         "Terraform",
-        "Docker",
-        "AWS"
+        "AWS",
+        "Docker"
       ],
       "role": "Software Engineer",
       "experience_level": "Mid",
@@ -2843,7 +3000,7 @@
       "salary_mentioned": true,
       "salary_band": "$150k-$200k",
       "equity_mentioned": false,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 47986567,
@@ -2872,9 +3029,9 @@
     {
       "id": 47975610,
       "technologies": [],
-      "role": "Product Manager",
-      "experience_level": "Mid",
-      "remote": "fully_remote",
+      "role": "Other",
+      "experience_level": "Not specified",
+      "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -2886,7 +3043,7 @@
         "Python",
         "TypeScript"
       ],
-      "role": "Senior Software Engineer",
+      "role": "Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -2897,9 +3054,9 @@
     {
       "id": 47980841,
       "technologies": [],
-      "role": "Senior Software Engineer",
-      "experience_level": "Senior",
-      "remote": "fully_remote",
+      "role": "Other",
+      "experience_level": "Not specified",
+      "remote": "hybrid",
       "salary_mentioned": true,
       "salary_band": "$200k+",
       "equity_mentioned": true,
@@ -2908,7 +3065,7 @@
     {
       "id": 47981052,
       "technologies": [],
-      "role": "Senior Software Engineer",
+      "role": "Full Stack Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -2920,7 +3077,7 @@
       "id": 47976762,
       "technologies": [],
       "role": "Backend Engineer",
-      "experience_level": "Not specified",
+      "experience_level": "Senior",
       "remote": "hybrid",
       "salary_mentioned": true,
       "salary_band": "$150k-$200k",
@@ -2975,7 +3132,7 @@
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 47978393,
@@ -2990,10 +3147,8 @@
     },
     {
       "id": 47976772,
-      "technologies": [
-        "Azure"
-      ],
-      "role": "Software Engineer",
+      "technologies": [],
+      "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -3017,26 +3172,26 @@
     {
       "id": 47977643,
       "technologies": [],
-      "role": "Other",
+      "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 47978246,
       "technologies": [
         "TypeScript",
         "React",
-        "Node.js",
         "Python",
+        "Node.js",
         "GCP",
         "AWS"
       ],
-      "role": "AI Engineer",
-      "experience_level": "Senior",
+      "role": "Software Engineer",
+      "experience_level": "Not specified",
       "remote": "onsite_only",
       "salary_mentioned": false,
       "salary_band": null,
@@ -3046,14 +3201,14 @@
     {
       "id": 47980469,
       "technologies": [
-        "Svelte",
-        "Python"
+        "Python",
+        "Svelte"
       ],
       "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "onsite_only",
       "salary_mentioned": true,
-      "salary_band": "$100k-$150k",
+      "salary_band": "$150k-$200k",
       "equity_mentioned": false,
       "ai_ml_mentioned": true
     },
@@ -3065,7 +3220,7 @@
       ],
       "role": "Software Engineer",
       "experience_level": "Not specified",
-      "remote": "not_mentioned",
+      "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -3081,7 +3236,8 @@
         "AWS",
         "GCP",
         "Azure",
-        "Kubernetes"
+        "Kubernetes",
+        "Linux"
       ],
       "role": "DevOps / SRE",
       "experience_level": "Senior",
@@ -3093,16 +3249,14 @@
     },
     {
       "id": 47980578,
-      "technologies": [
-        "Next.js"
-      ],
-      "role": "Software Engineer",
+      "technologies": [],
+      "role": "Full Stack Engineer",
       "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 47981106,
@@ -3110,11 +3264,12 @@
         "Python",
         "TypeScript",
         "React",
-        "Node.js"
+        "Node.js",
+        "Snowflake"
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Senior",
-      "remote": "fully_remote",
+      "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -3127,19 +3282,8 @@
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "$200k+",
+      "salary_band": "$100k-$150k",
       "equity_mentioned": true,
-      "ai_ml_mentioned": false
-    },
-    {
-      "id": 47981361,
-      "technologies": [],
-      "role": "Software Engineer",
-      "experience_level": "Not specified",
-      "remote": "fully_remote",
-      "salary_mentioned": true,
-      "salary_band": "<$100k",
-      "equity_mentioned": false,
       "ai_ml_mentioned": false
     },
     {
@@ -3161,22 +3305,19 @@
         "Rust",
         "React"
       ],
-      "role": "Full Stack Engineer",
+      "role": "Software Engineer",
       "experience_level": "Senior",
-      "remote": "fully_remote",
+      "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 47977930,
-      "technologies": [
-        "Kubernetes",
-        "Node.js"
-      ],
-      "role": "Full Stack Engineer",
-      "experience_level": "Senior",
+      "technologies": [],
+      "role": "Software Engineer",
+      "experience_level": "Not specified",
       "remote": "onsite_only",
       "salary_mentioned": false,
       "salary_band": null,
@@ -3190,7 +3331,8 @@
         "C#",
         "TypeScript",
         "Swift",
-        "Kotlin"
+        "Kotlin",
+        "Python"
       ],
       "role": "Software Engineer",
       "experience_level": "Not specified",
@@ -3203,7 +3345,7 @@
     {
       "id": 47976739,
       "technologies": [],
-      "role": "Other",
+      "role": "Software Engineer",
       "experience_level": "Senior",
       "remote": "not_mentioned",
       "salary_mentioned": false,
@@ -3253,7 +3395,7 @@
         "FastAPI",
         "PostgreSQL"
       ],
-      "role": "Software Engineer",
+      "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "onsite_only",
       "salary_mentioned": false,
@@ -3262,20 +3404,9 @@
       "ai_ml_mentioned": false
     },
     {
-      "id": 48006726,
-      "technologies": [],
-      "role": "Other",
-      "experience_level": "Not specified",
-      "remote": "fully_remote",
-      "salary_mentioned": false,
-      "salary_band": null,
-      "equity_mentioned": false,
-      "ai_ml_mentioned": false
-    },
-    {
       "id": 47982224,
       "technologies": [],
-      "role": "Software Engineer",
+      "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "hybrid",
       "salary_mentioned": true,
@@ -3286,7 +3417,7 @@
     {
       "id": 47985200,
       "technologies": [],
-      "role": "ML Engineer",
+      "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -3319,9 +3450,9 @@
         "Next.js",
         "PostgreSQL",
         "TypeScript",
-        "Cloudflare"
+        "iOS"
       ],
-      "role": "Full Stack Engineer",
+      "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -3332,7 +3463,7 @@
     {
       "id": 47979526,
       "technologies": [],
-      "role": "Software Engineer",
+      "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -3345,14 +3476,14 @@
       "technologies": [
         "React",
         "Next.js",
-        "AWS",
-        "Flutter"
+        "Flutter",
+        "AWS"
       ],
-      "role": "Full Stack Engineer",
+      "role": "Software Engineer",
       "experience_level": "Senior",
       "remote": "hybrid",
       "salary_mentioned": true,
-      "salary_band": "<$100k",
+      "salary_band": "$100k-$150k",
       "equity_mentioned": false,
       "ai_ml_mentioned": false
     },
@@ -3374,24 +3505,13 @@
         "React",
         "Next.js"
       ],
-      "role": "Software Engineer",
+      "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
       "ai_ml_mentioned": true
-    },
-    {
-      "id": 47987473,
-      "technologies": [],
-      "role": "Other",
-      "experience_level": "Not specified",
-      "remote": "fully_remote",
-      "salary_mentioned": false,
-      "salary_band": null,
-      "equity_mentioned": false,
-      "ai_ml_mentioned": false
     },
     {
       "id": 47977567,
@@ -3417,11 +3537,11 @@
         "React",
         "PostgreSQL",
         "Elasticsearch",
-        "AWS",
-        "Kubernetes"
+        "Kubernetes",
+        "AWS"
       ],
       "role": "Software Engineer",
-      "experience_level": "Junior",
+      "experience_level": "Senior",
       "remote": "onsite_only",
       "salary_mentioned": false,
       "salary_band": null,
@@ -3444,9 +3564,9 @@
       "technologies": [
         "Rust"
       ],
-      "role": "Software Engineer",
-      "experience_level": "Senior",
-      "remote": "hybrid",
+      "role": "Backend Engineer",
+      "experience_level": "Not specified",
+      "remote": "fully_remote",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -3466,8 +3586,8 @@
     {
       "id": 47980891,
       "technologies": [
-        "C#",
-        "Python"
+        "Python",
+        "C#"
       ],
       "role": "Software Engineer",
       "experience_level": "Senior",
@@ -3481,7 +3601,8 @@
       "id": 47976872,
       "technologies": [
         "TypeScript",
-        "Rust"
+        "Rust",
+        "Node.js"
       ],
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
@@ -3517,7 +3638,7 @@
       "id": 47976500,
       "technologies": [],
       "role": "Product Manager",
-      "experience_level": "Senior",
+      "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": false,
       "salary_band": null,
@@ -3546,7 +3667,7 @@
       "id": 47980362,
       "technologies": [],
       "role": "Software Engineer",
-      "experience_level": "Senior",
+      "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
@@ -3558,8 +3679,8 @@
       "technologies": [
         "Rust"
       ],
-      "role": "Software Engineer",
-      "experience_level": "Junior",
+      "role": "ML Engineer",
+      "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
@@ -3569,31 +3690,20 @@
     {
       "id": 47976286,
       "technologies": [],
-      "role": "Senior Software Engineer",
+      "role": "Backend Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "$200k+",
+      "salary_band": "$150k-$200k",
       "equity_mentioned": true,
       "ai_ml_mentioned": true
-    },
-    {
-      "id": 47986051,
-      "technologies": [],
-      "role": "Full Stack Engineer",
-      "experience_level": "Mid",
-      "remote": "not_mentioned",
-      "salary_mentioned": false,
-      "salary_band": null,
-      "equity_mentioned": false,
-      "ai_ml_mentioned": false
     },
     {
       "id": 47976294,
       "technologies": [],
       "role": "Engineering Manager",
       "experience_level": "Senior",
-      "remote": "hybrid",
+      "remote": "onsite_only",
       "salary_mentioned": true,
       "salary_band": "$150k-$200k",
       "equity_mentioned": false,
@@ -3621,11 +3731,11 @@
         "PostgreSQL",
         "AWS"
       ],
-      "role": "Full Stack Engineer",
+      "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "$200k+",
+      "salary_band": "$150k-$200k",
       "equity_mentioned": false,
       "ai_ml_mentioned": true
     },
@@ -3644,40 +3754,10 @@
     },
     {
       "id": 47985197,
-      "technologies": [
-        "Kubernetes"
-      ],
+      "technologies": [],
       "role": "Software Engineer",
       "experience_level": "Not specified",
-      "remote": "fully_remote",
-      "salary_mentioned": false,
-      "salary_band": null,
-      "equity_mentioned": false,
-      "ai_ml_mentioned": true
-    },
-    {
-      "id": 47982383,
-      "technologies": [],
-      "role": "Other",
-      "experience_level": "Not specified",
-      "remote": "onsite_only",
-      "salary_mentioned": false,
-      "salary_band": null,
-      "equity_mentioned": false,
-      "ai_ml_mentioned": false
-    },
-    {
-      "id": 47986820,
-      "technologies": [
-        "React",
-        "Next.js",
-        "Node.js",
-        "TypeScript",
-        "Laravel"
-      ],
-      "role": "Full Stack Engineer",
-      "experience_level": "Senior",
-      "remote": "not_mentioned",
+      "remote": "hybrid",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
@@ -3689,7 +3769,7 @@
         "Go"
       ],
       "role": "Principal Engineer",
-      "experience_level": "Not specified",
+      "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
       "salary_band": null,
@@ -3699,7 +3779,7 @@
     {
       "id": 47978926,
       "technologies": [],
-      "role": "Software Engineer",
+      "role": "Other",
       "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": false,
@@ -3730,7 +3810,8 @@
         "React",
         "Go",
         "Kubernetes",
-        "GCP"
+        "GCP",
+        "iOS"
       ],
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
@@ -3744,12 +3825,14 @@
       "id": 47979929,
       "technologies": [
         "Python",
+        "React",
         "React Native",
         "TypeScript",
         "PostgreSQL",
         "FastAPI",
         "Django",
-        "AWS"
+        "AWS",
+        "Docker"
       ],
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
@@ -3765,7 +3848,7 @@
       "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "onsite_only",
-      "salary_mentioned": false,
+      "salary_mentioned": true,
       "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": true
@@ -3774,7 +3857,8 @@
       "id": 47985782,
       "technologies": [
         "Flutter",
-        "Kotlin"
+        "Kotlin",
+        "Android"
       ],
       "role": "Mobile Engineer",
       "experience_level": "Not specified",
@@ -3788,6 +3872,8 @@
       "id": 47976214,
       "technologies": [
         "Python",
+        "TypeScript",
+        "Rust",
         "AWS"
       ],
       "role": "Senior Software Engineer",
@@ -3813,7 +3899,7 @@
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 47999884,
@@ -3837,17 +3923,19 @@
       "technologies": [
         "Python",
         "Rust",
-        "JavaScript",
         "TypeScript",
-        "PostgreSQL"
+        "JavaScript",
+        "PostgreSQL",
+        "Linux",
+        "Git"
       ],
       "role": "Software Engineer",
-      "experience_level": "Junior",
+      "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
-      "ai_ml_mentioned": true
+      "ai_ml_mentioned": false
     },
     {
       "id": 47979095,
@@ -3858,7 +3946,7 @@
         "MySQL",
         "AWS"
       ],
-      "role": "Senior Software Engineer",
+      "role": "Full Stack Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -3869,24 +3957,38 @@
     {
       "id": 47984038,
       "technologies": [
+        "Python",
+        "TypeScript",
         "React",
         "FastAPI",
-        "PostgreSQL",
-        "Python",
-        "TypeScript"
+        "PostgreSQL"
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Mid",
       "remote": "onsite_only",
       "salary_mentioned": true,
-      "salary_band": "$200k+",
+      "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": true
     },
     {
       "id": 47981421,
-      "technologies": [],
-      "role": "Software Engineer",
+      "technologies": [
+        "AWS",
+        "GCP",
+        "Azure",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "Kafka",
+        "RabbitMQ",
+        "Redis",
+        "Elasticsearch",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB"
+      ],
+      "role": "DevOps / SRE",
       "experience_level": "Not specified",
       "remote": "hybrid",
       "salary_mentioned": false,
@@ -3900,8 +4002,8 @@
         "Python",
         "PyTorch",
         "Hugging Face",
-        "React",
         "TypeScript",
+        "React",
         "Django"
       ],
       "role": "ML Engineer",
@@ -3914,7 +4016,11 @@
     },
     {
       "id": 47978339,
-      "technologies": [],
+      "technologies": [
+        "Python",
+        "TypeScript",
+        "React"
+      ],
       "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "onsite_only",
@@ -3925,8 +4031,11 @@
     },
     {
       "id": 47978141,
-      "technologies": [],
-      "role": "Software Engineer",
+      "technologies": [
+        "iOS",
+        "Android"
+      ],
+      "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": true,
@@ -3936,7 +4045,10 @@
     },
     {
       "id": 47977223,
-      "technologies": [],
+      "technologies": [
+        "Rust",
+        "Python"
+      ],
       "role": "ML Engineer",
       "experience_level": "Senior",
       "remote": "hybrid",
@@ -3956,7 +4068,7 @@
         "PostgreSQL",
         "Redis"
       ],
-      "role": "Software Engineer",
+      "role": "Full Stack Engineer",
       "experience_level": "Mid",
       "remote": "onsite_only",
       "salary_mentioned": false,
@@ -3965,53 +4077,30 @@
       "ai_ml_mentioned": true
     },
     {
-      "id": 47980592,
-      "technologies": [],
-      "role": "Other",
-      "experience_level": "Not specified",
-      "remote": "not_mentioned",
-      "salary_mentioned": false,
-      "salary_band": null,
-      "equity_mentioned": false,
-      "ai_ml_mentioned": false
-    },
-    {
-      "id": 47980052,
-      "technologies": [],
-      "role": "Other",
-      "experience_level": "Not specified",
-      "remote": "not_mentioned",
-      "salary_mentioned": false,
-      "salary_band": null,
-      "equity_mentioned": false,
-      "ai_ml_mentioned": false
-    },
-    {
-      "id": 47989286,
-      "technologies": [],
-      "role": "Other",
-      "experience_level": "Not specified",
-      "remote": "not_mentioned",
-      "salary_mentioned": false,
-      "salary_band": null,
-      "equity_mentioned": false,
-      "ai_ml_mentioned": false
-    },
-    {
       "id": 48025244,
-      "technologies": [],
+      "technologies": [
+        "React",
+        "Python",
+        "TypeScript",
+        "AWS",
+        "OpenAI API"
+      ],
       "role": "Full Stack Engineer",
       "experience_level": "Junior",
       "remote": "onsite_only",
       "salary_mentioned": true,
-      "salary_band": "$200k+",
+      "salary_band": "$150k-$200k",
       "equity_mentioned": true,
       "ai_ml_mentioned": true
     },
     {
       "id": 47983385,
       "technologies": [
-        "Python"
+        "Python",
+        "TypeScript",
+        "React",
+        "AWS",
+        "OpenAI API"
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Senior",
@@ -4022,5 +4111,5 @@
       "ai_ml_mentioned": true
     }
   ],
-  "classified_at": "2026-05-05T20:45:32.454Z"
+  "classified_at": "2026-06-11T13:16:52.215Z"
 }

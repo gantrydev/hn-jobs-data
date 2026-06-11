@@ -2,92 +2,92 @@
   "schema_version": "1.0",
   "date": "2026-04-17",
   "run_id": "2026-04-17-manual",
-  "job_count": 370,
+  "job_count": 363,
   "technologies": [
     {
       "name": "Python",
-      "count": 133,
-      "pct": 35.9
-    },
-    {
-      "name": "React",
-      "count": 99,
-      "pct": 26.8
+      "count": 102,
+      "pct": 28.1
     },
     {
       "name": "TypeScript",
-      "count": 98,
-      "pct": 26.5
+      "count": 90,
+      "pct": 24.8
+    },
+    {
+      "name": "React",
+      "count": 81,
+      "pct": 22.3
     },
     {
       "name": "PostgreSQL",
-      "count": 69,
-      "pct": 18.6
+      "count": 68,
+      "pct": 18.7
     },
     {
       "name": "AWS",
-      "count": 66,
-      "pct": 17.8
-    },
-    {
-      "name": "Rust",
-      "count": 39,
-      "pct": 10.5
-    },
-    {
-      "name": "Node.js",
-      "count": 36,
-      "pct": 9.7
+      "count": 63,
+      "pct": 17.4
     },
     {
       "name": "Kubernetes",
-      "count": 31,
-      "pct": 8.4
+      "count": 36,
+      "pct": 9.9
     },
     {
-      "name": "Go",
-      "count": 31,
-      "pct": 8.4
+      "name": "Rust",
+      "count": 32,
+      "pct": 8.8
+    },
+    {
+      "name": "Node.js",
+      "count": 28,
+      "pct": 7.7
     },
     {
       "name": "Docker",
-      "count": 30,
-      "pct": 8.1
+      "count": 25,
+      "pct": 6.9
     },
     {
-      "name": "Terraform",
+      "name": "Go",
       "count": 25,
-      "pct": 6.8
+      "pct": 6.9
     },
     {
       "name": "Next.js",
-      "count": 24,
-      "pct": 6.5
+      "count": 23,
+      "pct": 6.3
+    },
+    {
+      "name": "Terraform",
+      "count": 20,
+      "pct": 5.5
+    },
+    {
+      "name": "JavaScript",
+      "count": 18,
+      "pct": 5
     },
     {
       "name": "Java",
-      "count": 21,
-      "pct": 5.7
-    },
-    {
-      "name": "FastAPI",
-      "count": 20,
-      "pct": 5.4
-    },
-    {
-      "name": "C++",
-      "count": 18,
-      "pct": 4.9
+      "count": 17,
+      "pct": 4.7
     },
     {
       "name": "GCP",
       "count": 17,
-      "pct": 4.6
+      "pct": 4.7
+    },
+    {
+      "name": "FastAPI",
+      "count": 17,
+      "pct": 4.7
     },
     {
       "name": "GraphQL",
       "count": 16,
-      "pct": 4.3
+      "pct": 4.4
     },
     {
       "name": "Redis",
@@ -95,29 +95,44 @@
       "pct": 4.1
     },
     {
-      "name": "JavaScript",
-      "count": 13,
-      "pct": 3.5
+      "name": "C++",
+      "count": 14,
+      "pct": 3.9
     },
     {
-      "name": "MySQL",
+      "name": "Django",
+      "count": 12,
+      "pct": 3.3
+    },
+    {
+      "name": "iOS",
       "count": 11,
       "pct": 3
     },
     {
-      "name": "Django",
-      "count": 10,
-      "pct": 2.7
-    },
-    {
-      "name": "Elasticsearch",
-      "count": 9,
-      "pct": 2.4
-    },
-    {
       "name": "Ruby",
+      "count": 10,
+      "pct": 2.8
+    },
+    {
+      "name": "MySQL",
       "count": 9,
-      "pct": 2.4
+      "pct": 2.5
+    },
+    {
+      "name": "React Native",
+      "count": 8,
+      "pct": 2.2
+    },
+    {
+      "name": "PyTorch",
+      "count": 8,
+      "pct": 2.2
+    },
+    {
+      "name": "Azure",
+      "count": 8,
+      "pct": 2.2
     },
     {
       "name": "C#",
@@ -125,17 +140,17 @@
       "pct": 2.2
     },
     {
-      "name": "iOS",
+      "name": "Elasticsearch",
       "count": 7,
       "pct": 1.9
     },
     {
-      "name": "React Native",
+      "name": "Rails",
       "count": 7,
       "pct": 1.9
     },
     {
-      "name": "PyTorch",
+      "name": "Android",
       "count": 7,
       "pct": 1.9
     },
@@ -150,22 +165,27 @@
       "pct": 1.4
     },
     {
-      "name": "Azure",
+      "name": "LangChain",
       "count": 5,
       "pct": 1.4
     },
     {
-      "name": "Android",
+      "name": "GitHub Actions",
       "count": 4,
       "pct": 1.1
     },
     {
-      "name": "Rails",
+      "name": "OpenAI API",
       "count": 4,
       "pct": 1.1
     },
     {
-      "name": "PHP",
+      "name": "Hugging Face",
+      "count": 4,
+      "pct": 1.1
+    },
+    {
+      "name": "Flutter",
       "count": 4,
       "pct": 1.1
     },
@@ -175,22 +195,12 @@
       "pct": 1.1
     },
     {
-      "name": "Kafka",
-      "count": 3,
-      "pct": 0.8
-    },
-    {
       "name": "Spring",
       "count": 3,
       "pct": 0.8
     },
     {
-      "name": "Svelte",
-      "count": 3,
-      "pct": 0.8
-    },
-    {
-      "name": "Elixir",
+      "name": "Kafka",
       "count": 3,
       "pct": 0.8
     },
@@ -200,44 +210,94 @@
       "pct": 0.8
     },
     {
-      "name": "Scala",
+      "name": "PHP",
       "count": 3,
       "pct": 0.8
     },
     {
-      "name": "Laravel",
-      "count": 3,
-      "pct": 0.8
-    },
-    {
-      "name": "TensorFlow",
-      "count": 3,
-      "pct": 0.8
-    },
-    {
-      "name": "GitHub Actions",
-      "count": 3,
-      "pct": 0.8
-    },
-    {
-      "name": "Flutter",
-      "count": 3,
-      "pct": 0.8
-    },
-    {
-      "name": "Angular",
+      "name": "Svelte",
       "count": 2,
-      "pct": 0.5
+      "pct": 0.6
     },
     {
       "name": "RabbitMQ",
       "count": 2,
-      "pct": 0.5
+      "pct": 0.6
     },
     {
-      "name": "Hugging Face",
+      "name": "SQL",
       "count": 2,
-      "pct": 0.5
+      "pct": 0.6
+    },
+    {
+      "name": "Elixir",
+      "count": 2,
+      "pct": 0.6
+    },
+    {
+      "name": "TensorFlow",
+      "count": 2,
+      "pct": 0.6
+    },
+    {
+      "name": "Laravel",
+      "count": 2,
+      "pct": 0.6
+    },
+    {
+      "name": "Scala",
+      "count": 2,
+      "pct": 0.6
+    },
+    {
+      "name": "Angular",
+      "count": 2,
+      "pct": 0.6
+    },
+    {
+      "name": "LLM",
+      "count": 2,
+      "pct": 0.6
+    },
+    {
+      "name": "ML Engineer",
+      "count": 2,
+      "pct": 0.6
+    },
+    {
+      "name": "SQLite",
+      "count": 2,
+      "pct": 0.6
+    },
+    {
+      "name": "Cloudflare",
+      "count": 2,
+      "pct": 0.6
+    },
+    {
+      "name": "Jenkins",
+      "count": 2,
+      "pct": 0.6
+    },
+    {
+      "name": "Linux",
+      "count": 2,
+      "pct": 0.6
+    },
+    {
+      "name": "Ruby on Rails",
+      "count": 2,
+      "pct": 0.6
+    },
+    {
+      "name": "C",
+      "count": 1,
+      "pct": 0.3
+    },
+    {
+      "name": "Golang",
+      "count": 1,
+      "pct": 0.3
     },
     {
       "name": "gRPC",
@@ -245,42 +305,17 @@
       "pct": 0.3
     },
     {
-      "name": "SQL",
+      "name": "Vue.js",
       "count": 1,
       "pct": 0.3
     },
     {
-      "name": "SQLite",
+      "name": "Snowflake",
       "count": 1,
       "pct": 0.3
     },
     {
-      "name": "LangChain",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "Cloudflare",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "CloudFormation",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "Pulumi",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "OpenAI API",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "Babel",
+      "name": "CSS",
       "count": 1,
       "pct": 0.3
     },
@@ -290,7 +325,17 @@
       "pct": 0.3
     },
     {
-      "name": "Temporal",
+      "name": "Spark",
+      "count": 1,
+      "pct": 0.3
+    },
+    {
+      "name": "LLM/Agents",
+      "count": 1,
+      "pct": 0.3
+    },
+    {
+      "name": "S3",
       "count": 1,
       "pct": 0.3
     },
@@ -303,43 +348,48 @@
   "roles": [
     {
       "name": "Software Engineer",
-      "count": 177,
-      "pct": 47.8
+      "count": 122,
+      "pct": 33.6
     },
     {
       "name": "Full Stack Engineer",
-      "count": 42,
-      "pct": 11.4
+      "count": 53,
+      "pct": 14.6
     },
     {
       "name": "Senior Software Engineer",
-      "count": 41,
-      "pct": 11.1
-    },
-    {
-      "name": "Backend Engineer",
-      "count": 22,
-      "pct": 5.9
+      "count": 51,
+      "pct": 14
     },
     {
       "name": "Other",
+      "count": 39,
+      "pct": 10.7
+    },
+    {
+      "name": "Backend Engineer",
       "count": 21,
-      "pct": 5.7
+      "pct": 5.8
     },
     {
       "name": "Staff Engineer",
-      "count": 10,
-      "pct": 2.7
+      "count": 14,
+      "pct": 3.9
     },
     {
       "name": "ML Engineer",
-      "count": 10,
-      "pct": 2.7
+      "count": 11,
+      "pct": 3
     },
     {
       "name": "DevOps / SRE",
-      "count": 8,
-      "pct": 2.2
+      "count": 10,
+      "pct": 2.8
+    },
+    {
+      "name": "AI Engineer",
+      "count": 9,
+      "pct": 2.5
     },
     {
       "name": "Engineering Manager",
@@ -347,27 +397,12 @@
       "pct": 2.2
     },
     {
-      "name": "Product Manager",
-      "count": 8,
-      "pct": 2.2
-    },
-    {
-      "name": "AI Engineer",
-      "count": 7,
-      "pct": 1.9
-    },
-    {
-      "name": "Data Engineer",
-      "count": 5,
-      "pct": 1.4
-    },
-    {
       "name": "Frontend Engineer",
       "count": 5,
       "pct": 1.4
     },
     {
-      "name": "Principal Engineer",
+      "name": "Data Engineer",
       "count": 4,
       "pct": 1.1
     },
@@ -377,87 +412,115 @@
       "pct": 0.8
     },
     {
-      "name": "Designer",
-      "count": 3,
-      "pct": 0.8
-    },
-    {
       "name": "Data Scientist",
       "count": 3,
       "pct": 0.8
     },
     {
-      "name": "Product Engineer",
+      "name": "Designer",
+      "count": 3,
+      "pct": 0.8
+    },
+    {
+      "name": "Product Manager",
+      "count": 2,
+      "pct": 0.6
+    },
+    {
+      "name": "Infrastructure Engineer",
       "count": 1,
       "pct": 0.3
     },
     {
-      "name": "Marketing",
+      "name": "Data Analyst",
+      "count": 1,
+      "pct": 0.3
+    },
+    {
+      "name": "Senior Backend Engineer",
+      "count": 1,
+      "pct": 0.3
+    },
+    {
+      "name": "Founding Engineer",
+      "count": 1,
+      "pct": 0.3
+    },
+    {
+      "name": "Principal Engineer",
       "count": 1,
       "pct": 0.3
     }
   ],
   "compensation": {
-    "salary_mentioned_count": 112,
-    "salary_mentioned_pct": 30.3,
+    "salary_mentioned_count": 123,
+    "salary_mentioned_pct": 33.9,
     "ranges": [
       {
         "band": "$150k-$200k",
-        "count": 47
-      },
-      {
-        "band": "$200k+",
-        "count": 33
+        "count": 53
       },
       {
         "band": "$100k-$150k",
-        "count": 22
+        "count": 38
+      },
+      {
+        "band": "$200k+",
+        "count": 18
       },
       {
         "band": "<$100k",
-        "count": 17
+        "count": 7
       },
       {
-        "band": "$200+",
-        "count": 3
+        "band": "<100k",
+        "count": 2
+      },
+      {
+        "band": "150k-200k",
+        "count": 1
+      },
+      {
+        "band": "200k+",
+        "count": 1
       }
     ],
-    "equity_mentioned_count": 104,
-    "equity_mentioned_pct": 28.1
+    "equity_mentioned_count": 84,
+    "equity_mentioned_pct": 23.1
   },
   "remote": {
     "fully_remote": {
-      "count": 147,
-      "pct": 39.7
+      "count": 141,
+      "pct": 38.8
     },
     "hybrid": {
-      "count": 87,
-      "pct": 23.5
+      "count": 92,
+      "pct": 25.3
     },
     "onsite_only": {
-      "count": 99,
-      "pct": 26.8
+      "count": 112,
+      "pct": 30.9
     },
     "not_mentioned": {
-      "count": 36,
-      "pct": 9.7
+      "count": 18,
+      "pct": 5
     }
   },
   "experience_levels": [
     {
       "level": "Not specified",
-      "count": 176,
-      "pct": 47.6
+      "count": 172,
+      "pct": 47.4
     },
     {
       "level": "Senior",
-      "count": 162,
-      "pct": 43.8
+      "count": 167,
+      "pct": 46
     },
     {
       "level": "Mid",
-      "count": 20,
-      "pct": 5.4
+      "count": 13,
+      "pct": 3.6
     },
     {
       "level": "Junior",
@@ -465,6 +528,6 @@
       "pct": 3
     }
   ],
-  "ai_ml_mentioned_pct": 67,
-  "generated_at": "2026-04-17T12:28:56.885Z"
+  "ai_ml_mentioned_pct": 60.6,
+  "generated_at": "2026-06-11T13:14:47.507Z"
 }

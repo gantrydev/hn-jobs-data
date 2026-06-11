@@ -168,6 +168,58 @@ async function updateTrendSeries(
 }
 
 // ==============================================================================
+// llms.txt — markdown index served at the Pages root so LLMs can discover and
+// fetch the dataset (https://llmstxt.org convention).
+// ==============================================================================
+
+async function updateLlmsTxt(latest: Analysis): Promise<void> {
+  const manifest = await readJSON<Manifest>(path.join(INDEXES_DIR, "manifest.json"))
+  const runs = manifest?.runs ?? []
+
+  const list = (items: Array<{ name: string; pct: number }>, n: number) =>
+    items.slice(0, n).map((i) => `${i.name} (${i.pct}%)`).join(", ")
+
+  const lines = [
+    "# HN Job Trends — Data",
+    "",
+    '> Monthly tech-hiring trends mined from Hacker News "Who is hiring?" threads. Every job posting is classified (role, technologies, experience level, remote policy, compensation) and aggregated per month. All data is served as JSON; this file indexes it for LLMs.',
+    "",
+    `Latest run: ${latest.date} — ${latest.job_count} jobs analyzed. Generated ${latest.generated_at}.`,
+    "",
+    "## Latest snapshot",
+    "",
+    `- Jobs analyzed: ${latest.job_count}`,
+    `- Top technologies: ${list(latest.technologies, 8)}`,
+    `- Top roles: ${list(latest.roles, 6)}`,
+    `- Fully remote: ${latest.remote.fully_remote.pct}%`,
+    `- Salary mentioned: ${latest.compensation.salary_mentioned_pct}%`,
+    `- AI/ML mentioned: ${latest.ai_ml_mentioned_pct}%`,
+    "",
+    "## Index files",
+    "",
+    "- [manifest.json](/indexes/manifest.json): every run with job counts and titles",
+    "- [history.json](/indexes/history.json): per-run summary metrics for charting",
+    "- [tech-trends.json](/indexes/tech-trends.json): technology counts over time",
+    "- [role-trends.json](/indexes/role-trends.json): role counts over time",
+    "- [latest.json](/indexes/latest.json): full analysis for the most recent run",
+    "",
+    "## Per-run data",
+    "",
+    "Each run exposes `raw.json` (original postings), `classified.json` (per-job labels), and `analysis.json` (aggregated metrics).",
+    "",
+    ...runs.map((r) => `- [${r.date}](/runs/${r.date}/analysis.json): ${r.job_count} jobs${r.thread_title ? ` — ${r.thread_title}` : ""}`),
+    "",
+    "## Analysis schema",
+    "",
+    "`analysis.json` fields: `job_count`; `technologies[]` and `roles[]` as `{name,count,pct}`; `experience_levels[]` as `{level,count,pct}`; `remote` as `{fully_remote,hybrid,onsite_only,not_mentioned}`; `compensation` as `{salary_mentioned_pct,ranges[],equity_mentioned_pct}`; and `ai_ml_mentioned_pct`. All percentages are over `job_count`.",
+    "",
+  ]
+
+  await fs.writeFile(path.resolve("llms.txt"), lines.join("\n"))
+  console.log("  Updated llms.txt")
+}
+
+// ==============================================================================
 // Public API — called by the orchestrator after analysis completes
 // ==============================================================================
 
@@ -184,6 +236,9 @@ export async function updateIndexes(
     updateTrendSeries("tech-trends.json", analysis.technologies, analysis.date),
     updateTrendSeries("role-trends.json", analysis.roles, analysis.date),
   ])
+
+  // After manifest.json is written so the run list is current.
+  await updateLlmsTxt(analysis)
 
   console.log("Indexes updated successfully")
 }

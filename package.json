@@ -12,6 +12,7 @@
     "fetch": "node --env-file-if-exists=.env --import tsx/esm scripts/run-fetch.ts",
     "analyze": "node --env-file-if-exists=.env --import tsx/esm scripts/run-analyze.ts",
     "backfill": "node --env-file-if-exists=.env --import tsx/esm scripts/run-backfill.ts",
+    "reprocess": "node --env-file-if-exists=.env --import tsx/esm scripts/run-reprocess.ts",
     "index": "node --import tsx/esm scripts/run-index.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",

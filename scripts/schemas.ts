@@ -56,23 +56,7 @@ const ExperienceLevelSchema = z.object({
   pct: pctSchema,
 })
 
-// Per-batch LLM response — counts only, no percentages. We compute pct ourselves
-// after aggregating across all batches. This keeps the LLM task simple (classify
-// and count) and avoids trusting LLM math.
-const BatchNamedCountSchema = z.object({
-  name: z.string().trim(),
-  count: z.int().min(0),
-})
-
-const BatchExperienceLevelSchema = z.object({
-  level: z.enum(["Senior", "Mid", "Junior", "Not specified"]),
-  count: z.int().min(0),
-})
-
-// Per-job classification returned by the LLM inside each batch response.
-// These sit alongside the aggregate counts so we get both summary stats AND
-// granular per-job data in a single API call.
-const BatchClassifiedJobSchema = z.object({
+export const ClassifiedJobSchema = z.object({
   id: z.int(),
   technologies: z.array(z.string().trim()),
   role: z.string().trim(),
@@ -84,22 +68,11 @@ const BatchClassifiedJobSchema = z.object({
   ai_ml_mentioned: z.boolean(),
 })
 
+const BatchClassifiedJobSchema = ClassifiedJobSchema.extend({
+  is_job: z.boolean(),
+})
+
 export const BatchResponseSchema = z.object({
-  technologies: z.array(BatchNamedCountSchema),
-  roles: z.array(BatchNamedCountSchema),
-  compensation: z.object({
-    salary_mentioned_count: z.int().min(0),
-    ranges: z.array(SalaryBandSchema),
-    equity_mentioned_count: z.int().min(0),
-  }),
-  remote: z.object({
-    fully_remote: z.int().min(0),
-    hybrid: z.int().min(0),
-    onsite_only: z.int().min(0),
-    not_mentioned: z.int().min(0),
-  }),
-  experience_levels: z.array(BatchExperienceLevelSchema),
-  ai_ml_mentioned_count: z.int().min(0),
   jobs: z.array(BatchClassifiedJobSchema),
 })
 
@@ -132,18 +105,6 @@ export const AnalysisSchema = z.object({
 // ==============================================================================
 // classified.json — per-job LLM classifications
 // ==============================================================================
-
-export const ClassifiedJobSchema = z.object({
-  id: z.int(),
-  technologies: z.array(z.string().trim()),
-  role: z.string().trim(),
-  experience_level: z.enum(["Senior", "Mid", "Junior", "Not specified"]),
-  remote: z.enum(["fully_remote", "hybrid", "onsite_only", "not_mentioned"]),
-  salary_mentioned: z.boolean(),
-  salary_band: z.string().trim().nullable(),
-  equity_mentioned: z.boolean(),
-  ai_ml_mentioned: z.boolean(),
-})
 
 export const ClassifiedDataSchema = z.object({
   schema_version: z.literal("1.0"),

@@ -1,14 +1,14 @@
 import * as z from "zod/v4"
-import { BatchResponseSchema, type Analysis, type BatchResponse, type ClassifiedJob, type RawData, type RawJob } from "./schemas.js"
+import { BatchResponseSchema, ClassifiedJobSchema, type Analysis, type BatchResponse, type ClassifiedJob, type RawData, type RawJob } from "./schemas.js"
 
 // ==============================================================================
 // OpenRouter API
 // ==============================================================================
 
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-const DEFAULT_MODEL = "deepseek/deepseek-v4-flash"
+const DEFAULT_MODEL = "deepseek/deepseek-v4-flash:nitro"
 const MODEL = process.env.MODEL ?? DEFAULT_MODEL
-const MAX_CONCURRENT = 5
+const MAX_CONCURRENT = parseInt(process.env.MAX_CONCURRENT ?? "8", 10)
 
 // Configurable batch size — smaller batches = better accuracy + lower latency,
 // but more API calls. 10 is a good default for ~200 job postings.
@@ -18,12 +18,10 @@ const JOBS_PER_BATCH = parseInt(process.env.JOBS_PER_BATCH ?? "10", 10)
 // via structured output (response_format), not prompt instructions.
 const SYSTEM_PROMPT = `You are a data analyst specializing in tech job market trends.
 
-You will be given a batch of job postings from Hacker News. Each job has a numeric ID.
-Your task is to:
-1. Classify each individual job and return a "jobs" array with per-job data.
-2. Return aggregate counts summarising the batch.
-
-Both are required in every response.
+You will be given a batch of comments from a Hacker News "Who is hiring?" thread.
+Each comment has a numeric ID. Most are job postings from employers, but some are
+not (meta-commentary, "Who wants to be hired?" / freelancer-seeking posts, questions,
+or replies). Classify each comment and return a "jobs" array with one entry per input.
 
 ## Technology Taxonomy
 
@@ -70,10 +68,36 @@ DevOps / SRE, Product Manager, Designer, Other
 - "onsite_only"    = requires specific location with no remote option stated
 - "not_mentioned"  = no work arrangement information
 
+## Job vs non-job (is_job)
+
+Set is_job = true for any comment where an employer or team is advertising a position
+they want to fill. Be inclusive — this covers:
+- full-time, part-time, contract, consulting, freelance, and internship roles
+- academic, faculty, and research positions
+- early-stage or founding-team engineering roles at a startup
+- posts that describe the company first and then list the roles being hired for
+- a pipe-delimited header like "Company | Role | Location | REMOTE" — the standard
+  format in these threads — is ALWAYS a job, even if terse or listing several roles
+- any explicit hiring language: "we're hiring", "we are looking for", "join our team",
+  "now hiring", or a contact-to-apply email/link
+
+Set is_job = false ONLY when the comment is not itself a hiring listing:
+- meta-commentary, questions, or discussion about the thread or job market
+- "Who wants to be hired?" or candidates advertising themselves for work
+- replies from applicants or third parties ("I applied...", "I don't work there but...")
+- shared links, aggregators, or tooling
+- requests to the poster or moderators (e.g. asking to add a tag)
+- co-founder searches that offer only equity with no salaried role
+
+When in doubt about a comment that names a company and a role, prefer is_job = true.
+When is_job is false, still fill the other fields with best-effort defaults
+(empty technologies, role "Other", "Not specified", "not_mentioned", false/null).
+
 ## Per-job classification ("jobs" array)
 
-For each job posting, return an object with:
+For each comment, return an object with:
 - id: the numeric HN item ID provided in the input
+- is_job: boolean per the rules above
 - technologies: array of canonical technology names found in this job
 - role: single closest role from the taxonomy
 - experience_level: one of "Senior", "Mid", "Junior", "Not specified"
@@ -85,10 +109,9 @@ For each job posting, return an object with:
 
 ## Important
 
-- Only return counts in the aggregate section — do NOT compute percentages
-- Sort arrays by count descending
-- Only include items with count > 0 in the aggregate section
-- The "jobs" array must contain one entry per input job, using the provided ID`
+- Return exactly one entry in the "jobs" array per input comment, using the provided ID
+- Set is_job correctly — non-postings must not be counted as jobs
+- Use only the canonical technology and role names listed above`
 
 // Convert the Zod schema to JSON Schema once — passed to OpenRouter as structured
 // output so the model is constrained to return valid JSON matching our schema.
@@ -100,30 +123,35 @@ interface OpenRouterResponse {
       content: string
     }
   }>
+  usage?: {
+    completion_tokens?: number
+  }
 }
 
 // ==============================================================================
 // Single batch API call with retry
 // ==============================================================================
 
-async function callOpenRouter(jobs: RawJob[]): Promise<BatchResponse> {
+async function callOpenRouter(jobs: RawJob[], label: string): Promise<BatchResponse> {
   const apiKey = process.env.OPENROUTER_API_KEY
   if (!apiKey) throw new Error("OPENROUTER_API_KEY environment variable is not set")
 
   const jobTexts = jobs.map((job) => `--- Job ID: ${job.id} ---\n${job.text}`).join("\n\n")
-  const userMessage = `Here are ${jobs.length} job postings. Classify each one individually (using the provided ID) and return both per-job classifications and aggregate counts.\n\n${jobTexts}`
+  const userMessage = `Here are ${jobs.length} comments from a "Who is hiring?" thread. Classify each one individually using the provided ID, setting is_job=false for any comment that is not an employer's job posting.\n\n${jobTexts}`
 
   let lastError: Error | null = null
+  let best: BatchResponse | null = null
 
   // First attempt is deterministic; retries raise temperature so a model that
-  // botched structured output (truncated/invalid JSON) actually re-rolls
-  // instead of replaying the same bad response.
+  // botched structured output (truncated JSON, or dropped some postings) actually
+  // re-rolls instead of replaying the same bad response.
   const MAX_ATTEMPTS = 4
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     try {
-      if (attempt > 1) console.log(`    Retrying batch...`)
+      if (attempt > 1) console.log(`    [${label}] retry ${attempt}/${MAX_ATTEMPTS} — ${lastError?.message}`)
 
-      const res = await fetch(OPENROUTER_URL, {
+      const started = Date.now()
+      const res: Response = await fetch(OPENROUTER_URL, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${apiKey}`,
@@ -146,27 +174,48 @@ async function callOpenRouter(jobs: RawJob[]): Promise<BatchResponse> {
           },
           temperature: attempt === 1 ? 0 : 0.4,
           max_tokens: 32768,
+          // Pure extraction task — skip chain-of-thought, which was ~70% of the
+          // output tokens (and thus the latency). Override with REASONING=1.
+          reasoning: { enabled: process.env.REASONING === "1" },
         }),
       })
 
       if (!res.ok) {
         const body = await res.text()
-        throw new Error(`OpenRouter API error ${res.status}: ${body}`)
+        throw new Error(`HTTP ${res.status}: ${body.slice(0, 200)}`)
       }
 
+      // Measure after the body is read: the model streams the JSON as it
+      // generates, so res.json() — not fetch() — is where the time goes.
       const data = (await res.json()) as OpenRouterResponse
+      const elapsed = Date.now() - started
       const content = data.choices[0]?.message?.content
-      if (!content) throw new Error("OpenRouter returned empty response")
+      if (!content) throw new Error("empty response")
 
-      // Structured output guarantees valid JSON, but we still validate with
-      // Zod as a defence-in-depth measure
-      return BatchResponseSchema.parse(JSON.parse(content))
+      const parsed = BatchResponseSchema.parse(JSON.parse(content))
+      const returnedIds = new Set(parsed.jobs.map((j) => j.id))
+      const missing = jobs.filter((j) => !returnedIds.has(j.id))
+      if (missing.length === 0) {
+        const tok = data.usage?.completion_tokens
+        const tps = tok ? `, ${Math.round(tok / (elapsed / 1000))}tps` : ""
+        console.log(`    [${label}] ${parsed.jobs.length}/${jobs.length} in ${elapsed}ms${tok ? `, ${tok}tok${tps}` : ""}${attempt > 1 ? ` (attempt ${attempt})` : ""}`)
+        return parsed
+      }
+
+      // Model dropped some postings — keep the most complete attempt and re-roll.
+      if (!best || parsed.jobs.length > best.jobs.length) best = parsed
+      throw new Error(`returned ${parsed.jobs.length}/${jobs.length}, missing ${missing.length} id(s) after ${elapsed}ms`)
     } catch (err) {
       lastError = err instanceof Error ? err : new Error(String(err))
     }
   }
 
-  throw new Error(`Batch failed after ${MAX_ATTEMPTS} attempts: ${lastError?.message}`)
+  if (best) {
+    console.warn(`    [${label}] ⚠ incomplete after ${MAX_ATTEMPTS} attempts: ${best.jobs.length}/${jobs.length} classified`)
+    return best
+  }
+
+  throw new Error(`[${label}] failed after ${MAX_ATTEMPTS} attempts: ${lastError?.message}`)
 }
 
 // ==============================================================================
@@ -181,8 +230,9 @@ function toPct(count: number, total: number): number {
   return total === 0 ? 0 : round1((count / total) * 100)
 }
 
-function aggregateBatches(batches: BatchResponse[], totalJobs: number): Omit<Analysis, "schema_version" | "date" | "run_id" | "job_count" | "generated_at"> {
-  // Merge named counts (technologies, roles) by summing counts for each name
+function aggregate(jobs: ClassifiedJob[]): Omit<Analysis, "schema_version" | "date" | "run_id" | "job_count" | "generated_at"> {
+  const totalJobs = jobs.length
+
   const techMap = new Map<string, number>()
   const roleMap = new Map<string, number>()
   const bandMap = new Map<string, number>()
@@ -196,27 +246,22 @@ function aggregateBatches(batches: BatchResponse[], totalJobs: number): Omit<Ana
   let remoteNotMentioned = 0
   let aiMlCount = 0
 
-  for (const batch of batches) {
-    for (const t of batch.technologies) {
-      techMap.set(t.name, (techMap.get(t.name) ?? 0) + t.count)
+  for (const job of jobs) {
+    for (const t of job.technologies) {
+      techMap.set(t, (techMap.get(t) ?? 0) + 1)
     }
-    for (const r of batch.roles) {
-      roleMap.set(r.name, (roleMap.get(r.name) ?? 0) + r.count)
-    }
-    for (const b of batch.compensation.ranges) {
-      bandMap.set(b.band, (bandMap.get(b.band) ?? 0) + b.count)
-    }
-    for (const e of batch.experience_levels) {
-      levelMap.set(e.level, (levelMap.get(e.level) ?? 0) + e.count)
-    }
+    roleMap.set(job.role, (roleMap.get(job.role) ?? 0) + 1)
+    levelMap.set(job.experience_level, (levelMap.get(job.experience_level) ?? 0) + 1)
 
-    salaryCount += batch.compensation.salary_mentioned_count
-    equityCount += batch.compensation.equity_mentioned_count
-    remoteFullyRemote += batch.remote.fully_remote
-    remoteHybrid += batch.remote.hybrid
-    remoteOnsite += batch.remote.onsite_only
-    remoteNotMentioned += batch.remote.not_mentioned
-    aiMlCount += batch.ai_ml_mentioned_count
+    if (job.salary_mentioned) salaryCount += 1
+    if (job.salary_band) bandMap.set(job.salary_band, (bandMap.get(job.salary_band) ?? 0) + 1)
+    if (job.equity_mentioned) equityCount += 1
+    if (job.ai_ml_mentioned) aiMlCount += 1
+
+    if (job.remote === "fully_remote") remoteFullyRemote += 1
+    else if (job.remote === "hybrid") remoteHybrid += 1
+    else if (job.remote === "onsite_only") remoteOnsite += 1
+    else remoteNotMentioned += 1
   }
 
   // Convert maps to sorted arrays with percentages
@@ -259,6 +304,30 @@ function aggregateBatches(batches: BatchResponse[], totalJobs: number): Omit<Ana
 }
 
 // ==============================================================================
+// Bounded-concurrency pool — keeps `limit` calls in flight at all times, so a
+// slow batch never stalls the others (unlike a fixed-wave barrier).
+// ==============================================================================
+
+async function runPool<T, R>(
+  items: T[],
+  limit: number,
+  fn: (item: T, index: number) => Promise<R>,
+): Promise<R[]> {
+  const results = new Array<R>(items.length)
+  let next = 0
+
+  async function worker(): Promise<void> {
+    while (next < items.length) {
+      const i = next++
+      results[i] = await fn(items[i], i)
+    }
+  }
+
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker))
+  return results
+}
+
+// ==============================================================================
 // Main entry point — batch jobs, run in parallel, aggregate
 // ==============================================================================
 
@@ -277,25 +346,25 @@ export async function analyzeJobs(raw: RawData): Promise<AnalyzeResult> {
   console.log(`Analyzing ${raw.total_jobs} jobs via OpenRouter (${MODEL})...`)
   console.log(`  ${batches.length} batches of up to ${JOBS_PER_BATCH} jobs, ${MAX_CONCURRENT} concurrent`)
 
-  // Process batches with bounded concurrency
-  const results: BatchResponse[] = []
-  for (let i = 0; i < batches.length; i += MAX_CONCURRENT) {
-    const chunk = batches.slice(i, i + MAX_CONCURRENT)
-    const chunkResults = await Promise.all(
-      chunk.map((batch, j) => {
-        const batchNum = i + j + 1
-        console.log(`  Batch ${batchNum}/${batches.length} (${batch.length} jobs)`)
-        return callOpenRouter(batch)
-      }),
-    )
-    results.push(...chunkResults)
+  // Process batches with a bounded-concurrency pool
+  const startedAll = Date.now()
+  const results = await runPool(batches, MAX_CONCURRENT, (batch, i) =>
+    callOpenRouter(batch, `batch ${i + 1}/${batches.length}`),
+  )
+
+  const modelJobs = results.flatMap((batch) => batch.jobs)
+  console.log(`  Model returned ${modelJobs.length}/${raw.total_jobs} classifications in ${((Date.now() - startedAll) / 1000).toFixed(1)}s`)
+  if (modelJobs.length !== raw.total_jobs) {
+    console.warn(`  ⚠ coverage gap: ${raw.total_jobs - modelJobs.length} comment(s) never classified`)
   }
 
-  // Aggregate all batch results and compute percentages
-  const aggregated = aggregateBatches(results, raw.total_jobs)
+  const classifiedJobs: ClassifiedJob[] = modelJobs
+    .filter((job) => job.is_job)
+    .map((job) => ClassifiedJobSchema.parse(job))
+  const dropped = modelJobs.length - classifiedJobs.length
+  if (dropped > 0) console.log(`  Filtered ${dropped} non-job comment(s) (is_job=false)`)
 
-  // Collect per-job classifications from all batches
-  const classifiedJobs: ClassifiedJob[] = results.flatMap((batch) => batch.jobs)
+  const aggregated = aggregate(classifiedJobs)
 
   console.log(`  Analysis complete: ${aggregated.technologies.length} technologies, ${aggregated.roles.length} roles, ${classifiedJobs.length} jobs classified`)
 
@@ -303,7 +372,7 @@ export async function analyzeJobs(raw: RawData): Promise<AnalyzeResult> {
     schema_version: "1.0",
     date: raw.date,
     run_id: raw.run_id,
-    job_count: raw.total_jobs,
+    job_count: classifiedJobs.length,
     ...aggregated,
     generated_at: new Date().toISOString(),
   }

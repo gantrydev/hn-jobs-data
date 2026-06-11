@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add runs/ indexes/
+          git add runs/ indexes/ llms.txt
           git diff --staged --quiet || git commit -m "data: $(date -u +'%Y-%m-%d') pipeline run"
           git push
 
@@ -64,6 +64,7 @@ jobs:
           mkdir _site
           cp -r indexes _site/indexes
           cp -r runs _site/runs
+          cp llms.txt _site/llms.txt
 
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:

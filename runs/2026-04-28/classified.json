@@ -366,7 +366,7 @@
       "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "fully_remote",
-      "salary_mentioned": true,
+      "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": true
@@ -646,8 +646,8 @@
       "role": "Software Engineer",
       "experience_level": "Mid",
       "remote": "onsite_only",
-      "salary_mentioned": true,
-      "salary_band": "Not specified",
+      "salary_mentioned": false,
+      "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": false
     },
@@ -1418,7 +1418,7 @@
       "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": true,
-      "salary_band": "under $100k",
+      "salary_band": "<$100k",
       "equity_mentioned": false,
       "ai_ml_mentioned": false
     },
@@ -1619,8 +1619,8 @@
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
-      "salary_mentioned": true,
-      "salary_band": "Not specified",
+      "salary_mentioned": false,
+      "salary_band": null,
       "equity_mentioned": false,
       "ai_ml_mentioned": false
     },
@@ -1806,7 +1806,7 @@
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
-      "salary_mentioned": true,
+      "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": false
@@ -1849,7 +1849,7 @@
       "role": "Full Stack Engineer",
       "experience_level": "Not specified",
       "remote": "hybrid",
-      "salary_mentioned": true,
+      "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
       "ai_ml_mentioned": false
@@ -1877,7 +1877,7 @@
       "role": "Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
-      "salary_mentioned": true,
+      "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": true
@@ -1897,7 +1897,7 @@
       "role": "Full Stack Engineer",
       "experience_level": "Senior",
       "remote": "hybrid",
-      "salary_mentioned": true,
+      "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": true
@@ -2416,7 +2416,7 @@
       "role": "Full Stack Engineer",
       "experience_level": "Junior",
       "remote": "fully_remote",
-      "salary_mentioned": true,
+      "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
       "ai_ml_mentioned": false
@@ -3318,7 +3318,7 @@
       "role": "Software Engineer",
       "experience_level": "Mid",
       "remote": "fully_remote",
-      "salary_mentioned": true,
+      "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": true
@@ -3351,7 +3351,7 @@
       "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "hybrid",
-      "salary_mentioned": true,
+      "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": true
@@ -3383,7 +3383,7 @@
       "role": "Full Stack Engineer",
       "experience_level": "Not specified",
       "remote": "fully_remote",
-      "salary_mentioned": true,
+      "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": true
@@ -3433,7 +3433,7 @@
       "role": "Backend Engineer",
       "experience_level": "Mid",
       "remote": "hybrid",
-      "salary_mentioned": true,
+      "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": false,
       "ai_ml_mentioned": false
@@ -3670,7 +3670,7 @@
       "experience_level": "Senior",
       "remote": "not_mentioned",
       "salary_mentioned": true,
-      "salary_band": ">$200k",
+      "salary_band": "$200k+",
       "equity_mentioned": false,
       "ai_ml_mentioned": true
     },
@@ -4897,8 +4897,8 @@
       "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "not_mentioned",
-      "salary_mentioned": true,
-      "salary_band": "Not specified",
+      "salary_mentioned": false,
+      "salary_band": null,
       "equity_mentioned": false,
       "ai_ml_mentioned": true
     },

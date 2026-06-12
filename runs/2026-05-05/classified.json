@@ -173,8 +173,8 @@
       "role": "Backend Engineer",
       "experience_level": "Mid",
       "remote": "hybrid",
-      "salary_mentioned": true,
-      "salary_band": "€58k-€65k — skipping (non-USD); no USD band, set to null",
+      "salary_mentioned": false,
+      "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": true
     },
@@ -569,7 +569,7 @@
       "role": "Software Engineer",
       "experience_level": "Senior",
       "remote": "hybrid",
-      "salary_mentioned": true,
+      "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": false
@@ -671,7 +671,7 @@
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
-      "salary_mentioned": true,
+      "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": false
@@ -1940,7 +1940,7 @@
       "role": "Backend Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
-      "salary_mentioned": true,
+      "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": true
@@ -3848,7 +3848,7 @@
       "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "onsite_only",
-      "salary_mentioned": true,
+      "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": true
@@ -3966,7 +3966,7 @@
       "role": "Full Stack Engineer",
       "experience_level": "Mid",
       "remote": "onsite_only",
-      "salary_mentioned": true,
+      "salary_mentioned": false,
       "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": true

@@ -2170,8 +2170,8 @@
       "role": "Full Stack Engineer",
       "experience_level": "Senior",
       "remote": "hybrid",
-      "salary_mentioned": true,
-      "salary_band": "€90k–€110k",
+      "salary_mentioned": false,
+      "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": true
     },
@@ -3891,7 +3891,7 @@
       "experience_level": "Senior",
       "remote": "onsite_only",
       "salary_mentioned": true,
-      "salary_band": "Under $100k",
+      "salary_band": "<$100k",
       "equity_mentioned": true,
       "ai_ml_mentioned": false
     },

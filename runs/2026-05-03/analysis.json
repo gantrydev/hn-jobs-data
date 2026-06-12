@@ -403,8 +403,8 @@
     }
   ],
   "compensation": {
-    "salary_mentioned_count": 70,
-    "salary_mentioned_pct": 33.2,
+    "salary_mentioned_count": 67,
+    "salary_mentioned_pct": 31.8,
     "ranges": [
       {
         "band": "$150k-$200k",
@@ -417,10 +417,6 @@
       {
         "band": "$200k+",
         "count": 6
-      },
-      {
-        "band": "Not specified",
-        "count": 3
       },
       {
         "band": "<$100k",

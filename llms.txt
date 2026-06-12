@@ -10,7 +10,7 @@ Latest run: 2026-06-11 — 309 jobs analyzed. Generated 2026-06-11T13:19:07.786Z
 - Top technologies: Python (31.1%), TypeScript (23.9%), React (21.7%), PostgreSQL (18.8%), AWS (14.9%), Go (10%), Kubernetes (9.4%), Rust (9.1%)
 - Top roles: Software Engineer (29.1%), Full Stack Engineer (13.9%), Senior Software Engineer (13.9%), Other (11%), Backend Engineer (7.1%), ML Engineer (4.9%)
 - Fully remote: 41.7%
-- Salary mentioned: 34.6%
+- Salary mentioned: 32.7%
 - AI/ML mentioned: 59.9%
 
 ## Index files

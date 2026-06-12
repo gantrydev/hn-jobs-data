@@ -1,5 +1,5 @@
 import * as z from "zod/v4"
-import { BatchResponseSchema, ClassifiedJobSchema, type Analysis, type BatchResponse, type ClassifiedJob, type RawData, type RawJob } from "./schemas.js"
+import { BatchResponseSchema, ClassifiedJobSchema, SALARY_BANDS, type Analysis, type BatchResponse, type ClassifiedJob, type RawData, type RawJob, type SalaryBand } from "./schemas.js"
 
 // ==============================================================================
 // OpenRouter API
@@ -57,7 +57,7 @@ DevOps / SRE, Product Manager, Designer, Other
 ## Compensation Rules
 
 - Count a job as "salary mentioned" only if a dollar figure or range appears
-- Use these salary bands: <$100k, $100k-$150k, $150k-$200k, $200k+
+- salary_band must be exactly one of: ${SALARY_BANDS.join(", ")}
 - salary_band should be null when salary_mentioned is false
 - Count equity as mentioned only if "equity", "options", "RSUs", or "stock" appears
 
@@ -103,7 +103,7 @@ For each comment, return an object with:
 - experience_level: one of "Senior", "Mid", "Junior", "Not specified"
 - remote: one of "fully_remote", "hybrid", "onsite_only", "not_mentioned"
 - salary_mentioned: boolean
-- salary_band: salary band string if salary_mentioned is true, null otherwise
+- salary_band: one of ${SALARY_BANDS.join(", ")} if salary_mentioned is true, null otherwise
 - equity_mentioned: boolean
 - ai_ml_mentioned: boolean (any mention of AI, ML, LLM, or related terms)
 
@@ -235,7 +235,7 @@ function aggregate(jobs: ClassifiedJob[]): Omit<Analysis, "schema_version" | "da
 
   const techMap = new Map<string, number>()
   const roleMap = new Map<string, number>()
-  const bandMap = new Map<string, number>()
+  const bandMap = new Map<SalaryBand, number>()
   const levelMap = new Map<string, number>()
 
   let salaryCount = 0

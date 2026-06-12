@@ -403,8 +403,8 @@
     }
   ],
   "compensation": {
-    "salary_mentioned_count": 115,
-    "salary_mentioned_pct": 34.1,
+    "salary_mentioned_count": 114,
+    "salary_mentioned_pct": 33.8,
     "ranges": [
       {
         "band": "$150k-$200k",
@@ -420,15 +420,7 @@
       },
       {
         "band": "<$100k",
-        "count": 7
-      },
-      {
-        "band": "€90k–€110k",
-        "count": 1
-      },
-      {
-        "band": "Under $100k",
-        "count": 1
+        "count": 8
       }
     ],
     "equity_mentioned_count": 67,

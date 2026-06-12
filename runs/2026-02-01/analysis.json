@@ -433,8 +433,8 @@
     }
   ],
   "compensation": {
-    "salary_mentioned_count": 122,
-    "salary_mentioned_pct": 29.3,
+    "salary_mentioned_count": 117,
+    "salary_mentioned_pct": 28.1,
     "ranges": [
       {
         "band": "$150k-$200k",
@@ -450,23 +450,7 @@
       },
       {
         "band": "<$100k",
-        "count": 3
-      },
-      {
-        "band": "Under $100k",
-        "count": 2
-      },
-      {
-        "band": "Not specified",
-        "count": 2
-      },
-      {
-        "band": "not available",
-        "count": 1
-      },
-      {
-        "band": "£90k+ (not in USD bands)",
-        "count": 1
+        "count": 5
       }
     ],
     "equity_mentioned_count": 94,

@@ -9,6 +9,69 @@ const isoTimestampSchema = z.string().trim().datetime()
 const pctSchema = z.number().min(0).max(100)
 const countPctSchema = z.object({ count: z.int().min(0), pct: pctSchema })
 
+export const SALARY_BANDS = ["<$100k", "$100k-$150k", "$150k-$200k", "$200k+"] as const
+export type SalaryBand = (typeof SALARY_BANDS)[number]
+
+const SALARY_BAND_ALIASES: Record<string, SalaryBand> = {
+  "<$100k": "<$100k",
+  "<100k": "<$100k",
+  "$0-$100k": "<$100k",
+  "less-than-100k": "<$100k",
+  under_100k: "<$100k",
+  "under$100k": "<$100k",
+  "under $100k": "<$100k",
+  "100k-$150k": "$100k-$150k",
+  "100k-150k": "$100k-$150k",
+  "$100k-$150k": "$100k-$150k",
+  "$100k-150k": "$100k-$150k",
+  "150k-$200k": "$150k-$200k",
+  "150k-200k": "$150k-$200k",
+  "$150k-$200k": "$150k-$200k",
+  "$150k-200k": "$150k-$200k",
+  "200k+": "$200k+",
+  "$200k+": "$200k+",
+  ">$200k": "$200k+",
+}
+
+function salaryBandForAmount(amountInThousands: number): SalaryBand {
+  if (amountInThousands < 100) return "<$100k"
+  if (amountInThousands < 150) return "$100k-$150k"
+  if (amountInThousands < 200) return "$150k-$200k"
+  return "$200k+"
+}
+
+function normalizeSalaryBandKey(value: string): string {
+  return value.trim().toLowerCase().replace(/[–—]/g, "-").replace(/\s+/g, " ")
+}
+
+function parseUsdSalaryBand(value: string): SalaryBand | null {
+  const key = normalizeSalaryBandKey(value)
+  if (/[€£]/.test(key)) return null
+  if (/\b(non-usd|not available|not specified|skipping)\b/.test(key)) return null
+
+  const amounts = [...key.matchAll(/\$?\s*(\d+(?:\.\d+)?)(?:\s*k)?/g)]
+    .map((match) => Number(match[1]))
+    .filter(Number.isFinite)
+    .map((amount) => (amount >= 1000 ? amount / 1000 : amount))
+
+  if (amounts.length === 0) return null
+  const representativeAmount = amounts.reduce((sum, amount) => sum + amount, 0) / amounts.length
+  return salaryBandForAmount(representativeAmount)
+}
+
+export function normalizeSalaryBand(value: unknown): SalaryBand | null {
+  if (typeof value !== "string") return null
+  const key = normalizeSalaryBandKey(value)
+  return SALARY_BAND_ALIASES[key] ?? parseUsdSalaryBand(value)
+}
+
+const SalaryBandValueSchema = z.enum(SALARY_BANDS)
+const StrictSalaryBandValueSchema = z.preprocess((value) => normalizeSalaryBand(value) ?? value, SalaryBandValueSchema)
+const NullableSalaryBandValueSchema = z.preprocess((value) => {
+  if (value === null || value === undefined) return null
+  return normalizeSalaryBand(value)
+}, SalaryBandValueSchema.nullable())
+
 // ==============================================================================
 // raw.json — fetched job data before LLM analysis
 // ==============================================================================
@@ -46,7 +109,7 @@ const NamedCountSchema = z.object({
 })
 
 const SalaryBandSchema = z.object({
-  band: z.string().trim(),
+  band: StrictSalaryBandValueSchema,
   count: z.int().min(0),
 })
 
@@ -56,17 +119,35 @@ const ExperienceLevelSchema = z.object({
   pct: pctSchema,
 })
 
-export const ClassifiedJobSchema = z.object({
-  id: z.int(),
-  technologies: z.array(z.string().trim()),
-  role: z.string().trim(),
-  experience_level: z.enum(["Senior", "Mid", "Junior", "Not specified"]),
-  remote: z.enum(["fully_remote", "hybrid", "onsite_only", "not_mentioned"]),
-  salary_mentioned: z.boolean(),
-  salary_band: z.string().trim().nullable(),
-  equity_mentioned: z.boolean(),
-  ai_ml_mentioned: z.boolean(),
-})
+export const ClassifiedJobSchema = z
+  .object({
+    id: z.int(),
+    technologies: z.array(z.string().trim()),
+    role: z.string().trim(),
+    experience_level: z.enum(["Senior", "Mid", "Junior", "Not specified"]),
+    remote: z.enum(["fully_remote", "hybrid", "onsite_only", "not_mentioned"]),
+    salary_mentioned: z.boolean(),
+    salary_band: NullableSalaryBandValueSchema,
+    equity_mentioned: z.boolean(),
+    ai_ml_mentioned: z.boolean(),
+  })
+  .superRefine((job, ctx) => {
+    if (job.salary_mentioned && job.salary_band === null) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["salary_band"],
+        message: "salary_band is required when salary_mentioned is true",
+      })
+    }
+
+    if (!job.salary_mentioned && job.salary_band !== null) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["salary_band"],
+        message: "salary_band must be null when salary_mentioned is false",
+      })
+    }
+  })
 
 const BatchClassifiedJobSchema = ClassifiedJobSchema.extend({
   is_job: z.boolean(),

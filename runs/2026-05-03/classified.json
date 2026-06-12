@@ -445,8 +445,8 @@
       "role": "Backend Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
-      "salary_mentioned": true,
-      "salary_band": "Not specified",
+      "salary_mentioned": false,
+      "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": true
     },
@@ -496,8 +496,8 @@
       "role": "Engineering Manager",
       "experience_level": "Not specified",
       "remote": "hybrid",
-      "salary_mentioned": true,
-      "salary_band": "Not specified",
+      "salary_mentioned": false,
+      "salary_band": null,
       "equity_mentioned": false,
       "ai_ml_mentioned": false
     },
@@ -2829,8 +2829,8 @@
       "role": "Other",
       "experience_level": "Not specified",
       "remote": "onsite_only",
-      "salary_mentioned": true,
-      "salary_band": "Not specified",
+      "salary_mentioned": false,
+      "salary_band": null,
       "equity_mentioned": true,
       "ai_ml_mentioned": true
     },

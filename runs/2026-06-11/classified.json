@@ -301,7 +301,6 @@
         "TypeScript",
         "Python",
         "PostgreSQL",
-        "AI/ML",
         "OpenAI API"
       ],
       "role": "Full Stack Engineer",
@@ -320,8 +319,7 @@
         "Python",
         "React",
         "PostgreSQL",
-        "OpenAI API",
-        "LLM"
+        "OpenAI API"
       ],
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
@@ -439,9 +437,7 @@
     },
     {
       "id": 48443143,
-      "technologies": [
-        "ML"
-      ],
+      "technologies": [],
       "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "onsite_only",
@@ -696,8 +692,7 @@
       "id": 48446422,
       "technologies": [
         "Python",
-        "Django",
-        "AI/ML"
+        "Django"
       ],
       "role": "Backend Engineer",
       "experience_level": "Senior",
@@ -2924,7 +2919,7 @@
         "PyTorch",
         "PostgreSQL",
         "Redis",
-        "Vue.js",
+        "Vue",
         "Kubernetes",
         "Docker",
         "AWS",

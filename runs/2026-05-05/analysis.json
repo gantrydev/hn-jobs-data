@@ -120,17 +120,17 @@
       "pct": 4
     },
     {
+      "name": "Rails",
+      "count": 11,
+      "pct": 4
+    },
+    {
       "name": "Ruby",
       "count": 10,
       "pct": 3.6
     },
     {
       "name": "FastAPI",
-      "count": 10,
-      "pct": 3.6
-    },
-    {
-      "name": "Rails",
       "count": 10,
       "pct": 3.6
     },
@@ -306,11 +306,6 @@
     },
     {
       "name": "MCP",
-      "count": 1,
-      "pct": 0.4
-    },
-    {
-      "name": "Ruby on Rails",
       "count": 1,
       "pct": 0.4
     },

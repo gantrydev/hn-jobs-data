@@ -247,8 +247,7 @@
         "Python",
         "React",
         "React Native",
-        "PostgreSQL",
-        "Mobile"
+        "PostgreSQL"
       ],
       "role": "Software Engineer",
       "experience_level": "Junior",
@@ -690,7 +689,7 @@
     {
       "id": 47985734,
       "technologies": [
-        "Vue.js"
+        "Vue"
       ],
       "role": "Frontend Engineer",
       "experience_level": "Senior",
@@ -1544,7 +1543,6 @@
         "React",
         "Node.js",
         "Rails",
-        "MongoDB",
         "MongoDB"
       ],
       "role": "Full Stack Engineer",
@@ -1589,7 +1587,7 @@
       "technologies": [
         "Node.js",
         "AWS",
-        "Golang"
+        "Go"
       ],
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
@@ -2776,7 +2774,7 @@
         "Flutter",
         "Kotlin",
         "Android",
-        "Google Cloud"
+        "GCP"
       ],
       "role": "Mobile Engineer",
       "experience_level": "Not specified",
@@ -2797,8 +2795,7 @@
         "React",
         "PostgreSQL",
         "AWS",
-        "OpenAI API",
-        "LLM"
+        "OpenAI API"
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Senior",

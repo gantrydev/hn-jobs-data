@@ -41,8 +41,8 @@
     },
     {
       "name": "Go",
-      "count": 27,
-      "pct": 8
+      "count": 28,
+      "pct": 8.3
     },
     {
       "name": "Node.js",
@@ -260,42 +260,7 @@
       "pct": 0.3
     },
     {
-      "name": "GPU",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "Distributed systems",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
       "name": "SQS",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "Event-driven",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "AI/ML",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "Golang",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "Mobile",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "ML",
       "count": 1,
       "pct": 0.3
     },

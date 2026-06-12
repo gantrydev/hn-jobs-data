@@ -2461,7 +2461,7 @@
         "PyTorch",
         "PostgreSQL",
         "Redis",
-        "Vue.js",
+        "Vue",
         "Kubernetes",
         "Docker",
         "AWS",
@@ -3343,8 +3343,7 @@
       "technologies": [
         "Rust",
         "TypeScript",
-        "Python",
-        "ML Engineer"
+        "Python"
       ],
       "role": "Software Engineer",
       "experience_level": "Senior",
@@ -3405,9 +3404,7 @@
     },
     {
       "id": 48369098,
-      "technologies": [
-        "AI Engineer"
-      ],
+      "technologies": [],
       "role": "AI Engineer",
       "experience_level": "Junior",
       "remote": "fully_remote",

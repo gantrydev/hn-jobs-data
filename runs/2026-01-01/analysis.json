@@ -140,6 +140,11 @@
       "pct": 1.6
     },
     {
+      "name": "Vue",
+      "count": 4,
+      "pct": 1.6
+    },
+    {
       "name": "Azure",
       "count": 4,
       "pct": 1.6
@@ -171,11 +176,6 @@
     },
     {
       "name": "Cloudflare",
-      "count": 3,
-      "pct": 1.2
-    },
-    {
-      "name": "Vue",
       "count": 3,
       "pct": 1.2
     },
@@ -265,22 +265,7 @@
       "pct": 0.4
     },
     {
-      "name": "Vue.js",
-      "count": 1,
-      "pct": 0.4
-    },
-    {
       "name": "SQL",
-      "count": 1,
-      "pct": 0.4
-    },
-    {
-      "name": "NLP",
-      "count": 1,
-      "pct": 0.4
-    },
-    {
-      "name": "LLM",
       "count": 1,
       "pct": 0.4
     },

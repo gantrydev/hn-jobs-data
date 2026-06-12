@@ -125,6 +125,11 @@
       "pct": 2.1
     },
     {
+      "name": "Vue",
+      "count": 7,
+      "pct": 2.1
+    },
+    {
       "name": "LangChain",
       "count": 7,
       "pct": 2.1
@@ -161,11 +166,6 @@
     },
     {
       "name": "Elasticsearch",
-      "count": 5,
-      "pct": 1.5
-    },
-    {
-      "name": "Vue",
       "count": 5,
       "pct": 1.5
     },
@@ -250,11 +250,6 @@
       "pct": 0.6
     },
     {
-      "name": "Vue.js",
-      "count": 2,
-      "pct": 0.6
-    },
-    {
       "name": "SQL",
       "count": 2,
       "pct": 0.6
@@ -280,11 +275,6 @@
       "pct": 0.3
     },
     {
-      "name": "LLM",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
       "name": "Pub/Sub",
       "count": 1,
       "pct": 0.3
@@ -300,11 +290,6 @@
       "pct": 0.3
     },
     {
-      "name": "Web",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
       "name": "Spring",
       "count": 1,
       "pct": 0.3
@@ -316,11 +301,6 @@
     },
     {
       "name": "Express",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "DevOps",
       "count": 1,
       "pct": 0.3
     },

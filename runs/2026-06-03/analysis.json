@@ -205,6 +205,11 @@
       "pct": 0.8
     },
     {
+      "name": "Vue",
+      "count": 2,
+      "pct": 0.8
+    },
+    {
       "name": "CUDA",
       "count": 2,
       "pct": 0.8
@@ -245,11 +250,6 @@
       "pct": 0.4
     },
     {
-      "name": "Vue",
-      "count": 1,
-      "pct": 0.4
-    },
-    {
       "name": "SQLite",
       "count": 1,
       "pct": 0.4
@@ -275,11 +275,6 @@
       "pct": 0.4
     },
     {
-      "name": "Vue.js",
-      "count": 1,
-      "pct": 0.4
-    },
-    {
       "name": "Snowflake",
       "count": 1,
       "pct": 0.4
@@ -295,17 +290,7 @@
       "pct": 0.4
     },
     {
-      "name": "ML Engineer",
-      "count": 1,
-      "pct": 0.4
-    },
-    {
       "name": "TensorFlow",
-      "count": 1,
-      "pct": 0.4
-    },
-    {
-      "name": "AI Engineer",
       "count": 1,
       "pct": 0.4
     }

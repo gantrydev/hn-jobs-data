@@ -4,7 +4,10 @@ import * as z from "zod/v4"
 // Shared primitives
 // ==============================================================================
 
-const dateStringSchema = z.string().trim().regex(/^\d{4}-\d{2}-\d{2}$/)
+const dateStringSchema = z
+  .string()
+  .trim()
+  .regex(/^\d{4}-\d{2}-\d{2}$/)
 const isoTimestampSchema = z.string().trim().datetime()
 const pctSchema = z.number().min(0).max(100)
 const countPctSchema = z.object({ count: z.int().min(0), pct: pctSchema })
@@ -12,13 +15,143 @@ const countPctSchema = z.object({ count: z.int().min(0), pct: pctSchema })
 export const SALARY_BANDS = ["<$100k", "$100k-$150k", "$150k-$200k", "$200k+"] as const
 export type SalaryBand = (typeof SALARY_BANDS)[number]
 
+export const TECHNOLOGY_TAXONOMY = {
+  Languages: [
+    "TypeScript",
+    "JavaScript",
+    "Python",
+    "Go",
+    "Rust",
+    "Java",
+    "Kotlin",
+    "Swift",
+    "C++",
+    "C#",
+    "C",
+    "Ruby",
+    "PHP",
+    "Scala",
+    "Elixir",
+    "Dart",
+    "R",
+    "OCaml",
+  ],
+  Frontend: ["React", "Next.js", "Vue", "Angular", "Svelte", "Ember.js", "CSS", "Redux"],
+  Backend: [
+    "Node.js",
+    "Django",
+    "FastAPI",
+    "Rails",
+    "Spring",
+    "Laravel",
+    "GraphQL",
+    "gRPC",
+    "Express",
+    "Flask",
+    "NestJS",
+    "WebSockets",
+    "WebRTC",
+  ],
+  Databases: [
+    "PostgreSQL",
+    "MySQL",
+    "MongoDB",
+    "Redis",
+    "Elasticsearch",
+    "Cassandra",
+    "SQLite",
+    "Snowflake",
+    "ClickHouse",
+    "SQL",
+    "SQL Server",
+    "Supabase",
+    "Neo4j",
+    "Firestore",
+  ],
+  Cloud: ["AWS", "GCP", "Azure", "Cloudflare", "Vercel", "Firebase", "S3"],
+  "Infra/DevOps": [
+    "Kubernetes",
+    "Docker",
+    "Terraform",
+    "GitHub Actions",
+    "Linux",
+    "Jenkins",
+    "Git",
+    "Nix",
+    "eBPF",
+  ],
+  Messaging: ["Kafka", "RabbitMQ", "Pub/Sub", "SQS"],
+  "AI/ML": [
+    "PyTorch",
+    "TensorFlow",
+    "LangChain",
+    "OpenAI API",
+    "Anthropic API",
+    "Gemini API",
+    "Hugging Face",
+    "CUDA",
+    "Spark",
+    "Airflow",
+    "MCP",
+  ],
+  Mobile: ["iOS", "Android", "React Native", "Flutter"],
+  Robotics: ["ROS"],
+  Runtime: ["WebAssembly"],
+} as const
+
+export const TECHNOLOGY_NAMES = Object.values(TECHNOLOGY_TAXONOMY).flat() as [
+  (typeof TECHNOLOGY_TAXONOMY)[keyof typeof TECHNOLOGY_TAXONOMY][number],
+  ...(typeof TECHNOLOGY_TAXONOMY)[keyof typeof TECHNOLOGY_TAXONOMY][number][],
+]
+export type Technology = (typeof TECHNOLOGY_NAMES)[number]
+
+export const ROLE_NAMES = [
+  "Software Engineer",
+  "Senior Software Engineer",
+  "Staff Engineer",
+  "Principal Engineer",
+  "Engineering Manager",
+  "Full Stack Engineer",
+  "Backend Engineer",
+  "Frontend Engineer",
+  "Mobile Engineer",
+  "ML Engineer",
+  "AI Engineer",
+  "Data Scientist",
+  "Data Engineer",
+  "DevOps / SRE",
+  "Product Manager",
+  "Designer",
+  "Other",
+] as const
+export type Role = (typeof ROLE_NAMES)[number]
+
+const TECHNOLOGY_ALIASES: Record<string, Technology> = {
+  "claude api": "Anthropic API",
+  "gemini api": "Gemini API",
+  "github actions": "GitHub Actions",
+  golang: "Go",
+  "google cloud": "GCP",
+  "ruby on rails": "Rails",
+  "vue.js": "Vue",
+}
+
+const ROLE_ALIASES: Record<string, Role> = {
+  "data analyst": "Data Scientist",
+  "founding engineer": "Software Engineer",
+  "infrastructure engineer": "DevOps / SRE",
+  "product engineer": "Software Engineer",
+  "senior backend engineer": "Backend Engineer",
+  "senior full stack engineer": "Full Stack Engineer",
+}
+
 const SALARY_BAND_ALIASES: Record<string, SalaryBand> = {
   "<$100k": "<$100k",
   "<100k": "<$100k",
   "$0-$100k": "<$100k",
   "less-than-100k": "<$100k",
   under_100k: "<$100k",
-  "under$100k": "<$100k",
+  under$100k: "<$100k",
   "under $100k": "<$100k",
   "100k-$150k": "$100k-$150k",
   "100k-150k": "$100k-$150k",
@@ -65,12 +198,50 @@ export function normalizeSalaryBand(value: unknown): SalaryBand | null {
   return SALARY_BAND_ALIASES[key] ?? parseUsdSalaryBand(value)
 }
 
+function normalizeTaxonomyKey(value: string): string {
+  return value.trim().toLowerCase().replace(/[–—]/g, "-").replace(/\s+/g, " ")
+}
+
+export function normalizeTechnology(value: unknown): Technology | null {
+  if (typeof value !== "string") return null
+  const trimmed = value.trim()
+  const canonical = TECHNOLOGY_NAMES.find(
+    (technology) => technology.toLowerCase() === trimmed.toLowerCase(),
+  )
+  if (canonical) return canonical
+  return TECHNOLOGY_ALIASES[normalizeTaxonomyKey(trimmed)] ?? null
+}
+
+export function normalizeRole(value: unknown): Role | null {
+  if (typeof value !== "string") return null
+  const trimmed = value.trim()
+  const canonical = ROLE_NAMES.find((role) => role.toLowerCase() === trimmed.toLowerCase())
+  if (canonical) return canonical
+  return ROLE_ALIASES[normalizeTaxonomyKey(trimmed)] ?? null
+}
+
 const SalaryBandValueSchema = z.enum(SALARY_BANDS)
-const StrictSalaryBandValueSchema = z.preprocess((value) => normalizeSalaryBand(value) ?? value, SalaryBandValueSchema)
+const StrictSalaryBandValueSchema = z.preprocess(
+  (value) => normalizeSalaryBand(value) ?? value,
+  SalaryBandValueSchema,
+)
 const NullableSalaryBandValueSchema = z.preprocess((value) => {
   if (value === null || value === undefined) return null
   return normalizeSalaryBand(value)
 }, SalaryBandValueSchema.nullable())
+const TechnologyValueSchema = z.enum(TECHNOLOGY_NAMES)
+const TechnologyListSchema = z.preprocess((value) => {
+  if (!Array.isArray(value)) return value
+  return [
+    ...new Set(
+      value.flatMap((item) => {
+        const normalized = normalizeTechnology(item)
+        return normalized ? [normalized] : []
+      }),
+    ),
+  ]
+}, z.array(TechnologyValueSchema))
+const RoleValueSchema = z.preprocess((value) => normalizeRole(value) ?? value, z.enum(ROLE_NAMES))
 
 // ==============================================================================
 // raw.json — fetched job data before LLM analysis
@@ -108,6 +279,14 @@ const NamedCountSchema = z.object({
   pct: pctSchema,
 })
 
+const TechnologyCountSchema = NamedCountSchema.extend({
+  name: TechnologyValueSchema,
+})
+
+const RoleCountSchema = NamedCountSchema.extend({
+  name: RoleValueSchema,
+})
+
 const SalaryBandSchema = z.object({
   band: StrictSalaryBandValueSchema,
   count: z.int().min(0),
@@ -122,8 +301,8 @@ const ExperienceLevelSchema = z.object({
 export const ClassifiedJobSchema = z
   .object({
     id: z.int(),
-    technologies: z.array(z.string().trim()),
-    role: z.string().trim(),
+    technologies: TechnologyListSchema,
+    role: RoleValueSchema,
     experience_level: z.enum(["Senior", "Mid", "Junior", "Not specified"]),
     remote: z.enum(["fully_remote", "hybrid", "onsite_only", "not_mentioned"]),
     salary_mentioned: z.boolean(),
@@ -163,8 +342,8 @@ export const AnalysisSchema = z.object({
   date: dateStringSchema,
   run_id: z.string().trim(),
   job_count: z.int(),
-  technologies: z.array(NamedCountSchema),
-  roles: z.array(NamedCountSchema),
+  technologies: z.array(TechnologyCountSchema),
+  roles: z.array(RoleCountSchema),
   compensation: z.object({
     salary_mentioned_count: z.int().min(0),
     salary_mentioned_pct: pctSchema,

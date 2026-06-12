@@ -45,12 +45,12 @@
       "pct": 7.7
     },
     {
-      "name": "Docker",
-      "count": 25,
-      "pct": 6.9
+      "name": "Go",
+      "count": 26,
+      "pct": 7.2
     },
     {
-      "name": "Go",
+      "name": "Docker",
       "count": 25,
       "pct": 6.9
     },
@@ -120,6 +120,11 @@
       "pct": 2.5
     },
     {
+      "name": "Rails",
+      "count": 8,
+      "pct": 2.2
+    },
+    {
       "name": "React Native",
       "count": 8,
       "pct": 2.2
@@ -145,22 +150,17 @@
       "pct": 1.9
     },
     {
-      "name": "Rails",
-      "count": 7,
-      "pct": 1.9
-    },
-    {
       "name": "Android",
       "count": 7,
       "pct": 1.9
     },
     {
-      "name": "Kotlin",
-      "count": 5,
-      "pct": 1.4
+      "name": "Vue",
+      "count": 6,
+      "pct": 1.7
     },
     {
-      "name": "Vue",
+      "name": "Kotlin",
       "count": 5,
       "pct": 1.4
     },
@@ -255,16 +255,6 @@
       "pct": 0.6
     },
     {
-      "name": "LLM",
-      "count": 2,
-      "pct": 0.6
-    },
-    {
-      "name": "ML Engineer",
-      "count": 2,
-      "pct": 0.6
-    },
-    {
       "name": "SQLite",
       "count": 2,
       "pct": 0.6
@@ -285,27 +275,12 @@
       "pct": 0.6
     },
     {
-      "name": "Ruby on Rails",
-      "count": 2,
-      "pct": 0.6
-    },
-    {
       "name": "C",
       "count": 1,
       "pct": 0.3
     },
     {
-      "name": "Golang",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
       "name": "gRPC",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "Vue.js",
       "count": 1,
       "pct": 0.3
     },
@@ -330,11 +305,6 @@
       "pct": 0.3
     },
     {
-      "name": "LLM/Agents",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
       "name": "S3",
       "count": 1,
       "pct": 0.3
@@ -348,8 +318,8 @@
   "roles": [
     {
       "name": "Software Engineer",
-      "count": 122,
-      "pct": 33.6
+      "count": 123,
+      "pct": 33.9
     },
     {
       "name": "Full Stack Engineer",
@@ -368,8 +338,8 @@
     },
     {
       "name": "Backend Engineer",
-      "count": 21,
-      "pct": 5.8
+      "count": 22,
+      "pct": 6.1
     },
     {
       "name": "Staff Engineer",
@@ -377,14 +347,14 @@
       "pct": 3.9
     },
     {
-      "name": "ML Engineer",
+      "name": "DevOps / SRE",
       "count": 11,
       "pct": 3
     },
     {
-      "name": "DevOps / SRE",
-      "count": 10,
-      "pct": 2.8
+      "name": "ML Engineer",
+      "count": 11,
+      "pct": 3
     },
     {
       "name": "AI Engineer",
@@ -407,12 +377,12 @@
       "pct": 1.1
     },
     {
-      "name": "Mobile Engineer",
-      "count": 3,
-      "pct": 0.8
+      "name": "Data Scientist",
+      "count": 4,
+      "pct": 1.1
     },
     {
-      "name": "Data Scientist",
+      "name": "Mobile Engineer",
       "count": 3,
       "pct": 0.8
     },
@@ -425,26 +395,6 @@
       "name": "Product Manager",
       "count": 2,
       "pct": 0.6
-    },
-    {
-      "name": "Infrastructure Engineer",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "Data Analyst",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "Senior Backend Engineer",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "Founding Engineer",
-      "count": 1,
-      "pct": 0.3
     },
     {
       "name": "Principal Engineer",

@@ -2916,7 +2916,7 @@
       "technologies": [
         "PHP",
         "Laravel",
-        "Vue.js",
+        "Vue",
         "MySQL",
         "AWS",
         "Kubernetes",
@@ -2924,8 +2924,6 @@
         "Python",
         "SQL",
         "Docker",
-        "NLP",
-        "LLM",
         "TypeScript",
         "Go",
         "C++",

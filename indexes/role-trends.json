@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-06-12T13:40:54.192Z",
+  "updated_at": "2026-06-12T13:51:47.694Z",
   "series": {
     "Software Engineer": [
       {
@@ -20,13 +20,13 @@
       },
       {
         "date": "2026-04-17",
-        "count": 122,
-        "pct": 33.6
+        "count": 123,
+        "pct": 33.9
       },
       {
         "date": "2026-04-28",
-        "count": 128,
-        "pct": 36.2
+        "count": 129,
+        "pct": 36.4
       },
       {
         "date": "2026-05-03",
@@ -77,8 +77,8 @@
       },
       {
         "date": "2026-04-28",
-        "count": 46,
-        "pct": 13
+        "count": 47,
+        "pct": 13.3
       },
       {
         "date": "2026-05-03",
@@ -228,13 +228,13 @@
       },
       {
         "date": "2026-04-17",
-        "count": 21,
-        "pct": 5.8
+        "count": 22,
+        "pct": 6.1
       },
       {
         "date": "2026-04-28",
-        "count": 20,
-        "pct": 5.6
+        "count": 21,
+        "pct": 5.9
       },
       {
         "date": "2026-05-03",
@@ -332,13 +332,13 @@
       },
       {
         "date": "2026-04-17",
-        "count": 10,
-        "pct": 2.8
+        "count": 11,
+        "pct": 3
       },
       {
         "date": "2026-04-28",
-        "count": 9,
-        "pct": 2.5
+        "count": 10,
+        "pct": 2.8
       },
       {
         "date": "2026-05-03",
@@ -822,65 +822,13 @@
       },
       {
         "date": "2026-04-17",
-        "count": 3,
-        "pct": 0.8
+        "count": 4,
+        "pct": 1.1
       },
       {
         "date": "2026-04-28",
         "count": 4,
         "pct": 1.1
-      }
-    ],
-    "Infrastructure Engineer": [
-      {
-        "date": "2026-04-17",
-        "count": 1,
-        "pct": 0.3
-      },
-      {
-        "date": "2026-04-28",
-        "count": 1,
-        "pct": 0.3
-      }
-    ],
-    "Data Analyst": [
-      {
-        "date": "2026-04-17",
-        "count": 1,
-        "pct": 0.3
-      }
-    ],
-    "Senior Backend Engineer": [
-      {
-        "date": "2026-04-17",
-        "count": 1,
-        "pct": 0.3
-      },
-      {
-        "date": "2026-04-28",
-        "count": 1,
-        "pct": 0.3
-      }
-    ],
-    "Founding Engineer": [
-      {
-        "date": "2026-04-17",
-        "count": 1,
-        "pct": 0.3
-      }
-    ],
-    "Product Engineer": [
-      {
-        "date": "2026-04-28",
-        "count": 1,
-        "pct": 0.3
-      }
-    ],
-    "Senior Full Stack Engineer": [
-      {
-        "date": "2026-04-28",
-        "count": 1,
-        "pct": 0.3
       }
     ]
   }

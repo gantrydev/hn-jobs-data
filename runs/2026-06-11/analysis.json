@@ -190,6 +190,11 @@
       "pct": 1.3
     },
     {
+      "name": "Vue",
+      "count": 3,
+      "pct": 1
+    },
+    {
       "name": "Svelte",
       "count": 3,
       "pct": 1
@@ -213,16 +218,6 @@
       "name": "Linux",
       "count": 3,
       "pct": 1
-    },
-    {
-      "name": "Vue",
-      "count": 2,
-      "pct": 0.6
-    },
-    {
-      "name": "AI/ML",
-      "count": 2,
-      "pct": 0.6
     },
     {
       "name": "Elixir",
@@ -260,17 +255,7 @@
       "pct": 0.3
     },
     {
-      "name": "LLM",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
       "name": "OCaml",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "ML",
       "count": 1,
       "pct": 0.3
     },
@@ -301,11 +286,6 @@
     },
     {
       "name": "WebRTC",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "Vue.js",
       "count": 1,
       "pct": 0.3
     },

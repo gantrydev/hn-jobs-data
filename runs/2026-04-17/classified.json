@@ -781,7 +781,7 @@
       "technologies": [
         "React",
         "TypeScript",
-        "Golang",
+        "Go",
         "PostgreSQL",
         "GraphQL",
         "Terraform",
@@ -1084,7 +1084,7 @@
         "PyTorch",
         "PostgreSQL",
         "Redis",
-        "Vue.js",
+        "Vue",
         "Kubernetes",
         "Docker",
         "AWS",
@@ -1673,9 +1673,7 @@
     },
     {
       "id": 47649099,
-      "technologies": [
-        "LLM"
-      ],
+      "technologies": [],
       "role": "Software Engineer",
       "experience_level": "Senior",
       "remote": "onsite_only",
@@ -1796,9 +1794,7 @@
     },
     {
       "id": 47603141,
-      "technologies": [
-        "ML Engineer"
-      ],
+      "technologies": [],
       "role": "ML Engineer",
       "experience_level": "Senior",
       "remote": "not_mentioned",
@@ -2694,7 +2690,7 @@
     {
       "id": 47603363,
       "technologies": [],
-      "role": "Infrastructure Engineer",
+      "role": "DevOps / SRE",
       "experience_level": "Not specified",
       "remote": "onsite_only",
       "salary_mentioned": true,
@@ -2743,7 +2739,7 @@
       "technologies": [
         "Python"
       ],
-      "role": "Data Analyst",
+      "role": "Data Scientist",
       "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -3083,9 +3079,7 @@
     },
     {
       "id": 47634342,
-      "technologies": [
-        "LLM/Agents"
-      ],
+      "technologies": [],
       "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "hybrid",
@@ -3598,8 +3592,7 @@
     {
       "id": 47603909,
       "technologies": [
-        "Cloudflare",
-        "ML Engineer"
+        "Cloudflare"
       ],
       "role": "ML Engineer",
       "experience_level": "Senior",
@@ -3762,8 +3755,7 @@
       "technologies": [
         "Rails",
         "React",
-        "Ruby",
-        "Ruby on Rails"
+        "Ruby"
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Not specified",
@@ -4334,7 +4326,7 @@
         "Python",
         "TypeScript"
       ],
-      "role": "Senior Backend Engineer",
+      "role": "Backend Engineer",
       "experience_level": "Senior",
       "remote": "hybrid",
       "salary_mentioned": false,
@@ -4366,11 +4358,10 @@
         "Python",
         "React",
         "Ruby",
-        "Ruby on Rails",
-        "LLM",
+        "Rails",
         "TypeScript"
       ],
-      "role": "Founding Engineer",
+      "role": "Software Engineer",
       "experience_level": "Senior",
       "remote": "onsite_only",
       "salary_mentioned": true,

@@ -40,19 +40,19 @@
       "pct": 10
     },
     {
+      "name": "Go",
+      "count": 20,
+      "pct": 9.5
+    },
+    {
       "name": "Kubernetes",
       "count": 20,
       "pct": 9.5
     },
     {
-      "name": "Go",
-      "count": 19,
-      "pct": 9
-    },
-    {
       "name": "GCP",
-      "count": 16,
-      "pct": 7.6
+      "count": 17,
+      "pct": 8.1
     },
     {
       "name": "Docker",
@@ -150,11 +150,6 @@
       "pct": 2.4
     },
     {
-      "name": "MongoDB",
-      "count": 5,
-      "pct": 2.4
-    },
-    {
       "name": "Cloudflare",
       "count": 5,
       "pct": 2.4
@@ -190,6 +185,16 @@
       "pct": 1.9
     },
     {
+      "name": "Vue",
+      "count": 4,
+      "pct": 1.9
+    },
+    {
+      "name": "MongoDB",
+      "count": 4,
+      "pct": 1.9
+    },
+    {
       "name": "Hugging Face",
       "count": 4,
       "pct": 1.9
@@ -206,11 +211,6 @@
     },
     {
       "name": "Svelte",
-      "count": 3,
-      "pct": 1.4
-    },
-    {
-      "name": "Vue",
       "count": 3,
       "pct": 1.4
     },
@@ -250,17 +250,7 @@
       "pct": 0.5
     },
     {
-      "name": "Mobile",
-      "count": 1,
-      "pct": 0.5
-    },
-    {
       "name": "Scala",
-      "count": 1,
-      "pct": 0.5
-    },
-    {
-      "name": "Vue.js",
       "count": 1,
       "pct": 0.5
     },
@@ -271,11 +261,6 @@
     },
     {
       "name": "gRPC",
-      "count": 1,
-      "pct": 0.5
-    },
-    {
-      "name": "Golang",
       "count": 1,
       "pct": 0.5
     },
@@ -306,16 +291,6 @@
     },
     {
       "name": "Express",
-      "count": 1,
-      "pct": 0.5
-    },
-    {
-      "name": "Google Cloud",
-      "count": 1,
-      "pct": 0.5
-    },
-    {
-      "name": "LLM",
       "count": 1,
       "pct": 0.5
     }

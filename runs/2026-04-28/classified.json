@@ -1002,9 +1002,7 @@
     },
     {
       "id": 47719161,
-      "technologies": [
-        "AI/ML"
-      ],
+      "technologies": [],
       "role": "Software Engineer",
       "experience_level": "Mid",
       "remote": "onsite_only",
@@ -1040,9 +1038,7 @@
     },
     {
       "id": 47754408,
-      "technologies": [
-        "AI/ML"
-      ],
+      "technologies": [],
       "role": "ML Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
@@ -1064,9 +1060,7 @@
     },
     {
       "id": 47715444,
-      "technologies": [
-        "AI/ML"
-      ],
+      "technologies": [],
       "role": "Full Stack Engineer",
       "experience_level": "Mid",
       "remote": "onsite_only",
@@ -1243,8 +1237,7 @@
       "technologies": [
         "AWS",
         "GCP",
-        "Azure",
-        "GitHub"
+        "Azure"
       ],
       "role": "Other",
       "experience_level": "Not specified",
@@ -2501,7 +2494,7 @@
     {
       "id": 47603363,
       "technologies": [],
-      "role": "Infrastructure Engineer",
+      "role": "DevOps / SRE",
       "experience_level": "Not specified",
       "remote": "onsite_only",
       "salary_mentioned": true,
@@ -2514,7 +2507,7 @@
       "technologies": [
         "Python",
         "React",
-        "Claude API"
+        "Anthropic API"
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Not specified",
@@ -3280,8 +3273,7 @@
     {
       "id": 47603909,
       "technologies": [
-        "Cloudflare",
-        "ML Engineer"
+        "Cloudflare"
       ],
       "role": "ML Engineer",
       "experience_level": "Senior",
@@ -3613,9 +3605,7 @@
     },
     {
       "id": 47619045,
-      "technologies": [
-        "AI/ML"
-      ],
+      "technologies": [],
       "role": "Other",
       "experience_level": "Not specified",
       "remote": "fully_remote",
@@ -4102,7 +4092,7 @@
         "Django",
         "Vue"
       ],
-      "role": "Product Engineer",
+      "role": "Software Engineer",
       "experience_level": "Not specified",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -4166,7 +4156,7 @@
         "Python",
         "TypeScript"
       ],
-      "role": "Senior Backend Engineer",
+      "role": "Backend Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -4230,7 +4220,7 @@
         "React",
         "Next.js"
       ],
-      "role": "Senior Full Stack Engineer",
+      "role": "Full Stack Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
       "salary_mentioned": false,
@@ -4362,8 +4352,7 @@
         "C#",
         "TypeScript",
         "Swift",
-        "Kotlin",
-        "Bluetooth"
+        "Kotlin"
       ],
       "role": "Software Engineer",
       "experience_level": "Not specified",

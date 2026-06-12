@@ -1,5 +1,19 @@
 import * as z from "zod/v4"
-import { BatchResponseSchema, ClassifiedJobSchema, SALARY_BANDS, type Analysis, type BatchResponse, type ClassifiedJob, type RawData, type RawJob, type SalaryBand } from "./schemas.js"
+import {
+  BatchResponseSchema,
+  ClassifiedJobSchema,
+  ROLE_NAMES,
+  SALARY_BANDS,
+  TECHNOLOGY_TAXONOMY,
+  type Analysis,
+  type BatchResponse,
+  type ClassifiedJob,
+  type RawData,
+  type RawJob,
+  type Role,
+  type SalaryBand,
+  type Technology,
+} from "./schemas.js"
 
 // ==============================================================================
 // OpenRouter API
@@ -13,6 +27,12 @@ const MAX_CONCURRENT = parseInt(process.env.MAX_CONCURRENT ?? "8", 10)
 // Configurable batch size — smaller batches = better accuracy + lower latency,
 // but more API calls. 10 is a good default for ~200 job postings.
 const JOBS_PER_BATCH = parseInt(process.env.JOBS_PER_BATCH ?? "10", 10)
+
+function formatTechnologyTaxonomy(): string {
+  return Object.entries(TECHNOLOGY_TAXONOMY)
+    .map(([category, technologies]) => `${category.padEnd(14)} ${technologies.join(", ")}`)
+    .join("\n")
+}
 
 // The prompt focuses on classification rules only — output format is enforced
 // via structured output (response_format), not prompt instructions.
@@ -28,24 +48,13 @@ or replies). Classify each comment and return a "jobs" array with one entry per 
 Only use the following technology names. Map all variants to the canonical name.
 Do not invent new entries. If a technology is not in this list, skip it.
 
-Languages:     TypeScript, JavaScript, Python, Go, Rust, Java, Kotlin, Swift, C++, C#, Ruby, PHP, Scala, Elixir
-Frontend:      React, Next.js, Vue, Angular, Svelte
-Backend:       Node.js, Django, FastAPI, Rails, Spring, Laravel, GraphQL, gRPC
-Databases:     PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch, Cassandra, SQLite
-Cloud:         AWS, GCP, Azure, Cloudflare
-Infra/DevOps:  Kubernetes, Docker, Terraform, GitHub Actions
-Messaging:     Kafka, RabbitMQ, Pub/Sub, SQS
-AI/ML:         PyTorch, TensorFlow, LangChain, OpenAI API, Hugging Face
-Mobile:        iOS, Android, React Native, Flutter
+${formatTechnologyTaxonomy()}
 
 ## Role Taxonomy
 
 Only use the following role names. Normalize all variants to the closest match.
 
-Software Engineer, Senior Software Engineer, Staff Engineer, Principal Engineer,
-Engineering Manager, Full Stack Engineer, Backend Engineer, Frontend Engineer,
-Mobile Engineer, ML Engineer, AI Engineer, Data Scientist, Data Engineer,
-DevOps / SRE, Product Manager, Designer, Other
+${ROLE_NAMES.join(", ")}
 
 ## Experience Level Rules
 
@@ -148,7 +157,8 @@ async function callOpenRouter(jobs: RawJob[], label: string): Promise<BatchRespo
   const MAX_ATTEMPTS = 4
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     try {
-      if (attempt > 1) console.log(`    [${label}] retry ${attempt}/${MAX_ATTEMPTS} — ${lastError?.message}`)
+      if (attempt > 1)
+        console.log(`    [${label}] retry ${attempt}/${MAX_ATTEMPTS} — ${lastError?.message}`)
 
       const started = Date.now()
       const res: Response = await fetch(OPENROUTER_URL, {
@@ -198,20 +208,26 @@ async function callOpenRouter(jobs: RawJob[], label: string): Promise<BatchRespo
       if (missing.length === 0) {
         const tok = data.usage?.completion_tokens
         const tps = tok ? `, ${Math.round(tok / (elapsed / 1000))}tps` : ""
-        console.log(`    [${label}] ${parsed.jobs.length}/${jobs.length} in ${elapsed}ms${tok ? `, ${tok}tok${tps}` : ""}${attempt > 1 ? ` (attempt ${attempt})` : ""}`)
+        console.log(
+          `    [${label}] ${parsed.jobs.length}/${jobs.length} in ${elapsed}ms${tok ? `, ${tok}tok${tps}` : ""}${attempt > 1 ? ` (attempt ${attempt})` : ""}`,
+        )
         return parsed
       }
 
       // Model dropped some postings — keep the most complete attempt and re-roll.
       if (!best || parsed.jobs.length > best.jobs.length) best = parsed
-      throw new Error(`returned ${parsed.jobs.length}/${jobs.length}, missing ${missing.length} id(s) after ${elapsed}ms`)
+      throw new Error(
+        `returned ${parsed.jobs.length}/${jobs.length}, missing ${missing.length} id(s) after ${elapsed}ms`,
+      )
     } catch (err) {
       lastError = err instanceof Error ? err : new Error(String(err))
     }
   }
 
   if (best) {
-    console.warn(`    [${label}] ⚠ incomplete after ${MAX_ATTEMPTS} attempts: ${best.jobs.length}/${jobs.length} classified`)
+    console.warn(
+      `    [${label}] ⚠ incomplete after ${MAX_ATTEMPTS} attempts: ${best.jobs.length}/${jobs.length} classified`,
+    )
     return best
   }
 
@@ -230,11 +246,13 @@ function toPct(count: number, total: number): number {
   return total === 0 ? 0 : round1((count / total) * 100)
 }
 
-function aggregate(jobs: ClassifiedJob[]): Omit<Analysis, "schema_version" | "date" | "run_id" | "job_count" | "generated_at"> {
+function aggregate(
+  jobs: ClassifiedJob[],
+): Omit<Analysis, "schema_version" | "date" | "run_id" | "job_count" | "generated_at"> {
   const totalJobs = jobs.length
 
-  const techMap = new Map<string, number>()
-  const roleMap = new Map<string, number>()
+  const techMap = new Map<Technology, number>()
+  const roleMap = new Map<Role, number>()
   const bandMap = new Map<SalaryBand, number>()
   const levelMap = new Map<string, number>()
 
@@ -265,7 +283,7 @@ function aggregate(jobs: ClassifiedJob[]): Omit<Analysis, "schema_version" | "da
   }
 
   // Convert maps to sorted arrays with percentages
-  const mapToSorted = (map: Map<string, number>) =>
+  const mapToSorted = <T extends string>(map: Map<T, number>) =>
     [...map.entries()]
       .map(([name, count]) => ({ name, count, pct: toPct(count, totalJobs) }))
       .sort((a, b) => b.count - a.count)
@@ -344,7 +362,9 @@ export async function analyzeJobs(raw: RawData): Promise<AnalyzeResult> {
   }
 
   console.log(`Analyzing ${raw.total_jobs} jobs via OpenRouter (${MODEL})...`)
-  console.log(`  ${batches.length} batches of up to ${JOBS_PER_BATCH} jobs, ${MAX_CONCURRENT} concurrent`)
+  console.log(
+    `  ${batches.length} batches of up to ${JOBS_PER_BATCH} jobs, ${MAX_CONCURRENT} concurrent`,
+  )
 
   // Process batches with a bounded-concurrency pool
   const startedAll = Date.now()
@@ -353,9 +373,13 @@ export async function analyzeJobs(raw: RawData): Promise<AnalyzeResult> {
   )
 
   const modelJobs = results.flatMap((batch) => batch.jobs)
-  console.log(`  Model returned ${modelJobs.length}/${raw.total_jobs} classifications in ${((Date.now() - startedAll) / 1000).toFixed(1)}s`)
+  console.log(
+    `  Model returned ${modelJobs.length}/${raw.total_jobs} classifications in ${((Date.now() - startedAll) / 1000).toFixed(1)}s`,
+  )
   if (modelJobs.length !== raw.total_jobs) {
-    console.warn(`  ⚠ coverage gap: ${raw.total_jobs - modelJobs.length} comment(s) never classified`)
+    console.warn(
+      `  ⚠ coverage gap: ${raw.total_jobs - modelJobs.length} comment(s) never classified`,
+    )
   }
 
   const classifiedJobs: ClassifiedJob[] = modelJobs
@@ -366,7 +390,9 @@ export async function analyzeJobs(raw: RawData): Promise<AnalyzeResult> {
 
   const aggregated = aggregate(classifiedJobs)
 
-  console.log(`  Analysis complete: ${aggregated.technologies.length} technologies, ${aggregated.roles.length} roles, ${classifiedJobs.length} jobs classified`)
+  console.log(
+    `  Analysis complete: ${aggregated.technologies.length} technologies, ${aggregated.roles.length} roles, ${classifiedJobs.length} jobs classified`,
+  )
 
   const analysis: Analysis = {
     schema_version: "1.0",

@@ -963,9 +963,7 @@
       "id": 48040028,
       "technologies": [
         "Go",
-        "PostgreSQL",
-        "GPU",
-        "Distributed systems"
+        "PostgreSQL"
       ],
       "role": "Backend Engineer",
       "experience_level": "Senior",
@@ -1052,8 +1050,7 @@
         "Kotlin",
         "Scala",
         "C#",
-        "Kafka",
-        "Event-driven"
+        "Kafka"
       ],
       "role": "Backend Engineer",
       "experience_level": "Senior",
@@ -1484,7 +1481,6 @@
         "React",
         "CUDA",
         "PostgreSQL",
-        "AI/ML",
         "PyTorch",
         "TensorFlow"
       ],
@@ -1560,7 +1556,7 @@
     {
       "id": 47979955,
       "technologies": [
-        "Golang",
+        "Go",
         "Node.js",
         "React",
         "AWS"
@@ -2321,8 +2317,7 @@
         "GCP",
         "Kubernetes",
         "Redis",
-        "MySQL",
-        "Mobile"
+        "MySQL"
       ],
       "role": "DevOps / SRE",
       "experience_level": "Not specified",
@@ -2343,8 +2338,7 @@
         "iOS",
         "Android",
         "AWS",
-        "Kubernetes",
-        "ML"
+        "Kubernetes"
       ],
       "role": "Software Engineer",
       "experience_level": "Not specified",

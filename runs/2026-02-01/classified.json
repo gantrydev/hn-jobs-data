@@ -282,8 +282,7 @@
       "id": 46861925,
       "technologies": [
         "Python",
-        "PostgreSQL",
-        "AI"
+        "PostgreSQL"
       ],
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
@@ -295,9 +294,7 @@
     },
     {
       "id": 46860967,
-      "technologies": [
-        "AI"
-      ],
+      "technologies": [],
       "role": "Software Engineer",
       "experience_level": "Senior",
       "remote": "fully_remote",
@@ -394,8 +391,7 @@
         "Supabase",
         "Neo4j",
         "LangChain",
-        "React Native",
-        "AI"
+        "React Native"
       ],
       "role": "Other",
       "experience_level": "Senior",
@@ -1430,7 +1426,7 @@
         "GCP",
         "Kubernetes",
         "Rails",
-        "Vue.js",
+        "Vue",
         "TypeScript",
         "Rust"
       ],
@@ -2303,7 +2299,7 @@
         "React",
         "TypeScript",
         "Docker",
-        "Google Cloud"
+        "GCP"
       ],
       "role": "Software Engineer",
       "experience_level": "Not specified",
@@ -4781,7 +4777,6 @@
         "C++",
         "PostgreSQL",
         "Svelte",
-        "Swift",
         "AWS"
       ],
       "role": "Software Engineer",
@@ -4805,9 +4800,7 @@
     },
     {
       "id": 46877031,
-      "technologies": [
-        "LLM"
-      ],
+      "technologies": [],
       "role": "ML Engineer",
       "experience_level": "Not specified",
       "remote": "onsite_only",
@@ -5758,8 +5751,7 @@
       "id": 46862595,
       "technologies": [
         "TypeScript",
-        "AWS",
-        "AI"
+        "AWS"
       ],
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
@@ -5782,9 +5774,7 @@
     },
     {
       "id": 46861359,
-      "technologies": [
-        "AI"
-      ],
+      "technologies": [],
       "role": "Software Engineer",
       "experience_level": "Senior",
       "remote": "onsite_only",

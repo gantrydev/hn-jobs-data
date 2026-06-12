@@ -140,7 +140,7 @@
         "Terraform",
         "GCP",
         "Rails",
-        "Vue.js",
+        "Vue",
         "TypeScript",
         "Rust",
         "Kubernetes",
@@ -1586,8 +1586,7 @@
         "Python",
         "FastAPI",
         "React",
-        "GCP",
-        "LLM"
+        "GCP"
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Senior",
@@ -3136,7 +3135,7 @@
         "PyTorch",
         "PostgreSQL",
         "Redis",
-        "Vue.js",
+        "Vue",
         "Kubernetes",
         "Docker",
         "AWS",
@@ -3310,8 +3309,7 @@
       "technologies": [
         "Java",
         "React Native",
-        "JavaScript",
-        "Web"
+        "JavaScript"
       ],
       "role": "Backend Engineer",
       "experience_level": "Senior",
@@ -4016,8 +4014,7 @@
     {
       "id": 47220915,
       "technologies": [
-        "Python",
-        "DevOps"
+        "Python"
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Not specified",

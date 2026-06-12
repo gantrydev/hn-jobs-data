@@ -51,8 +51,8 @@
     },
     {
       "name": "GCP",
-      "count": 31,
-      "pct": 7.5
+      "count": 32,
+      "pct": 7.7
     },
     {
       "name": "Next.js",
@@ -125,17 +125,17 @@
       "pct": 3.1
     },
     {
-      "name": "Swift",
-      "count": 11,
-      "pct": 2.6
-    },
-    {
       "name": "LangChain",
       "count": 10,
       "pct": 2.4
     },
     {
       "name": "MongoDB",
+      "count": 10,
+      "pct": 2.4
+    },
+    {
+      "name": "Swift",
       "count": 10,
       "pct": 2.4
     },
@@ -190,17 +190,12 @@
       "pct": 1.4
     },
     {
-      "name": "AI",
-      "count": 5,
-      "pct": 1.2
+      "name": "Vue",
+      "count": 6,
+      "pct": 1.4
     },
     {
       "name": "MySQL",
-      "count": 5,
-      "pct": 1.2
-    },
-    {
-      "name": "Vue",
       "count": 5,
       "pct": 1.2
     },
@@ -295,22 +290,12 @@
       "pct": 0.2
     },
     {
-      "name": "Vue.js",
-      "count": 1,
-      "pct": 0.2
-    },
-    {
       "name": "Snowflake",
       "count": 1,
       "pct": 0.2
     },
     {
       "name": "SQLite",
-      "count": 1,
-      "pct": 0.2
-    },
-    {
-      "name": "Google Cloud",
       "count": 1,
       "pct": 0.2
     },
@@ -326,11 +311,6 @@
     },
     {
       "name": "NestJS",
-      "count": 1,
-      "pct": 0.2
-    },
-    {
-      "name": "LLM",
       "count": 1,
       "pct": 0.2
     },

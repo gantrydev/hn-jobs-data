@@ -180,11 +180,6 @@
       "pct": 1.1
     },
     {
-      "name": "AI/ML",
-      "count": 4,
-      "pct": 1.1
-    },
-    {
       "name": "MongoDB",
       "count": 4,
       "pct": 1.1
@@ -280,12 +275,7 @@
       "pct": 0.3
     },
     {
-      "name": "GitHub",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "Claude API",
+      "name": "Anthropic API",
       "count": 1,
       "pct": 0.3
     },
@@ -306,11 +296,6 @@
     },
     {
       "name": "SQLite",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "ML Engineer",
       "count": 1,
       "pct": 0.3
     },
@@ -340,11 +325,6 @@
       "pct": 0.3
     },
     {
-      "name": "Bluetooth",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
       "name": "S3",
       "count": 1,
       "pct": 0.3
@@ -353,8 +333,8 @@
   "roles": [
     {
       "name": "Software Engineer",
-      "count": 128,
-      "pct": 36.2
+      "count": 129,
+      "pct": 36.4
     },
     {
       "name": "Senior Software Engineer",
@@ -363,8 +343,8 @@
     },
     {
       "name": "Full Stack Engineer",
-      "count": 46,
-      "pct": 13
+      "count": 47,
+      "pct": 13.3
     },
     {
       "name": "Other",
@@ -373,8 +353,8 @@
     },
     {
       "name": "Backend Engineer",
-      "count": 20,
-      "pct": 5.6
+      "count": 21,
+      "pct": 5.9
     },
     {
       "name": "AI Engineer",
@@ -383,8 +363,8 @@
     },
     {
       "name": "DevOps / SRE",
-      "count": 9,
-      "pct": 2.5
+      "count": 10,
+      "pct": 2.8
     },
     {
       "name": "ML Engineer",
@@ -430,26 +410,6 @@
       "name": "Product Manager",
       "count": 2,
       "pct": 0.6
-    },
-    {
-      "name": "Infrastructure Engineer",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "Product Engineer",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "Senior Backend Engineer",
-      "count": 1,
-      "pct": 0.3
-    },
-    {
-      "name": "Senior Full Stack Engineer",
-      "count": 1,
-      "pct": 0.3
     }
   ],
   "compensation": {

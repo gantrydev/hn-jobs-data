@@ -14,6 +14,14 @@ import type { Analysis, History, Manifest, TrendSeries } from "./schemas.js"
 
 const INDEXES_DIR = path.resolve("indexes")
 
+function getMonthKey(date: string): string {
+  return date.slice(0, 7)
+}
+
+function isSameMonth(a: string, b: string): boolean {
+  return getMonthKey(a) === getMonthKey(b)
+}
+
 async function readJSON<T>(filePath: string): Promise<T | null> {
   try {
     const content = await fs.readFile(filePath, "utf-8")
@@ -105,10 +113,11 @@ async function updateHistory(analysis: Analysis): Promise<void> {
     ai_ml_mentioned_pct: analysis.ai_ml_mentioned_pct,
   }
 
-  // Replace if this date already exists (refresh run updates the same month)
-  const existingIndex = runs.findIndex((r) => r.date === analysis.date)
+  const existingIndex = runs.findIndex((r) => isSameMonth(r.date, analysis.date))
   if (existingIndex >= 0) {
-    runs[existingIndex] = newRun
+    if (runs[existingIndex].date <= analysis.date) {
+      runs[existingIndex] = newRun
+    }
   } else {
     runs.push(newRun)
   }
@@ -136,6 +145,23 @@ async function updateTrendSeries(
   const filePath = path.join(INDEXES_DIR, fileName)
   const existing = await readJSON<TrendSeries>(filePath)
   const series = existing?.series ?? {}
+  const existingMonthDates = Object.values(series).flatMap((points) =>
+    points.filter((point) => isSameMonth(point.date, date)).map((point) => point.date),
+  )
+  const latestExistingDate = existingMonthDates.toSorted().at(-1)
+
+  if (latestExistingDate && latestExistingDate > date) {
+    console.log(`  Kept ${fileName} unchanged for ${getMonthKey(date)}`)
+    return
+  }
+
+  for (const points of Object.values(series)) {
+    for (let i = points.length - 1; i >= 0; i--) {
+      if (isSameMonth(points[i].date, date)) {
+        points.splice(i, 1)
+      }
+    }
+  }
 
   for (const item of items) {
     if (!series[item.name]) {
@@ -144,23 +170,20 @@ async function updateTrendSeries(
 
     const points = series[item.name]
     const dataPoint = { date, count: item.count, pct: item.pct }
-
-    // Replace if this date already exists, otherwise append
-    const existingIndex = points.findIndex((p) => p.date === date)
-    if (existingIndex >= 0) {
-      points[existingIndex] = dataPoint
-    } else {
-      points.push(dataPoint)
-    }
+    points.push(dataPoint)
 
     // Keep sorted chronologically
     points.sort((a, b) => a.date.localeCompare(b.date))
   }
 
+  const nonEmptySeries = Object.fromEntries(
+    Object.entries(series).filter(([, points]) => points.length > 0),
+  )
+
   const trendSeries: TrendSeries = {
     schema_version: "1.0",
     updated_at: new Date().toISOString(),
-    series,
+    series: nonEmptySeries,
   }
 
   await writeJSON(filePath, trendSeries)

@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-06-13T08:52:17.440Z",
+  "top_pairs": [
+    {
+      "tech": "React",
+      "with": "TypeScript",
+      "count": 169,
+      "jaccard": 0.48
+    },
+    {
+      "tech": "PostgreSQL",
+      "with": "TypeScript",
+      "count": 120,
+      "jaccard": 0.339
+    },
+    {
+      "tech": "PostgreSQL",
+      "with": "React",
+      "count": 112,
+      "jaccard": 0.334
+    },
+    {
+      "tech": "Python",
+      "with": "TypeScript",
+      "count": 107,
+      "jaccard": 0.255
+    },
+    {
+      "tech": "AWS",
+      "with": "TypeScript",
+      "count": 99,
+      "jaccard": 0.289
+    },
+    {
+      "tech": "Python",
+      "with": "React",
+      "count": 95,
+      "jaccard": 0.235
+    },
+    {
+      "tech": "AWS",
+      "with": "React",
+      "count": 90,
+      "jaccard": 0.277
+    },
+    {
+      "tech": "AWS",
+      "with": "PostgreSQL",
+      "count": 82,
+      "jaccard": 0.287
+    },
+    {
+      "tech": "AWS",
+      "with": "Python",
+      "count": 81,
+      "jaccard": 0.238
+    },
+    {
+      "tech": "PostgreSQL",
+      "with": "Python",
+      "count": 77,
+      "jaccard": 0.205
+    }
+  ],
+  "clusters": [
+    {
+      "label": "Python / PostgreSQL / Go",
+      "top_techs": [
+        "Python",
+        "PostgreSQL",
+        "Go",
+        "AWS",
+        "Rust"
+      ],
+      "pct": 58.8
+    },
+    {
+      "label": "TypeScript / React / PostgreSQL",
+      "top_techs": [
+        "TypeScript",
+        "React",
+        "PostgreSQL",
+        "Python",
+        "AWS"
+      ],
+      "pct": 38.9
+    },
+    {
+      "label": "Java / Kotlin / Scala",
+      "top_techs": [
+        "Java",
+        "Kotlin",
+        "Scala",
+        "C#",
+        "Kafka"
+      ],
+      "pct": 2.4
+    }
+  ],
+  "top_associations": [
+    {
+      "antecedent": [
+        "PyTorch"
+      ],
+      "consequent": [
+        "TensorFlow"
+      ],
+      "confidence": 0.6,
+      "lift": 17
+    },
+    {
+      "antecedent": [
+        "TensorFlow"
+      ],
+      "consequent": [
+        "PyTorch"
+      ],
+      "confidence": 1,
+      "lift": 17
+    },
+    {
+      "antecedent": [
+        "Rails"
+      ],
+      "consequent": [
+        "Ruby"
+      ],
+      "confidence": 0.846,
+      "lift": 11.07
+    },
+    {
+      "antecedent": [
+        "Ruby"
+      ],
+      "consequent": [
+        "Rails"
+      ],
+      "confidence": 0.846,
+      "lift": 11.07
+    },
+    {
+      "antecedent": [
+        "JavaScript"
+      ],
+      "consequent": [
+        "Ruby"
+      ],
+      "confidence": 0.353,
+      "lift": 4.62
+    },
+    {
+      "antecedent": [
+        "Ruby"
+      ],
+      "consequent": [
+        "JavaScript"
+      ],
+      "confidence": 0.462,
+      "lift": 4.62
+    },
+    {
+      "antecedent": [
+        "Docker"
+      ],
+      "consequent": [
+        "Terraform"
+      ],
+      "confidence": 0.36,
+      "lift": 3.83
+    },
+    {
+      "antecedent": [
+        "Terraform"
+      ],
+      "consequent": [
+        "Docker"
+      ],
+      "confidence": 0.563,
+      "lift": 3.83
+    },
+    {
+      "antecedent": [
+        "Terraform"
+      ],
+      "consequent": [
+        "Rust"
+      ],
+      "confidence": 0.375,
+      "lift": 3.04
+    },
+    {
+      "antecedent": [
+        "GraphQL"
+      ],
+      "consequent": [
+        "Next.js"
+      ],
+      "confidence": 0.429,
+      "lift": 2.91
+    }
+  ],
+  "momentum_summary": {
+    "top_rising": [
+      {
+        "tech": "Hugging Face",
+        "slope_pct": 47.6
+      },
+      {
+        "tech": "TensorFlow",
+        "slope_pct": 47.2
+      },
+      {
+        "tech": "Svelte",
+        "slope_pct": 46.6
+      },
+      {
+        "tech": "LangChain",
+        "slope_pct": 43
+      },
+      {
+        "tech": "Scala",
+        "slope_pct": 41.8
+      }
+    ],
+    "top_declining": [
+      {
+        "tech": "Cloudflare",
+        "slope_pct": -34.1
+      },
+      {
+        "tech": "PHP",
+        "slope_pct": -32.3
+      },
+      {
+        "tech": "iOS",
+        "slope_pct": -29.7
+      },
+      {
+        "tech": "Android",
+        "slope_pct": -19.5
+      },
+      {
+        "tech": "FastAPI",
+        "slope_pct": -13.9
+      }
+    ]
+  }
+}

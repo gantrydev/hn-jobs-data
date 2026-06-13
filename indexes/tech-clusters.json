@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-06-13T08:52:17.431Z",
+  "total_jobs": 211,
+  "k": 3,
+  "clusters": [
+    {
+      "id": 0,
+      "label": "Python / PostgreSQL / Go",
+      "top_techs": [
+        "Python",
+        "PostgreSQL",
+        "Go",
+        "AWS",
+        "Rust",
+        "React",
+        "Kubernetes",
+        "JavaScript"
+      ],
+      "top_roles": [
+        "Senior Software Engineer",
+        "Backend Engineer",
+        "Full Stack Engineer"
+      ],
+      "size": 124,
+      "pct": 58.8,
+      "avg_salary_mentioned": 21,
+      "avg_remote_pct": 56,
+      "avg_ai_ml_pct": 52
+    },
+    {
+      "id": 1,
+      "label": "TypeScript / React / PostgreSQL",
+      "top_techs": [
+        "TypeScript",
+        "React",
+        "PostgreSQL",
+        "Python",
+        "AWS",
+        "Next.js",
+        "Node.js",
+        "Kubernetes"
+      ],
+      "top_roles": [
+        "Full Stack Engineer",
+        "Senior Software Engineer",
+        "Backend Engineer"
+      ],
+      "size": 82,
+      "pct": 38.9,
+      "avg_salary_mentioned": 41,
+      "avg_remote_pct": 48,
+      "avg_ai_ml_pct": 78
+    },
+    {
+      "id": 2,
+      "label": "Java / Kotlin / Scala",
+      "top_techs": [
+        "Java",
+        "Kotlin",
+        "Scala",
+        "C#",
+        "Kafka",
+        "Python",
+        "TypeScript",
+        "C++"
+      ],
+      "top_roles": [
+        "Senior Software Engineer",
+        "AI Engineer",
+        "Staff Engineer"
+      ],
+      "size": 5,
+      "pct": 2.4,
+      "avg_salary_mentioned": 20,
+      "avg_remote_pct": 60,
+      "avg_ai_ml_pct": 60
+    }
+  ]
+}

@@ -1,0 +1,1384 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-06-13T08:52:17.439Z",
+  "rising": [
+    {
+      "tech": "Hugging Face",
+      "total_count": 5,
+      "slope": 0.286,
+      "slope_pct": 47.6,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-02-01",
+          "count": 2,
+          "totalJobs": 452,
+          "pct": 0.4
+        },
+        {
+          "date": "2026-03-15",
+          "count": 3,
+          "totalJobs": 362,
+          "pct": 0.8
+        }
+      ]
+    },
+    {
+      "tech": "TensorFlow",
+      "total_count": 10,
+      "slope": 0.441,
+      "slope_pct": 47.2,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 2,
+          "totalJobs": 295,
+          "pct": 0.7
+        },
+        {
+          "date": "2026-02-01",
+          "count": 2,
+          "totalJobs": 452,
+          "pct": 0.4
+        },
+        {
+          "date": "2026-03-15",
+          "count": 6,
+          "totalJobs": 362,
+          "pct": 1.7
+        }
+      ]
+    },
+    {
+      "tech": "Svelte",
+      "total_count": 8,
+      "slope": 0.326,
+      "slope_pct": 46.6,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 1,
+          "totalJobs": 295,
+          "pct": 0.3
+        },
+        {
+          "date": "2026-02-01",
+          "count": 3,
+          "totalJobs": 452,
+          "pct": 0.7
+        },
+        {
+          "date": "2026-03-15",
+          "count": 4,
+          "totalJobs": 362,
+          "pct": 1.1
+        }
+      ]
+    },
+    {
+      "tech": "LangChain",
+      "total_count": 12,
+      "slope": 0.43,
+      "slope_pct": 43,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 1,
+          "totalJobs": 295,
+          "pct": 0.3
+        },
+        {
+          "date": "2026-02-01",
+          "count": 6,
+          "totalJobs": 452,
+          "pct": 1.3
+        },
+        {
+          "date": "2026-03-15",
+          "count": 5,
+          "totalJobs": 362,
+          "pct": 1.4
+        }
+      ]
+    },
+    {
+      "tech": "Scala",
+      "total_count": 8,
+      "slope": 0.32,
+      "slope_pct": 41.8,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 2,
+          "totalJobs": 295,
+          "pct": 0.7
+        },
+        {
+          "date": "2026-02-01",
+          "count": 1,
+          "totalJobs": 452,
+          "pct": 0.2
+        },
+        {
+          "date": "2026-03-15",
+          "count": 5,
+          "totalJobs": 362,
+          "pct": 1.4
+        }
+      ]
+    },
+    {
+      "tech": "Ruby",
+      "total_count": 28,
+      "slope": 0.901,
+      "slope_pct": 36.5,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 4,
+          "totalJobs": 295,
+          "pct": 1.4
+        },
+        {
+          "date": "2026-02-01",
+          "count": 11,
+          "totalJobs": 452,
+          "pct": 2.4
+        },
+        {
+          "date": "2026-03-15",
+          "count": 13,
+          "totalJobs": 362,
+          "pct": 3.6
+        }
+      ]
+    },
+    {
+      "tech": "Rails",
+      "total_count": 31,
+      "slope": 0.901,
+      "slope_pct": 32.6,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 5,
+          "totalJobs": 295,
+          "pct": 1.7
+        },
+        {
+          "date": "2026-02-01",
+          "count": 12,
+          "totalJobs": 452,
+          "pct": 2.7
+        },
+        {
+          "date": "2026-03-15",
+          "count": 14,
+          "totalJobs": 362,
+          "pct": 3.9
+        }
+      ]
+    },
+    {
+      "tech": "PyTorch",
+      "total_count": 21,
+      "slope": 0.596,
+      "slope_pct": 31.3,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 4,
+          "totalJobs": 295,
+          "pct": 1.4
+        },
+        {
+          "date": "2026-02-01",
+          "count": 7,
+          "totalJobs": 452,
+          "pct": 1.5
+        },
+        {
+          "date": "2026-03-15",
+          "count": 10,
+          "totalJobs": 362,
+          "pct": 2.8
+        }
+      ]
+    },
+    {
+      "tech": "Elixir",
+      "total_count": 9,
+      "slope": 0.357,
+      "slope_pct": 31.1,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-02-01",
+          "count": 4,
+          "totalJobs": 452,
+          "pct": 0.9
+        },
+        {
+          "date": "2026-03-15",
+          "count": 5,
+          "totalJobs": 362,
+          "pct": 1.4
+        }
+      ]
+    },
+    {
+      "tech": "Kafka",
+      "total_count": 9,
+      "slope": 0.357,
+      "slope_pct": 31.1,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-02-01",
+          "count": 4,
+          "totalJobs": 452,
+          "pct": 0.9
+        },
+        {
+          "date": "2026-03-15",
+          "count": 5,
+          "totalJobs": 362,
+          "pct": 1.4
+        }
+      ]
+    },
+    {
+      "tech": "JavaScript",
+      "total_count": 36,
+      "slope": 0.973,
+      "slope_pct": 29.8,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 7,
+          "totalJobs": 295,
+          "pct": 2.4
+        },
+        {
+          "date": "2026-02-01",
+          "count": 12,
+          "totalJobs": 452,
+          "pct": 2.7
+        },
+        {
+          "date": "2026-03-15",
+          "count": 17,
+          "totalJobs": 362,
+          "pct": 4.7
+        }
+      ]
+    },
+    {
+      "tech": "OpenAI API",
+      "total_count": 5,
+      "slope": 0.124,
+      "slope_pct": 28.7,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 1,
+          "totalJobs": 295,
+          "pct": 0.3
+        },
+        {
+          "date": "2026-02-01",
+          "count": 2,
+          "totalJobs": 452,
+          "pct": 0.4
+        },
+        {
+          "date": "2026-03-15",
+          "count": 2,
+          "totalJobs": 362,
+          "pct": 0.6
+        }
+      ]
+    },
+    {
+      "tech": "SQL",
+      "total_count": 4,
+      "slope": 0.143,
+      "slope_pct": 28.6,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-02-01",
+          "count": 2,
+          "totalJobs": 452,
+          "pct": 0.4
+        },
+        {
+          "date": "2026-03-15",
+          "count": 2,
+          "totalJobs": 362,
+          "pct": 0.6
+        }
+      ]
+    },
+    {
+      "tech": "C",
+      "total_count": 2,
+      "slope": 0.071,
+      "slope_pct": 28.6,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-02-01",
+          "count": 1,
+          "totalJobs": 452,
+          "pct": 0.2
+        },
+        {
+          "date": "2026-03-15",
+          "count": 1,
+          "totalJobs": 362,
+          "pct": 0.3
+        }
+      ]
+    },
+    {
+      "tech": "Angular",
+      "total_count": 8,
+      "slope": 0.19,
+      "slope_pct": 28.4,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 1,
+          "totalJobs": 295,
+          "pct": 0.3
+        },
+        {
+          "date": "2026-02-01",
+          "count": 4,
+          "totalJobs": 452,
+          "pct": 0.9
+        },
+        {
+          "date": "2026-03-15",
+          "count": 3,
+          "totalJobs": 362,
+          "pct": 0.8
+        }
+      ]
+    },
+    {
+      "tech": "Django",
+      "total_count": 28,
+      "slope": 0.685,
+      "slope_pct": 27.1,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 6,
+          "totalJobs": 295,
+          "pct": 2
+        },
+        {
+          "date": "2026-02-01",
+          "count": 9,
+          "totalJobs": 452,
+          "pct": 2
+        },
+        {
+          "date": "2026-03-15",
+          "count": 13,
+          "totalJobs": 362,
+          "pct": 3.6
+        }
+      ]
+    },
+    {
+      "tech": "Flutter",
+      "total_count": 9,
+      "slope": 0.181,
+      "slope_pct": 24.7,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 1,
+          "totalJobs": 295,
+          "pct": 0.3
+        },
+        {
+          "date": "2026-02-01",
+          "count": 5,
+          "totalJobs": 452,
+          "pct": 1.1
+        },
+        {
+          "date": "2026-03-15",
+          "count": 3,
+          "totalJobs": 362,
+          "pct": 0.8
+        }
+      ]
+    },
+    {
+      "tech": "Docker",
+      "total_count": 61,
+      "slope": 1.15,
+      "slope_pct": 21.2,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 12,
+          "totalJobs": 295,
+          "pct": 4.1
+        },
+        {
+          "date": "2026-02-01",
+          "count": 24,
+          "totalJobs": 452,
+          "pct": 5.3
+        },
+        {
+          "date": "2026-03-15",
+          "count": 25,
+          "totalJobs": 362,
+          "pct": 6.9
+        }
+      ]
+    },
+    {
+      "tech": "Kotlin",
+      "total_count": 16,
+      "slope": 0.279,
+      "slope_pct": 20,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 3,
+          "totalJobs": 295,
+          "pct": 1
+        },
+        {
+          "date": "2026-02-01",
+          "count": 7,
+          "totalJobs": 452,
+          "pct": 1.5
+        },
+        {
+          "date": "2026-03-15",
+          "count": 6,
+          "totalJobs": 362,
+          "pct": 1.7
+        }
+      ]
+    },
+    {
+      "tech": "Swift",
+      "total_count": 15,
+      "slope": 0.255,
+      "slope_pct": 19.6,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 2,
+          "totalJobs": 295,
+          "pct": 0.7
+        },
+        {
+          "date": "2026-02-01",
+          "count": 8,
+          "totalJobs": 452,
+          "pct": 1.8
+        },
+        {
+          "date": "2026-03-15",
+          "count": 5,
+          "totalJobs": 362,
+          "pct": 1.4
+        }
+      ]
+    },
+    {
+      "tech": "GraphQL",
+      "total_count": 38,
+      "slope": 0.585,
+      "slope_pct": 17.4,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 7,
+          "totalJobs": 295,
+          "pct": 2.4
+        },
+        {
+          "date": "2026-02-01",
+          "count": 17,
+          "totalJobs": 452,
+          "pct": 3.8
+        },
+        {
+          "date": "2026-03-15",
+          "count": 14,
+          "totalJobs": 362,
+          "pct": 3.9
+        }
+      ]
+    },
+    {
+      "tech": "React Native",
+      "total_count": 25,
+      "slope": 0.314,
+      "slope_pct": 14.3,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 5,
+          "totalJobs": 295,
+          "pct": 1.7
+        },
+        {
+          "date": "2026-02-01",
+          "count": 11,
+          "totalJobs": 452,
+          "pct": 2.4
+        },
+        {
+          "date": "2026-03-15",
+          "count": 9,
+          "totalJobs": 362,
+          "pct": 2.5
+        }
+      ]
+    },
+    {
+      "tech": "Elasticsearch",
+      "total_count": 12,
+      "slope": 0.147,
+      "slope_pct": 14.2,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 2,
+          "totalJobs": 295,
+          "pct": 0.7
+        },
+        {
+          "date": "2026-02-01",
+          "count": 6,
+          "totalJobs": 452,
+          "pct": 1.3
+        },
+        {
+          "date": "2026-03-15",
+          "count": 4,
+          "totalJobs": 362,
+          "pct": 1.1
+        }
+      ]
+    },
+    {
+      "tech": "C#",
+      "total_count": 14,
+      "slope": 0.159,
+      "slope_pct": 12.9,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 3,
+          "totalJobs": 295,
+          "pct": 1
+        },
+        {
+          "date": "2026-02-01",
+          "count": 6,
+          "totalJobs": 452,
+          "pct": 1.3
+        },
+        {
+          "date": "2026-03-15",
+          "count": 5,
+          "totalJobs": 362,
+          "pct": 1.4
+        }
+      ]
+    },
+    {
+      "tech": "PostgreSQL",
+      "total_count": 200,
+      "slope": 1.727,
+      "slope_pct": 9.7,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 43,
+          "totalJobs": 295,
+          "pct": 14.6
+        },
+        {
+          "date": "2026-02-01",
+          "count": 88,
+          "totalJobs": 452,
+          "pct": 19.5
+        },
+        {
+          "date": "2026-03-15",
+          "count": 69,
+          "totalJobs": 362,
+          "pct": 19.1
+        }
+      ]
+    },
+    {
+      "tech": "Laravel",
+      "total_count": 9,
+      "slope": 0.067,
+      "slope_pct": 8.1,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 3,
+          "totalJobs": 295,
+          "pct": 1
+        },
+        {
+          "date": "2026-02-01",
+          "count": 2,
+          "totalJobs": 452,
+          "pct": 0.4
+        },
+        {
+          "date": "2026-03-15",
+          "count": 4,
+          "totalJobs": 362,
+          "pct": 1.1
+        }
+      ]
+    },
+    {
+      "tech": "Redis",
+      "total_count": 42,
+      "slope": 0.298,
+      "slope_pct": 8,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 9,
+          "totalJobs": 295,
+          "pct": 3.1
+        },
+        {
+          "date": "2026-02-01",
+          "count": 19,
+          "totalJobs": 452,
+          "pct": 4.2
+        },
+        {
+          "date": "2026-03-15",
+          "count": 14,
+          "totalJobs": 362,
+          "pct": 3.9
+        }
+      ]
+    },
+    {
+      "tech": "Vue",
+      "total_count": 17,
+      "slope": 0.11,
+      "slope_pct": 7,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 5,
+          "totalJobs": 295,
+          "pct": 1.7
+        },
+        {
+          "date": "2026-02-01",
+          "count": 5,
+          "totalJobs": 452,
+          "pct": 1.1
+        },
+        {
+          "date": "2026-03-15",
+          "count": 7,
+          "totalJobs": 362,
+          "pct": 1.9
+        }
+      ]
+    },
+    {
+      "tech": "Terraform",
+      "total_count": 57,
+      "slope": 0.318,
+      "slope_pct": 6.4,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 11,
+          "totalJobs": 295,
+          "pct": 3.7
+        },
+        {
+          "date": "2026-02-01",
+          "count": 29,
+          "totalJobs": 452,
+          "pct": 6.4
+        },
+        {
+          "date": "2026-03-15",
+          "count": 17,
+          "totalJobs": 362,
+          "pct": 4.7
+        }
+      ]
+    }
+  ],
+  "declining": [
+    {
+      "tech": "Cloudflare",
+      "total_count": 5,
+      "slope": -0.159,
+      "slope_pct": -34.1,
+      "trend": "declining",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 2,
+          "totalJobs": 295,
+          "pct": 0.7
+        },
+        {
+          "date": "2026-02-01",
+          "count": 2,
+          "totalJobs": 452,
+          "pct": 0.4
+        },
+        {
+          "date": "2026-03-15",
+          "count": 1,
+          "totalJobs": 362,
+          "pct": 0.3
+        }
+      ]
+    },
+    {
+      "tech": "PHP",
+      "total_count": 11,
+      "slope": -0.345,
+      "slope_pct": -32.3,
+      "trend": "declining",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 5,
+          "totalJobs": 295,
+          "pct": 1.7
+        },
+        {
+          "date": "2026-02-01",
+          "count": 3,
+          "totalJobs": 452,
+          "pct": 0.7
+        },
+        {
+          "date": "2026-03-15",
+          "count": 3,
+          "totalJobs": 362,
+          "pct": 0.8
+        }
+      ]
+    },
+    {
+      "tech": "iOS",
+      "total_count": 13,
+      "slope": -0.347,
+      "slope_pct": -29.7,
+      "trend": "declining",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 4,
+          "totalJobs": 295,
+          "pct": 1.4
+        },
+        {
+          "date": "2026-02-01",
+          "count": 7,
+          "totalJobs": 452,
+          "pct": 1.5
+        },
+        {
+          "date": "2026-03-15",
+          "count": 2,
+          "totalJobs": 362,
+          "pct": 0.6
+        }
+      ]
+    },
+    {
+      "tech": "Android",
+      "total_count": 10,
+      "slope": -0.175,
+      "slope_pct": -19.5,
+      "trend": "declining",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 3,
+          "totalJobs": 295,
+          "pct": 1
+        },
+        {
+          "date": "2026-02-01",
+          "count": 5,
+          "totalJobs": 452,
+          "pct": 1.1
+        },
+        {
+          "date": "2026-03-15",
+          "count": 2,
+          "totalJobs": 362,
+          "pct": 0.6
+        }
+      ]
+    },
+    {
+      "tech": "FastAPI",
+      "total_count": 28,
+      "slope": -0.357,
+      "slope_pct": -13.9,
+      "trend": "declining",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 9,
+          "totalJobs": 295,
+          "pct": 3.1
+        },
+        {
+          "date": "2026-02-01",
+          "count": 11,
+          "totalJobs": 452,
+          "pct": 2.4
+        },
+        {
+          "date": "2026-03-15",
+          "count": 8,
+          "totalJobs": 362,
+          "pct": 2.2
+        }
+      ]
+    },
+    {
+      "tech": "MongoDB",
+      "total_count": 18,
+      "slope": -0.161,
+      "slope_pct": -10.3,
+      "trend": "declining",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 4,
+          "totalJobs": 295,
+          "pct": 1.4
+        },
+        {
+          "date": "2026-02-01",
+          "count": 10,
+          "totalJobs": 452,
+          "pct": 2.2
+        },
+        {
+          "date": "2026-03-15",
+          "count": 4,
+          "totalJobs": 362,
+          "pct": 1.1
+        }
+      ]
+    },
+    {
+      "tech": "GitHub Actions",
+      "total_count": 11,
+      "slope": -0.076,
+      "slope_pct": -8.1,
+      "trend": "declining",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 2,
+          "totalJobs": 295,
+          "pct": 0.7
+        },
+        {
+          "date": "2026-02-01",
+          "count": 7,
+          "totalJobs": 452,
+          "pct": 1.5
+        },
+        {
+          "date": "2026-03-15",
+          "count": 2,
+          "totalJobs": 362,
+          "pct": 0.6
+        }
+      ]
+    },
+    {
+      "tech": "MySQL",
+      "total_count": 16,
+      "slope": -0.112,
+      "slope_pct": -7.6,
+      "trend": "declining",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 5,
+          "totalJobs": 295,
+          "pct": 1.7
+        },
+        {
+          "date": "2026-02-01",
+          "count": 6,
+          "totalJobs": 452,
+          "pct": 1.3
+        },
+        {
+          "date": "2026-03-15",
+          "count": 5,
+          "totalJobs": 362,
+          "pct": 1.4
+        }
+      ]
+    }
+  ],
+  "stable": [
+    {
+      "tech": "Kubernetes",
+      "total_count": 105,
+      "slope": 0.463,
+      "slope_pct": 5,
+      "trend": "stable",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 24,
+          "totalJobs": 295,
+          "pct": 8.1
+        },
+        {
+          "date": "2026-02-01",
+          "count": 47,
+          "totalJobs": 452,
+          "pct": 10.4
+        },
+        {
+          "date": "2026-03-15",
+          "count": 34,
+          "totalJobs": 362,
+          "pct": 9.4
+        }
+      ]
+    },
+    {
+      "tech": "AWS",
+      "total_count": 168,
+      "slope": 0.697,
+      "slope_pct": 4.7,
+      "trend": "stable",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 38,
+          "totalJobs": 295,
+          "pct": 12.9
+        },
+        {
+          "date": "2026-02-01",
+          "count": 76,
+          "totalJobs": 452,
+          "pct": 16.8
+        },
+        {
+          "date": "2026-03-15",
+          "count": 54,
+          "totalJobs": 362,
+          "pct": 14.9
+        }
+      ]
+    },
+    {
+      "tech": "Go",
+      "total_count": 84,
+      "slope": 0.336,
+      "slope_pct": 4.5,
+      "trend": "stable",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 20,
+          "totalJobs": 295,
+          "pct": 6.8
+        },
+        {
+          "date": "2026-02-01",
+          "count": 36,
+          "totalJobs": 452,
+          "pct": 8
+        },
+        {
+          "date": "2026-03-15",
+          "count": 28,
+          "totalJobs": 362,
+          "pct": 7.7
+        }
+      ]
+    },
+    {
+      "tech": "Java",
+      "total_count": 33,
+      "slope": 0.126,
+      "slope_pct": 4.4,
+      "trend": "stable",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 7,
+          "totalJobs": 295,
+          "pct": 2.4
+        },
+        {
+          "date": "2026-02-01",
+          "count": 16,
+          "totalJobs": 452,
+          "pct": 3.5
+        },
+        {
+          "date": "2026-03-15",
+          "count": 10,
+          "totalJobs": 362,
+          "pct": 2.8
+        }
+      ]
+    },
+    {
+      "tech": "Python",
+      "total_count": 253,
+      "slope": 0.718,
+      "slope_pct": 3.2,
+      "trend": "stable",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 64,
+          "totalJobs": 295,
+          "pct": 21.7
+        },
+        {
+          "date": "2026-02-01",
+          "count": 104,
+          "totalJobs": 452,
+          "pct": 23
+        },
+        {
+          "date": "2026-03-15",
+          "count": 85,
+          "totalJobs": 362,
+          "pct": 23.5
+        }
+      ]
+    },
+    {
+      "tech": "TypeScript",
+      "total_count": 274,
+      "slope": 0.525,
+      "slope_pct": 2.2,
+      "trend": "stable",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 64,
+          "totalJobs": 295,
+          "pct": 21.7
+        },
+        {
+          "date": "2026-02-01",
+          "count": 125,
+          "totalJobs": 452,
+          "pct": 27.7
+        },
+        {
+          "date": "2026-03-15",
+          "count": 85,
+          "totalJobs": 362,
+          "pct": 23.5
+        }
+      ]
+    },
+    {
+      "tech": "Spring",
+      "total_count": 3,
+      "slope": 0.004,
+      "slope_pct": 1.5,
+      "trend": "stable",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 1,
+          "totalJobs": 295,
+          "pct": 0.3
+        },
+        {
+          "date": "2026-02-01",
+          "count": 1,
+          "totalJobs": 452,
+          "pct": 0.2
+        },
+        {
+          "date": "2026-03-15",
+          "count": 1,
+          "totalJobs": 362,
+          "pct": 0.3
+        }
+      ]
+    },
+    {
+      "tech": "GCP",
+      "total_count": 62,
+      "slope": 0.018,
+      "slope_pct": 0.3,
+      "trend": "stable",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 13,
+          "totalJobs": 295,
+          "pct": 4.4
+        },
+        {
+          "date": "2026-02-01",
+          "count": 32,
+          "totalJobs": 452,
+          "pct": 7.1
+        },
+        {
+          "date": "2026-03-15",
+          "count": 17,
+          "totalJobs": 362,
+          "pct": 4.7
+        }
+      ]
+    },
+    {
+      "tech": "Rust",
+      "total_count": 85,
+      "slope": -0.01,
+      "slope_pct": -0.1,
+      "trend": "stable",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 21,
+          "totalJobs": 295,
+          "pct": 7.1
+        },
+        {
+          "date": "2026-02-01",
+          "count": 38,
+          "totalJobs": 452,
+          "pct": 8.4
+        },
+        {
+          "date": "2026-03-15",
+          "count": 26,
+          "totalJobs": 362,
+          "pct": 7.2
+        }
+      ]
+    },
+    {
+      "tech": "RabbitMQ",
+      "total_count": 4,
+      "slope": -0.004,
+      "slope_pct": -1.2,
+      "trend": "stable",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 1,
+          "totalJobs": 295,
+          "pct": 0.3
+        },
+        {
+          "date": "2026-02-01",
+          "count": 2,
+          "totalJobs": 452,
+          "pct": 0.4
+        },
+        {
+          "date": "2026-03-15",
+          "count": 1,
+          "totalJobs": 362,
+          "pct": 0.3
+        }
+      ]
+    },
+    {
+      "tech": "Azure",
+      "total_count": 16,
+      "slope": -0.027,
+      "slope_pct": -2.1,
+      "trend": "stable",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 2,
+          "totalJobs": 295,
+          "pct": 0.7
+        },
+        {
+          "date": "2026-02-01",
+          "count": 11,
+          "totalJobs": 452,
+          "pct": 2.4
+        },
+        {
+          "date": "2026-03-15",
+          "count": 3,
+          "totalJobs": 362,
+          "pct": 0.8
+        }
+      ]
+    },
+    {
+      "tech": "React",
+      "total_count": 247,
+      "slope": -0.487,
+      "slope_pct": -2.2,
+      "trend": "stable",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 69,
+          "totalJobs": 295,
+          "pct": 23.4
+        },
+        {
+          "date": "2026-02-01",
+          "count": 98,
+          "totalJobs": 452,
+          "pct": 21.7
+        },
+        {
+          "date": "2026-03-15",
+          "count": 80,
+          "totalJobs": 362,
+          "pct": 22.1
+        }
+      ]
+    },
+    {
+      "tech": "C++",
+      "total_count": 47,
+      "slope": -0.12,
+      "slope_pct": -2.8,
+      "trend": "stable",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 13,
+          "totalJobs": 295,
+          "pct": 4.4
+        },
+        {
+          "date": "2026-02-01",
+          "count": 19,
+          "totalJobs": 452,
+          "pct": 4.2
+        },
+        {
+          "date": "2026-03-15",
+          "count": 15,
+          "totalJobs": 362,
+          "pct": 4.1
+        }
+      ]
+    },
+    {
+      "tech": "Next.js",
+      "total_count": 76,
+      "slope": -0.212,
+      "slope_pct": -3.1,
+      "trend": "stable",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 22,
+          "totalJobs": 295,
+          "pct": 7.5
+        },
+        {
+          "date": "2026-02-01",
+          "count": 29,
+          "totalJobs": 452,
+          "pct": 6.4
+        },
+        {
+          "date": "2026-03-15",
+          "count": 25,
+          "totalJobs": 362,
+          "pct": 6.9
+        }
+      ]
+    },
+    {
+      "tech": "Node.js",
+      "total_count": 96,
+      "slope": -0.355,
+      "slope_pct": -4.1,
+      "trend": "stable",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 26,
+          "totalJobs": 295,
+          "pct": 8.8
+        },
+        {
+          "date": "2026-02-01",
+          "count": 41,
+          "totalJobs": 452,
+          "pct": 9.1
+        },
+        {
+          "date": "2026-03-15",
+          "count": 29,
+          "totalJobs": 362,
+          "pct": 8
+        }
+      ]
+    }
+  ]
+}

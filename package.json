@@ -12,6 +12,7 @@
     "analyze": "node --env-file-if-exists=.env --import tsx/esm scripts/run-analyze.ts",
     "backfill": "node --env-file-if-exists=.env --import tsx/esm scripts/run-backfill.ts",
     "index": "node --import tsx/esm scripts/run-index.ts",
+    "analytics": "node --import tsx/esm scripts/analytics.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",

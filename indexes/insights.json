@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-13T09:40:13.759Z",
+  "generated_at": "2026-06-13T10:15:42.460Z",
   "top_pairs": [
     {
       "tech": "PostgreSQL",
@@ -111,16 +111,6 @@
   "top_associations": [
     {
       "antecedent": [
-        "PyTorch"
-      ],
-      "consequent": [
-        "TensorFlow"
-      ],
-      "confidence": 0.667,
-      "lift": 13.44
-    },
-    {
-      "antecedent": [
         "TensorFlow"
       ],
       "consequent": [
@@ -208,6 +198,16 @@
       ],
       "confidence": 0.846,
       "lift": 1.58
+    },
+    {
+      "antecedent": [
+        "GCP"
+      ],
+      "consequent": [
+        "Containers"
+      ],
+      "confidence": 0.563,
+      "lift": 1.55
     }
   ],
   "momentum_summary": {

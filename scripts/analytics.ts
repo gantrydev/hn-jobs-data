@@ -553,38 +553,30 @@ function buildAssociationRules(
     const countA = itemCounts.get(a) || 0
     const countB = itemCounts.get(b) || 0
 
-    // Rule: a → b
+    // Emit only the direction with higher lift
     const confAB = count / countA
-    if (confAB >= MIN_CONFIDENCE) {
-      const expectedIfIndep = (countA / totalJobs) * (countB / totalJobs)
-      const lift = support / expectedIfIndep
-      if (lift > 1.2) {
-        rules.push({
-          antecedent: [a],
-          consequent: [b],
-          support: Math.round(support * 1000) / 1000,
-          confidence: Math.round(confAB * 1000) / 1000,
-          lift: Math.round(lift * 100) / 100,
-          count,
-        })
-      }
-    }
-
-    // Rule: b → a
     const confBA = count / countB
-    if (confBA >= MIN_CONFIDENCE) {
-      const expectedIfIndep = (countA / totalJobs) * (countB / totalJobs)
-      const lift = support / expectedIfIndep
-      if (lift > 1.2) {
-        rules.push({
-          antecedent: [b],
-          consequent: [a],
-          support: Math.round(support * 1000) / 1000,
-          confidence: Math.round(confBA * 1000) / 1000,
-          lift: Math.round(lift * 100) / 100,
-          count,
-        })
-      }
+    const expectedIfIndep = (countA / totalJobs) * (countB / totalJobs)
+    const lift = support / expectedIfIndep
+
+    if (lift <= 1.2) continue
+
+    if (confAB >= confBA && confAB >= MIN_CONFIDENCE) {
+      rules.push({
+        antecedent: [a], consequent: [b],
+        support: Math.round(support * 1000) / 1000,
+        confidence: Math.round(confAB * 1000) / 1000,
+        lift: Math.round(lift * 100) / 100,
+        count,
+      })
+    } else if (confBA >= MIN_CONFIDENCE) {
+      rules.push({
+        antecedent: [b], consequent: [a],
+        support: Math.round(support * 1000) / 1000,
+        confidence: Math.round(confBA * 1000) / 1000,
+        lift: Math.round(lift * 100) / 100,
+        count,
+      })
     }
   }
 

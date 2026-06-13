@@ -1,20 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-13T09:40:13.756Z",
+  "generated_at": "2026-06-13T10:15:42.459Z",
   "total_jobs": 121,
   "rules": [
-    {
-      "antecedent": [
-        "PyTorch"
-      ],
-      "consequent": [
-        "TensorFlow"
-      ],
-      "support": 0.05,
-      "confidence": 0.667,
-      "lift": 13.44,
-      "count": 6
-    },
     {
       "antecedent": [
         "TensorFlow"
@@ -161,18 +149,6 @@
     },
     {
       "antecedent": [
-        "AWS"
-      ],
-      "consequent": [
-        "Containers"
-      ],
-      "support": 0.19,
-      "confidence": 0.489,
-      "lift": 1.35,
-      "count": 23
-    },
-    {
-      "antecedent": [
         "Containers"
       ],
       "consequent": [
@@ -228,18 +204,6 @@
       ],
       "support": 0.24,
       "confidence": 0.659,
-      "lift": 1.23,
-      "count": 29
-    },
-    {
-      "antecedent": [
-        "PostgreSQL"
-      ],
-      "consequent": [
-        "Containers"
-      ],
-      "support": 0.24,
-      "confidence": 0.446,
       "lift": 1.23,
       "count": 29
     }

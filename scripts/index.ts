@@ -181,6 +181,7 @@ export async function updateIndexes(
     updateLatest(analysis),
     updateManifest(analysis, threadTitle),
     updateHistory(analysis),
+    updateTrendSeries("language-trends.json", analysis.languages ?? [], analysis.date),
     updateTrendSeries("tech-trends.json", analysis.technologies, analysis.date),
     updateTrendSeries("role-trends.json", analysis.roles, analysis.date),
   ])

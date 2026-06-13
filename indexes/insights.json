@@ -1,42 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-13T08:52:17.440Z",
+  "generated_at": "2026-06-13T09:13:26.086Z",
   "top_pairs": [
-    {
-      "tech": "React",
-      "with": "TypeScript",
-      "count": 169,
-      "jaccard": 0.48
-    },
-    {
-      "tech": "PostgreSQL",
-      "with": "TypeScript",
-      "count": 120,
-      "jaccard": 0.339
-    },
     {
       "tech": "PostgreSQL",
       "with": "React",
       "count": 112,
       "jaccard": 0.334
-    },
-    {
-      "tech": "Python",
-      "with": "TypeScript",
-      "count": 107,
-      "jaccard": 0.255
-    },
-    {
-      "tech": "AWS",
-      "with": "TypeScript",
-      "count": 99,
-      "jaccard": 0.289
-    },
-    {
-      "tech": "Python",
-      "with": "React",
-      "count": 95,
-      "jaccard": 0.235
     },
     {
       "tech": "AWS",
@@ -51,51 +21,81 @@
       "jaccard": 0.287
     },
     {
-      "tech": "AWS",
-      "with": "Python",
-      "count": 81,
-      "jaccard": 0.238
+      "tech": "Node.js",
+      "with": "React",
+      "count": 74,
+      "jaccard": 0.275
     },
     {
-      "tech": "PostgreSQL",
-      "with": "Python",
-      "count": 77,
-      "jaccard": 0.205
+      "tech": "Next.js",
+      "with": "React",
+      "count": 59,
+      "jaccard": 0.223
+    },
+    {
+      "tech": "AWS",
+      "with": "Kubernetes",
+      "count": 50,
+      "jaccard": 0.224
+    },
+    {
+      "tech": "Kubernetes",
+      "with": "PostgreSQL",
+      "count": 49,
+      "jaccard": 0.191
+    },
+    {
+      "tech": "Kubernetes",
+      "with": "React",
+      "count": 42,
+      "jaccard": 0.135
+    },
+    {
+      "tech": "Node.js",
+      "with": "PostgreSQL",
+      "count": 42,
+      "jaccard": 0.165
+    },
+    {
+      "tech": "AWS",
+      "with": "Terraform",
+      "count": 41,
+      "jaccard": 0.223
     }
   ],
   "clusters": [
     {
-      "label": "Python / PostgreSQL / Go",
+      "label": "PostgreSQL / AWS / Kubernetes",
       "top_techs": [
-        "Python",
         "PostgreSQL",
-        "Go",
         "AWS",
-        "Rust"
+        "Kubernetes",
+        "Docker",
+        "Terraform"
       ],
-      "pct": 58.8
+      "pct": 47.9
     },
     {
-      "label": "TypeScript / React / PostgreSQL",
+      "label": "React / PostgreSQL / AWS",
       "top_techs": [
-        "TypeScript",
         "React",
         "PostgreSQL",
-        "Python",
-        "AWS"
+        "AWS",
+        "Node.js",
+        "Kubernetes"
       ],
-      "pct": 38.9
+      "pct": 37.3
     },
     {
-      "label": "Java / Kotlin / Scala",
+      "label": "Next.js / React / PostgreSQL",
       "top_techs": [
-        "Java",
-        "Kotlin",
-        "Scala",
-        "C#",
-        "Kafka"
+        "Next.js",
+        "React",
+        "PostgreSQL",
+        "AWS",
+        "Node.js"
       ],
-      "pct": 2.4
+      "pct": 14.8
     }
   ],
   "top_associations": [
@@ -106,8 +106,8 @@
       "consequent": [
         "TensorFlow"
       ],
-      "confidence": 0.6,
-      "lift": 17
+      "confidence": 0.667,
+      "lift": 13.44
     },
     {
       "antecedent": [
@@ -117,47 +117,17 @@
         "PyTorch"
       ],
       "confidence": 1,
-      "lift": 17
+      "lift": 13.44
     },
     {
       "antecedent": [
-        "Rails"
+        "Vue"
       ],
       "consequent": [
-        "Ruby"
+        "Terraform"
       ],
-      "confidence": 0.846,
-      "lift": 11.07
-    },
-    {
-      "antecedent": [
-        "Ruby"
-      ],
-      "consequent": [
-        "Rails"
-      ],
-      "confidence": 0.846,
-      "lift": 11.07
-    },
-    {
-      "antecedent": [
-        "JavaScript"
-      ],
-      "consequent": [
-        "Ruby"
-      ],
-      "confidence": 0.353,
-      "lift": 4.62
-    },
-    {
-      "antecedent": [
-        "Ruby"
-      ],
-      "consequent": [
-        "JavaScript"
-      ],
-      "confidence": 0.462,
-      "lift": 4.62
+      "confidence": 0.8,
+      "lift": 6.05
     },
     {
       "antecedent": [
@@ -167,7 +137,7 @@
         "Terraform"
       ],
       "confidence": 0.36,
-      "lift": 3.83
+      "lift": 2.72
     },
     {
       "antecedent": [
@@ -177,17 +147,7 @@
         "Docker"
       ],
       "confidence": 0.563,
-      "lift": 3.83
-    },
-    {
-      "antecedent": [
-        "Terraform"
-      ],
-      "consequent": [
-        "Rust"
-      ],
-      "confidence": 0.375,
-      "lift": 3.04
+      "lift": 2.72
     },
     {
       "antecedent": [
@@ -197,7 +157,47 @@
         "Next.js"
       ],
       "confidence": 0.429,
-      "lift": 2.91
+      "lift": 2.16
+    },
+    {
+      "antecedent": [
+        "GCP"
+      ],
+      "consequent": [
+        "Kubernetes"
+      ],
+      "confidence": 0.5,
+      "lift": 2.02
+    },
+    {
+      "antecedent": [
+        "FastAPI"
+      ],
+      "consequent": [
+        "Kubernetes"
+      ],
+      "confidence": 0.5,
+      "lift": 2.02
+    },
+    {
+      "antecedent": [
+        "Elasticsearch"
+      ],
+      "consequent": [
+        "PostgreSQL"
+      ],
+      "confidence": 1,
+      "lift": 1.86
+    },
+    {
+      "antecedent": [
+        "Redis"
+      ],
+      "consequent": [
+        "Kubernetes"
+      ],
+      "confidence": 0.462,
+      "lift": 1.86
     }
   ],
   "momentum_summary": {
@@ -219,18 +219,14 @@
         "slope_pct": 43
       },
       {
-        "tech": "Scala",
-        "slope_pct": 41.8
+        "tech": "Rails",
+        "slope_pct": 32.6
       }
     ],
     "top_declining": [
       {
         "tech": "Cloudflare",
         "slope_pct": -34.1
-      },
-      {
-        "tech": "PHP",
-        "slope_pct": -32.3
       },
       {
         "tech": "iOS",
@@ -243,6 +239,10 @@
       {
         "tech": "FastAPI",
         "slope_pct": -13.9
+      },
+      {
+        "tech": "MongoDB",
+        "slope_pct": -10.3
       }
     ]
   }

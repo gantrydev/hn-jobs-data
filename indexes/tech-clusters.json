@@ -1,80 +1,80 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-13T08:52:17.431Z",
-  "total_jobs": 211,
+  "generated_at": "2026-06-13T09:13:26.078Z",
+  "total_jobs": 169,
   "k": 3,
   "clusters": [
     {
       "id": 0,
-      "label": "Python / PostgreSQL / Go",
+      "label": "PostgreSQL / AWS / Kubernetes",
       "top_techs": [
-        "Python",
         "PostgreSQL",
-        "Go",
         "AWS",
-        "Rust",
-        "React",
         "Kubernetes",
-        "JavaScript"
+        "Docker",
+        "Terraform",
+        "Redis",
+        "GCP",
+        "Rails"
       ],
       "top_roles": [
         "Senior Software Engineer",
-        "Backend Engineer",
-        "Full Stack Engineer"
+        "Full Stack Engineer",
+        "Backend Engineer"
       ],
-      "size": 124,
-      "pct": 58.8,
-      "avg_salary_mentioned": 21,
-      "avg_remote_pct": 56,
-      "avg_ai_ml_pct": 52
+      "size": 81,
+      "pct": 47.9,
+      "avg_salary_mentioned": 26,
+      "avg_remote_pct": 57,
+      "avg_ai_ml_pct": 63
     },
     {
       "id": 1,
-      "label": "TypeScript / React / PostgreSQL",
+      "label": "React / PostgreSQL / AWS",
       "top_techs": [
-        "TypeScript",
         "React",
         "PostgreSQL",
-        "Python",
         "AWS",
-        "Next.js",
         "Node.js",
-        "Kubernetes"
+        "Kubernetes",
+        "GCP",
+        "Django",
+        "GraphQL"
       ],
       "top_roles": [
         "Full Stack Engineer",
         "Senior Software Engineer",
         "Backend Engineer"
       ],
-      "size": 82,
-      "pct": 38.9,
-      "avg_salary_mentioned": 41,
-      "avg_remote_pct": 48,
-      "avg_ai_ml_pct": 78
+      "size": 63,
+      "pct": 37.3,
+      "avg_salary_mentioned": 38,
+      "avg_remote_pct": 46,
+      "avg_ai_ml_pct": 68
     },
     {
       "id": 2,
-      "label": "Java / Kotlin / Scala",
+      "label": "Next.js / React / PostgreSQL",
       "top_techs": [
-        "Java",
-        "Kotlin",
-        "Scala",
-        "C#",
-        "Kafka",
-        "Python",
-        "TypeScript",
-        "C++"
+        "Next.js",
+        "React",
+        "PostgreSQL",
+        "AWS",
+        "Node.js",
+        "GraphQL",
+        "Docker",
+        "Kubernetes"
       ],
       "top_roles": [
+        "Full Stack Engineer",
         "Senior Software Engineer",
-        "AI Engineer",
         "Staff Engineer"
       ],
-      "size": 5,
-      "pct": 2.4,
-      "avg_salary_mentioned": 20,
-      "avg_remote_pct": 60,
-      "avg_ai_ml_pct": 60
+      "size": 25,
+      "pct": 14.8,
+      "avg_salary_mentioned": 40,
+      "avg_remote_pct": 48,
+      "avg_ai_ml_pct": 80
     }
   ]
 }

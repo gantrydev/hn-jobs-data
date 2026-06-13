@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-13T08:52:17.439Z",
+  "generated_at": "2026-06-13T09:13:26.085Z",
   "rising": [
     {
       "tech": "Hugging Face",
@@ -105,60 +105,6 @@
       ]
     },
     {
-      "tech": "Scala",
-      "total_count": 8,
-      "slope": 0.32,
-      "slope_pct": 41.8,
-      "trend": "rising",
-      "series": [
-        {
-          "date": "2026-01-01",
-          "count": 2,
-          "totalJobs": 295,
-          "pct": 0.7
-        },
-        {
-          "date": "2026-02-01",
-          "count": 1,
-          "totalJobs": 452,
-          "pct": 0.2
-        },
-        {
-          "date": "2026-03-15",
-          "count": 5,
-          "totalJobs": 362,
-          "pct": 1.4
-        }
-      ]
-    },
-    {
-      "tech": "Ruby",
-      "total_count": 28,
-      "slope": 0.901,
-      "slope_pct": 36.5,
-      "trend": "rising",
-      "series": [
-        {
-          "date": "2026-01-01",
-          "count": 4,
-          "totalJobs": 295,
-          "pct": 1.4
-        },
-        {
-          "date": "2026-02-01",
-          "count": 11,
-          "totalJobs": 452,
-          "pct": 2.4
-        },
-        {
-          "date": "2026-03-15",
-          "count": 13,
-          "totalJobs": 362,
-          "pct": 3.6
-        }
-      ]
-    },
-    {
       "tech": "Rails",
       "total_count": 31,
       "slope": 0.901,
@@ -213,27 +159,6 @@
       ]
     },
     {
-      "tech": "Elixir",
-      "total_count": 9,
-      "slope": 0.357,
-      "slope_pct": 31.1,
-      "trend": "rising",
-      "series": [
-        {
-          "date": "2026-02-01",
-          "count": 4,
-          "totalJobs": 452,
-          "pct": 0.9
-        },
-        {
-          "date": "2026-03-15",
-          "count": 5,
-          "totalJobs": 362,
-          "pct": 1.4
-        }
-      ]
-    },
-    {
       "tech": "Kafka",
       "total_count": 9,
       "slope": 0.357,
@@ -251,33 +176,6 @@
           "count": 5,
           "totalJobs": 362,
           "pct": 1.4
-        }
-      ]
-    },
-    {
-      "tech": "JavaScript",
-      "total_count": 36,
-      "slope": 0.973,
-      "slope_pct": 29.8,
-      "trend": "rising",
-      "series": [
-        {
-          "date": "2026-01-01",
-          "count": 7,
-          "totalJobs": 295,
-          "pct": 2.4
-        },
-        {
-          "date": "2026-02-01",
-          "count": 12,
-          "totalJobs": 452,
-          "pct": 2.7
-        },
-        {
-          "date": "2026-03-15",
-          "count": 17,
-          "totalJobs": 362,
-          "pct": 4.7
         }
       ]
     },
@@ -305,48 +203,6 @@
           "count": 2,
           "totalJobs": 362,
           "pct": 0.6
-        }
-      ]
-    },
-    {
-      "tech": "SQL",
-      "total_count": 4,
-      "slope": 0.143,
-      "slope_pct": 28.6,
-      "trend": "rising",
-      "series": [
-        {
-          "date": "2026-02-01",
-          "count": 2,
-          "totalJobs": 452,
-          "pct": 0.4
-        },
-        {
-          "date": "2026-03-15",
-          "count": 2,
-          "totalJobs": 362,
-          "pct": 0.6
-        }
-      ]
-    },
-    {
-      "tech": "C",
-      "total_count": 2,
-      "slope": 0.071,
-      "slope_pct": 28.6,
-      "trend": "rising",
-      "series": [
-        {
-          "date": "2026-02-01",
-          "count": 1,
-          "totalJobs": 452,
-          "pct": 0.2
-        },
-        {
-          "date": "2026-03-15",
-          "count": 1,
-          "totalJobs": 362,
-          "pct": 0.3
         }
       ]
     },
@@ -459,60 +315,6 @@
       ]
     },
     {
-      "tech": "Kotlin",
-      "total_count": 16,
-      "slope": 0.279,
-      "slope_pct": 20,
-      "trend": "rising",
-      "series": [
-        {
-          "date": "2026-01-01",
-          "count": 3,
-          "totalJobs": 295,
-          "pct": 1
-        },
-        {
-          "date": "2026-02-01",
-          "count": 7,
-          "totalJobs": 452,
-          "pct": 1.5
-        },
-        {
-          "date": "2026-03-15",
-          "count": 6,
-          "totalJobs": 362,
-          "pct": 1.7
-        }
-      ]
-    },
-    {
-      "tech": "Swift",
-      "total_count": 15,
-      "slope": 0.255,
-      "slope_pct": 19.6,
-      "trend": "rising",
-      "series": [
-        {
-          "date": "2026-01-01",
-          "count": 2,
-          "totalJobs": 295,
-          "pct": 0.7
-        },
-        {
-          "date": "2026-02-01",
-          "count": 8,
-          "totalJobs": 452,
-          "pct": 1.8
-        },
-        {
-          "date": "2026-03-15",
-          "count": 5,
-          "totalJobs": 362,
-          "pct": 1.4
-        }
-      ]
-    },
-    {
       "tech": "GraphQL",
       "total_count": 38,
       "slope": 0.585,
@@ -590,33 +392,6 @@
           "count": 4,
           "totalJobs": 362,
           "pct": 1.1
-        }
-      ]
-    },
-    {
-      "tech": "C#",
-      "total_count": 14,
-      "slope": 0.159,
-      "slope_pct": 12.9,
-      "trend": "rising",
-      "series": [
-        {
-          "date": "2026-01-01",
-          "count": 3,
-          "totalJobs": 295,
-          "pct": 1
-        },
-        {
-          "date": "2026-02-01",
-          "count": 6,
-          "totalJobs": 452,
-          "pct": 1.3
-        },
-        {
-          "date": "2026-03-15",
-          "count": 5,
-          "totalJobs": 362,
-          "pct": 1.4
         }
       ]
     },
@@ -781,33 +556,6 @@
           "count": 1,
           "totalJobs": 362,
           "pct": 0.3
-        }
-      ]
-    },
-    {
-      "tech": "PHP",
-      "total_count": 11,
-      "slope": -0.345,
-      "slope_pct": -32.3,
-      "trend": "declining",
-      "series": [
-        {
-          "date": "2026-01-01",
-          "count": 5,
-          "totalJobs": 295,
-          "pct": 1.7
-        },
-        {
-          "date": "2026-02-01",
-          "count": 3,
-          "totalJobs": 452,
-          "pct": 0.7
-        },
-        {
-          "date": "2026-03-15",
-          "count": 3,
-          "totalJobs": 362,
-          "pct": 0.8
         }
       ]
     },
@@ -1030,114 +778,6 @@
       ]
     },
     {
-      "tech": "Go",
-      "total_count": 84,
-      "slope": 0.336,
-      "slope_pct": 4.5,
-      "trend": "stable",
-      "series": [
-        {
-          "date": "2026-01-01",
-          "count": 20,
-          "totalJobs": 295,
-          "pct": 6.8
-        },
-        {
-          "date": "2026-02-01",
-          "count": 36,
-          "totalJobs": 452,
-          "pct": 8
-        },
-        {
-          "date": "2026-03-15",
-          "count": 28,
-          "totalJobs": 362,
-          "pct": 7.7
-        }
-      ]
-    },
-    {
-      "tech": "Java",
-      "total_count": 33,
-      "slope": 0.126,
-      "slope_pct": 4.4,
-      "trend": "stable",
-      "series": [
-        {
-          "date": "2026-01-01",
-          "count": 7,
-          "totalJobs": 295,
-          "pct": 2.4
-        },
-        {
-          "date": "2026-02-01",
-          "count": 16,
-          "totalJobs": 452,
-          "pct": 3.5
-        },
-        {
-          "date": "2026-03-15",
-          "count": 10,
-          "totalJobs": 362,
-          "pct": 2.8
-        }
-      ]
-    },
-    {
-      "tech": "Python",
-      "total_count": 253,
-      "slope": 0.718,
-      "slope_pct": 3.2,
-      "trend": "stable",
-      "series": [
-        {
-          "date": "2026-01-01",
-          "count": 64,
-          "totalJobs": 295,
-          "pct": 21.7
-        },
-        {
-          "date": "2026-02-01",
-          "count": 104,
-          "totalJobs": 452,
-          "pct": 23
-        },
-        {
-          "date": "2026-03-15",
-          "count": 85,
-          "totalJobs": 362,
-          "pct": 23.5
-        }
-      ]
-    },
-    {
-      "tech": "TypeScript",
-      "total_count": 274,
-      "slope": 0.525,
-      "slope_pct": 2.2,
-      "trend": "stable",
-      "series": [
-        {
-          "date": "2026-01-01",
-          "count": 64,
-          "totalJobs": 295,
-          "pct": 21.7
-        },
-        {
-          "date": "2026-02-01",
-          "count": 125,
-          "totalJobs": 452,
-          "pct": 27.7
-        },
-        {
-          "date": "2026-03-15",
-          "count": 85,
-          "totalJobs": 362,
-          "pct": 23.5
-        }
-      ]
-    },
-    {
       "tech": "Spring",
       "total_count": 3,
       "slope": 0.004,
@@ -1188,33 +828,6 @@
           "count": 17,
           "totalJobs": 362,
           "pct": 4.7
-        }
-      ]
-    },
-    {
-      "tech": "Rust",
-      "total_count": 85,
-      "slope": -0.01,
-      "slope_pct": -0.1,
-      "trend": "stable",
-      "series": [
-        {
-          "date": "2026-01-01",
-          "count": 21,
-          "totalJobs": 295,
-          "pct": 7.1
-        },
-        {
-          "date": "2026-02-01",
-          "count": 38,
-          "totalJobs": 452,
-          "pct": 8.4
-        },
-        {
-          "date": "2026-03-15",
-          "count": 26,
-          "totalJobs": 362,
-          "pct": 7.2
         }
       ]
     },
@@ -1296,33 +909,6 @@
           "count": 80,
           "totalJobs": 362,
           "pct": 22.1
-        }
-      ]
-    },
-    {
-      "tech": "C++",
-      "total_count": 47,
-      "slope": -0.12,
-      "slope_pct": -2.8,
-      "trend": "stable",
-      "series": [
-        {
-          "date": "2026-01-01",
-          "count": 13,
-          "totalJobs": 295,
-          "pct": 4.4
-        },
-        {
-          "date": "2026-02-01",
-          "count": 19,
-          "totalJobs": 452,
-          "pct": 4.2
-        },
-        {
-          "date": "2026-03-15",
-          "count": 15,
-          "totalJobs": 362,
-          "pct": 4.1
         }
       ]
     },

@@ -74,6 +74,7 @@ const BatchExperienceLevelSchema = z.object({
 // granular per-job data in a single API call.
 const BatchClassifiedJobSchema = z.object({
   id: z.int(),
+  languages: z.array(z.string().trim()),
   technologies: z.array(z.string().trim()),
   role: z.string().trim(),
   experience_level: z.enum(["Senior", "Mid", "Junior", "Not specified"]),
@@ -85,6 +86,7 @@ const BatchClassifiedJobSchema = z.object({
 })
 
 export const BatchResponseSchema = z.object({
+  languages: z.array(BatchNamedCountSchema),
   technologies: z.array(BatchNamedCountSchema),
   roles: z.array(BatchNamedCountSchema),
   compensation: z.object({
@@ -109,6 +111,7 @@ export const AnalysisSchema = z.object({
   date: dateStringSchema,
   run_id: z.string().trim(),
   job_count: z.int(),
+  languages: z.array(NamedCountSchema),
   technologies: z.array(NamedCountSchema),
   roles: z.array(NamedCountSchema),
   compensation: z.object({
@@ -135,6 +138,7 @@ export const AnalysisSchema = z.object({
 
 export const ClassifiedJobSchema = z.object({
   id: z.int(),
+  languages: z.array(z.string().trim()),
   technologies: z.array(z.string().trim()),
   role: z.string().trim(),
   experience_level: z.enum(["Senior", "Mid", "Junior", "Not specified"]),

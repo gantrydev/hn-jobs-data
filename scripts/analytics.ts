@@ -22,6 +22,7 @@ import path from "node:path"
 
 interface ClassifiedJob {
   id: number
+  languages: string[]
   technologies: string[]
   role: string
   experience_level: string
@@ -337,7 +338,7 @@ function buildClusters(
   const latest = allData[allData.length - 1]
   const jobs = latest.jobs.filter((j) => j.technologies.length > 0)
 
-  // Build tech vocabulary from latest run
+  // Build tech vocabulary from latest run (technologies only, no languages)
   const techSet = new Set<string>()
   for (const job of jobs) {
     for (const t of job.technologies) techSet.add(t)
@@ -406,17 +407,17 @@ function buildClusters(
     })
   }
 
-  // Sort by size descending
-  clusters.sort((a, b) => b.size - a.size)
-  // Re-id after sorting
-  clusters.forEach((c, i) => (c.id = i))
+  // Filter out tiny clusters (< 2% or < 5 jobs)
+  const filtered = clusters.filter((c) => c.pct >= 2 && c.size >= 3)
+  filtered.sort((a, b) => b.size - a.size)
+  filtered.forEach((c, i) => (c.id = i))
 
   return {
     schema_version: "1.0",
     generated_at: new Date().toISOString(),
     total_jobs: jobs.length,
-    k,
-    clusters,
+    k: filtered.length,
+    clusters: filtered,
   }
 }
 
@@ -434,6 +435,33 @@ function buildAssociationRules(
   const totalJobs = jobs.length
   const MIN_SUPPORT = 0.03 // 3%
   const MIN_CONFIDENCE = 0.3
+
+  // Trivial pairs: same-ecosystem associations that aren't insightful.
+  // Sorted pairs stored as "a|||b".
+  const TRIVIAL_PAIRS = new Set([
+    // Ruby ecosystem
+    ["Rails", "Ruby"].sort().join("|||"),
+    ["Sidekiq", "Ruby"].sort().join("|||"),
+    ["Sidekiq", "Rails"].sort().join("|||"),
+    // Python ecosystem
+    ["Django", "Python"].sort().join("|||"),
+    ["FastAPI", "Python"].sort().join("|||"),
+    // JS ecosystem
+    ["Next.js", "React"].sort().join("|||"),
+    ["Next.js", "TypeScript"].sort().join("|||"),
+    ["Next.js", "Node.js"].sort().join("|||"),
+    ["React", "JavaScript"].sort().join("|||"),
+    // Java ecosystem
+    ["Java", "Spring"].sort().join("|||"),
+    ["Java", "Kotlin"].sort().join("|||"),
+    // PHP ecosystem
+    ["PHP", "Laravel"].sort().join("|||"),
+    // Mobile
+    ["iOS", "Swift"].sort().join("|||"),
+    ["iOS", "React Native"].sort().join("|||"),
+    ["Android", "Kotlin"].sort().join("|||"),
+    ["Android", "React Native"].sort().join("|||"),
+  ])
 
   // Count single itemsets (support for each tech)
   const itemCounts = new Map<string, number>()
@@ -465,6 +493,10 @@ function buildAssociationRules(
 
   for (const [key, { count }] of pairCounts) {
     const [a, b] = key.split("|||")
+
+    // Skip trivial same-ecosystem pairs
+    if (TRIVIAL_PAIRS.has(key)) continue
+
     const support = count / totalJobs
     if (support < MIN_SUPPORT) continue
 

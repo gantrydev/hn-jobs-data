@@ -74,7 +74,8 @@ Product Manager, Designer, Other
 
 For each job posting, return an object with:
 - id: the numeric HN item ID provided in the input
-- technologies: array of canonical technology names found in this job
+- languages: array of programming languages found in this job (from the Languages taxonomy above)
+- technologies: array of all other canonical technology names found (frameworks, databases, cloud, infra, AI/ML, mobile, messaging — everything except languages)
 - role: single closest role from the taxonomy
 - experience_level: one of "Senior", "Mid", "Junior", "Not specified"
 - remote: one of "fully_remote", "hybrid", "onsite_only", "not_mentioned"
@@ -178,7 +179,8 @@ function toPct(count: number, total: number): number {
 }
 
 function aggregateBatches(batches: BatchResponse[], totalJobs: number): Omit<Analysis, "schema_version" | "date" | "run_id" | "job_count" | "generated_at"> {
-  // Merge named counts (technologies, roles) by summing counts for each name
+  // Merge named counts (languages, technologies, roles) by summing counts for each name
+  const langMap = new Map<string, number>()
   const techMap = new Map<string, number>()
   const roleMap = new Map<string, number>()
   const bandMap = new Map<string, number>()
@@ -193,6 +195,9 @@ function aggregateBatches(batches: BatchResponse[], totalJobs: number): Omit<Ana
   let aiMlCount = 0
 
   for (const batch of batches) {
+    for (const t of batch.languages) {
+      langMap.set(t.name, (langMap.get(t.name) ?? 0) + t.count)
+    }
     for (const t of batch.technologies) {
       techMap.set(t.name, (techMap.get(t.name) ?? 0) + t.count)
     }
@@ -234,6 +239,7 @@ function aggregateBatches(batches: BatchResponse[], totalJobs: number): Omit<Ana
     .sort((a, b) => b.count - a.count)
 
   return {
+    languages: mapToSorted(langMap),
     technologies: mapToSorted(techMap),
     roles: mapToSorted(roleMap),
     compensation: {
@@ -293,7 +299,7 @@ export async function analyzeJobs(raw: RawData): Promise<AnalyzeResult> {
   // Collect per-job classifications from all batches
   const classifiedJobs: ClassifiedJob[] = results.flatMap((batch) => batch.jobs)
 
-  console.log(`  Analysis complete: ${aggregated.technologies.length} technologies, ${aggregated.roles.length} roles, ${classifiedJobs.length} jobs classified`)
+  console.log(`  Analysis complete: ${aggregated.languages.length} languages, ${aggregated.technologies.length} technologies, ${aggregated.roles.length} roles, ${classifiedJobs.length} jobs classified`)
 
   const analysis: Analysis = {
     schema_version: "1.0",

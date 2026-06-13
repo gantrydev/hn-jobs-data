@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-13T09:21:09.726Z",
+  "generated_at": "2026-06-13T09:40:13.759Z",
   "top_pairs": [
     {
       "tech": "PostgreSQL",
@@ -27,28 +27,28 @@
       "jaccard": 0.275
     },
     {
+      "tech": "AWS",
+      "with": "Containers",
+      "count": 71,
+      "jaccard": 0.3
+    },
+    {
+      "tech": "Containers",
+      "with": "PostgreSQL",
+      "count": 70,
+      "jaccard": 0.259
+    },
+    {
       "tech": "Next.js",
       "with": "React",
       "count": 59,
       "jaccard": 0.223
     },
     {
-      "tech": "AWS",
-      "with": "Kubernetes",
-      "count": 50,
-      "jaccard": 0.224
-    },
-    {
-      "tech": "Kubernetes",
-      "with": "PostgreSQL",
-      "count": 49,
-      "jaccard": 0.191
-    },
-    {
-      "tech": "Kubernetes",
+      "tech": "Containers",
       "with": "React",
-      "count": 42,
-      "jaccard": 0.135
+      "count": 55,
+      "jaccard": 0.166
     },
     {
       "tech": "Node.js",
@@ -69,33 +69,43 @@
       "top_techs": [
         "React",
         "PostgreSQL",
-        "AWS",
-        "Node.js",
-        "Next.js"
+        "AWS"
       ],
-      "pct": 42
+      "pct": 33.1
     },
     {
-      "label": "AWS / PostgreSQL / Node.js",
+      "label": "Containers / GCP",
       "top_techs": [
-        "AWS",
-        "PostgreSQL",
-        "Node.js",
+        "Containers",
+        "GCP"
+      ],
+      "pct": 5.3
+    },
+    {
+      "label": "PyTorch / TensorFlow / LangChain",
+      "top_techs": [
         "PyTorch",
-        "Rails"
+        "TensorFlow",
+        "LangChain",
+        "Hugging Face"
       ],
-      "pct": 36.7
+      "pct": 4.1
     },
     {
-      "label": "PostgreSQL / Kubernetes / AWS",
+      "label": "Next.js / GraphQL",
       "top_techs": [
-        "PostgreSQL",
-        "Kubernetes",
-        "AWS",
-        "Docker",
-        "Terraform"
+        "Next.js",
+        "GraphQL"
       ],
-      "pct": 21.3
+      "pct": 3.6
+    },
+    {
+      "label": "Terraform / Vue",
+      "top_techs": [
+        "Terraform",
+        "Vue"
+      ],
+      "pct": 2.4
     }
   ],
   "top_associations": [
@@ -131,23 +141,33 @@
     },
     {
       "antecedent": [
-        "Docker"
+        "Kafka"
       ],
       "consequent": [
-        "Terraform"
+        "Containers"
       ],
-      "confidence": 0.36,
-      "lift": 2.72
+      "confidence": 1,
+      "lift": 2.75
     },
     {
       "antecedent": [
         "Terraform"
       ],
       "consequent": [
-        "Docker"
+        "Containers"
       ],
-      "confidence": 0.563,
-      "lift": 2.72
+      "confidence": 0.813,
+      "lift": 2.23
+    },
+    {
+      "antecedent": [
+        "Vue"
+      ],
+      "consequent": [
+        "Containers"
+      ],
+      "confidence": 0.8,
+      "lift": 2.2
     },
     {
       "antecedent": [
@@ -161,26 +181,6 @@
     },
     {
       "antecedent": [
-        "GCP"
-      ],
-      "consequent": [
-        "Kubernetes"
-      ],
-      "confidence": 0.5,
-      "lift": 2.02
-    },
-    {
-      "antecedent": [
-        "FastAPI"
-      ],
-      "consequent": [
-        "Kubernetes"
-      ],
-      "confidence": 0.5,
-      "lift": 2.02
-    },
-    {
-      "antecedent": [
         "Elasticsearch"
       ],
       "consequent": [
@@ -191,13 +191,23 @@
     },
     {
       "antecedent": [
+        "Terraform"
+      ],
+      "consequent": [
+        "AWS"
+      ],
+      "confidence": 0.688,
+      "lift": 1.77
+    },
+    {
+      "antecedent": [
         "Redis"
       ],
       "consequent": [
-        "Kubernetes"
+        "PostgreSQL"
       ],
-      "confidence": 0.462,
-      "lift": 1.86
+      "confidence": 0.846,
+      "lift": 1.58
     }
   ],
   "momentum_summary": {

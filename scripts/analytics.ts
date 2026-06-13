@@ -344,61 +344,104 @@ function buildClusters(
     for (const t of job.technologies) techSet.add(t)
   }
   const techList = Array.from(techSet).sort()
-  const techIndex = new Map(techList.map((t, i) => [t, i]))
 
-  // One-hot encode each job
-  const vectors: number[][] = jobs.map((job) => {
-    const vec = new Array(techList.length).fill(0)
-    for (const t of job.technologies) {
-      const idx = techIndex.get(t)
-      if (idx !== undefined) vec[idx] = 1
+  // ── Build co-occurrence adjacency for the latest run ──
+  const adj = new Map<string, Map<string, number>>()
+  for (const t of techList) adj.set(t, new Map())
+  for (const job of jobs) {
+    for (let i = 0; i < job.technologies.length; i++) {
+      for (let j = i + 1; j < job.technologies.length; j++) {
+        const a = job.technologies[i], b = job.technologies[j]
+        const ma = adj.get(a)!
+        ma.set(b, (ma.get(b) ?? 0) + 1)
+        const mb = adj.get(b)!
+        mb.set(a, (mb.get(a) ?? 0) + 1)
+      }
     }
-    return vec
-  })
+  }
 
-  const k = Math.min(6, Math.max(3, Math.floor(jobs.length / 60)))
-  const { assignments } = kmeans(vectors, k)
+  // Tech frequencies for Jaccard denominator
+  const techFreq = new Map<string, number>()
+  for (const job of jobs) {
+    for (const t of job.technologies) {
+      techFreq.set(t, (techFreq.get(t) ?? 0) + 1)
+    }
+  }
 
-  // Analyze each cluster
+  // ── Filter noise: only techs with ≥ MIN_OCCURRENCES ──
+  const MIN_OCCURRENCES = 3
+  const valid = new Set(techList.filter((t) => (techFreq.get(t) ?? 0) >= MIN_OCCURRENCES))
+
+  // ── Greedy tech clustering based on Jaccard similarity ──
+  // Start with the most frequent tech, build clusters by adding techs
+  // that have high Jaccard similarity with existing cluster members.
+  const MIN_JACCARD = 0.15
+
+  // Sort techs by frequency descending
+  const sortedTechs = [...valid].sort((a, b) => (techFreq.get(b) ?? 0) - (techFreq.get(a) ?? 0))
+  const assigned = new Set<string>()
+  const techClusters: string[][] = []
+
+  for (const seed of sortedTechs) {
+    if (assigned.has(seed)) continue
+    const cluster = [seed]
+    assigned.add(seed)
+
+    // Add techs that co-occur strongly with ALL current cluster members
+    for (const candidate of sortedTechs) {
+      if (assigned.has(candidate)) continue
+      let allAbove = true
+      let minJac = 1
+      for (const member of cluster) {
+        const co = adj.get(candidate)?.get(member) ?? 0
+        const fa = techFreq.get(candidate) ?? 1
+        const fb = techFreq.get(member) ?? 1
+        const jac = co / (fa + fb - co)
+        if (jac < minJac) minJac = jac
+        if (jac < MIN_JACCARD) { allAbove = false; break }
+      }
+      if (allAbove && cluster.length < 8) {
+        cluster.push(candidate)
+        assigned.add(candidate)
+      }
+    }
+
+    if (cluster.length >= 2) {
+      techClusters.push(cluster)
+    }
+  }
+
+  // ── Build ClusterInfo for each tech cluster ──
   const clusters: ClusterInfo[] = []
 
-  for (let c = 0; c < k; c++) {
-    const clusterJobs = jobs.filter((_, i) => assignments[i] === c)
-    const size = clusterJobs.length
+  for (const techCluster of techClusters) {
+    const label = techCluster.slice(0, 3).join(" / ")
 
-    // Top techs in cluster
-    const techCounts = new Map<string, number>()
+    // Count jobs that match ≥2 techs from this cluster
+    const matchingJobs = jobs.filter((job) => {
+      let m = 0
+      for (const t of job.technologies) { if (techCluster.includes(t)) m++ }
+      return m >= 2
+    })
+
+    const size = matchingJobs.length
+    if (size < 2) continue
+
     const roleCounts = new Map<string, number>()
-
-    for (const job of clusterJobs) {
-      for (const t of job.technologies) {
-        techCounts.set(t, (techCounts.get(t) || 0) + 1)
-      }
+    for (const job of matchingJobs) {
       roleCounts.set(job.role, (roleCounts.get(job.role) || 0) + 1)
     }
 
-    const topTechs = Array.from(techCounts.entries())
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 8)
-      .map(([name]) => name)
-
     const topRoles = Array.from(roleCounts.entries())
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 3)
-      .map(([name]) => name)
+      .sort((a, b) => b[1] - a[1]).slice(0, 3).map(([name]) => name)
 
-    const avgSalary = clusterJobs.filter((j) => j.salary_mentioned).length / size
-    const avgRemote = clusterJobs.filter((j) => j.remote === "fully_remote").length / size
-    const avgAiML = clusterJobs.filter((j) => j.ai_ml_mentioned).length / size
-
-    // Generate a label from the top techs
-    const label = topTechs.slice(0, 3).join(" / ")
+    const avgSalary = matchingJobs.filter((j) => j.salary_mentioned).length / size
+    const avgRemote = matchingJobs.filter((j) => j.remote === "fully_remote").length / size
+    const avgAiML = matchingJobs.filter((j) => j.ai_ml_mentioned).length / size
 
     clusters.push({
-      id: c,
-      label,
-      top_techs: topTechs,
-      top_roles: topRoles,
+      id: clusters.length, label,
+      top_techs: techCluster, top_roles: topRoles,
       size,
       pct: Math.round((size / jobs.length) * 1000) / 10,
       avg_salary_mentioned: Math.round(avgSalary * 100),
@@ -407,17 +450,24 @@ function buildClusters(
     })
   }
 
-  // Filter out tiny clusters (< 2% or < 5 jobs)
-  const filtered = clusters.filter((c) => c.pct >= 2 && c.size >= 3)
-  filtered.sort((a, b) => b.size - a.size)
-  filtered.forEach((c, i) => (c.id = i))
+  clusters.sort((a, b) => b.size - a.size)
+  clusters.forEach((c, i) => (c.id = i))
+
+  const assignedJobs = jobs.filter((j) => {
+    for (const cluster of clusters) {
+      let m = 0
+      for (const t of j.technologies) { if (cluster.top_techs.includes(t)) m++ }
+      if (m >= 2) return true
+    }
+    return false
+  })
 
   return {
     schema_version: "1.0",
     generated_at: new Date().toISOString(),
-    total_jobs: jobs.length,
-    k: filtered.length,
-    clusters: filtered,
+    total_jobs: assignedJobs.length,
+    k: clusters.length,
+    clusters,
   }
 }
 

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-13T09:21:09.725Z",
+  "generated_at": "2026-06-13T09:40:13.758Z",
   "rising": [
     {
       "tech": "Hugging Face",
@@ -288,33 +288,6 @@
       ]
     },
     {
-      "tech": "Docker",
-      "total_count": 61,
-      "slope": 1.15,
-      "slope_pct": 21.2,
-      "trend": "rising",
-      "series": [
-        {
-          "date": "2026-01-01",
-          "count": 12,
-          "totalJobs": 295,
-          "pct": 4.1
-        },
-        {
-          "date": "2026-02-01",
-          "count": 24,
-          "totalJobs": 452,
-          "pct": 5.3
-        },
-        {
-          "date": "2026-03-15",
-          "count": 25,
-          "totalJobs": 362,
-          "pct": 6.9
-        }
-      ]
-    },
-    {
       "tech": "GraphQL",
       "total_count": 38,
       "slope": 0.585,
@@ -473,6 +446,33 @@
           "count": 14,
           "totalJobs": 362,
           "pct": 3.9
+        }
+      ]
+    },
+    {
+      "tech": "Containers",
+      "total_count": 140,
+      "slope": 0.968,
+      "slope_pct": 7.8,
+      "trend": "rising",
+      "series": [
+        {
+          "date": "2026-01-01",
+          "count": 32,
+          "totalJobs": 295,
+          "pct": 10.8
+        },
+        {
+          "date": "2026-02-01",
+          "count": 60,
+          "totalJobs": 452,
+          "pct": 13.3
+        },
+        {
+          "date": "2026-03-15",
+          "count": 48,
+          "totalJobs": 362,
+          "pct": 13.3
         }
       ]
     },
@@ -723,33 +723,6 @@
     }
   ],
   "stable": [
-    {
-      "tech": "Kubernetes",
-      "total_count": 105,
-      "slope": 0.463,
-      "slope_pct": 5,
-      "trend": "stable",
-      "series": [
-        {
-          "date": "2026-01-01",
-          "count": 24,
-          "totalJobs": 295,
-          "pct": 8.1
-        },
-        {
-          "date": "2026-02-01",
-          "count": 47,
-          "totalJobs": 452,
-          "pct": 10.4
-        },
-        {
-          "date": "2026-03-15",
-          "count": 34,
-          "totalJobs": 362,
-          "pct": 9.4
-        }
-      ]
-    },
     {
       "tech": "AWS",
       "total_count": 168,

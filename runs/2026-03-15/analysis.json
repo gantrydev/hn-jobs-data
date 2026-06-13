@@ -102,9 +102,9 @@
       "pct": 14.9
     },
     {
-      "name": "Kubernetes",
-      "count": 34,
-      "pct": 9.4
+      "name": "Containers",
+      "count": 48,
+      "pct": 13.3
     },
     {
       "name": "Node.js",
@@ -113,11 +113,6 @@
     },
     {
       "name": "Next.js",
-      "count": 25,
-      "pct": 6.9
-    },
-    {
-      "name": "Docker",
       "count": 25,
       "pct": 6.9
     },

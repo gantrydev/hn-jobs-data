@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-13T09:21:09.720Z",
-  "total_jobs": 169,
-  "k": 3,
+  "generated_at": "2026-06-13T09:40:13.752Z",
+  "total_jobs": 73,
+  "k": 5,
   "clusters": [
     {
       "id": 0,
@@ -10,71 +10,92 @@
       "top_techs": [
         "React",
         "PostgreSQL",
-        "AWS",
-        "Node.js",
-        "Next.js",
-        "GraphQL",
-        "Rails",
-        "Django"
+        "AWS"
       ],
       "top_roles": [
         "Full Stack Engineer",
         "Senior Software Engineer",
         "Backend Engineer"
       ],
-      "size": 71,
-      "pct": 42,
-      "avg_salary_mentioned": 37,
-      "avg_remote_pct": 48,
-      "avg_ai_ml_pct": 69
+      "size": 56,
+      "pct": 33.1,
+      "avg_salary_mentioned": 43,
+      "avg_remote_pct": 45,
+      "avg_ai_ml_pct": 73
     },
     {
       "id": 1,
-      "label": "AWS / PostgreSQL / Node.js",
+      "label": "Containers / GCP",
       "top_techs": [
-        "AWS",
-        "PostgreSQL",
-        "Node.js",
-        "PyTorch",
-        "Rails",
-        "Kubernetes",
-        "Next.js",
+        "Containers",
         "GCP"
       ],
       "top_roles": [
-        "Full Stack Engineer",
-        "Senior Software Engineer",
-        "ML Engineer"
+        "Other",
+        "DevOps / SRE",
+        "AI Engineer"
       ],
-      "size": 62,
-      "pct": 36.7,
-      "avg_salary_mentioned": 16,
+      "size": 9,
+      "pct": 5.3,
+      "avg_salary_mentioned": 56,
       "avg_remote_pct": 56,
-      "avg_ai_ml_pct": 69
+      "avg_ai_ml_pct": 89
     },
     {
       "id": 2,
-      "label": "PostgreSQL / Kubernetes / AWS",
+      "label": "PyTorch / TensorFlow / LangChain",
       "top_techs": [
-        "PostgreSQL",
-        "Kubernetes",
-        "AWS",
-        "Docker",
-        "Terraform",
-        "React",
-        "Redis",
-        "GCP"
+        "PyTorch",
+        "TensorFlow",
+        "LangChain",
+        "Hugging Face"
       ],
       "top_roles": [
-        "Full Stack Engineer",
-        "Senior Software Engineer",
-        "DevOps / SRE"
+        "ML Engineer",
+        "Other",
+        "AI Engineer"
       ],
-      "size": 36,
-      "pct": 21.3,
-      "avg_salary_mentioned": 53,
-      "avg_remote_pct": 50,
-      "avg_ai_ml_pct": 61
+      "size": 7,
+      "pct": 4.1,
+      "avg_salary_mentioned": 57,
+      "avg_remote_pct": 29,
+      "avg_ai_ml_pct": 100
+    },
+    {
+      "id": 3,
+      "label": "Next.js / GraphQL",
+      "top_techs": [
+        "Next.js",
+        "GraphQL"
+      ],
+      "top_roles": [
+        "Senior Software Engineer",
+        "Full Stack Engineer",
+        "Frontend Engineer"
+      ],
+      "size": 6,
+      "pct": 3.6,
+      "avg_salary_mentioned": 33,
+      "avg_remote_pct": 33,
+      "avg_ai_ml_pct": 67
+    },
+    {
+      "id": 4,
+      "label": "Terraform / Vue",
+      "top_techs": [
+        "Terraform",
+        "Vue"
+      ],
+      "top_roles": [
+        "Engineering Manager",
+        "Senior Software Engineer",
+        "Backend Engineer"
+      ],
+      "size": 4,
+      "pct": 2.4,
+      "avg_salary_mentioned": 25,
+      "avg_remote_pct": 75,
+      "avg_ai_ml_pct": 75
     }
   ]
 }

@@ -102,9 +102,9 @@
       "pct": 16.8
     },
     {
-      "name": "Kubernetes",
-      "count": 47,
-      "pct": 10.4
+      "name": "Containers",
+      "count": 60,
+      "pct": 13.3
     },
     {
       "name": "Node.js",
@@ -125,11 +125,6 @@
       "name": "Terraform",
       "count": 29,
       "pct": 6.4
-    },
-    {
-      "name": "Docker",
-      "count": 24,
-      "pct": 5.3
     },
     {
       "name": "Redis",

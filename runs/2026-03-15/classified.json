@@ -151,7 +151,7 @@
         "GCP",
         "Rails",
         "Vue",
-        "Kubernetes"
+        "Containers"
       ],
       "role": "Engineering Manager",
       "experience_level": "Senior",
@@ -171,7 +171,7 @@
         "React",
         "Node.js",
         "PostgreSQL",
-        "Kubernetes",
+        "Containers",
         "AWS"
       ],
       "role": "Full Stack Engineer",
@@ -248,8 +248,7 @@
         "GraphQL",
         "AWS",
         "GCP",
-        "Docker",
-        "Kubernetes",
+        "Containers",
         "PyTorch",
         "TensorFlow",
         "Hugging Face",
@@ -609,7 +608,7 @@
         "React",
         "Node.js",
         "PostgreSQL",
-        "Docker",
+        "Containers",
         "Tailwind"
       ],
       "role": "Full Stack Engineer",
@@ -682,8 +681,7 @@
         "LangChain",
         "AWS",
         "GCP",
-        "Docker",
-        "Kubernetes"
+        "Containers"
       ],
       "role": "Other",
       "experience_level": "Senior",
@@ -761,7 +759,7 @@
         "Next.js",
         "GraphQL",
         "AWS",
-        "Docker"
+        "Containers"
       ],
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
@@ -853,7 +851,7 @@
     {
       "id": 47299084,
       "technologies": [
-        "Kubernetes",
+        "Containers",
         "Kafka",
         "Redis",
         "PostgreSQL",
@@ -1026,7 +1024,7 @@
     {
       "id": 47224124,
       "technologies": [
-        "Kubernetes",
+        "Containers",
         "GCP"
       ],
       "role": "DevOps / SRE",
@@ -1060,7 +1058,7 @@
       "technologies": [
         "Terraform",
         "AWS",
-        "Kubernetes"
+        "Containers"
       ],
       "role": "DevOps / SRE",
       "experience_level": "Not specified",
@@ -1302,7 +1300,7 @@
       "id": 47222857,
       "technologies": [
         "PostgreSQL",
-        "Docker"
+        "Containers"
       ],
       "role": "Staff Engineer",
       "experience_level": "Senior",
@@ -1424,7 +1422,7 @@
     {
       "id": 47324911,
       "technologies": [
-        "Kubernetes"
+        "Containers"
       ],
       "role": "Staff Engineer",
       "experience_level": "Senior",
@@ -1456,7 +1454,7 @@
         "Vue",
         "PostgreSQL",
         "AWS",
-        "Docker",
+        "Containers",
         "Terraform"
       ],
       "role": "Senior Software Engineer",
@@ -1567,7 +1565,7 @@
       "technologies": [
         "PostgreSQL",
         "AWS",
-        "Docker"
+        "Containers"
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Senior",
@@ -1855,7 +1853,7 @@
       "id": 47241620,
       "technologies": [
         "Next.js",
-        "Docker",
+        "Containers",
         "Pulumi",
         "Terraform",
         "AWS",
@@ -2033,7 +2031,7 @@
     {
       "id": 47222944,
       "technologies": [
-        "Kubernetes",
+        "Containers",
         "PostgreSQL",
         "React"
       ],
@@ -2066,7 +2064,7 @@
       "technologies": [
         "PostgreSQL",
         "AWS",
-        "Kubernetes",
+        "Containers",
         "Terraform"
       ],
       "role": "Senior Software Engineer",
@@ -2391,7 +2389,7 @@
     {
       "id": 47222459,
       "technologies": [
-        "Kubernetes",
+        "Containers",
         "PostgreSQL"
       ],
       "role": "Senior Software Engineer",
@@ -2409,7 +2407,7 @@
       "id": 47238829,
       "technologies": [
         "GCP",
-        "Kubernetes",
+        "Containers",
         "Redis",
         "Pub/Sub"
       ],
@@ -2586,7 +2584,7 @@
       "id": 47222239,
       "technologies": [
         "AWS",
-        "Kubernetes",
+        "Containers",
         "Terraform"
       ],
       "role": "Senior Software Engineer",
@@ -2635,7 +2633,7 @@
       "technologies": [
         "Django",
         "React",
-        "Kubernetes"
+        "Containers"
       ],
       "role": "Senior Software Engineer",
       "experience_level": "Senior",
@@ -2722,7 +2720,7 @@
     {
       "id": 47222105,
       "technologies": [
-        "Kubernetes"
+        "Containers"
       ],
       "role": "ML Engineer",
       "experience_level": "Not specified",
@@ -2743,8 +2741,7 @@
         "React",
         "Next.js",
         "PostgreSQL",
-        "Docker",
-        "Kubernetes"
+        "Containers"
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Not specified",
@@ -2807,8 +2804,7 @@
         "AWS",
         "GCP",
         "Azure",
-        "Docker",
-        "Kubernetes"
+        "Containers"
       ],
       "role": "AI Engineer",
       "experience_level": "Senior",
@@ -2983,8 +2979,7 @@
         "AWS",
         "Redis",
         "Kafka",
-        "Docker",
-        "Kubernetes"
+        "Containers"
       ],
       "role": "Backend Engineer",
       "experience_level": "Senior",
@@ -3003,7 +2998,7 @@
         "FastAPI",
         "PostgreSQL",
         "React",
-        "Kubernetes",
+        "Containers",
         "GCP"
       ],
       "role": "Full Stack Engineer",
@@ -3051,7 +3046,7 @@
       "technologies": [
         "React",
         "Next.js",
-        "Kubernetes",
+        "Containers",
         "PostgreSQL"
       ],
       "role": "Full Stack Engineer",
@@ -3087,7 +3082,7 @@
         "Sidekiq",
         "RabbitMQ",
         "AWS",
-        "Docker",
+        "Containers",
         "GraphQL"
       ],
       "role": "Backend Engineer",
@@ -3167,7 +3162,7 @@
       "id": 47219700,
       "technologies": [
         "React",
-        "Kubernetes"
+        "Containers"
       ],
       "role": "DevOps / SRE",
       "experience_level": "Junior",
@@ -3250,7 +3245,7 @@
         "PostgreSQL",
         "Next.js",
         "Terraform",
-        "Docker"
+        "Containers"
       ],
       "role": "Full Stack Engineer",
       "experience_level": "Not specified",
@@ -3314,7 +3309,7 @@
       "id": 47224903,
       "technologies": [
         "PostgreSQL",
-        "Kubernetes",
+        "Containers",
         "AWS"
       ],
       "role": "Full Stack Engineer",
@@ -3428,8 +3423,7 @@
         "PostgreSQL",
         "Redis",
         "Vue",
-        "Kubernetes",
-        "Docker",
+        "Containers",
         "Terraform"
       ],
       "role": "Backend Engineer",
@@ -3586,8 +3580,7 @@
       "id": 47227409,
       "technologies": [
         "PostgreSQL",
-        "Docker",
-        "Kubernetes",
+        "Containers",
         "MySQL"
       ],
       "role": "Senior Software Engineer",
@@ -3633,9 +3626,8 @@
       "id": 47220396,
       "technologies": [
         "Spring",
-        "Kubernetes",
-        "Kafka",
-        "Docker"
+        "Containers",
+        "Kafka"
       ],
       "role": "Staff Engineer",
       "experience_level": "Senior",
@@ -3837,7 +3829,7 @@
       "id": 47233376,
       "technologies": [
         "PostgreSQL",
-        "Kubernetes",
+        "Containers",
         "GCP"
       ],
       "role": "AI Engineer",
@@ -3856,7 +3848,7 @@
       "id": 47221145,
       "technologies": [
         "PostgreSQL",
-        "Docker",
+        "Containers",
         "AWS",
         "Terraform"
       ],
@@ -3906,7 +3898,7 @@
         "Django",
         "PostgreSQL",
         "Redis",
-        "Docker",
+        "Containers",
         "AWS"
       ],
       "role": "Full Stack Engineer",
@@ -3956,8 +3948,7 @@
       "id": 47229274,
       "technologies": [
         "AWS",
-        "Kubernetes",
-        "Docker",
+        "Containers",
         "Terraform",
         "GitHub Actions"
       ],
@@ -4102,7 +4093,7 @@
     {
       "id": 47223924,
       "technologies": [
-        "Kubernetes"
+        "Containers"
       ],
       "role": "Backend Engineer",
       "experience_level": "Not specified",
@@ -4178,7 +4169,7 @@
         "React",
         "Next.js",
         "PostgreSQL",
-        "Docker",
+        "Containers",
         "AWS"
       ],
       "role": "Full Stack Engineer",
@@ -4269,7 +4260,7 @@
         "Django",
         "MongoDB",
         "Flutter",
-        "Docker",
+        "Containers",
         "AWS"
       ],
       "role": "Full Stack Engineer",
@@ -4327,8 +4318,7 @@
         "Svelte",
         "PostgreSQL",
         "Redis",
-        "Docker",
-        "Kubernetes"
+        "Containers"
       ],
       "role": "Backend Engineer",
       "experience_level": "Senior",
@@ -4359,8 +4349,7 @@
         "PostgreSQL",
         "React",
         "GraphQL",
-        "Docker",
-        "Kubernetes",
+        "Containers",
         "Terraform"
       ],
       "role": "Full Stack Engineer",
@@ -4464,7 +4453,7 @@
         "React",
         "PostgreSQL",
         "Elasticsearch",
-        "Kubernetes",
+        "Containers",
         "AWS"
       ],
       "role": "Full Stack Engineer",
@@ -4571,7 +4560,7 @@
         "PostgreSQL",
         "React",
         "AWS",
-        "Docker",
+        "Containers",
         "Terraform",
         "Kafka"
       ],
@@ -4635,7 +4624,7 @@
       "technologies": [
         "React",
         "PostgreSQL",
-        "Kubernetes",
+        "Containers",
         "AWS"
       ],
       "role": "Full Stack Engineer",
@@ -4999,7 +4988,7 @@
       "technologies": [
         "Vue",
         "Terraform",
-        "Docker"
+        "Containers"
       ],
       "role": "DevOps / SRE",
       "experience_level": "Senior",
@@ -5046,7 +5035,7 @@
     {
       "id": 47220359,
       "technologies": [
-        "Kubernetes"
+        "Containers"
       ],
       "role": "Backend Engineer",
       "experience_level": "Not specified",
@@ -5062,7 +5051,7 @@
     {
       "id": 47219927,
       "technologies": [
-        "Kubernetes",
+        "Containers",
         "Node.js",
         "PostgreSQL"
       ],

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-13T09:13:26.086Z",
+  "generated_at": "2026-06-13T09:21:09.726Z",
   "top_pairs": [
     {
       "tech": "PostgreSQL",
@@ -65,37 +65,37 @@
   ],
   "clusters": [
     {
-      "label": "PostgreSQL / AWS / Kubernetes",
-      "top_techs": [
-        "PostgreSQL",
-        "AWS",
-        "Kubernetes",
-        "Docker",
-        "Terraform"
-      ],
-      "pct": 47.9
-    },
-    {
       "label": "React / PostgreSQL / AWS",
       "top_techs": [
         "React",
         "PostgreSQL",
         "AWS",
         "Node.js",
-        "Kubernetes"
+        "Next.js"
       ],
-      "pct": 37.3
+      "pct": 42
     },
     {
-      "label": "Next.js / React / PostgreSQL",
+      "label": "AWS / PostgreSQL / Node.js",
       "top_techs": [
-        "Next.js",
-        "React",
-        "PostgreSQL",
         "AWS",
-        "Node.js"
+        "PostgreSQL",
+        "Node.js",
+        "PyTorch",
+        "Rails"
       ],
-      "pct": 14.8
+      "pct": 36.7
+    },
+    {
+      "label": "PostgreSQL / Kubernetes / AWS",
+      "top_techs": [
+        "PostgreSQL",
+        "Kubernetes",
+        "AWS",
+        "Docker",
+        "Terraform"
+      ],
+      "pct": 21.3
     }
   ],
   "top_associations": [

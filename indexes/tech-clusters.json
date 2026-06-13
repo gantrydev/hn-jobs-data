@@ -1,80 +1,80 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-13T09:13:26.078Z",
+  "generated_at": "2026-06-13T09:21:09.720Z",
   "total_jobs": 169,
   "k": 3,
   "clusters": [
     {
       "id": 0,
-      "label": "PostgreSQL / AWS / Kubernetes",
-      "top_techs": [
-        "PostgreSQL",
-        "AWS",
-        "Kubernetes",
-        "Docker",
-        "Terraform",
-        "Redis",
-        "GCP",
-        "Rails"
-      ],
-      "top_roles": [
-        "Senior Software Engineer",
-        "Full Stack Engineer",
-        "Backend Engineer"
-      ],
-      "size": 81,
-      "pct": 47.9,
-      "avg_salary_mentioned": 26,
-      "avg_remote_pct": 57,
-      "avg_ai_ml_pct": 63
-    },
-    {
-      "id": 1,
       "label": "React / PostgreSQL / AWS",
       "top_techs": [
         "React",
         "PostgreSQL",
         "AWS",
         "Node.js",
-        "Kubernetes",
-        "GCP",
-        "Django",
-        "GraphQL"
+        "Next.js",
+        "GraphQL",
+        "Rails",
+        "Django"
       ],
       "top_roles": [
         "Full Stack Engineer",
         "Senior Software Engineer",
         "Backend Engineer"
       ],
-      "size": 63,
-      "pct": 37.3,
-      "avg_salary_mentioned": 38,
-      "avg_remote_pct": 46,
-      "avg_ai_ml_pct": 68
+      "size": 71,
+      "pct": 42,
+      "avg_salary_mentioned": 37,
+      "avg_remote_pct": 48,
+      "avg_ai_ml_pct": 69
     },
     {
-      "id": 2,
-      "label": "Next.js / React / PostgreSQL",
+      "id": 1,
+      "label": "AWS / PostgreSQL / Node.js",
       "top_techs": [
-        "Next.js",
-        "React",
-        "PostgreSQL",
         "AWS",
+        "PostgreSQL",
         "Node.js",
-        "GraphQL",
-        "Docker",
-        "Kubernetes"
+        "PyTorch",
+        "Rails",
+        "Kubernetes",
+        "Next.js",
+        "GCP"
       ],
       "top_roles": [
         "Full Stack Engineer",
         "Senior Software Engineer",
-        "Staff Engineer"
+        "ML Engineer"
       ],
-      "size": 25,
-      "pct": 14.8,
-      "avg_salary_mentioned": 40,
-      "avg_remote_pct": 48,
-      "avg_ai_ml_pct": 80
+      "size": 62,
+      "pct": 36.7,
+      "avg_salary_mentioned": 16,
+      "avg_remote_pct": 56,
+      "avg_ai_ml_pct": 69
+    },
+    {
+      "id": 2,
+      "label": "PostgreSQL / Kubernetes / AWS",
+      "top_techs": [
+        "PostgreSQL",
+        "Kubernetes",
+        "AWS",
+        "Docker",
+        "Terraform",
+        "React",
+        "Redis",
+        "GCP"
+      ],
+      "top_roles": [
+        "Full Stack Engineer",
+        "Senior Software Engineer",
+        "DevOps / SRE"
+      ],
+      "size": 36,
+      "pct": 21.3,
+      "avg_salary_mentioned": 53,
+      "avg_remote_pct": 50,
+      "avg_ai_ml_pct": 61
     }
   ]
 }

@@ -109,7 +109,7 @@
     {
       "name": "Node.js",
       "count": 29,
-      "pct": 8
+      "pct": 8.0
     },
     {
       "name": "Next.js",
@@ -316,7 +316,7 @@
     {
       "name": "Backend Engineer",
       "count": 47,
-      "pct": 13
+      "pct": 13.0
     },
     {
       "name": "DevOps / SRE",
@@ -389,5 +389,74 @@
       "pct": 0.3
     }
   ],
-  "generated_at": "2026-06-13T09:11:57.566Z"
+  "generated_at": "2026-06-13T09:11:57.566Z",
+  "remote": {
+    "fully_remote": {
+      "count": 158,
+      "pct": 43.6
+    },
+    "hybrid": {
+      "count": 75,
+      "pct": 20.7
+    },
+    "onsite_only": {
+      "count": 84,
+      "pct": 23.2
+    },
+    "not_mentioned": {
+      "count": 45,
+      "pct": 12.4
+    }
+  },
+  "experience_levels": [
+    {
+      "level": "Senior",
+      "count": 182,
+      "pct": 50.3
+    },
+    {
+      "level": "Not specified",
+      "count": 160,
+      "pct": 44.2
+    },
+    {
+      "level": "Mid",
+      "count": 12,
+      "pct": 3.3
+    },
+    {
+      "level": "Junior",
+      "count": 8,
+      "pct": 2.2
+    }
+  ],
+  "compensation": {
+    "salary_mentioned_count": 95,
+    "salary_mentioned_pct": 26.2,
+    "ranges": [
+      {
+        "band": "$150k-$200k",
+        "count": 42
+      },
+      {
+        "band": "$200k+",
+        "count": 28
+      },
+      {
+        "band": "$100k-$150k",
+        "count": 16
+      },
+      {
+        "band": "<$100k",
+        "count": 7
+      },
+      {
+        "band": "$200+",
+        "count": 2
+      }
+    ],
+    "equity_mentioned_count": 71,
+    "equity_mentioned_pct": 19.6
+  },
+  "ai_ml_mentioned_pct": 58.6
 }

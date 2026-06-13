@@ -52,12 +52,12 @@
     {
       "name": "Kotlin",
       "count": 3,
-      "pct": 1
+      "pct": 1.0
     },
     {
       "name": "C#",
       "count": 3,
-      "pct": 1
+      "pct": 1.0
     },
     {
       "name": "Scala",
@@ -134,7 +134,7 @@
     {
       "name": "Django",
       "count": 6,
-      "pct": 2
+      "pct": 2.0
     },
     {
       "name": "MySQL",
@@ -174,12 +174,12 @@
     {
       "name": "Android",
       "count": 3,
-      "pct": 1
+      "pct": 1.0
     },
     {
       "name": "Laravel",
       "count": 3,
-      "pct": 1
+      "pct": 1.0
     },
     {
       "name": "Elasticsearch",
@@ -316,12 +316,12 @@
     {
       "name": "Principal Engineer",
       "count": 3,
-      "pct": 1
+      "pct": 1.0
     },
     {
       "name": "Frontend Engineer",
       "count": 3,
-      "pct": 1
+      "pct": 1.0
     },
     {
       "name": "Data Scientist",
@@ -349,5 +349,74 @@
       "pct": 0.3
     }
   ],
-  "generated_at": "2026-06-13T09:11:57.553Z"
+  "generated_at": "2026-06-13T09:11:57.553Z",
+  "remote": {
+    "fully_remote": {
+      "count": 133,
+      "pct": 45.1
+    },
+    "hybrid": {
+      "count": 50,
+      "pct": 16.9
+    },
+    "onsite_only": {
+      "count": 64,
+      "pct": 21.7
+    },
+    "not_mentioned": {
+      "count": 48,
+      "pct": 16.3
+    }
+  },
+  "experience_levels": [
+    {
+      "level": "Not specified",
+      "count": 150,
+      "pct": 50.8
+    },
+    {
+      "level": "Senior",
+      "count": 130,
+      "pct": 44.1
+    },
+    {
+      "level": "Mid",
+      "count": 11,
+      "pct": 3.7
+    },
+    {
+      "level": "Junior",
+      "count": 4,
+      "pct": 1.4
+    }
+  ],
+  "compensation": {
+    "salary_mentioned_count": 65,
+    "salary_mentioned_pct": 22.0,
+    "ranges": [
+      {
+        "band": "$150k-$200k",
+        "count": 24
+      },
+      {
+        "band": "$200k+",
+        "count": 18
+      },
+      {
+        "band": "<$100k",
+        "count": 12
+      },
+      {
+        "band": "$100k-$150k",
+        "count": 10
+      },
+      {
+        "band": "$200k-$200k",
+        "count": 1
+      }
+    ],
+    "equity_mentioned_count": 58,
+    "equity_mentioned_pct": 19.7
+  },
+  "ai_ml_mentioned_pct": 56.6
 }

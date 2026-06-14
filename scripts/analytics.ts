@@ -177,7 +177,6 @@ function buildCooccurrenceMatrix(
   }
 
   const techList = Array.from(techSet).sort()
-  const N = techList.length
 
   // Initialize matrix
   const matrix: Record<string, Record<string, number>> = {}
@@ -241,95 +240,8 @@ function buildCooccurrenceMatrix(
 }
 
 // ==============================================================================
-// 2. K-Means Clustering
+// 2. Tech Stack Clustering
 // ==============================================================================
-
-function kmeans(
-  vectors: number[][],
-  k: number,
-  maxIterations = 50,
-): { centroids: number[][]; assignments: number[] } {
-  const n = vectors.length
-  const d = vectors[0].length
-
-  // Initialize centroids using k-means++
-  const centroids: number[][] = []
-  // First centroid: random point
-  centroids.push([...vectors[Math.floor(Math.random() * n)]])
-
-  for (let c = 1; c < k; c++) {
-    // Compute distances to nearest centroid
-    const dists = vectors.map((v) => {
-      let minDist = Infinity
-      for (const centroid of centroids) {
-        let sum = 0
-        for (let i = 0; i < d; i++) sum += (v[i] - centroid[i]) ** 2
-        minDist = Math.min(minDist, sum)
-      }
-      return minDist
-    })
-
-    // Weighted random selection
-    const totalDist = dists.reduce((a, b) => a + b, 0)
-    let r = Math.random() * totalDist
-    let idx = 0
-    for (let i = 0; i < n; i++) {
-      r -= dists[i]
-      if (r <= 0) {
-        idx = i
-        break
-      }
-    }
-    centroids.push([...vectors[idx]])
-  }
-
-  // Iterate
-  const assignments = new Array(n).fill(0)
-  for (let iter = 0; iter < maxIterations; iter++) {
-    // Assign to nearest centroid
-    let changed = false
-    for (let i = 0; i < n; i++) {
-      let minDist = Infinity
-      let best = 0
-      for (let c = 0; c < k; c++) {
-        let sum = 0
-        for (let j = 0; j < d; j++) sum += (vectors[i][j] - centroids[c][j]) ** 2
-        if (sum < minDist) {
-          minDist = sum
-          best = c
-        }
-      }
-      if (assignments[i] !== best) {
-        assignments[i] = best
-        changed = true
-      }
-    }
-
-    if (!changed) break
-
-    // Recompute centroids
-    for (let c = 0; c < k; c++) {
-      centroids[c] = new Array(d).fill(0)
-    }
-    const counts = new Array(k).fill(0)
-    for (let i = 0; i < n; i++) {
-      const c = assignments[i]
-      counts[c]++
-      for (let j = 0; j < d; j++) {
-        centroids[c][j] += vectors[i][j]
-      }
-    }
-    for (let c = 0; c < k; c++) {
-      if (counts[c] > 0) {
-        for (let j = 0; j < d; j++) {
-          centroids[c][j] /= counts[c]
-        }
-      }
-    }
-  }
-
-  return { centroids, assignments }
-}
 
 function buildClusters(
   allData: Array<{ date: string; jobs: ClassifiedJob[] }>,
@@ -352,9 +264,10 @@ function buildClusters(
     for (let i = 0; i < job.technologies.length; i++) {
       for (let j = i + 1; j < job.technologies.length; j++) {
         const a = job.technologies[i], b = job.technologies[j]
-        const ma = adj.get(a)!
+        const ma = adj.get(a)
+        const mb = adj.get(b)
+        if (!ma || !mb) continue
         ma.set(b, (ma.get(b) ?? 0) + 1)
-        const mb = adj.get(b)!
         mb.set(a, (mb.get(a) ?? 0) + 1)
       }
     }
@@ -617,13 +530,14 @@ function buildMomentum(allData: Array<{ date: string; jobs: ClassifiedJob[] }>):
     }
 
     for (const [tech, count] of techCounts) {
-      if (!techMonths.has(tech)) techMonths.set(tech, [])
-      techMonths.get(tech)!.push({
+      const series = techMonths.get(tech) ?? []
+      series.push({
         date,
         count,
         totalJobs,
         pct: Math.round((count / totalJobs) * 1000) / 10,
       })
+      techMonths.set(tech, series)
     }
   }
 

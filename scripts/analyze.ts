@@ -8,6 +8,7 @@ import {
   type Analysis,
   type BatchResponse,
   type ClassifiedJob,
+  type Language,
   type RawData,
   type RawJob,
   type Role,
@@ -107,7 +108,8 @@ When is_job is false, still fill the other fields with best-effort defaults
 For each comment, return an object with:
 - id: the numeric HN item ID provided in the input
 - is_job: boolean per the rules above
-- technologies: array of canonical technology names found in this job
+- languages: array of programming languages found in this job from the Languages taxonomy
+- technologies: array of all other canonical technology names found in this job
 - role: single closest role from the taxonomy
 - experience_level: one of "Senior", "Mid", "Junior", "Not specified"
 - remote: one of "fully_remote", "hybrid", "onsite_only", "not_mentioned"
@@ -251,6 +253,7 @@ function aggregate(
 ): Omit<Analysis, "schema_version" | "date" | "run_id" | "job_count" | "generated_at"> {
   const totalJobs = jobs.length
 
+  const langMap = new Map<Language, number>()
   const techMap = new Map<Technology, number>()
   const roleMap = new Map<Role, number>()
   const bandMap = new Map<SalaryBand, number>()
@@ -265,6 +268,9 @@ function aggregate(
   let aiMlCount = 0
 
   for (const job of jobs) {
+    for (const language of job.languages) {
+      langMap.set(language, (langMap.get(language) ?? 0) + 1)
+    }
     for (const t of job.technologies) {
       techMap.set(t, (techMap.get(t) ?? 0) + 1)
     }
@@ -301,6 +307,7 @@ function aggregate(
     .sort((a, b) => b.count - a.count)
 
   return {
+    languages: mapToSorted(langMap),
     technologies: mapToSorted(techMap),
     roles: mapToSorted(roleMap),
     compensation: {
@@ -391,7 +398,7 @@ export async function analyzeJobs(raw: RawData): Promise<AnalyzeResult> {
   const aggregated = aggregate(classifiedJobs)
 
   console.log(
-    `  Analysis complete: ${aggregated.technologies.length} technologies, ${aggregated.roles.length} roles, ${classifiedJobs.length} jobs classified`,
+    `  Analysis complete: ${aggregated.languages.length} languages, ${aggregated.technologies.length} technologies, ${aggregated.roles.length} roles, ${classifiedJobs.length} jobs classified`,
   )
 
   const analysis: Analysis = {

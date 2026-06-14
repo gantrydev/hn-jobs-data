@@ -110,4 +110,7 @@ jobs:
       - name: Trigger site rebuild
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
-        run: gh api repos/gantryops/hn-jobs-site/dispatches -f event_type=data-updated
+        run: |
+          gh api repos/gantryops/hn-jobs-site/dispatches \
+            -f event_type=data-updated \
+            -f client_payload[data_branch]="${GITHUB_REF_NAME}"

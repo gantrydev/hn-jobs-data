@@ -104,6 +104,8 @@ export const TECHNOLOGY_NAMES = Object.values(TECHNOLOGY_TAXONOMY).flat() as [
   ...(typeof TECHNOLOGY_TAXONOMY)[keyof typeof TECHNOLOGY_TAXONOMY][number][],
 ]
 export type Technology = (typeof TECHNOLOGY_NAMES)[number]
+export const LANGUAGE_NAMES = TECHNOLOGY_TAXONOMY.Languages
+export type Language = (typeof LANGUAGE_NAMES)[number]
 
 export const ROLE_NAMES = [
   "Software Engineer",
@@ -212,6 +214,13 @@ export function normalizeTechnology(value: unknown): Technology | null {
   return TECHNOLOGY_ALIASES[normalizeTaxonomyKey(trimmed)] ?? null
 }
 
+export function normalizeLanguage(value: unknown): Language | null {
+  const technology = normalizeTechnology(value)
+  return technology && (LANGUAGE_NAMES as readonly Technology[]).includes(technology)
+    ? (technology as Language)
+    : null
+}
+
 export function normalizeRole(value: unknown): Role | null {
   if (typeof value !== "string") return null
   const trimmed = value.trim()
@@ -241,6 +250,18 @@ const TechnologyListSchema = z.preprocess((value) => {
     ),
   ]
 }, z.array(TechnologyValueSchema))
+const LanguageValueSchema = z.enum(LANGUAGE_NAMES)
+const LanguageListSchema = z.preprocess((value) => {
+  if (!Array.isArray(value)) return value
+  return [
+    ...new Set(
+      value.flatMap((item) => {
+        const normalized = normalizeLanguage(item)
+        return normalized ? [normalized] : []
+      }),
+    ),
+  ]
+}, z.array(LanguageValueSchema))
 const RoleValueSchema = z.preprocess((value) => normalizeRole(value) ?? value, z.enum(ROLE_NAMES))
 
 // ==============================================================================
@@ -283,6 +304,10 @@ const TechnologyCountSchema = NamedCountSchema.extend({
   name: TechnologyValueSchema,
 })
 
+const LanguageCountSchema = NamedCountSchema.extend({
+  name: LanguageValueSchema,
+})
+
 const RoleCountSchema = NamedCountSchema.extend({
   name: RoleValueSchema,
 })
@@ -301,6 +326,7 @@ const ExperienceLevelSchema = z.object({
 export const ClassifiedJobSchema = z
   .object({
     id: z.int(),
+    languages: LanguageListSchema.default([]),
     technologies: TechnologyListSchema,
     role: RoleValueSchema,
     experience_level: z.enum(["Senior", "Mid", "Junior", "Not specified"]),
@@ -342,6 +368,7 @@ export const AnalysisSchema = z.object({
   date: dateStringSchema,
   run_id: z.string().trim(),
   job_count: z.int(),
+  languages: z.array(LanguageCountSchema).default([]),
   technologies: z.array(TechnologyCountSchema),
   roles: z.array(RoleCountSchema),
   compensation: z.object({

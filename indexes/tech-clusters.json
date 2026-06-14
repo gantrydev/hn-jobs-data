@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-06-14T08:42:32.197Z",
+  "total_jobs": 124,
+  "k": 10,
+  "clusters": [
+    {
+      "id": 0,
+      "label": "Python / TypeScript / React",
+      "top_techs": [
+        "Python",
+        "TypeScript",
+        "React",
+        "PostgreSQL",
+        "AWS"
+      ],
+      "top_roles": [
+        "Software Engineer",
+        "Full Stack Engineer",
+        "Senior Software Engineer"
+      ],
+      "size": 98,
+      "pct": 53.8,
+      "avg_salary_mentioned": 41,
+      "avg_remote_pct": 47,
+      "avg_ai_ml_pct": 70
+    },
+    {
+      "id": 1,
+      "label": "Go / Kubernetes / Rust",
+      "top_techs": [
+        "Go",
+        "Kubernetes",
+        "Rust"
+      ],
+      "top_roles": [
+        "Software Engineer",
+        "Senior Software Engineer",
+        "Full Stack Engineer"
+      ],
+      "size": 22,
+      "pct": 12.1,
+      "avg_salary_mentioned": 27,
+      "avg_remote_pct": 55,
+      "avg_ai_ml_pct": 36
+    },
+    {
+      "id": 2,
+      "label": "GCP / Azure / PyTorch",
+      "top_techs": [
+        "GCP",
+        "Azure",
+        "PyTorch"
+      ],
+      "top_roles": [
+        "ML Engineer",
+        "DevOps / SRE",
+        "Other"
+      ],
+      "size": 7,
+      "pct": 3.8,
+      "avg_salary_mentioned": 14,
+      "avg_remote_pct": 43,
+      "avg_ai_ml_pct": 86
+    },
+    {
+      "id": 3,
+      "label": "Android / Java / Kotlin",
+      "top_techs": [
+        "Android",
+        "Java",
+        "Kotlin"
+      ],
+      "top_roles": [
+        "Software Engineer",
+        "Senior Software Engineer",
+        "Backend Engineer"
+      ],
+      "size": 7,
+      "pct": 3.8,
+      "avg_salary_mentioned": 29,
+      "avg_remote_pct": 43,
+      "avg_ai_ml_pct": 43
+    },
+    {
+      "id": 4,
+      "label": "Node.js / Next.js",
+      "top_techs": [
+        "Node.js",
+        "Next.js"
+      ],
+      "top_roles": [
+        "Full Stack Engineer",
+        "Senior Software Engineer",
+        "Software Engineer"
+      ],
+      "size": 6,
+      "pct": 3.3,
+      "avg_salary_mentioned": 50,
+      "avg_remote_pct": 50,
+      "avg_ai_ml_pct": 67
+    },
+    {
+      "id": 5,
+      "label": "Terraform / Docker",
+      "top_techs": [
+        "Terraform",
+        "Docker"
+      ],
+      "top_roles": [
+        "Backend Engineer",
+        "ML Engineer",
+        "Senior Software Engineer"
+      ],
+      "size": 5,
+      "pct": 2.7,
+      "avg_salary_mentioned": 20,
+      "avg_remote_pct": 80,
+      "avg_ai_ml_pct": 40
+    },
+    {
+      "id": 6,
+      "label": "JavaScript / Laravel / PHP",
+      "top_techs": [
+        "JavaScript",
+        "Laravel",
+        "PHP"
+      ],
+      "top_roles": [
+        "Software Engineer",
+        "Senior Software Engineer",
+        "Full Stack Engineer"
+      ],
+      "size": 4,
+      "pct": 2.2,
+      "avg_salary_mentioned": 0,
+      "avg_remote_pct": 50,
+      "avg_ai_ml_pct": 75
+    },
+    {
+      "id": 7,
+      "label": "React Native / iOS",
+      "top_techs": [
+        "React Native",
+        "iOS"
+      ],
+      "top_roles": [
+        "Other",
+        "Full Stack Engineer",
+        "Software Engineer"
+      ],
+      "size": 3,
+      "pct": 1.6,
+      "avg_salary_mentioned": 0,
+      "avg_remote_pct": 33,
+      "avg_ai_ml_pct": 67
+    },
+    {
+      "id": 8,
+      "label": "Ruby / Rails",
+      "top_techs": [
+        "Ruby",
+        "Rails"
+      ],
+      "top_roles": [
+        "Full Stack Engineer",
+        "Senior Software Engineer"
+      ],
+      "size": 3,
+      "pct": 1.6,
+      "avg_salary_mentioned": 67,
+      "avg_remote_pct": 33,
+      "avg_ai_ml_pct": 67
+    },
+    {
+      "id": 9,
+      "label": "OpenAI API / LangChain",
+      "top_techs": [
+        "OpenAI API",
+        "LangChain"
+      ],
+      "top_roles": [
+        "AI Engineer",
+        "Senior Software Engineer"
+      ],
+      "size": 2,
+      "pct": 1.1,
+      "avg_salary_mentioned": 50,
+      "avg_remote_pct": 50,
+      "avg_ai_ml_pct": 100
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-06-14T08:42:32.210Z",
+  "top_pairs": [
+    {
+      "tech": "React",
+      "with": "TypeScript",
+      "count": 504,
+      "jaccard": 0.491
+    },
+    {
+      "tech": "Python",
+      "with": "TypeScript",
+      "count": 406,
+      "jaccard": 0.315
+    },
+    {
+      "tech": "PostgreSQL",
+      "with": "TypeScript",
+      "count": 355,
+      "jaccard": 0.34
+    },
+    {
+      "tech": "Python",
+      "with": "React",
+      "count": 352,
+      "jaccard": 0.274
+    },
+    {
+      "tech": "PostgreSQL",
+      "with": "React",
+      "count": 338,
+      "jaccard": 0.336
+    },
+    {
+      "tech": "AWS",
+      "with": "Python",
+      "count": 309,
+      "jaccard": 0.272
+    },
+    {
+      "tech": "PostgreSQL",
+      "with": "Python",
+      "count": 296,
+      "jaccard": 0.244
+    },
+    {
+      "tech": "AWS",
+      "with": "TypeScript",
+      "count": 277,
+      "jaccard": 0.262
+    },
+    {
+      "tech": "AWS",
+      "with": "React",
+      "count": 262,
+      "jaccard": 0.257
+    },
+    {
+      "tech": "AWS",
+      "with": "PostgreSQL",
+      "count": 258,
+      "jaccard": 0.289
+    }
+  ],
+  "clusters": [
+    {
+      "label": "Python / TypeScript / React",
+      "top_techs": [
+        "Python",
+        "TypeScript",
+        "React",
+        "PostgreSQL",
+        "AWS"
+      ],
+      "pct": 53.8
+    },
+    {
+      "label": "Go / Kubernetes / Rust",
+      "top_techs": [
+        "Go",
+        "Kubernetes",
+        "Rust"
+      ],
+      "pct": 12.1
+    },
+    {
+      "label": "GCP / Azure / PyTorch",
+      "top_techs": [
+        "GCP",
+        "Azure",
+        "PyTorch"
+      ],
+      "pct": 3.8
+    },
+    {
+      "label": "Android / Java / Kotlin",
+      "top_techs": [
+        "Android",
+        "Java",
+        "Kotlin"
+      ],
+      "pct": 3.8
+    },
+    {
+      "label": "Node.js / Next.js",
+      "top_techs": [
+        "Node.js",
+        "Next.js"
+      ],
+      "pct": 3.3
+    },
+    {
+      "label": "Terraform / Docker",
+      "top_techs": [
+        "Terraform",
+        "Docker"
+      ],
+      "pct": 2.7
+    },
+    {
+      "label": "JavaScript / Laravel / PHP",
+      "top_techs": [
+        "JavaScript",
+        "Laravel",
+        "PHP"
+      ],
+      "pct": 2.2
+    },
+    {
+      "label": "React Native / iOS",
+      "top_techs": [
+        "React Native",
+        "iOS"
+      ],
+      "pct": 1.6
+    },
+    {
+      "label": "Ruby / Rails",
+      "top_techs": [
+        "Ruby",
+        "Rails"
+      ],
+      "pct": 1.6
+    },
+    {
+      "label": "OpenAI API / LangChain",
+      "top_techs": [
+        "OpenAI API",
+        "LangChain"
+      ],
+      "pct": 1.1
+    }
+  ],
+  "top_associations": [
+    {
+      "antecedent": [
+        "Android"
+      ],
+      "consequent": [
+        "iOS"
+      ],
+      "confidence": 0.8,
+      "lift": 12.4
+    },
+    {
+      "antecedent": [
+        "Azure"
+      ],
+      "consequent": [
+        "GCP"
+      ],
+      "confidence": 0.625,
+      "lift": 7.45
+    },
+    {
+      "antecedent": [
+        "Docker"
+      ],
+      "consequent": [
+        "Terraform"
+      ],
+      "confidence": 0.385,
+      "lift": 3.14
+    },
+    {
+      "antecedent": [
+        "Terraform"
+      ],
+      "consequent": [
+        "AWS"
+      ],
+      "confidence": 0.789,
+      "lift": 2.85
+    },
+    {
+      "antecedent": [
+        "Azure"
+      ],
+      "consequent": [
+        "AWS"
+      ],
+      "confidence": 0.75,
+      "lift": 2.7
+    },
+    {
+      "antecedent": [
+        "Docker"
+      ],
+      "consequent": [
+        "Kubernetes"
+      ],
+      "confidence": 0.462,
+      "lift": 2.55
+    },
+    {
+      "antecedent": [
+        "GCP"
+      ],
+      "consequent": [
+        "AWS"
+      ],
+      "confidence": 0.692,
+      "lift": 2.5
+    },
+    {
+      "antecedent": [
+        "Terraform"
+      ],
+      "consequent": [
+        "Kubernetes"
+      ],
+      "confidence": 0.421,
+      "lift": 2.33
+    },
+    {
+      "antecedent": [
+        "Rust"
+      ],
+      "consequent": [
+        "Go"
+      ],
+      "confidence": 0.444,
+      "lift": 2.3
+    },
+    {
+      "antecedent": [
+        "FastAPI"
+      ],
+      "consequent": [
+        "PostgreSQL"
+      ],
+      "confidence": 0.833,
+      "lift": 2.27
+    }
+  ],
+  "momentum_summary": {
+    "top_rising": [
+      {
+        "tech": "Spark",
+        "slope_pct": 93.8
+      },
+      {
+        "tech": "Cassandra",
+        "slope_pct": 67.2
+      },
+      {
+        "tech": "Dart",
+        "slope_pct": 28.6
+      },
+      {
+        "tech": "Spring",
+        "slope_pct": 26.7
+      },
+      {
+        "tech": "Linux",
+        "slope_pct": 24
+      }
+    ],
+    "top_declining": [
+      {
+        "tech": "eBPF",
+        "slope_pct": -60
+      },
+      {
+        "tech": "SQS",
+        "slope_pct": -19.3
+      },
+      {
+        "tech": "C++",
+        "slope_pct": -10.4
+      },
+      {
+        "tech": "Node.js",
+        "slope_pct": -10.1
+      },
+      {
+        "tech": "Git",
+        "slope_pct": -9.7
+      }
+    ]
+  }
+}

@@ -78,6 +78,10 @@ async function main(): Promise<void> {
   // ── Step 3: Update indexes ─────────────────────────────────────────────────
   await updateIndexes(analysis, raw.sources.who_is_hiring_thread_title)
 
+  // ── Step 4: Run analytics (co-occurrence, clusters, associations, momentum) ─
+  const { runAnalytics } = await import("./analytics.js")
+  await runAnalytics()
+
   console.log(`\n✅ Pipeline complete: ${runId}\n`)
 }
 

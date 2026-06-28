@@ -2,16 +2,16 @@
 
 > Monthly tech-hiring trends mined from Hacker News "Who is hiring?" threads. Every job posting is classified (role, technologies, experience level, remote policy, compensation) and aggregated per month. All data is served as JSON; this file indexes it for LLMs.
 
-Latest run: 2026-06-11 — 309 jobs analyzed. Generated 2026-06-11T13:19:07.786Z.
+Latest run: 2026-06-28 — 330 jobs analyzed. Generated 2026-06-28T11:47:05.880Z.
 
 ## Latest snapshot
 
-- Jobs analyzed: 309
-- Top technologies: Python (31.1%), TypeScript (23.9%), React (21.7%), PostgreSQL (18.8%), AWS (14.9%), Go (10%), Kubernetes (9.4%), Rust (9.1%)
-- Top roles: Software Engineer (29.1%), Full Stack Engineer (13.9%), Senior Software Engineer (13.9%), Other (11%), Backend Engineer (7.1%), ML Engineer (4.9%)
-- Fully remote: 41.7%
-- Salary mentioned: 32.7%
-- AI/ML mentioned: 59.9%
+- Jobs analyzed: 330
+- Top technologies: React (26.4%), PostgreSQL (22.4%), AWS (20.3%), Kubernetes (15.5%), Docker (12.4%), Terraform (10.6%), Node.js (10.3%), Linux (9.7%)
+- Top roles: Software Engineer (28.2%), Full Stack Engineer (16.7%), Senior Software Engineer (16.4%), Other (9.4%), AI Engineer (4.8%), Staff Engineer (4.2%)
+- Fully remote: 41.8%
+- Salary mentioned: 32.4%
+- AI/ML mentioned: 59.7%
 
 ## Index files
 
@@ -25,6 +25,7 @@ Latest run: 2026-06-11 — 309 jobs analyzed. Generated 2026-06-11T13:19:07.786Z
 
 Each run exposes `raw.json` (original postings), `classified.json` (per-job labels), and `analysis.json` (aggregated metrics).
 
+- [2026-06-28](/runs/2026-06-28/analysis.json): 330 jobs — Ask HN: Who is hiring? (June 2026)
 - [2026-06-11](/runs/2026-06-11/analysis.json): 309 jobs — Ask HN: Who is hiring? (June 2026)
 - [2026-06-03](/runs/2026-06-03/analysis.json): 247 jobs — Ask HN: Who is hiring? (June 2026)
 - [2026-05-28](/runs/2026-05-28/analysis.json): 337 jobs — Ask HN: Who is hiring? (May 2026)

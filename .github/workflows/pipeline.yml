@@ -104,13 +104,13 @@ jobs:
         with:
           app-id: ${{ vars.DISPATCH_APP_ID }}
           private-key: ${{ secrets.DISPATCH_APP_KEY }}
-          owner: gantryops
+          owner: gantrydev
           repositories: hn-jobs-site
 
       - name: Trigger site rebuild
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
-          gh api repos/gantryops/hn-jobs-site/dispatches \
+          gh api repos/gantrydev/hn-jobs-site/dispatches \
             -f event_type=data-updated \
             -f client_payload[data_branch]="${GITHUB_REF_NAME}"

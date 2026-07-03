@@ -126,6 +126,27 @@
       "remote_pct": 41.8,
       "salary_mentioned_pct": 32.4,
       "ai_ml_mentioned_pct": 59.7
+    },
+    {
+      "date": "2026-07-03",
+      "job_count": 197,
+      "top_techs": [
+        "React",
+        "PostgreSQL",
+        "AWS",
+        "Docker",
+        "Kubernetes"
+      ],
+      "top_roles": [
+        "Software Engineer",
+        "Senior Software Engineer",
+        "Full Stack Engineer",
+        "Other",
+        "Backend Engineer"
+      ],
+      "remote_pct": 44.7,
+      "salary_mentioned_pct": 34.5,
+      "ai_ml_mentioned_pct": 55.3
     }
   ]
 }

@@ -1,487 +1,487 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-03T12:19:31.788Z",
-  "total_jobs": 101,
+  "generated_at": "2026-07-28T12:01:07.376Z",
+  "total_jobs": 190,
   "rules": [
     {
       "antecedent": [
-        "LangChain"
+        "JavaScript"
       ],
       "consequent": [
-        "Hugging Face"
+        "TypeScript"
       ],
-      "support": 0.04,
+      "support": 0.195,
+      "confidence": 0.949,
+      "lift": 4.01,
+      "count": 37
+    },
+    {
+      "antecedent": [
+        "Kotlin"
+      ],
+      "consequent": [
+        "Swift"
+      ],
+      "support": 0.279,
       "confidence": 1,
-      "lift": 20.2,
-      "count": 4
+      "lift": 3.58,
+      "count": 53
     },
     {
       "antecedent": [
-        "WebAssembly"
+        "C"
       ],
       "consequent": [
-        "eBPF"
+        "C#"
       ],
-      "support": 0.04,
-      "confidence": 0.8,
-      "lift": 16.16,
-      "count": 4
+      "support": 0.268,
+      "confidence": 0.981,
+      "lift": 3.58,
+      "count": 51
     },
     {
       "antecedent": [
-        "LangChain"
+        "JavaScript"
       ],
       "consequent": [
-        "Gemini API"
+        "C++"
       ],
-      "support": 0.04,
+      "support": 0.205,
       "confidence": 1,
-      "lift": 14.43,
-      "count": 4
+      "lift": 3.58,
+      "count": 39
     },
     {
       "antecedent": [
-        "Hugging Face"
+        "JavaScript"
       ],
       "consequent": [
-        "CUDA"
+        "Rust"
       ],
-      "support": 0.04,
-      "confidence": 0.8,
-      "lift": 13.47,
-      "count": 4
+      "support": 0.189,
+      "confidence": 0.923,
+      "lift": 3.58,
+      "count": 36
     },
     {
       "antecedent": [
-        "TensorFlow"
+        "JavaScript"
       ],
       "consequent": [
-        "PyTorch"
+        "Java"
       ],
-      "support": 0.04,
+      "support": 0.2,
+      "confidence": 0.974,
+      "lift": 3.56,
+      "count": 38
+    },
+    {
+      "antecedent": [
+        "Java"
+      ],
+      "consequent": [
+        "Swift"
+      ],
+      "support": 0.268,
+      "confidence": 0.981,
+      "lift": 3.52,
+      "count": 51
+    },
+    {
+      "antecedent": [
+        "C"
+      ],
+      "consequent": [
+        "Kotlin"
+      ],
+      "support": 0.268,
+      "confidence": 0.981,
+      "lift": 3.52,
+      "count": 51
+    },
+    {
+      "antecedent": [
+        "C"
+      ],
+      "consequent": [
+        "Swift"
+      ],
+      "support": 0.268,
+      "confidence": 0.981,
+      "lift": 3.52,
+      "count": 51
+    },
+    {
+      "antecedent": [
+        "Rust"
+      ],
+      "consequent": [
+        "Kotlin"
+      ],
+      "support": 0.253,
+      "confidence": 0.98,
+      "lift": 3.51,
+      "count": 48
+    },
+    {
+      "antecedent": [
+        "Rust"
+      ],
+      "consequent": [
+        "Swift"
+      ],
+      "support": 0.253,
+      "confidence": 0.98,
+      "lift": 3.51,
+      "count": 48
+    },
+    {
+      "antecedent": [
+        "Rust"
+      ],
+      "consequent": [
+        "C++"
+      ],
+      "support": 0.253,
+      "confidence": 0.98,
+      "lift": 3.51,
+      "count": 48
+    },
+    {
+      "antecedent": [
+        "C"
+      ],
+      "consequent": [
+        "Java"
+      ],
+      "support": 0.263,
+      "confidence": 0.962,
+      "lift": 3.51,
+      "count": 50
+    },
+    {
+      "antecedent": [
+        "Rust"
+      ],
+      "consequent": [
+        "Java"
+      ],
+      "support": 0.247,
+      "confidence": 0.959,
+      "lift": 3.5,
+      "count": 47
+    },
+    {
+      "antecedent": [
+        "JavaScript"
+      ],
+      "consequent": [
+        "Kotlin"
+      ],
+      "support": 0.2,
+      "confidence": 0.974,
+      "lift": 3.49,
+      "count": 38
+    },
+    {
+      "antecedent": [
+        "JavaScript"
+      ],
+      "consequent": [
+        "Swift"
+      ],
+      "support": 0.2,
+      "confidence": 0.974,
+      "lift": 3.49,
+      "count": 38
+    },
+    {
+      "antecedent": [
+        "JavaScript"
+      ],
+      "consequent": [
+        "Go"
+      ],
+      "support": 0.195,
+      "confidence": 0.949,
+      "lift": 3.47,
+      "count": 37
+    },
+    {
+      "antecedent": [
+        "JavaScript"
+      ],
+      "consequent": [
+        "C"
+      ],
+      "support": 0.195,
+      "confidence": 0.949,
+      "lift": 3.47,
+      "count": 37
+    },
+    {
+      "antecedent": [
+        "Go"
+      ],
+      "consequent": [
+        "Kotlin"
+      ],
+      "support": 0.263,
+      "confidence": 0.962,
+      "lift": 3.45,
+      "count": 50
+    },
+    {
+      "antecedent": [
+        "Go"
+      ],
+      "consequent": [
+        "Swift"
+      ],
+      "support": 0.263,
+      "confidence": 0.962,
+      "lift": 3.45,
+      "count": 50
+    },
+    {
+      "antecedent": [
+        "Go"
+      ],
+      "consequent": [
+        "PHP"
+      ],
+      "support": 0.274,
       "confidence": 1,
-      "lift": 12.63,
-      "count": 4
+      "lift": 3.45,
+      "count": 52
     },
     {
       "antecedent": [
-        "LangChain"
+        "Go"
       ],
       "consequent": [
-        "Anthropic API"
+        "Scala"
       ],
-      "support": 0.04,
+      "support": 0.274,
       "confidence": 1,
-      "lift": 12.63,
-      "count": 4
+      "lift": 3.45,
+      "count": 52
     },
     {
       "antecedent": [
-        "Hugging Face"
+        "Go"
       ],
       "consequent": [
-        "Gemini API"
+        "Elixir"
       ],
-      "support": 0.04,
-      "confidence": 0.8,
-      "lift": 11.54,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "CUDA"
-      ],
-      "consequent": [
-        "Nix"
-      ],
-      "support": 0.04,
-      "confidence": 0.667,
-      "lift": 11.22,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "Android"
-      ],
-      "consequent": [
-        "iOS"
-      ],
-      "support": 0.069,
+      "support": 0.274,
       "confidence": 1,
-      "lift": 11.22,
-      "count": 7
+      "lift": 3.45,
+      "count": 52
     },
     {
       "antecedent": [
-        "Gemini API"
+        "Go"
       ],
       "consequent": [
-        "Anthropic API"
+        "Dart"
       ],
-      "support": 0.059,
-      "confidence": 0.857,
-      "lift": 10.82,
-      "count": 6
-    },
-    {
-      "antecedent": [
-        "Hugging Face"
-      ],
-      "consequent": [
-        "PyTorch"
-      ],
-      "support": 0.04,
-      "confidence": 0.8,
-      "lift": 10.1,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "Hugging Face"
-      ],
-      "consequent": [
-        "Anthropic API"
-      ],
-      "support": 0.04,
-      "confidence": 0.8,
-      "lift": 10.1,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "Nix"
-      ],
-      "consequent": [
-        "Android"
-      ],
-      "support": 0.04,
-      "confidence": 0.667,
-      "lift": 9.62,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "CUDA"
-      ],
-      "consequent": [
-        "PyTorch"
-      ],
-      "support": 0.04,
-      "confidence": 0.667,
-      "lift": 8.42,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "eBPF"
-      ],
-      "consequent": [
-        "Linux"
-      ],
-      "support": 0.05,
+      "support": 0.274,
       "confidence": 1,
-      "lift": 8.42,
-      "count": 5
+      "lift": 3.45,
+      "count": 52
     },
     {
       "antecedent": [
-        "Nix"
+        "Go"
       ],
       "consequent": [
-        "iOS"
+        "R"
       ],
-      "support": 0.04,
-      "confidence": 0.667,
-      "lift": 7.48,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "Gemini API"
-      ],
-      "consequent": [
-        "PyTorch"
-      ],
-      "support": 0.04,
-      "confidence": 0.571,
-      "lift": 7.21,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "Nix"
-      ],
-      "consequent": [
-        "Linux"
-      ],
-      "support": 0.05,
-      "confidence": 0.833,
-      "lift": 7.01,
-      "count": 5
-    },
-    {
-      "antecedent": [
-        "CUDA"
-      ],
-      "consequent": [
-        "Linux"
-      ],
-      "support": 0.05,
-      "confidence": 0.833,
-      "lift": 7.01,
-      "count": 5
-    },
-    {
-      "antecedent": [
-        "Nix"
-      ],
-      "consequent": [
-        "Git"
-      ],
-      "support": 0.05,
-      "confidence": 0.833,
-      "lift": 7.01,
-      "count": 5
-    },
-    {
-      "antecedent": [
-        "CUDA"
-      ],
-      "consequent": [
-        "Git"
-      ],
-      "support": 0.05,
-      "confidence": 0.833,
-      "lift": 7.01,
-      "count": 5
-    },
-    {
-      "antecedent": [
-        "WebAssembly"
-      ],
-      "consequent": [
-        "Linux"
-      ],
-      "support": 0.04,
-      "confidence": 0.8,
-      "lift": 6.73,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "Anthropic API"
-      ],
-      "consequent": [
-        "PyTorch"
-      ],
-      "support": 0.04,
-      "confidence": 0.5,
-      "lift": 6.31,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "GitHub Actions"
-      ],
-      "consequent": [
-        "Terraform"
-      ],
-      "support": 0.04,
-      "confidence": 0.667,
-      "lift": 5.61,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "GitHub Actions"
-      ],
-      "consequent": [
-        "Git"
-      ],
-      "support": 0.04,
-      "confidence": 0.667,
-      "lift": 5.61,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "Git"
-      ],
-      "consequent": [
-        "Linux"
-      ],
-      "support": 0.079,
-      "confidence": 0.667,
-      "lift": 5.61,
-      "count": 8
-    },
-    {
-      "antecedent": [
-        "LangChain"
-      ],
-      "consequent": [
-        "OpenAI API"
-      ],
-      "support": 0.04,
+      "support": 0.274,
       "confidence": 1,
-      "lift": 5.61,
-      "count": 4
+      "lift": 3.45,
+      "count": 52
     },
     {
       "antecedent": [
-        "Anthropic API"
+        "Go"
       ],
       "consequent": [
-        "iOS"
+        "OCaml"
       ],
-      "support": 0.04,
-      "confidence": 0.5,
-      "lift": 5.61,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "S3"
-      ],
-      "consequent": [
-        "Linux"
-      ],
-      "support": 0.04,
-      "confidence": 0.667,
-      "lift": 5.61,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "Anthropic API"
-      ],
-      "consequent": [
-        "OpenAI API"
-      ],
-      "support": 0.069,
-      "confidence": 0.875,
-      "lift": 4.91,
-      "count": 7
-    },
-    {
-      "antecedent": [
-        "Gemini API"
-      ],
-      "consequent": [
-        "Terraform"
-      ],
-      "support": 0.04,
-      "confidence": 0.571,
-      "lift": 4.81,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "Android"
-      ],
-      "consequent": [
-        "Linux"
-      ],
-      "support": 0.04,
-      "confidence": 0.571,
-      "lift": 4.81,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "Android"
-      ],
-      "consequent": [
-        "Git"
-      ],
-      "support": 0.04,
-      "confidence": 0.571,
-      "lift": 4.81,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "Gemini API"
-      ],
-      "consequent": [
-        "OpenAI API"
-      ],
-      "support": 0.059,
-      "confidence": 0.857,
-      "lift": 4.81,
-      "count": 6
-    },
-    {
-      "antecedent": [
-        "Airflow"
-      ],
-      "consequent": [
-        "SQL"
-      ],
-      "support": 0.04,
-      "confidence": 0.667,
-      "lift": 4.49,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "Hugging Face"
-      ],
-      "consequent": [
-        "OpenAI API"
-      ],
-      "support": 0.04,
-      "confidence": 0.8,
-      "lift": 4.49,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "TensorFlow"
-      ],
-      "consequent": [
-        "Docker"
-      ],
-      "support": 0.04,
+      "support": 0.274,
       "confidence": 1,
-      "lift": 4.21,
-      "count": 4
+      "lift": 3.45,
+      "count": 52
     },
     {
       "antecedent": [
-        "PyTorch"
+        "Java"
       ],
       "consequent": [
-        "Terraform"
+        "C++"
       ],
-      "support": 0.04,
-      "confidence": 0.5,
-      "lift": 4.21,
-      "count": 4
+      "support": 0.263,
+      "confidence": 0.962,
+      "lift": 3.45,
+      "count": 50
     },
     {
       "antecedent": [
-        "Anthropic API"
+        "Java"
       ],
       "consequent": [
-        "Terraform"
+        "PHP"
       ],
-      "support": 0.04,
-      "confidence": 0.5,
-      "lift": 4.21,
-      "count": 4
-    },
-    {
-      "antecedent": [
-        "S3"
-      ],
-      "consequent": [
-        "Docker"
-      ],
-      "support": 0.059,
+      "support": 0.274,
       "confidence": 1,
-      "lift": 4.21,
-      "count": 6
+      "lift": 3.45,
+      "count": 52
+    },
+    {
+      "antecedent": [
+        "Java"
+      ],
+      "consequent": [
+        "Scala"
+      ],
+      "support": 0.274,
+      "confidence": 1,
+      "lift": 3.45,
+      "count": 52
+    },
+    {
+      "antecedent": [
+        "Java"
+      ],
+      "consequent": [
+        "Elixir"
+      ],
+      "support": 0.274,
+      "confidence": 1,
+      "lift": 3.45,
+      "count": 52
+    },
+    {
+      "antecedent": [
+        "Java"
+      ],
+      "consequent": [
+        "Dart"
+      ],
+      "support": 0.274,
+      "confidence": 1,
+      "lift": 3.45,
+      "count": 52
+    },
+    {
+      "antecedent": [
+        "Java"
+      ],
+      "consequent": [
+        "R"
+      ],
+      "support": 0.274,
+      "confidence": 1,
+      "lift": 3.45,
+      "count": 52
+    },
+    {
+      "antecedent": [
+        "Java"
+      ],
+      "consequent": [
+        "OCaml"
+      ],
+      "support": 0.274,
+      "confidence": 1,
+      "lift": 3.45,
+      "count": 52
+    },
+    {
+      "antecedent": [
+        "C#"
+      ],
+      "consequent": [
+        "Kotlin"
+      ],
+      "support": 0.263,
+      "confidence": 0.962,
+      "lift": 3.45,
+      "count": 50
+    },
+    {
+      "antecedent": [
+        "Kotlin"
+      ],
+      "consequent": [
+        "PHP"
+      ],
+      "support": 0.279,
+      "confidence": 1,
+      "lift": 3.45,
+      "count": 53
+    },
+    {
+      "antecedent": [
+        "Kotlin"
+      ],
+      "consequent": [
+        "Scala"
+      ],
+      "support": 0.279,
+      "confidence": 1,
+      "lift": 3.45,
+      "count": 53
+    },
+    {
+      "antecedent": [
+        "Kotlin"
+      ],
+      "consequent": [
+        "Elixir"
+      ],
+      "support": 0.279,
+      "confidence": 1,
+      "lift": 3.45,
+      "count": 53
+    },
+    {
+      "antecedent": [
+        "Kotlin"
+      ],
+      "consequent": [
+        "Dart"
+      ],
+      "support": 0.279,
+      "confidence": 1,
+      "lift": 3.45,
+      "count": 53
+    },
+    {
+      "antecedent": [
+        "Kotlin"
+      ],
+      "consequent": [
+        "R"
+      ],
+      "support": 0.279,
+      "confidence": 1,
+      "lift": 3.45,
+      "count": 53
+    },
+    {
+      "antecedent": [
+        "Kotlin"
+      ],
+      "consequent": [
+        "OCaml"
+      ],
+      "support": 0.279,
+      "confidence": 1,
+      "lift": 3.45,
+      "count": 53
     }
   ]
 }

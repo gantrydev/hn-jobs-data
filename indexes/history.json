@@ -128,13 +128,13 @@
       "ai_ml_mentioned_pct": 59.7
     },
     {
-      "date": "2026-07-03",
-      "job_count": 197,
+      "date": "2026-07-28",
+      "job_count": 283,
       "top_techs": [
         "React",
-        "PostgreSQL",
         "AWS",
-        "Docker",
+        "PostgreSQL",
+        "React Native",
         "Kubernetes"
       ],
       "top_roles": [
@@ -142,11 +142,11 @@
         "Senior Software Engineer",
         "Full Stack Engineer",
         "Other",
-        "Backend Engineer"
+        "DevOps / SRE"
       ],
-      "remote_pct": 44.7,
-      "salary_mentioned_pct": 34.5,
-      "ai_ml_mentioned_pct": 55.3
+      "remote_pct": 45.9,
+      "salary_mentioned_pct": 37.1,
+      "ai_ml_mentioned_pct": 54.4
     }
   ]
 }

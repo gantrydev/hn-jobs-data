@@ -1,319 +1,332 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-03T12:19:31.793Z",
+  "generated_at": "2026-07-28T12:01:07.381Z",
   "top_pairs": [
     {
       "tech": "React",
       "with": "TypeScript",
-      "count": 509,
-      "jaccard": 0.436
-    },
-    {
-      "tech": "Python",
-      "with": "TypeScript",
-      "count": 410,
-      "jaccard": 0.315
+      "count": 552,
+      "jaccard": 0.424
     },
     {
       "tech": "PostgreSQL",
       "with": "React",
-      "count": 408,
-      "jaccard": 0.343
+      "count": 519,
+      "jaccard": 0.386
     },
     {
       "tech": "Python",
-      "with": "React",
-      "count": 362,
-      "jaccard": 0.253
-    },
-    {
-      "tech": "PostgreSQL",
       "with": "TypeScript",
-      "count": 360,
-      "jaccard": 0.311
-    },
-    {
-      "tech": "AWS",
-      "with": "Python",
-      "count": 320,
-      "jaccard": 0.257
-    },
-    {
-      "tech": "AWS",
-      "with": "React",
-      "count": 312,
-      "jaccard": 0.257
+      "count": 454,
+      "jaccard": 0.334
     },
     {
       "tech": "AWS",
       "with": "PostgreSQL",
-      "count": 308,
-      "jaccard": 0.29
+      "count": 418,
+      "jaccard": 0.344
+    },
+    {
+      "tech": "AWS",
+      "with": "React",
+      "count": 416,
+      "jaccard": 0.302
+    },
+    {
+      "tech": "Python",
+      "with": "React",
+      "count": 415,
+      "jaccard": 0.265
+    },
+    {
+      "tech": "PostgreSQL",
+      "with": "TypeScript",
+      "count": 403,
+      "jaccard": 0.312
+    },
+    {
+      "tech": "AWS",
+      "with": "Python",
+      "count": 374,
+      "jaccard": 0.272
+    },
+    {
+      "tech": "Node.js",
+      "with": "React",
+      "count": 361,
+      "jaccard": 0.33
     },
     {
       "tech": "PostgreSQL",
       "with": "Python",
-      "count": 306,
-      "jaccard": 0.23
-    },
-    {
-      "tech": "AWS",
-      "with": "TypeScript",
-      "count": 281,
-      "jaccard": 0.241
+      "count": 359,
+      "jaccard": 0.245
     }
   ],
   "clusters": [
     {
-      "label": "React / PostgreSQL / AWS",
+      "label": "React / AWS / PostgreSQL",
       "top_techs": [
         "React",
-        "PostgreSQL",
         "AWS",
-        "Node.js"
+        "PostgreSQL",
+        "React Native",
+        "Kubernetes"
       ],
-      "pct": 33.9
+      "pct": 74.8
     },
     {
-      "label": "Docker / Kubernetes / Linux",
+      "label": "ROS / Docker / LangChain",
       "top_techs": [
+        "ROS",
         "Docker",
-        "Kubernetes",
-        "Linux",
-        "Git",
-        "Terraform"
+        "LangChain",
+        "CUDA",
+        "Hugging Face"
       ],
-      "pct": 23.1
+      "pct": 52.4
     },
     {
-      "label": "OpenAI API / Anthropic API / CUDA",
+      "label": "GCP / Gemini API / Git",
       "top_techs": [
-        "OpenAI API",
-        "Anthropic API",
-        "CUDA",
+        "GCP",
         "Gemini API",
+        "Git",
+        "WebAssembly",
+        "Android"
+      ],
+      "pct": 52.4
+    },
+    {
+      "label": "Spark / Terraform / Next.js",
+      "top_techs": [
+        "Spark",
+        "Terraform",
+        "Next.js",
+        "Rails",
         "GitHub Actions"
       ],
-      "pct": 10.7
+      "pct": 51
     },
     {
-      "label": "React Native / GraphQL / WebAssembly",
+      "label": "eBPF / Pub/Sub / RabbitMQ",
       "top_techs": [
-        "React Native",
-        "GraphQL",
-        "WebAssembly"
-      ],
-      "pct": 5
-    },
-    {
-      "label": "Nix / S3 / eBPF",
-      "top_techs": [
-        "Nix",
-        "S3",
-        "eBPF"
-      ],
-      "pct": 4.1
-    },
-    {
-      "label": "SQL / Airflow",
-      "top_techs": [
-        "SQL",
-        "Airflow"
-      ],
-      "pct": 3.3
-    },
-    {
-      "label": "Azure / Flutter / MySQL",
-      "top_techs": [
-        "Azure",
-        "Flutter",
-        "MySQL",
+        "eBPF",
         "Pub/Sub",
-        "RabbitMQ"
+        "RabbitMQ",
+        "SQS",
+        "Azure"
       ],
-      "pct": 3.3
+      "pct": 47.6
     },
     {
-      "label": "Next.js / Redis",
+      "label": "Cloudflare / SQL / Vercel",
       "top_techs": [
-        "Next.js",
-        "Redis"
+        "Cloudflare",
+        "SQL",
+        "Vercel",
+        "Firebase",
+        "S3"
       ],
-      "pct": 2.5
+      "pct": 43.8
     },
     {
-      "label": "Kafka / LangChain / Python",
+      "label": "CSS / ClickHouse / Elasticsearch",
       "top_techs": [
-        "Kafka",
-        "LangChain",
-        "Python",
-        "TensorFlow",
-        "Rust"
-      ],
-      "pct": 2.5
-    },
-    {
-      "label": "ClickHouse / Elasticsearch",
-      "top_techs": [
+        "CSS",
         "ClickHouse",
-        "Elasticsearch"
+        "Elasticsearch",
+        "Express",
+        "Laravel"
       ],
-      "pct": 1.7
+      "pct": 42.4
     },
     {
-      "label": "MongoDB / Express",
+      "label": "MySQL / NestJS / SQLite",
       "top_techs": [
-        "MongoDB",
-        "Express"
+        "MySQL",
+        "NestJS",
+        "SQLite",
+        "Snowflake",
+        "Spring"
       ],
-      "pct": 1.7
+      "pct": 41.4
+    },
+    {
+      "label": "Flask / Neo4j / Svelte",
+      "top_techs": [
+        "Flask",
+        "Neo4j",
+        "Svelte",
+        "Vue",
+        "SQL Server"
+      ],
+      "pct": 41
+    },
+    {
+      "label": "Python / Ruby / Dart",
+      "top_techs": [
+        "Python",
+        "Ruby",
+        "Dart",
+        "Elixir",
+        "OCaml"
+      ],
+      "pct": 26.2
+    },
+    {
+      "label": "C++ / Kotlin / Swift",
+      "top_techs": [
+        "C++",
+        "Kotlin",
+        "Swift",
+        "C",
+        "C#"
+      ],
+      "pct": 26.2
+    },
+    {
+      "label": "TypeScript / JavaScript",
+      "top_techs": [
+        "TypeScript",
+        "JavaScript"
+      ],
+      "pct": 17.6
     }
   ],
   "top_associations": [
     {
       "antecedent": [
-        "LangChain"
+        "JavaScript"
       ],
       "consequent": [
-        "Hugging Face"
+        "TypeScript"
+      ],
+      "confidence": 0.949,
+      "lift": 4.01
+    },
+    {
+      "antecedent": [
+        "Kotlin"
+      ],
+      "consequent": [
+        "Swift"
       ],
       "confidence": 1,
-      "lift": 20.2
+      "lift": 3.58
     },
     {
       "antecedent": [
-        "WebAssembly"
+        "C"
       ],
       "consequent": [
-        "eBPF"
+        "C#"
       ],
-      "confidence": 0.8,
-      "lift": 16.16
+      "confidence": 0.981,
+      "lift": 3.58
     },
     {
       "antecedent": [
-        "LangChain"
+        "JavaScript"
       ],
       "consequent": [
-        "Gemini API"
+        "C++"
       ],
       "confidence": 1,
-      "lift": 14.43
+      "lift": 3.58
     },
     {
       "antecedent": [
-        "Hugging Face"
+        "JavaScript"
       ],
       "consequent": [
-        "CUDA"
+        "Rust"
       ],
-      "confidence": 0.8,
-      "lift": 13.47
+      "confidence": 0.923,
+      "lift": 3.58
     },
     {
       "antecedent": [
-        "TensorFlow"
+        "JavaScript"
       ],
       "consequent": [
-        "PyTorch"
+        "Java"
       ],
-      "confidence": 1,
-      "lift": 12.63
+      "confidence": 0.974,
+      "lift": 3.56
     },
     {
       "antecedent": [
-        "LangChain"
+        "Java"
       ],
       "consequent": [
-        "Anthropic API"
+        "Swift"
       ],
-      "confidence": 1,
-      "lift": 12.63
+      "confidence": 0.981,
+      "lift": 3.52
     },
     {
       "antecedent": [
-        "Hugging Face"
+        "C"
       ],
       "consequent": [
-        "Gemini API"
+        "Kotlin"
       ],
-      "confidence": 0.8,
-      "lift": 11.54
+      "confidence": 0.981,
+      "lift": 3.52
     },
     {
       "antecedent": [
-        "CUDA"
+        "C"
       ],
       "consequent": [
-        "Nix"
+        "Swift"
       ],
-      "confidence": 0.667,
-      "lift": 11.22
+      "confidence": 0.981,
+      "lift": 3.52
     },
     {
       "antecedent": [
-        "Android"
+        "Rust"
       ],
       "consequent": [
-        "iOS"
+        "Kotlin"
       ],
-      "confidence": 1,
-      "lift": 11.22
-    },
-    {
-      "antecedent": [
-        "Gemini API"
-      ],
-      "consequent": [
-        "Anthropic API"
-      ],
-      "confidence": 0.857,
-      "lift": 10.82
+      "confidence": 0.98,
+      "lift": 3.51
     }
   ],
   "momentum_summary": {
     "top_rising": [
       {
         "tech": "WebRTC",
-        "slope_pct": 134.6
+        "slope_pct": 228.5
       },
       {
-        "tech": "Nix",
-        "slope_pct": 116.6
-      },
-      {
-        "tech": "Gemini API",
-        "slope_pct": 115.7
-      },
-      {
-        "tech": "Git",
-        "slope_pct": 109.7
+        "tech": "OCaml",
+        "slope_pct": 194.8
       },
       {
         "tech": "WebSockets",
-        "slope_pct": 107.8
+        "slope_pct": 182
+      },
+      {
+        "tech": "Nix",
+        "slope_pct": 162.5
+      },
+      {
+        "tech": "Gemini API",
+        "slope_pct": 153.2
       }
     ],
     "top_declining": [
       {
-        "tech": "C++",
-        "slope_pct": -19.5
-      },
-      {
-        "tech": "Elixir",
-        "slope_pct": -12.4
-      },
-      {
         "tech": "TypeScript",
-        "slope_pct": -12.1
+        "slope_pct": -11.9
       },
       {
         "tech": "Python",
-        "slope_pct": -10.7
-      },
-      {
-        "tech": "Rust",
-        "slope_pct": -9.5
+        "slope_pct": -10.1
       }
     ]
   }

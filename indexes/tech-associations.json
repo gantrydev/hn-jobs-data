@@ -1,487 +1,487 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-28T12:01:07.376Z",
-  "total_jobs": 190,
+  "generated_at": "2026-08-22T22:17:13.926Z",
+  "total_jobs": 111,
   "rules": [
     {
       "antecedent": [
-        "JavaScript"
+        "TensorFlow"
       ],
       "consequent": [
-        "TypeScript"
+        "PyTorch"
       ],
-      "support": 0.195,
-      "confidence": 0.949,
-      "lift": 4.01,
-      "count": 37
-    },
-    {
-      "antecedent": [
-        "Kotlin"
-      ],
-      "consequent": [
-        "Swift"
-      ],
-      "support": 0.279,
+      "support": 0.036,
       "confidence": 1,
-      "lift": 3.58,
-      "count": 53
+      "lift": 12.33,
+      "count": 4
     },
     {
       "antecedent": [
-        "C"
+        "Anthropic API"
       ],
       "consequent": [
-        "C#"
+        "OpenAI API"
       ],
-      "support": 0.268,
-      "confidence": 0.981,
-      "lift": 3.58,
-      "count": 51
+      "support": 0.045,
+      "confidence": 0.714,
+      "lift": 7.93,
+      "count": 5
     },
     {
       "antecedent": [
-        "JavaScript"
+        "CUDA"
       ],
       "consequent": [
-        "C++"
+        "Linux"
       ],
-      "support": 0.205,
+      "support": 0.036,
       "confidence": 1,
-      "lift": 3.58,
-      "count": 39
+      "lift": 7.4,
+      "count": 4
     },
     {
       "antecedent": [
-        "JavaScript"
+        "MongoDB"
       ],
       "consequent": [
-        "Rust"
+        "Next.js"
       ],
-      "support": 0.189,
-      "confidence": 0.923,
-      "lift": 3.58,
-      "count": 36
+      "support": 0.036,
+      "confidence": 0.8,
+      "lift": 5.92,
+      "count": 4
     },
     {
       "antecedent": [
-        "JavaScript"
+        "MongoDB"
       ],
       "consequent": [
-        "Java"
+        "Node.js"
       ],
-      "support": 0.2,
-      "confidence": 0.974,
-      "lift": 3.56,
-      "count": 38
-    },
-    {
-      "antecedent": [
-        "Java"
-      ],
-      "consequent": [
-        "Swift"
-      ],
-      "support": 0.268,
-      "confidence": 0.981,
-      "lift": 3.52,
-      "count": 51
-    },
-    {
-      "antecedent": [
-        "C"
-      ],
-      "consequent": [
-        "Kotlin"
-      ],
-      "support": 0.268,
-      "confidence": 0.981,
-      "lift": 3.52,
-      "count": 51
-    },
-    {
-      "antecedent": [
-        "C"
-      ],
-      "consequent": [
-        "Swift"
-      ],
-      "support": 0.268,
-      "confidence": 0.981,
-      "lift": 3.52,
-      "count": 51
-    },
-    {
-      "antecedent": [
-        "Rust"
-      ],
-      "consequent": [
-        "Kotlin"
-      ],
-      "support": 0.253,
-      "confidence": 0.98,
-      "lift": 3.51,
-      "count": 48
-    },
-    {
-      "antecedent": [
-        "Rust"
-      ],
-      "consequent": [
-        "Swift"
-      ],
-      "support": 0.253,
-      "confidence": 0.98,
-      "lift": 3.51,
-      "count": 48
-    },
-    {
-      "antecedent": [
-        "Rust"
-      ],
-      "consequent": [
-        "C++"
-      ],
-      "support": 0.253,
-      "confidence": 0.98,
-      "lift": 3.51,
-      "count": 48
-    },
-    {
-      "antecedent": [
-        "C"
-      ],
-      "consequent": [
-        "Java"
-      ],
-      "support": 0.263,
-      "confidence": 0.962,
-      "lift": 3.51,
-      "count": 50
-    },
-    {
-      "antecedent": [
-        "Rust"
-      ],
-      "consequent": [
-        "Java"
-      ],
-      "support": 0.247,
-      "confidence": 0.959,
-      "lift": 3.5,
-      "count": 47
-    },
-    {
-      "antecedent": [
-        "JavaScript"
-      ],
-      "consequent": [
-        "Kotlin"
-      ],
-      "support": 0.2,
-      "confidence": 0.974,
-      "lift": 3.49,
-      "count": 38
-    },
-    {
-      "antecedent": [
-        "JavaScript"
-      ],
-      "consequent": [
-        "Swift"
-      ],
-      "support": 0.2,
-      "confidence": 0.974,
-      "lift": 3.49,
-      "count": 38
-    },
-    {
-      "antecedent": [
-        "JavaScript"
-      ],
-      "consequent": [
-        "Go"
-      ],
-      "support": 0.195,
-      "confidence": 0.949,
-      "lift": 3.47,
-      "count": 37
-    },
-    {
-      "antecedent": [
-        "JavaScript"
-      ],
-      "consequent": [
-        "C"
-      ],
-      "support": 0.195,
-      "confidence": 0.949,
-      "lift": 3.47,
-      "count": 37
-    },
-    {
-      "antecedent": [
-        "Go"
-      ],
-      "consequent": [
-        "Kotlin"
-      ],
-      "support": 0.263,
-      "confidence": 0.962,
-      "lift": 3.45,
-      "count": 50
-    },
-    {
-      "antecedent": [
-        "Go"
-      ],
-      "consequent": [
-        "Swift"
-      ],
-      "support": 0.263,
-      "confidence": 0.962,
-      "lift": 3.45,
-      "count": 50
-    },
-    {
-      "antecedent": [
-        "Go"
-      ],
-      "consequent": [
-        "PHP"
-      ],
-      "support": 0.274,
+      "support": 0.045,
       "confidence": 1,
-      "lift": 3.45,
-      "count": 52
+      "lift": 4.62,
+      "count": 5
     },
     {
       "antecedent": [
-        "Go"
+        "WebSockets"
       ],
       "consequent": [
-        "Scala"
+        "Node.js"
       ],
-      "support": 0.274,
+      "support": 0.036,
       "confidence": 1,
-      "lift": 3.45,
-      "count": 52
+      "lift": 4.62,
+      "count": 4
     },
     {
       "antecedent": [
-        "Go"
+        "CSS"
       ],
       "consequent": [
-        "Elixir"
+        "Node.js"
       ],
-      "support": 0.274,
+      "support": 0.036,
+      "confidence": 0.8,
+      "lift": 3.7,
+      "count": 4
+    },
+    {
+      "antecedent": [
+        "Redis"
+      ],
+      "consequent": [
+        "Next.js"
+      ],
+      "support": 0.045,
+      "confidence": 0.455,
+      "lift": 3.36,
+      "count": 5
+    },
+    {
+      "antecedent": [
+        "Rails"
+      ],
+      "consequent": [
+        "Next.js"
+      ],
+      "support": 0.036,
+      "confidence": 0.4,
+      "lift": 2.96,
+      "count": 4
+    },
+    {
+      "antecedent": [
+        "Terraform"
+      ],
+      "consequent": [
+        "Kubernetes"
+      ],
+      "support": 0.117,
+      "confidence": 0.722,
+      "lift": 2.76,
+      "count": 13
+    },
+    {
+      "antecedent": [
+        "GraphQL"
+      ],
+      "consequent": [
+        "Node.js"
+      ],
+      "support": 0.045,
+      "confidence": 0.556,
+      "lift": 2.57,
+      "count": 5
+    },
+    {
+      "antecedent": [
+        "CSS"
+      ],
+      "consequent": [
+        "PostgreSQL"
+      ],
+      "support": 0.045,
       "confidence": 1,
-      "lift": 3.45,
-      "count": 52
+      "lift": 2.31,
+      "count": 5
     },
     {
       "antecedent": [
-        "Go"
+        "GraphQL"
       ],
       "consequent": [
-        "Dart"
+        "React"
       ],
-      "support": 0.274,
-      "confidence": 1,
-      "lift": 3.45,
-      "count": 52
+      "support": 0.072,
+      "confidence": 0.889,
+      "lift": 2.29,
+      "count": 8
     },
     {
       "antecedent": [
-        "Go"
+        "CSS"
       ],
       "consequent": [
-        "R"
+        "React"
       ],
-      "support": 0.274,
-      "confidence": 1,
-      "lift": 3.45,
-      "count": 52
+      "support": 0.036,
+      "confidence": 0.8,
+      "lift": 2.07,
+      "count": 4
     },
     {
       "antecedent": [
-        "Go"
+        "MongoDB"
       ],
       "consequent": [
-        "OCaml"
+        "React"
       ],
-      "support": 0.274,
-      "confidence": 1,
-      "lift": 3.45,
-      "count": 52
+      "support": 0.036,
+      "confidence": 0.8,
+      "lift": 2.07,
+      "count": 4
     },
     {
       "antecedent": [
-        "Java"
+        "GCP"
       ],
       "consequent": [
-        "C++"
+        "Terraform"
       ],
-      "support": 0.263,
-      "confidence": 0.962,
-      "lift": 3.45,
-      "count": 50
+      "support": 0.036,
+      "confidence": 0.333,
+      "lift": 2.06,
+      "count": 4
     },
     {
       "antecedent": [
-        "Java"
+        "Rails"
       ],
       "consequent": [
-        "PHP"
+        "Node.js"
       ],
-      "support": 0.274,
-      "confidence": 1,
-      "lift": 3.45,
-      "count": 52
+      "support": 0.036,
+      "confidence": 0.4,
+      "lift": 1.85,
+      "count": 4
     },
     {
       "antecedent": [
-        "Java"
+        "FastAPI"
       ],
       "consequent": [
-        "Scala"
+        "PostgreSQL"
       ],
-      "support": 0.274,
-      "confidence": 1,
-      "lift": 3.45,
-      "count": 52
+      "support": 0.036,
+      "confidence": 0.8,
+      "lift": 1.85,
+      "count": 4
     },
     {
       "antecedent": [
-        "Java"
+        "S3"
       ],
       "consequent": [
-        "Elixir"
+        "AWS"
       ],
-      "support": 0.274,
-      "confidence": 1,
-      "lift": 3.45,
-      "count": 52
+      "support": 0.036,
+      "confidence": 0.667,
+      "lift": 1.85,
+      "count": 4
     },
     {
       "antecedent": [
-        "Java"
+        "Rails"
       ],
       "consequent": [
-        "Dart"
+        "React"
       ],
-      "support": 0.274,
-      "confidence": 1,
-      "lift": 3.45,
-      "count": 52
+      "support": 0.063,
+      "confidence": 0.7,
+      "lift": 1.81,
+      "count": 7
     },
     {
       "antecedent": [
-        "Java"
+        "Redis"
       ],
       "consequent": [
-        "R"
+        "Node.js"
       ],
-      "support": 0.274,
-      "confidence": 1,
-      "lift": 3.45,
-      "count": 52
+      "support": 0.036,
+      "confidence": 0.364,
+      "lift": 1.68,
+      "count": 4
     },
     {
       "antecedent": [
-        "Java"
+        "Rails"
       ],
       "consequent": [
-        "OCaml"
+        "AWS"
       ],
-      "support": 0.274,
-      "confidence": 1,
-      "lift": 3.45,
-      "count": 52
+      "support": 0.054,
+      "confidence": 0.6,
+      "lift": 1.67,
+      "count": 6
     },
     {
       "antecedent": [
-        "C#"
+        "Rails"
       ],
       "consequent": [
-        "Kotlin"
+        "PostgreSQL"
       ],
-      "support": 0.263,
-      "confidence": 0.962,
-      "lift": 3.45,
-      "count": 50
+      "support": 0.063,
+      "confidence": 0.7,
+      "lift": 1.62,
+      "count": 7
     },
     {
       "antecedent": [
-        "Kotlin"
+        "React Native"
       ],
       "consequent": [
-        "PHP"
+        "PostgreSQL"
       ],
-      "support": 0.279,
-      "confidence": 1,
-      "lift": 3.45,
-      "count": 53
+      "support": 0.063,
+      "confidence": 0.7,
+      "lift": 1.62,
+      "count": 7
     },
     {
       "antecedent": [
-        "Kotlin"
+        "Docker"
       ],
       "consequent": [
-        "Scala"
+        "Kubernetes"
       ],
-      "support": 0.279,
-      "confidence": 1,
-      "lift": 3.45,
-      "count": 53
+      "support": 0.063,
+      "confidence": 0.412,
+      "lift": 1.58,
+      "count": 7
     },
     {
       "antecedent": [
-        "Kotlin"
+        "React Native"
       ],
       "consequent": [
-        "Elixir"
+        "React"
       ],
-      "support": 0.279,
-      "confidence": 1,
-      "lift": 3.45,
-      "count": 53
+      "support": 0.054,
+      "confidence": 0.6,
+      "lift": 1.55,
+      "count": 6
     },
     {
       "antecedent": [
-        "Kotlin"
+        "Terraform"
       ],
       "consequent": [
-        "Dart"
+        "AWS"
       ],
-      "support": 0.279,
-      "confidence": 1,
-      "lift": 3.45,
-      "count": 53
+      "support": 0.09,
+      "confidence": 0.556,
+      "lift": 1.54,
+      "count": 10
     },
     {
       "antecedent": [
-        "Kotlin"
+        "Next.js"
       ],
       "consequent": [
-        "R"
+        "PostgreSQL"
       ],
-      "support": 0.279,
-      "confidence": 1,
-      "lift": 3.45,
-      "count": 53
+      "support": 0.09,
+      "confidence": 0.667,
+      "lift": 1.54,
+      "count": 10
     },
     {
       "antecedent": [
-        "Kotlin"
+        "GraphQL"
       ],
       "consequent": [
-        "OCaml"
+        "PostgreSQL"
       ],
-      "support": 0.279,
-      "confidence": 1,
-      "lift": 3.45,
-      "count": 53
+      "support": 0.054,
+      "confidence": 0.667,
+      "lift": 1.54,
+      "count": 6
+    },
+    {
+      "antecedent": [
+        "S3"
+      ],
+      "consequent": [
+        "PostgreSQL"
+      ],
+      "support": 0.036,
+      "confidence": 0.667,
+      "lift": 1.54,
+      "count": 4
+    },
+    {
+      "antecedent": [
+        "Node.js"
+      ],
+      "consequent": [
+        "React"
+      ],
+      "support": 0.126,
+      "confidence": 0.583,
+      "lift": 1.51,
+      "count": 14
+    },
+    {
+      "antecedent": [
+        "Terraform"
+      ],
+      "consequent": [
+        "PostgreSQL"
+      ],
+      "support": 0.099,
+      "confidence": 0.611,
+      "lift": 1.41,
+      "count": 11
+    },
+    {
+      "antecedent": [
+        "GitHub Actions"
+      ],
+      "consequent": [
+        "AWS"
+      ],
+      "support": 0.045,
+      "confidence": 0.5,
+      "lift": 1.39,
+      "count": 5
+    },
+    {
+      "antecedent": [
+        "Node.js"
+      ],
+      "consequent": [
+        "AWS"
+      ],
+      "support": 0.108,
+      "confidence": 0.5,
+      "lift": 1.39,
+      "count": 12
+    },
+    {
+      "antecedent": [
+        "OpenAI API"
+      ],
+      "consequent": [
+        "PostgreSQL"
+      ],
+      "support": 0.054,
+      "confidence": 0.6,
+      "lift": 1.39,
+      "count": 6
+    },
+    {
+      "antecedent": [
+        "Redis"
+      ],
+      "consequent": [
+        "Kubernetes"
+      ],
+      "support": 0.036,
+      "confidence": 0.364,
+      "lift": 1.39,
+      "count": 4
+    },
+    {
+      "antecedent": [
+        "Docker"
+      ],
+      "consequent": [
+        "AWS"
+      ],
+      "support": 0.072,
+      "confidence": 0.471,
+      "lift": 1.31,
+      "count": 8
+    },
+    {
+      "antecedent": [
+        "Next.js"
+      ],
+      "consequent": [
+        "AWS"
+      ],
+      "support": 0.063,
+      "confidence": 0.467,
+      "lift": 1.3,
+      "count": 7
+    },
+    {
+      "antecedent": [
+        "React"
+      ],
+      "consequent": [
+        "PostgreSQL"
+      ],
+      "support": 0.216,
+      "confidence": 0.558,
+      "lift": 1.29,
+      "count": 24
+    },
+    {
+      "antecedent": [
+        "Linux"
+      ],
+      "consequent": [
+        "Kubernetes"
+      ],
+      "support": 0.045,
+      "confidence": 0.333,
+      "lift": 1.28,
+      "count": 5
     }
   ]
 }

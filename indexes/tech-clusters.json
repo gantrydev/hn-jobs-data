@@ -1,290 +1,203 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-28T12:01:07.261Z",
-  "total_jobs": 163,
-  "k": 12,
+  "generated_at": "2026-08-22T22:17:13.924Z",
+  "total_jobs": 75,
+  "k": 11,
   "clusters": [
     {
       "id": 0,
-      "label": "React / AWS / PostgreSQL",
+      "label": "PostgreSQL / React / AWS",
       "top_techs": [
+        "PostgreSQL",
         "React",
         "AWS",
-        "PostgreSQL",
-        "React Native",
-        "Kubernetes",
-        "OpenAI API",
-        "Anthropic API",
-        "MCP"
+        "Kubernetes"
       ],
       "top_roles": [
-        "Software Engineer",
-        "Senior Software Engineer",
-        "Full Stack Engineer"
+        "Full Stack Engineer",
+        "DevOps / SRE",
+        "Other"
       ],
-      "size": 157,
-      "pct": 74.8,
-      "avg_salary_mentioned": 39,
-      "avg_remote_pct": 49,
-      "avg_ai_ml_pct": 60
+      "size": 52,
+      "pct": 35.4,
+      "avg_salary_mentioned": 46,
+      "avg_remote_pct": 42,
+      "avg_ai_ml_pct": 71
     },
     {
       "id": 1,
-      "label": "ROS / Docker / LangChain",
+      "label": "Node.js / Next.js / MongoDB",
       "top_techs": [
-        "ROS",
-        "Docker",
-        "LangChain",
-        "CUDA",
-        "Hugging Face",
-        "PyTorch",
-        "iOS",
-        "Airflow"
+        "Node.js",
+        "Next.js",
+        "MongoDB"
       ],
       "top_roles": [
-        "Software Engineer",
         "Full Stack Engineer",
+        "Frontend Engineer",
         "Senior Software Engineer"
       ],
-      "size": 110,
-      "pct": 52.4,
-      "avg_salary_mentioned": 42,
-      "avg_remote_pct": 45,
-      "avg_ai_ml_pct": 59
+      "size": 9,
+      "pct": 6.1,
+      "avg_salary_mentioned": 78,
+      "avg_remote_pct": 22,
+      "avg_ai_ml_pct": 78
     },
     {
       "id": 2,
-      "label": "GCP / Gemini API / Git",
+      "label": "OpenAI API / Anthropic API",
       "top_techs": [
-        "GCP",
-        "Gemini API",
-        "Git",
-        "WebAssembly",
-        "Android",
-        "Flutter",
-        "TensorFlow",
-        "Node.js"
+        "OpenAI API",
+        "Anthropic API"
       ],
       "top_roles": [
-        "Software Engineer",
-        "Full Stack Engineer",
-        "Senior Software Engineer"
+        "AI Engineer",
+        "Backend Engineer",
+        "Other"
       ],
-      "size": 110,
-      "pct": 52.4,
-      "avg_salary_mentioned": 41,
-      "avg_remote_pct": 46,
-      "avg_ai_ml_pct": 57
+      "size": 5,
+      "pct": 3.4,
+      "avg_salary_mentioned": 40,
+      "avg_remote_pct": 100,
+      "avg_ai_ml_pct": 100
     },
     {
       "id": 3,
-      "label": "Spark / Terraform / Next.js",
+      "label": "Linux / CUDA",
       "top_techs": [
-        "Spark",
-        "Terraform",
-        "Next.js",
-        "Rails",
-        "GitHub Actions",
-        "Kafka",
         "Linux",
-        "Nix"
+        "CUDA"
       ],
       "top_roles": [
         "Software Engineer",
         "Senior Software Engineer",
-        "Full Stack Engineer"
+        "DevOps / SRE"
       ],
-      "size": 107,
-      "pct": 51,
-      "avg_salary_mentioned": 44,
-      "avg_remote_pct": 46,
-      "avg_ai_ml_pct": 54
+      "size": 4,
+      "pct": 2.7,
+      "avg_salary_mentioned": 0,
+      "avg_remote_pct": 0,
+      "avg_ai_ml_pct": 75
     },
     {
       "id": 4,
-      "label": "eBPF / Pub/Sub / RabbitMQ",
+      "label": "Terraform / GCP",
       "top_techs": [
-        "eBPF",
-        "Pub/Sub",
-        "RabbitMQ",
-        "SQS",
-        "Azure",
-        "GraphQL",
-        "Jenkins",
-        "Redis"
+        "Terraform",
+        "GCP"
       ],
       "top_roles": [
+        "Data Engineer",
         "Software Engineer",
-        "Senior Software Engineer",
-        "Full Stack Engineer"
+        "DevOps / SRE"
       ],
-      "size": 100,
-      "pct": 47.6,
-      "avg_salary_mentioned": 45,
-      "avg_remote_pct": 48,
-      "avg_ai_ml_pct": 53
+      "size": 4,
+      "pct": 2.7,
+      "avg_salary_mentioned": 25,
+      "avg_remote_pct": 25,
+      "avg_ai_ml_pct": 75
     },
     {
       "id": 5,
-      "label": "Cloudflare / SQL / Vercel",
+      "label": "SQL / Airflow",
       "top_techs": [
-        "Cloudflare",
         "SQL",
-        "Vercel",
-        "Firebase",
-        "S3",
-        "MongoDB",
-        "Django",
-        "FastAPI"
+        "Airflow"
       ],
       "top_roles": [
-        "Software Engineer",
-        "Full Stack Engineer",
-        "Senior Software Engineer"
+        "Data Engineer",
+        "ML Engineer"
       ],
-      "size": 92,
-      "pct": 43.8,
-      "avg_salary_mentioned": 45,
-      "avg_remote_pct": 49,
-      "avg_ai_ml_pct": 54
+      "size": 3,
+      "pct": 2,
+      "avg_salary_mentioned": 67,
+      "avg_remote_pct": 0,
+      "avg_ai_ml_pct": 100
     },
     {
       "id": 6,
-      "label": "CSS / ClickHouse / Elasticsearch",
+      "label": "Rails / CSS",
       "top_techs": [
-        "CSS",
-        "ClickHouse",
-        "Elasticsearch",
-        "Express",
-        "Laravel",
-        "Redux",
-        "WebSockets",
-        "Angular"
+        "Rails",
+        "CSS"
       ],
       "top_roles": [
-        "Software Engineer",
-        "Full Stack Engineer",
-        "Senior Software Engineer"
+        "Frontend Engineer",
+        "Full Stack Engineer"
       ],
-      "size": 89,
-      "pct": 42.4,
-      "avg_salary_mentioned": 44,
-      "avg_remote_pct": 47,
-      "avg_ai_ml_pct": 57
+      "size": 3,
+      "pct": 2,
+      "avg_salary_mentioned": 100,
+      "avg_remote_pct": 0,
+      "avg_ai_ml_pct": 67
     },
     {
       "id": 7,
-      "label": "MySQL / NestJS / SQLite",
+      "label": "Android / iOS",
       "top_techs": [
-        "MySQL",
-        "NestJS",
-        "SQLite",
-        "Snowflake",
-        "Spring",
-        "Supabase",
-        "Ember.js",
-        "Firestore"
+        "Android",
+        "iOS"
       ],
       "top_roles": [
         "Software Engineer",
-        "Full Stack Engineer",
-        "Senior Software Engineer"
+        "Mobile Engineer",
+        "Other"
       ],
-      "size": 87,
-      "pct": 41.4,
-      "avg_salary_mentioned": 44,
-      "avg_remote_pct": 48,
-      "avg_ai_ml_pct": 56
+      "size": 3,
+      "pct": 2,
+      "avg_salary_mentioned": 33,
+      "avg_remote_pct": 33,
+      "avg_ai_ml_pct": 67
     },
     {
       "id": 8,
-      "label": "Flask / Neo4j / Svelte",
+      "label": "WebRTC / WebSockets",
       "top_techs": [
-        "Flask",
-        "Neo4j",
-        "Svelte",
-        "Vue",
-        "SQL Server",
-        "gRPC",
         "WebRTC",
-        "Cassandra"
+        "WebSockets"
       ],
       "top_roles": [
-        "Software Engineer",
         "Full Stack Engineer",
-        "Senior Software Engineer"
+        "Software Engineer"
       ],
-      "size": 86,
-      "pct": 41,
-      "avg_salary_mentioned": 44,
-      "avg_remote_pct": 49,
-      "avg_ai_ml_pct": 57
+      "size": 3,
+      "pct": 2,
+      "avg_salary_mentioned": 0,
+      "avg_remote_pct": 0,
+      "avg_ai_ml_pct": 100
     },
     {
       "id": 9,
-      "label": "Python / Ruby / Dart",
+      "label": "Redis / Vercel",
       "top_techs": [
-        "Python",
-        "Ruby",
-        "Dart",
-        "Elixir",
-        "OCaml",
-        "PHP",
-        "R",
-        "Scala"
+        "Redis",
+        "Vercel"
       ],
       "top_roles": [
-        "Software Engineer",
-        "Full Stack Engineer",
-        "Senior Software Engineer"
+        "Full Stack Engineer"
       ],
-      "size": 55,
-      "pct": 26.2,
-      "avg_salary_mentioned": 38,
-      "avg_remote_pct": 53,
-      "avg_ai_ml_pct": 55
+      "size": 2,
+      "pct": 1.4,
+      "avg_salary_mentioned": 50,
+      "avg_remote_pct": 0,
+      "avg_ai_ml_pct": 100
     },
     {
       "id": 10,
-      "label": "C++ / Kotlin / Swift",
+      "label": "PyTorch / Hugging Face",
       "top_techs": [
-        "C++",
-        "Kotlin",
-        "Swift",
-        "C",
-        "C#",
-        "Go",
-        "Java",
-        "Rust"
+        "PyTorch",
+        "Hugging Face"
       ],
       "top_roles": [
-        "Software Engineer",
-        "Full Stack Engineer",
-        "Senior Software Engineer"
+        "AI Engineer",
+        "Data Scientist"
       ],
-      "size": 55,
-      "pct": 26.2,
-      "avg_salary_mentioned": 38,
-      "avg_remote_pct": 53,
-      "avg_ai_ml_pct": 55
-    },
-    {
-      "id": 11,
-      "label": "TypeScript / JavaScript",
-      "top_techs": [
-        "TypeScript",
-        "JavaScript"
-      ],
-      "top_roles": [
-        "Software Engineer",
-        "Full Stack Engineer",
-        "Senior Software Engineer"
-      ],
-      "size": 37,
-      "pct": 17.6,
-      "avg_salary_mentioned": 35,
-      "avg_remote_pct": 49,
-      "avg_ai_ml_pct": 59
+      "size": 2,
+      "pct": 1.4,
+      "avg_salary_mentioned": 0,
+      "avg_remote_pct": 0,
+      "avg_ai_ml_pct": 100
     }
   ]
 }

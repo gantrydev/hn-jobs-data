@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-22T22:17:13.932Z",
+  "generated_at": "2026-08-22T22:52:44.374Z",
   "top_pairs": [
     {
       "tech": "React",
@@ -72,7 +72,30 @@
         "AWS",
         "Kubernetes"
       ],
-      "pct": 35.4
+      "pct": 35.4,
+      "salary_sample_size": 24,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 3,
+          "pct": 12.5
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 6,
+          "pct": 25
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 11,
+          "pct": 45.8
+        },
+        {
+          "band": "$200k+",
+          "count": 4,
+          "pct": 16.7
+        }
+      ]
     },
     {
       "label": "Node.js / Next.js / MongoDB",
@@ -81,7 +104,30 @@
         "Next.js",
         "MongoDB"
       ],
-      "pct": 6.1
+      "pct": 6.1,
+      "salary_sample_size": 7,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 2,
+          "pct": 28.6
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 1,
+          "pct": 14.3
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 3,
+          "pct": 42.9
+        },
+        {
+          "band": "$200k+",
+          "count": 1,
+          "pct": 14.3
+        }
+      ]
     },
     {
       "label": "OpenAI API / Anthropic API",
@@ -89,7 +135,30 @@
         "OpenAI API",
         "Anthropic API"
       ],
-      "pct": 3.4
+      "pct": 3.4,
+      "salary_sample_size": 2,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 1,
+          "pct": 50
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$200k+",
+          "count": 1,
+          "pct": 50
+        }
+      ]
     },
     {
       "label": "Linux / CUDA",
@@ -97,7 +166,30 @@
         "Linux",
         "CUDA"
       ],
-      "pct": 2.7
+      "pct": 2.7,
+      "salary_sample_size": 0,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ]
     },
     {
       "label": "Terraform / GCP",
@@ -105,7 +197,30 @@
         "Terraform",
         "GCP"
       ],
-      "pct": 2.7
+      "pct": 2.7,
+      "salary_sample_size": 1,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 1,
+          "pct": 100
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ]
     },
     {
       "label": "SQL / Airflow",
@@ -113,7 +228,30 @@
         "SQL",
         "Airflow"
       ],
-      "pct": 2
+      "pct": 2,
+      "salary_sample_size": 2,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 1,
+          "pct": 50
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 1,
+          "pct": 50
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ]
     },
     {
       "label": "Rails / CSS",
@@ -121,7 +259,30 @@
         "Rails",
         "CSS"
       ],
-      "pct": 2
+      "pct": 2,
+      "salary_sample_size": 3,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 3,
+          "pct": 100
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ]
     },
     {
       "label": "Android / iOS",
@@ -129,7 +290,30 @@
         "Android",
         "iOS"
       ],
-      "pct": 2
+      "pct": 2,
+      "salary_sample_size": 1,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 1,
+          "pct": 100
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ]
     },
     {
       "label": "WebRTC / WebSockets",
@@ -137,7 +321,30 @@
         "WebRTC",
         "WebSockets"
       ],
-      "pct": 2
+      "pct": 2,
+      "salary_sample_size": 0,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ]
     },
     {
       "label": "Redis / Vercel",
@@ -145,7 +352,30 @@
         "Redis",
         "Vercel"
       ],
-      "pct": 1.4
+      "pct": 1.4,
+      "salary_sample_size": 1,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 1,
+          "pct": 100
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ]
     },
     {
       "label": "PyTorch / Hugging Face",
@@ -153,7 +383,30 @@
         "PyTorch",
         "Hugging Face"
       ],
-      "pct": 1.4
+      "pct": 1.4,
+      "salary_sample_size": 0,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ]
     }
   ],
   "top_associations": [

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-22T22:17:13.924Z",
+  "generated_at": "2026-08-22T22:52:44.370Z",
   "total_jobs": 75,
   "k": 11,
   "clusters": [
@@ -21,6 +21,29 @@
       "size": 52,
       "pct": 35.4,
       "avg_salary_mentioned": 46,
+      "salary_sample_size": 24,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 3,
+          "pct": 12.5
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 6,
+          "pct": 25
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 11,
+          "pct": 45.8
+        },
+        {
+          "band": "$200k+",
+          "count": 4,
+          "pct": 16.7
+        }
+      ],
       "avg_remote_pct": 42,
       "avg_ai_ml_pct": 71
     },
@@ -40,6 +63,29 @@
       "size": 9,
       "pct": 6.1,
       "avg_salary_mentioned": 78,
+      "salary_sample_size": 7,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 2,
+          "pct": 28.6
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 1,
+          "pct": 14.3
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 3,
+          "pct": 42.9
+        },
+        {
+          "band": "$200k+",
+          "count": 1,
+          "pct": 14.3
+        }
+      ],
       "avg_remote_pct": 22,
       "avg_ai_ml_pct": 78
     },
@@ -58,6 +104,29 @@
       "size": 5,
       "pct": 3.4,
       "avg_salary_mentioned": 40,
+      "salary_sample_size": 2,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 1,
+          "pct": 50
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$200k+",
+          "count": 1,
+          "pct": 50
+        }
+      ],
       "avg_remote_pct": 100,
       "avg_ai_ml_pct": 100
     },
@@ -76,6 +145,29 @@
       "size": 4,
       "pct": 2.7,
       "avg_salary_mentioned": 0,
+      "salary_sample_size": 0,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ],
       "avg_remote_pct": 0,
       "avg_ai_ml_pct": 75
     },
@@ -94,6 +186,29 @@
       "size": 4,
       "pct": 2.7,
       "avg_salary_mentioned": 25,
+      "salary_sample_size": 1,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 1,
+          "pct": 100
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ],
       "avg_remote_pct": 25,
       "avg_ai_ml_pct": 75
     },
@@ -111,6 +226,29 @@
       "size": 3,
       "pct": 2,
       "avg_salary_mentioned": 67,
+      "salary_sample_size": 2,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 1,
+          "pct": 50
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 1,
+          "pct": 50
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ],
       "avg_remote_pct": 0,
       "avg_ai_ml_pct": 100
     },
@@ -128,6 +266,29 @@
       "size": 3,
       "pct": 2,
       "avg_salary_mentioned": 100,
+      "salary_sample_size": 3,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 3,
+          "pct": 100
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ],
       "avg_remote_pct": 0,
       "avg_ai_ml_pct": 67
     },
@@ -146,6 +307,29 @@
       "size": 3,
       "pct": 2,
       "avg_salary_mentioned": 33,
+      "salary_sample_size": 1,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 1,
+          "pct": 100
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ],
       "avg_remote_pct": 33,
       "avg_ai_ml_pct": 67
     },
@@ -163,6 +347,29 @@
       "size": 3,
       "pct": 2,
       "avg_salary_mentioned": 0,
+      "salary_sample_size": 0,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ],
       "avg_remote_pct": 0,
       "avg_ai_ml_pct": 100
     },
@@ -179,6 +386,29 @@
       "size": 2,
       "pct": 1.4,
       "avg_salary_mentioned": 50,
+      "salary_sample_size": 1,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 1,
+          "pct": 100
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ],
       "avg_remote_pct": 0,
       "avg_ai_ml_pct": 100
     },
@@ -196,6 +426,29 @@
       "size": 2,
       "pct": 1.4,
       "avg_salary_mentioned": 0,
+      "salary_sample_size": 0,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ],
       "avg_remote_pct": 0,
       "avg_ai_ml_pct": 100
     }

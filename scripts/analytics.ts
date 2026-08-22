@@ -15,6 +15,7 @@
 
 import fs from "node:fs/promises"
 import path from "node:path"
+import { SALARY_BANDS, type SalaryBand } from "./schemas.js"
 
 // ==============================================================================
 // Types
@@ -28,7 +29,7 @@ interface ClassifiedJob {
   experience_level: string
   remote: string
   salary_mentioned: boolean
-  salary_band: string | null
+  salary_band: SalaryBand | null
   equity_mentioned: boolean
   ai_ml_mentioned: boolean
 }
@@ -65,6 +66,8 @@ interface ClusterInfo {
   size: number
   pct: number
   avg_salary_mentioned: number
+  salary_sample_size: number
+  salary_ranges: Array<{ band: SalaryBand; count: number; pct: number }>
   avg_remote_pct: number
   avg_ai_ml_pct: number
 }
@@ -349,6 +352,12 @@ function buildClusters(
       .sort((a, b) => b[1] - a[1]).slice(0, 3).map(([name]) => name)
 
     const avgSalary = matchingJobs.filter((j) => j.salary_mentioned).length / size
+    const salaryJobs = matchingJobs.filter((job) => job.salary_band !== null)
+    const salaryRanges = SALARY_BANDS.map((band) => {
+      const count = salaryJobs.filter((job) => job.salary_band === band).length
+      const pct = salaryJobs.length > 0 ? Math.round((count / salaryJobs.length) * 1000) / 10 : 0
+      return { band, count, pct }
+    })
     const avgRemote = matchingJobs.filter((j) => j.remote === "fully_remote").length / size
     const avgAiML = matchingJobs.filter((j) => j.ai_ml_mentioned).length / size
 
@@ -358,6 +367,8 @@ function buildClusters(
       size,
       pct: Math.round((size / jobs.length) * 1000) / 10,
       avg_salary_mentioned: Math.round(avgSalary * 100),
+      salary_sample_size: salaryJobs.length,
+      salary_ranges: salaryRanges,
       avg_remote_pct: Math.round(avgRemote * 100),
       avg_ai_ml_pct: Math.round(avgAiML * 100),
     })
@@ -646,6 +657,8 @@ export async function runAnalytics(): Promise<void> {
       label: c.label,
       top_techs: c.top_techs.slice(0, 5),
       pct: c.pct,
+      salary_sample_size: c.salary_sample_size,
+      salary_ranges: c.salary_ranges,
     })),
     top_associations: associations.rules.slice(0, 10).map((r) => ({
       antecedent: r.antecedent,

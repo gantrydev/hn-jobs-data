@@ -181,6 +181,7 @@ async function callOpenRouter(jobs: RawJob[], label: string): Promise<BatchRespo
             type: "json_schema",
             json_schema: {
               name: "batch_response",
+              strict: true,
               schema: batchJsonSchema,
             },
           },

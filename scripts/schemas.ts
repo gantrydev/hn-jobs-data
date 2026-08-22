@@ -234,10 +234,6 @@ const StrictSalaryBandValueSchema = z.preprocess(
   (value) => normalizeSalaryBand(value) ?? value,
   SalaryBandValueSchema,
 )
-const NullableSalaryBandValueSchema = z.preprocess((value) => {
-  if (value === null || value === undefined) return null
-  return normalizeSalaryBand(value)
-}, SalaryBandValueSchema.nullable())
 const TechnologyValueSchema = z.enum(TECHNOLOGY_NAMES)
 const TechnologyListSchema = z.preprocess((value) => {
   if (!Array.isArray(value)) return value
@@ -323,40 +319,31 @@ const ExperienceLevelSchema = z.object({
   pct: pctSchema,
 })
 
-export const ClassifiedJobSchema = z
-  .object({
-    id: z.int(),
-    languages: LanguageListSchema.default([]),
-    technologies: TechnologyListSchema,
-    role: RoleValueSchema,
-    experience_level: z.enum(["Senior", "Mid", "Junior", "Not specified"]),
-    remote: z.enum(["fully_remote", "hybrid", "onsite_only", "not_mentioned"]),
-    salary_mentioned: z.boolean(),
-    salary_band: NullableSalaryBandValueSchema,
-    equity_mentioned: z.boolean(),
-    ai_ml_mentioned: z.boolean(),
-  })
-  .superRefine((job, ctx) => {
-    if (job.salary_mentioned && job.salary_band === null) {
-      ctx.addIssue({
-        code: "custom",
-        path: ["salary_band"],
-        message: "salary_band is required when salary_mentioned is true",
-      })
-    }
-
-    if (!job.salary_mentioned && job.salary_band !== null) {
-      ctx.addIssue({
-        code: "custom",
-        path: ["salary_band"],
-        message: "salary_band must be null when salary_mentioned is false",
-      })
-    }
-  })
-
-const BatchClassifiedJobSchema = ClassifiedJobSchema.extend({
-  is_job: z.boolean(),
+const ClassifiedJobBaseSchema = z.object({
+  id: z.int(),
+  languages: LanguageListSchema.default([]),
+  technologies: TechnologyListSchema,
+  role: RoleValueSchema,
+  experience_level: z.enum(["Senior", "Mid", "Junior", "Not specified"]),
+  remote: z.enum(["fully_remote", "hybrid", "onsite_only", "not_mentioned"]),
+  equity_mentioned: z.boolean(),
+  ai_ml_mentioned: z.boolean(),
 })
+
+const ClassifiedJobVariants = [
+  ClassifiedJobBaseSchema.extend({
+    salary_mentioned: z.literal(true),
+    salary_band: StrictSalaryBandValueSchema,
+  }),
+  ClassifiedJobBaseSchema.extend({ salary_mentioned: z.literal(false), salary_band: z.null() }),
+] as const
+
+export const ClassifiedJobSchema = z.union(ClassifiedJobVariants)
+
+const BatchClassifiedJobSchema = z.union([
+  ClassifiedJobVariants[0].extend({ languages: LanguageListSchema, is_job: z.boolean() }),
+  ClassifiedJobVariants[1].extend({ languages: LanguageListSchema, is_job: z.boolean() }),
+])
 
 export const BatchResponseSchema = z.object({
   jobs: z.array(BatchClassifiedJobSchema),

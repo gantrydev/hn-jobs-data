@@ -2,6 +2,13 @@
   "schema_version": "1.0",
   "runs": [
     {
+      "run_id": "2026-08-28-refresh",
+      "date": "2026-08-28",
+      "type": "refresh",
+      "job_count": 250,
+      "thread_title": "Ask HN: Who is hiring? (August 2026)"
+    },
+    {
       "run_id": "2026-08-22-manual",
       "date": "2026-08-22",
       "type": "main",
@@ -100,6 +107,6 @@
       "thread_title": "Ask HN: Who is hiring? (January 2026)"
     }
   ],
-  "latest_run_id": "2026-08-22-manual",
-  "updated_at": "2026-08-22T22:17:13.855Z"
+  "latest_run_id": "2026-08-28-refresh",
+  "updated_at": "2026-08-28T21:05:43.557Z"
 }

@@ -1,18 +1,24 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-22T22:52:44.374Z",
+  "generated_at": "2026-08-28T21:05:43.641Z",
   "top_pairs": [
+    {
+      "tech": "PostgreSQL",
+      "with": "React",
+      "count": 567,
+      "jaccard": 0.381
+    },
     {
       "tech": "React",
       "with": "TypeScript",
       "count": 552,
-      "jaccard": 0.41
+      "jaccard": 0.396
     },
     {
-      "tech": "PostgreSQL",
-      "with": "React",
-      "count": 543,
-      "jaccard": 0.383
+      "tech": "AWS",
+      "with": "PostgreSQL",
+      "count": 460,
+      "jaccard": 0.339
     },
     {
       "tech": "Python",
@@ -22,45 +28,39 @@
     },
     {
       "tech": "AWS",
-      "with": "PostgreSQL",
-      "count": 439,
-      "jaccard": 0.341
-    },
-    {
-      "tech": "AWS",
       "with": "React",
-      "count": 434,
-      "jaccard": 0.3
+      "count": 452,
+      "jaccard": 0.298
     },
     {
       "tech": "Python",
       "with": "React",
       "count": 415,
-      "jaccard": 0.258
+      "jaccard": 0.25
     },
     {
       "tech": "PostgreSQL",
       "with": "TypeScript",
       "count": 403,
-      "jaccard": 0.3
+      "jaccard": 0.289
     },
     {
       "tech": "Node.js",
       "with": "React",
-      "count": 375,
-      "jaccard": 0.326
+      "count": 391,
+      "jaccard": 0.323
     },
     {
       "tech": "AWS",
       "with": "Python",
       "count": 374,
-      "jaccard": 0.264
+      "jaccard": 0.256
     },
     {
       "tech": "PostgreSQL",
       "with": "Python",
       "count": 359,
-      "jaccard": 0.237
+      "jaccard": 0.229
     }
   ],
   "clusters": [
@@ -72,7 +72,7 @@
         "AWS",
         "Kubernetes"
       ],
-      "pct": 35.4,
+      "pct": 36.3,
       "salary_sample_size": 24,
       "salary_ranges": [
         {
@@ -82,13 +82,13 @@
         },
         {
           "band": "$100k-$150k",
-          "count": 6,
-          "pct": 25
+          "count": 5,
+          "pct": 20.8
         },
         {
           "band": "$150k-$200k",
-          "count": 11,
-          "pct": 45.8
+          "count": 12,
+          "pct": 50
         },
         {
           "band": "$200k+",
@@ -104,28 +104,90 @@
         "Next.js",
         "MongoDB"
       ],
-      "pct": 6.1,
-      "salary_sample_size": 7,
+      "pct": 6.2,
+      "salary_sample_size": 8,
       "salary_ranges": [
         {
           "band": "<$100k",
           "count": 2,
-          "pct": 28.6
+          "pct": 25
         },
         {
           "band": "$100k-$150k",
-          "count": 1,
-          "pct": 14.3
+          "count": 2,
+          "pct": 25
         },
         {
           "band": "$150k-$200k",
           "count": 3,
-          "pct": 42.9
+          "pct": 37.5
         },
         {
           "band": "$200k+",
           "count": 1,
-          "pct": 14.3
+          "pct": 12.5
+        }
+      ]
+    },
+    {
+      "label": "Docker / Terraform",
+      "top_techs": [
+        "Docker",
+        "Terraform"
+      ],
+      "pct": 4.1,
+      "salary_sample_size": 2,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 1,
+          "pct": 50
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 1,
+          "pct": 50
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ]
+    },
+    {
+      "label": "Linux / Git",
+      "top_techs": [
+        "Linux",
+        "Git"
+      ],
+      "pct": 2.7,
+      "salary_sample_size": 1,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 1,
+          "pct": 100
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
         }
       ]
     },
@@ -135,7 +197,7 @@
         "OpenAI API",
         "Anthropic API"
       ],
-      "pct": 3.4,
+      "pct": 2.1,
       "salary_sample_size": 2,
       "salary_ranges": [
         {
@@ -147,99 +209,6 @@
           "band": "$100k-$150k",
           "count": 0,
           "pct": 0
-        },
-        {
-          "band": "$150k-$200k",
-          "count": 0,
-          "pct": 0
-        },
-        {
-          "band": "$200k+",
-          "count": 1,
-          "pct": 50
-        }
-      ]
-    },
-    {
-      "label": "Linux / CUDA",
-      "top_techs": [
-        "Linux",
-        "CUDA"
-      ],
-      "pct": 2.7,
-      "salary_sample_size": 0,
-      "salary_ranges": [
-        {
-          "band": "<$100k",
-          "count": 0,
-          "pct": 0
-        },
-        {
-          "band": "$100k-$150k",
-          "count": 0,
-          "pct": 0
-        },
-        {
-          "band": "$150k-$200k",
-          "count": 0,
-          "pct": 0
-        },
-        {
-          "band": "$200k+",
-          "count": 0,
-          "pct": 0
-        }
-      ]
-    },
-    {
-      "label": "Terraform / GCP",
-      "top_techs": [
-        "Terraform",
-        "GCP"
-      ],
-      "pct": 2.7,
-      "salary_sample_size": 1,
-      "salary_ranges": [
-        {
-          "band": "<$100k",
-          "count": 0,
-          "pct": 0
-        },
-        {
-          "band": "$100k-$150k",
-          "count": 1,
-          "pct": 100
-        },
-        {
-          "band": "$150k-$200k",
-          "count": 0,
-          "pct": 0
-        },
-        {
-          "band": "$200k+",
-          "count": 0,
-          "pct": 0
-        }
-      ]
-    },
-    {
-      "label": "SQL / Airflow",
-      "top_techs": [
-        "SQL",
-        "Airflow"
-      ],
-      "pct": 2,
-      "salary_sample_size": 2,
-      "salary_ranges": [
-        {
-          "band": "<$100k",
-          "count": 0,
-          "pct": 0
-        },
-        {
-          "band": "$100k-$150k",
-          "count": 1,
-          "pct": 50
         },
         {
           "band": "$150k-$200k",
@@ -259,7 +228,7 @@
         "Rails",
         "CSS"
       ],
-      "pct": 2,
+      "pct": 2.1,
       "salary_sample_size": 3,
       "salary_ranges": [
         {
@@ -285,12 +254,13 @@
       ]
     },
     {
-      "label": "Android / iOS",
+      "label": "Android / iOS / SQLite",
       "top_techs": [
         "Android",
-        "iOS"
+        "iOS",
+        "SQLite"
       ],
-      "pct": 2,
+      "pct": 2.1,
       "salary_sample_size": 1,
       "salary_ranges": [
         {
@@ -321,8 +291,8 @@
         "WebRTC",
         "WebSockets"
       ],
-      "pct": 2,
-      "salary_sample_size": 0,
+      "pct": 2.1,
+      "salary_sample_size": 1,
       "salary_ranges": [
         {
           "band": "<$100k",
@@ -341,8 +311,8 @@
         },
         {
           "band": "$200k+",
-          "count": 0,
-          "pct": 0
+          "count": 1,
+          "pct": 100
         }
       ]
     },
@@ -362,13 +332,13 @@
         },
         {
           "band": "$100k-$150k",
-          "count": 0,
-          "pct": 0
+          "count": 1,
+          "pct": 100
         },
         {
           "band": "$150k-$200k",
-          "count": 1,
-          "pct": 100
+          "count": 0,
+          "pct": 0
         },
         {
           "band": "$200k+",
@@ -378,10 +348,10 @@
       ]
     },
     {
-      "label": "PyTorch / Hugging Face",
+      "label": "PyTorch / Azure",
       "top_techs": [
         "PyTorch",
-        "Hugging Face"
+        "Azure"
       ],
       "pct": 1.4,
       "salary_sample_size": 0,
@@ -412,43 +382,13 @@
   "top_associations": [
     {
       "antecedent": [
-        "TensorFlow"
-      ],
-      "consequent": [
-        "PyTorch"
-      ],
-      "confidence": 1,
-      "lift": 12.33
-    },
-    {
-      "antecedent": [
-        "Anthropic API"
-      ],
-      "consequent": [
-        "OpenAI API"
-      ],
-      "confidence": 0.714,
-      "lift": 7.93
-    },
-    {
-      "antecedent": [
-        "CUDA"
-      ],
-      "consequent": [
-        "Linux"
-      ],
-      "confidence": 1,
-      "lift": 7.4
-    },
-    {
-      "antecedent": [
         "MongoDB"
       ],
       "consequent": [
         "Next.js"
       ],
       "confidence": 0.8,
-      "lift": 5.92
+      "lift": 6.03
     },
     {
       "antecedent": [
@@ -458,27 +398,17 @@
         "Node.js"
       ],
       "confidence": 1,
-      "lift": 4.62
+      "lift": 4.35
     },
     {
       "antecedent": [
-        "WebSockets"
+        "GitHub Actions"
       ],
       "consequent": [
-        "Node.js"
+        "Linux"
       ],
-      "confidence": 1,
-      "lift": 4.62
-    },
-    {
-      "antecedent": [
-        "CSS"
-      ],
-      "consequent": [
-        "Node.js"
-      ],
-      "confidence": 0.8,
-      "lift": 3.7
+      "confidence": 0.5,
+      "lift": 4.04
     },
     {
       "antecedent": [
@@ -488,7 +418,17 @@
         "Next.js"
       ],
       "confidence": 0.455,
-      "lift": 3.36
+      "lift": 3.42
+    },
+    {
+      "antecedent": [
+        "Git"
+      ],
+      "consequent": [
+        "Linux"
+      ],
+      "confidence": 0.4,
+      "lift": 3.23
     },
     {
       "antecedent": [
@@ -498,7 +438,7 @@
         "Next.js"
       ],
       "confidence": 0.4,
-      "lift": 2.96
+      "lift": 3.01
     },
     {
       "antecedent": [
@@ -507,8 +447,38 @@
       "consequent": [
         "Kubernetes"
       ],
-      "confidence": 0.722,
-      "lift": 2.76
+      "confidence": 0.667,
+      "lift": 2.6
+    },
+    {
+      "antecedent": [
+        "CSS"
+      ],
+      "consequent": [
+        "Node.js"
+      ],
+      "confidence": 0.571,
+      "lift": 2.48
+    },
+    {
+      "antecedent": [
+        "GraphQL"
+      ],
+      "consequent": [
+        "Node.js"
+      ],
+      "confidence": 0.556,
+      "lift": 2.41
+    },
+    {
+      "antecedent": [
+        "S3"
+      ],
+      "consequent": [
+        "AWS"
+      ],
+      "confidence": 0.833,
+      "lift": 2.41
     }
   ],
   "momentum_summary": {
@@ -536,12 +506,12 @@
     ],
     "top_declining": [
       {
-        "tech": "TypeScript",
-        "slope_pct": -11.9
+        "tech": "Python",
+        "slope_pct": -14.5
       },
       {
-        "tech": "Python",
-        "slope_pct": -10.1
+        "tech": "TypeScript",
+        "slope_pct": -11.9
       }
     ]
   }

@@ -1,134 +1,136 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-28T21:05:43.634Z",
-  "total_jobs": 69,
-  "k": 10,
+  "generated_at": "2026-09-03T14:08:30.286Z",
+  "total_jobs": 64,
+  "k": 11,
   "clusters": [
     {
       "id": 0,
-      "label": "PostgreSQL / React / AWS",
+      "label": "AWS / Kubernetes / Docker",
       "top_techs": [
-        "PostgreSQL",
-        "React",
         "AWS",
-        "Kubernetes"
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "GitHub Actions"
       ],
       "top_roles": [
+        "DevOps / SRE",
         "Full Stack Engineer",
-        "Senior Software Engineer",
-        "DevOps / SRE"
+        "Senior Software Engineer"
       ],
-      "size": 53,
-      "pct": 36.3,
-      "avg_salary_mentioned": 45,
-      "salary_sample_size": 24,
+      "size": 29,
+      "pct": 22.8,
+      "avg_salary_mentioned": 48,
+      "salary_sample_size": 14,
       "salary_ranges": [
         {
           "band": "<$100k",
           "count": 3,
-          "pct": 12.5
+          "pct": 21.4
         },
         {
           "band": "$100k-$150k",
           "count": 5,
-          "pct": 20.8
+          "pct": 35.7
         },
         {
           "band": "$150k-$200k",
-          "count": 12,
-          "pct": 50
+          "count": 4,
+          "pct": 28.6
         },
         {
           "band": "$200k+",
-          "count": 4,
-          "pct": 16.7
+          "count": 2,
+          "pct": 14.3
         }
       ],
-      "avg_remote_pct": 43,
-      "avg_ai_ml_pct": 74
+      "avg_remote_pct": 52,
+      "avg_ai_ml_pct": 72
     },
     {
       "id": 1,
-      "label": "Node.js / Next.js / MongoDB",
+      "label": "React / PostgreSQL / Node.js",
       "top_techs": [
-        "Node.js",
-        "Next.js",
-        "MongoDB"
+        "React",
+        "PostgreSQL",
+        "Node.js"
       ],
       "top_roles": [
         "Full Stack Engineer",
-        "Frontend Engineer",
+        "Staff Engineer",
         "Senior Software Engineer"
       ],
-      "size": 9,
-      "pct": 6.2,
-      "avg_salary_mentioned": 89,
-      "salary_sample_size": 8,
+      "size": 25,
+      "pct": 19.7,
+      "avg_salary_mentioned": 48,
+      "salary_sample_size": 12,
       "salary_ranges": [
         {
           "band": "<$100k",
-          "count": 2,
-          "pct": 25
+          "count": 1,
+          "pct": 8.3
         },
         {
           "band": "$100k-$150k",
-          "count": 2,
-          "pct": 25
+          "count": 4,
+          "pct": 33.3
         },
         {
           "band": "$150k-$200k",
-          "count": 3,
-          "pct": 37.5
+          "count": 5,
+          "pct": 41.7
         },
         {
           "band": "$200k+",
-          "count": 1,
-          "pct": 12.5
+          "count": 2,
+          "pct": 16.7
         }
       ],
-      "avg_remote_pct": 22,
-      "avg_ai_ml_pct": 78
+      "avg_remote_pct": 60,
+      "avg_ai_ml_pct": 80
     },
     {
       "id": 2,
-      "label": "Docker / Terraform",
+      "label": "GCP / Azure / FastAPI",
       "top_techs": [
-        "Docker",
-        "Terraform"
+        "GCP",
+        "Azure",
+        "FastAPI"
       ],
       "top_roles": [
+        "Full Stack Engineer",
         "DevOps / SRE",
-        "Senior Software Engineer",
-        "ML Engineer"
+        "Senior Software Engineer"
       ],
-      "size": 6,
-      "pct": 4.1,
-      "avg_salary_mentioned": 33,
-      "salary_sample_size": 2,
+      "size": 8,
+      "pct": 6.3,
+      "avg_salary_mentioned": 38,
+      "salary_sample_size": 3,
       "salary_ranges": [
         {
           "band": "<$100k",
-          "count": 0,
-          "pct": 0
+          "count": 1,
+          "pct": 33.3
         },
         {
           "band": "$100k-$150k",
-          "count": 1,
-          "pct": 50
+          "count": 0,
+          "pct": 0
         },
         {
           "band": "$150k-$200k",
           "count": 1,
-          "pct": 50
+          "pct": 33.3
         },
         {
           "band": "$200k+",
-          "count": 0,
-          "pct": 0
+          "count": 1,
+          "pct": 33.3
         }
       ],
-      "avg_remote_pct": 33,
-      "avg_ai_ml_pct": 83
+      "avg_remote_pct": 38,
+      "avg_ai_ml_pct": 88
     },
     {
       "id": 3,
@@ -139,10 +141,11 @@
       ],
       "top_roles": [
         "Software Engineer",
+        "DevOps / SRE",
         "Other"
       ],
       "size": 4,
-      "pct": 2.7,
+      "pct": 3.1,
       "avg_salary_mentioned": 25,
       "salary_sample_size": 1,
       "salary_ranges": [
@@ -167,34 +170,78 @@
           "pct": 0
         }
       ],
-      "avg_remote_pct": 50,
-      "avg_ai_ml_pct": 100
+      "avg_remote_pct": 25,
+      "avg_ai_ml_pct": 25
     },
     {
       "id": 4,
-      "label": "OpenAI API / Anthropic API",
+      "label": "OpenAI API / Anthropic API / Gemini API",
       "top_techs": [
         "OpenAI API",
-        "Anthropic API"
+        "Anthropic API",
+        "Gemini API"
       ],
       "top_roles": [
         "AI Engineer",
-        "Full Stack Engineer"
+        "Software Engineer",
+        "Senior Software Engineer"
       ],
-      "size": 3,
-      "pct": 2.1,
-      "avg_salary_mentioned": 67,
-      "salary_sample_size": 2,
+      "size": 4,
+      "pct": 3.1,
+      "avg_salary_mentioned": 75,
+      "salary_sample_size": 3,
       "salary_ranges": [
         {
           "band": "<$100k",
           "count": 1,
-          "pct": 50
+          "pct": 33.3
         },
         {
           "band": "$100k-$150k",
           "count": 0,
           "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 1,
+          "pct": 33.3
+        },
+        {
+          "band": "$200k+",
+          "count": 1,
+          "pct": 33.3
+        }
+      ],
+      "avg_remote_pct": 75,
+      "avg_ai_ml_pct": 100
+    },
+    {
+      "id": 5,
+      "label": "SQL / Elasticsearch / Spark",
+      "top_techs": [
+        "SQL",
+        "Elasticsearch",
+        "Spark"
+      ],
+      "top_roles": [
+        "Senior Software Engineer",
+        "Software Engineer",
+        "Data Engineer"
+      ],
+      "size": 3,
+      "pct": 2.4,
+      "avg_salary_mentioned": 67,
+      "salary_sample_size": 2,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 1,
+          "pct": 50
         },
         {
           "band": "$150k-$200k",
@@ -207,24 +254,23 @@
           "pct": 0
         }
       ],
-      "avg_remote_pct": 100,
-      "avg_ai_ml_pct": 100
+      "avg_remote_pct": 67,
+      "avg_ai_ml_pct": 67
     },
     {
-      "id": 5,
-      "label": "Rails / CSS",
+      "id": 6,
+      "label": "PyTorch / CUDA",
       "top_techs": [
-        "Rails",
-        "CSS"
+        "PyTorch",
+        "CUDA"
       ],
       "top_roles": [
-        "Frontend Engineer",
-        "Full Stack Engineer"
+        "ML Engineer"
       ],
       "size": 3,
-      "pct": 2.1,
-      "avg_salary_mentioned": 100,
-      "salary_sample_size": 3,
+      "pct": 2.4,
+      "avg_salary_mentioned": 33,
+      "salary_sample_size": 1,
       "salary_ranges": [
         {
           "band": "<$100k",
@@ -233,13 +279,13 @@
         },
         {
           "band": "$100k-$150k",
-          "count": 0,
-          "pct": 0
+          "count": 1,
+          "pct": 100
         },
         {
           "band": "$150k-$200k",
-          "count": 3,
-          "pct": 100
+          "count": 0,
+          "pct": 0
         },
         {
           "band": "$200k+",
@@ -248,30 +294,70 @@
         }
       ],
       "avg_remote_pct": 0,
-      "avg_ai_ml_pct": 67
+      "avg_ai_ml_pct": 100
     },
     {
-      "id": 6,
-      "label": "Android / iOS / SQLite",
+      "id": 7,
+      "label": "Kafka / Redis",
       "top_techs": [
-        "Android",
-        "iOS",
-        "SQLite"
+        "Kafka",
+        "Redis"
       ],
       "top_roles": [
-        "Mobile Engineer",
+        "Backend Engineer",
         "Software Engineer",
-        "Product Manager"
+        "Other"
       ],
       "size": 3,
-      "pct": 2.1,
+      "pct": 2.4,
       "avg_salary_mentioned": 33,
       "salary_sample_size": 1,
       "salary_ranges": [
         {
           "band": "<$100k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$100k-$150k",
           "count": 1,
           "pct": 100
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ],
+      "avg_remote_pct": 0,
+      "avg_ai_ml_pct": 100
+    },
+    {
+      "id": 8,
+      "label": "LangChain / MCP",
+      "top_techs": [
+        "LangChain",
+        "MCP"
+      ],
+      "top_roles": [
+        "Full Stack Engineer",
+        "AI Engineer",
+        "Staff Engineer"
+      ],
+      "size": 3,
+      "pct": 2.4,
+      "avg_salary_mentioned": 100,
+      "salary_sample_size": 3,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 1,
+          "pct": 33.3
         },
         {
           "band": "$100k-$150k",
@@ -280,8 +366,8 @@
         },
         {
           "band": "$150k-$200k",
-          "count": 0,
-          "pct": 0
+          "count": 2,
+          "pct": 66.7
         },
         {
           "band": "$200k+",
@@ -293,97 +379,58 @@
       "avg_ai_ml_pct": 100
     },
     {
-      "id": 7,
-      "label": "WebRTC / WebSockets",
-      "top_techs": [
-        "WebRTC",
-        "WebSockets"
-      ],
-      "top_roles": [
-        "Full Stack Engineer",
-        "Backend Engineer"
-      ],
-      "size": 3,
-      "pct": 2.1,
-      "avg_salary_mentioned": 33,
-      "salary_sample_size": 1,
-      "salary_ranges": [
-        {
-          "band": "<$100k",
-          "count": 0,
-          "pct": 0
-        },
-        {
-          "band": "$100k-$150k",
-          "count": 0,
-          "pct": 0
-        },
-        {
-          "band": "$150k-$200k",
-          "count": 0,
-          "pct": 0
-        },
-        {
-          "band": "$200k+",
-          "count": 1,
-          "pct": 100
-        }
-      ],
-      "avg_remote_pct": 0,
-      "avg_ai_ml_pct": 100
-    },
-    {
-      "id": 8,
-      "label": "Redis / Vercel",
-      "top_techs": [
-        "Redis",
-        "Vercel"
-      ],
-      "top_roles": [
-        "Senior Software Engineer",
-        "Full Stack Engineer"
-      ],
-      "size": 2,
-      "pct": 1.4,
-      "avg_salary_mentioned": 50,
-      "salary_sample_size": 1,
-      "salary_ranges": [
-        {
-          "band": "<$100k",
-          "count": 0,
-          "pct": 0
-        },
-        {
-          "band": "$100k-$150k",
-          "count": 1,
-          "pct": 100
-        },
-        {
-          "band": "$150k-$200k",
-          "count": 0,
-          "pct": 0
-        },
-        {
-          "band": "$200k+",
-          "count": 0,
-          "pct": 0
-        }
-      ],
-      "avg_remote_pct": 0,
-      "avg_ai_ml_pct": 100
-    },
-    {
       "id": 9,
-      "label": "PyTorch / Azure",
+      "label": "Next.js / Django",
       "top_techs": [
-        "PyTorch",
-        "Azure"
+        "Next.js",
+        "Django"
       ],
       "top_roles": [
-        "AI Engineer"
+        "Product Manager",
+        "Principal Engineer"
       ],
       "size": 2,
-      "pct": 1.4,
+      "pct": 1.6,
+      "avg_salary_mentioned": 100,
+      "salary_sample_size": 2,
+      "salary_ranges": [
+        {
+          "band": "<$100k",
+          "count": 2,
+          "pct": 100
+        },
+        {
+          "band": "$100k-$150k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$150k-$200k",
+          "count": 0,
+          "pct": 0
+        },
+        {
+          "band": "$200k+",
+          "count": 0,
+          "pct": 0
+        }
+      ],
+      "avg_remote_pct": 50,
+      "avg_ai_ml_pct": 100
+    },
+    {
+      "id": 10,
+      "label": "Android / iOS",
+      "top_techs": [
+        "Android",
+        "iOS"
+      ],
+      "top_roles": [
+        "Engineering Manager",
+        "Mobile Engineer"
+      ],
+      "size": 2,
+      "pct": 1.6,
       "avg_salary_mentioned": 0,
       "salary_sample_size": 0,
       "salary_ranges": [
@@ -408,8 +455,8 @@
           "pct": 0
         }
       ],
-      "avg_remote_pct": 50,
-      "avg_ai_ml_pct": 100
+      "avg_remote_pct": 100,
+      "avg_ai_ml_pct": 50
     }
   ]
 }

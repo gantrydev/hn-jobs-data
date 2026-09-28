@@ -170,8 +170,8 @@
       "ai_ml_mentioned_pct": 70
     },
     {
-      "date": "2026-09-03",
-      "job_count": 217,
+      "date": "2026-09-28",
+      "job_count": 269,
       "top_techs": [
         "React",
         "PostgreSQL",
@@ -186,9 +186,9 @@
         "Senior Software Engineer",
         "AI Engineer"
       ],
-      "remote_pct": 44.7,
-      "salary_mentioned_pct": 37.3,
-      "ai_ml_mentioned_pct": 67.7
+      "remote_pct": 44.2,
+      "salary_mentioned_pct": 39.8,
+      "ai_ml_mentioned_pct": 68.8
     }
   ]
 }

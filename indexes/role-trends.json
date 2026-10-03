@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-28T17:57:47.797Z",
+  "updated_at": "2026-10-03T14:33:46.641Z",
   "series": {
     "Software Engineer": [
       {
@@ -47,6 +47,11 @@
         "date": "2026-09-28",
         "count": 60,
         "pct": 22.3
+      },
+      {
+        "date": "2026-10-03",
+        "count": 33,
+        "pct": 18.4
       }
     ],
     "Full Stack Engineer": [
@@ -94,6 +99,11 @@
         "date": "2026-09-28",
         "count": 35,
         "pct": 13
+      },
+      {
+        "date": "2026-10-03",
+        "count": 19,
+        "pct": 10.6
       }
     ],
     "Senior Software Engineer": [
@@ -141,6 +151,11 @@
         "date": "2026-09-28",
         "count": 26,
         "pct": 9.7
+      },
+      {
+        "date": "2026-10-03",
+        "count": 28,
+        "pct": 15.6
       }
     ],
     "Other": [
@@ -188,6 +203,11 @@
         "date": "2026-09-28",
         "count": 42,
         "pct": 15.6
+      },
+      {
+        "date": "2026-10-03",
+        "count": 41,
+        "pct": 22.9
       }
     ],
     "Backend Engineer": [
@@ -235,6 +255,11 @@
         "date": "2026-09-28",
         "count": 13,
         "pct": 4.8
+      },
+      {
+        "date": "2026-10-03",
+        "count": 6,
+        "pct": 3.4
       }
     ],
     "AI Engineer": [
@@ -282,6 +307,11 @@
         "date": "2026-09-28",
         "count": 18,
         "pct": 6.7
+      },
+      {
+        "date": "2026-10-03",
+        "count": 10,
+        "pct": 5.6
       }
     ],
     "DevOps / SRE": [
@@ -329,6 +359,11 @@
         "date": "2026-09-28",
         "count": 16,
         "pct": 5.9
+      },
+      {
+        "date": "2026-10-03",
+        "count": 6,
+        "pct": 3.4
       }
     ],
     "Staff Engineer": [
@@ -376,6 +411,11 @@
         "date": "2026-09-28",
         "count": 13,
         "pct": 4.8
+      },
+      {
+        "date": "2026-10-03",
+        "count": 8,
+        "pct": 4.5
       }
     ],
     "Engineering Manager": [
@@ -423,6 +463,11 @@
         "date": "2026-09-28",
         "count": 11,
         "pct": 4.1
+      },
+      {
+        "date": "2026-10-03",
+        "count": 2,
+        "pct": 1.1
       }
     ],
     "ML Engineer": [
@@ -470,6 +515,11 @@
         "date": "2026-09-28",
         "count": 12,
         "pct": 4.5
+      },
+      {
+        "date": "2026-10-03",
+        "count": 7,
+        "pct": 3.9
       }
     ],
     "Mobile Engineer": [
@@ -517,6 +567,11 @@
         "date": "2026-09-28",
         "count": 1,
         "pct": 0.4
+      },
+      {
+        "date": "2026-10-03",
+        "count": 4,
+        "pct": 2.2
       }
     ],
     "Principal Engineer": [
@@ -564,6 +619,11 @@
         "date": "2026-09-28",
         "count": 3,
         "pct": 1.1
+      },
+      {
+        "date": "2026-10-03",
+        "count": 4,
+        "pct": 2.2
       }
     ],
     "Product Manager": [
@@ -611,6 +671,11 @@
         "date": "2026-09-28",
         "count": 8,
         "pct": 3
+      },
+      {
+        "date": "2026-10-03",
+        "count": 2,
+        "pct": 1.1
       }
     ],
     "Designer": [
@@ -643,6 +708,11 @@
         "date": "2026-09-28",
         "count": 2,
         "pct": 0.7
+      },
+      {
+        "date": "2026-10-03",
+        "count": 4,
+        "pct": 2.2
       }
     ],
     "Data Engineer": [
@@ -690,6 +760,11 @@
         "date": "2026-09-28",
         "count": 4,
         "pct": 1.5
+      },
+      {
+        "date": "2026-10-03",
+        "count": 1,
+        "pct": 0.6
       }
     ],
     "Frontend Engineer": [
@@ -732,6 +807,11 @@
         "date": "2026-09-28",
         "count": 1,
         "pct": 0.4
+      },
+      {
+        "date": "2026-10-03",
+        "count": 1,
+        "pct": 0.6
       }
     ],
     "Data Scientist": [
@@ -769,6 +849,11 @@
         "date": "2026-09-28",
         "count": 4,
         "pct": 1.5
+      },
+      {
+        "date": "2026-10-03",
+        "count": 3,
+        "pct": 1.7
       }
     ]
   }

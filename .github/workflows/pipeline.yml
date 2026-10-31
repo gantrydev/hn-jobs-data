@@ -1,8 +1,7 @@
 name: HN Jobs Pipeline
 
 on:
-  # A push that touches the data publishes it straight to Pages (deploy-pages
-  # below), without re-running the LLM pipeline.
+  # A data push validates and publishes saved outputs without re-running the LLM.
   push:
     branches: [main]
     paths:
@@ -25,6 +24,8 @@ concurrency:
 
 jobs:
   run-pipeline:
+    outputs:
+      sha: ${{ steps.commit.outputs.sha }}
     # Skip the fetch/analyze on a push or a deploy_only dispatch — those only publish.
     if: ${{ github.event_name != 'push' && !(github.event_name == 'workflow_dispatch' && inputs.deploy_only) }}
     runs-on: ubuntu-latest
@@ -48,19 +49,29 @@ jobs:
           MODEL: 'openai/gpt-6-luna'
 
       - name: Commit and push results
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add runs/ indexes/ llms.txt
           git diff --staged --quiet || git commit -m "data: $(date -u +'%Y-%m-%d') pipeline run"
           git push
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
-  # Deploy data to this repo's Pages so the site can fetch the fresh JSON.
-  # Runs after a scheduled/dispatched pipeline, or directly on a data push
-  # (where run-pipeline is skipped).
-  deploy-pages:
+  validate:
     needs: run-pipeline
-    if: ${{ always() && needs.run-pipeline.result != 'failure' && needs.run-pipeline.result != 'cancelled' }}
+    if: ${{ always() && (needs.run-pipeline.result == 'success' || needs.run-pipeline.result == 'skipped') }}
+    permissions:
+      contents: read
+    uses: ./.github/workflows/ci.yml
+    with:
+      ref: ${{ needs.run-pipeline.outputs.sha || github.sha }}
+
+  deploy-pages:
+    needs: [run-pipeline, validate]
+    if: ${{ always() && needs.validate.result == 'success' }}
+    outputs:
+      sha: ${{ needs.run-pipeline.outputs.sha || github.sha }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -70,11 +81,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
-      # Check out the branch tip, not github.sha: run-pipeline just pushed a new
-      # commit, and github.sha still points at the trigger commit (one run stale).
       - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
-          ref: ${{ github.ref_name }}
+          ref: ${{ needs.run-pipeline.outputs.sha || github.sha }}
 
       - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
 
@@ -111,7 +120,9 @@ jobs:
       - name: Trigger site rebuild
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          DATA_SHA: ${{ needs.deploy-pages.outputs.sha }}
         run: |
           gh api repos/gantrydev/hn-jobs-site/dispatches \
             -f event_type=data-updated \
-            -f "client_payload[data_branch]=${GITHUB_REF_NAME}"
+            -f "client_payload[data_branch]=${GITHUB_REF_NAME}" \
+            -f "client_payload[data_sha]=${DATA_SHA}"

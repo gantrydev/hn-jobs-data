@@ -18,6 +18,9 @@ HN APIs → fetch.ts → raw.json → analyze.ts → analysis.json → index.ts 
 2. **Analyze** — sends job texts to the configured OpenRouter model (`MODEL`, default `openai/gpt-6-luna`) in batched parallel calls (10 jobs per batch). Extracts technologies, roles, compensation, remote policy, and experience levels. Validates the schema, exact job-ID coverage, and quoted source evidence before publishing.
 3. **Index** — updates `latest.json`, `manifest.json`, `history.json`, `tech-trends.json`, and `role-trends.json` for consumption by [hn-jobs-site](https://github.com/gantryops/hn-jobs-site).
 
+Data publication requires CI, including the dependency audit, to pass for the exact
+commit being published. The site rebuild is triggered after Pages deployment succeeds.
+
 ## Output
 
 JSON files are served via GitHub Pages at:
@@ -70,6 +73,9 @@ adding canonical names or aliases to the taxonomy.
 - **pnpm** for package management
 - **GitHub Actions** for scheduling
 - **GitHub Pages** for serving JSON
+
+TODO: Clear the remaining moderate [minimatch advisory](https://github.com/advisories/GHSA-g3hv-75wg-m249)
+when ESLint supports its patched major version.
 
 ## Data Sources
 

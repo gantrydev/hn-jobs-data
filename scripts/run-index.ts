@@ -1,6 +1,7 @@
 import fs from "node:fs/promises"
 import path from "node:path"
 import { updateIndexes } from "./index.js"
+import { runAnalytics } from "./analytics.js"
 import { readJSON } from "./utils.js"
 import type { Analysis, RawData } from "./schemas.js"
 
@@ -56,6 +57,8 @@ async function main(): Promise<void> {
     console.log(`  Processing ${run.date}...`)
     await updateIndexes(run.analysis, run.threadTitle)
   }
+
+  await runAnalytics()
 
   console.log(`\n✅ Indexes rebuilt from ${runs.length} runs\n`)
 }

@@ -40,9 +40,12 @@ async function writeJSON(filePath: string, data: unknown): Promise<void> {
 // latest.json — just a copy of the current analysis
 // ==============================================================================
 
-async function updateLatest(analysis: Analysis): Promise<void> {
+async function updateLatest(analysis: Analysis): Promise<Analysis> {
+  const latest = await readJSON<Analysis>(path.join(INDEXES_DIR, "latest.json"))
+  if (latest && latest.date > analysis.date) return latest
   await writeJSON(path.join(INDEXES_DIR, "latest.json"), analysis)
   console.log("  Updated latest.json")
+  return analysis
 }
 
 // ==============================================================================
@@ -81,7 +84,7 @@ async function updateManifest(analysis: Analysis, threadTitle: string | null): P
   const manifest: Manifest = {
     schema_version: "1.0",
     runs,
-    latest_run_id: analysis.run_id,
+    latest_run_id: runs[0].run_id,
     updated_at: new Date().toISOString(),
   }
 
@@ -252,7 +255,7 @@ export async function updateIndexes(
 ): Promise<void> {
   console.log("Updating indexes...")
 
-  await Promise.all([
+  const [latest] = await Promise.all([
     updateLatest(analysis),
     updateManifest(analysis, threadTitle),
     updateHistory(analysis),
@@ -262,7 +265,7 @@ export async function updateIndexes(
   ])
 
   // After manifest.json is written so the run list is current.
-  await updateLlmsTxt(analysis)
+  await updateLlmsTxt(latest)
 
   console.log("Indexes updated successfully")
 }

@@ -14,6 +14,7 @@ const countPctSchema = z.object({ count: z.int().min(0), pct: pctSchema })
 
 export const SALARY_BANDS = ["<$100k", "$100k-$150k", "$150k-$200k", "$200k+"] as const
 export type SalaryBand = (typeof SALARY_BANDS)[number]
+export const TAXONOMY_VERSION = "2026-10-31"
 
 export const TECHNOLOGY_TAXONOMY = {
   Languages: [
@@ -35,8 +36,46 @@ export const TECHNOLOGY_TAXONOMY = {
     "Dart",
     "R",
     "OCaml",
+    "Bash",
+    "Solidity",
+    "Clojure",
+    "Haskell",
+    "Erlang",
+    "Julia",
+    "Objective-C",
+    "MATLAB",
+    "ClojureScript",
+    "Lua",
+    "Zig",
+    "F#",
   ],
-  Frontend: ["React", "Next.js", "Vue", "Angular", "Svelte", "Ember.js", "CSS", "Redux"],
+  Frontend: [
+    "React",
+    "Next.js",
+    "Vue",
+    "Angular",
+    "Svelte",
+    "Ember.js",
+    "CSS",
+    "Redux",
+    "HTML",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "TanStack",
+    "SvelteKit",
+    "Astro",
+    "Three.js",
+    "HTMX",
+    "Nuxt",
+    "Remix",
+    "SolidJS",
+    "Hotwire",
+    "Stimulus",
+    "Zustand",
+    "Alpine.js",
+    "React Router",
+    "Hotwire Turbo",
+  ],
   Backend: [
     "Node.js",
     "Django",
@@ -44,13 +83,17 @@ export const TECHNOLOGY_TAXONOMY = {
     "Rails",
     "Spring",
     "Laravel",
-    "GraphQL",
-    "gRPC",
     "Express",
     "Flask",
     "NestJS",
-    "WebSockets",
-    "WebRTC",
+    "Phoenix",
+    "Prisma",
+    "Drizzle",
+    "Pydantic",
+    "Fastify",
+    "Hono",
+    "tRPC",
+    "SQLAlchemy",
   ],
   Databases: [
     "PostgreSQL",
@@ -62,25 +105,107 @@ export const TECHNOLOGY_TAXONOMY = {
     "SQLite",
     "Snowflake",
     "ClickHouse",
-    "SQL",
     "SQL Server",
     "Supabase",
     "Neo4j",
     "Firestore",
+    "BigQuery",
+    "DuckDB",
+    "DynamoDB",
+    "PostGIS",
+    "Redshift",
+    "OpenSearch",
+    "Pinecone",
+    "TimescaleDB",
+    "Trino",
+    "pgvector",
+    "Chroma",
+    "InfluxDB",
+    "ScyllaDB",
+    "CockroachDB",
+    "Neon",
+    "PlanetScale",
+    "Convex",
+    "Cosmos DB",
+    "Qdrant",
+    "Weaviate",
   ],
-  Cloud: ["AWS", "GCP", "Azure", "Cloudflare", "Vercel", "Firebase", "S3"],
+  "Cloud/Hosting": [
+    "AWS",
+    "GCP",
+    "Azure",
+    "Cloudflare",
+    "Vercel",
+    "Firebase",
+    "Modal",
+    "DigitalOcean",
+    "Fly.io",
+    "Railway",
+    "Heroku",
+    "Netlify",
+    "Scaleway",
+    "CoreWeave",
+    "Hetzner",
+  ],
+  "Cloud Services": [
+    "S3",
+    "AWS Lambda",
+    "AWS ECS",
+    "AWS EKS",
+    "AWS Fargate",
+    "AWS EC2",
+    "AWS RDS",
+    "Cloud Run",
+    "Cloudflare Workers",
+    "Cloudflare R2",
+  ],
   "Infra/DevOps": [
     "Kubernetes",
     "Docker",
     "Terraform",
-    "GitHub Actions",
     "Linux",
-    "Jenkins",
-    "Git",
     "Nix",
     "eBPF",
+    "Helm",
+    "Pulumi",
+    "Ansible",
+    "OpenTofu",
+    "Argo CD",
+    "Flux",
+    "OpenStack",
+    "Nomad",
+    "Vault",
+    "NGINX",
+    "Istio",
+    "Linkerd",
+    "AWS CDK",
+    "CloudFormation",
+    "Terragrunt",
   ],
-  Messaging: ["Kafka", "RabbitMQ", "Pub/Sub", "SQS"],
+  "CI/CD": ["GitHub Actions", "Jenkins", "GitLab CI", "CircleCI", "Buildkite", "Azure DevOps"],
+  Messaging: ["Kafka", "RabbitMQ", "Pub/Sub", "SQS", "MQTT", "NATS"],
+  "APIs/Protocols": ["GraphQL", "gRPC", "WebSockets", "WebRTC"],
+  "Query Languages": ["SQL"],
+  "Workflow Orchestration": ["Temporal", "Celery", "Sidekiq"],
+  "Data Engineering": [
+    "Spark",
+    "Airflow",
+    "dbt",
+    "Dagster",
+    "Databricks",
+    "Pandas",
+    "NumPy",
+    "Polars",
+    "SciPy",
+    "Iceberg",
+    "Prefect",
+    "Fivetran",
+    "Metabase",
+    "Flink",
+    "Power BI",
+    "Superset",
+    "Looker",
+  ],
   "AI/ML": [
     "PyTorch",
     "TensorFlow",
@@ -90,13 +215,93 @@ export const TECHNOLOGY_TAXONOMY = {
     "Gemini API",
     "Hugging Face",
     "CUDA",
-    "Spark",
-    "Airflow",
     "MCP",
+    "LangGraph",
+    "Ray",
+    "LlamaIndex",
+    "scikit-learn",
+    "vLLM",
+    "JAX",
+    "TensorRT",
+    "ONNX",
+    "Pydantic AI",
+    "Semantic Kernel",
+    "MLflow",
+    "Triton",
+    "FAISS",
+    "OpenCV",
+    "Hugging Face Transformers",
+    "OpenAI Agents SDK",
   ],
-  Mobile: ["iOS", "Android", "React Native", "Flutter"],
+  Observability: [
+    "Grafana",
+    "Datadog",
+    "Prometheus",
+    "OpenTelemetry",
+    "Sentry",
+    "New Relic",
+    "Honeycomb",
+    "Splunk",
+    "Loki",
+    "Langfuse",
+    "Braintrust",
+  ],
+  Testing: ["Playwright", "Cypress", "Jest", "Vitest", "pytest", "Selenium", "JUnit", "RSpec"],
+  "Developer Tools": [
+    "Git",
+    "Vite",
+    "Bazel",
+    "CMake",
+    "uv",
+    "Ruff",
+    "mypy",
+    "Claude Code",
+    "Cursor",
+    "Codex",
+    "GitHub Copilot",
+    "Webpack",
+    "Boost",
+  ],
+  Design: ["Figma"],
+  Mobile: [
+    "iOS",
+    "Android",
+    "React Native",
+    "Flutter",
+    "Expo",
+    "SwiftUI",
+    "UIKit",
+    "Jetpack Compose",
+  ],
+  Desktop: ["Electron", "Tauri", "Qt", "AppKit"],
+  "Geospatial/Graphics": [
+    "Mapbox",
+    "D3.js",
+    "OpenGL",
+    "Unreal Engine",
+    "Unity",
+    "Godot",
+    "FFmpeg",
+    "GStreamer",
+    "WebGL",
+    "WebGPU",
+    "MapLibre",
+    "deck.gl",
+  ],
+  "Networking/Security": [
+    "OAuth",
+    "OIDC",
+    "SAML",
+    "Auth0",
+    "Keycloak",
+    "Tailscale",
+    "WireGuard",
+    "Clerk",
+  ],
   Robotics: ["ROS"],
-  Runtime: ["WebAssembly"],
+  Embedded: ["Yocto", "Zephyr"],
+  Runtime: ["WebAssembly", ".NET", "Bun", "Deno"],
+  Validation: ["Zod"],
 } as const
 
 export const TECHNOLOGY_NAMES = Object.values(TECHNOLOGY_TAXONOMY).flat() as [
@@ -136,6 +341,97 @@ const TECHNOLOGY_ALIASES: Record<string, Technology> = {
   "google cloud": "GCP",
   "ruby on rails": "Rails",
   "vue.js": "Vue",
+  postgres: "PostgreSQL",
+  postgresql: "PostgreSQL",
+  k8s: "Kubernetes",
+  node: "Node.js",
+  nodejs: "Node.js",
+  "react.js": "React",
+  reactjs: "React",
+  nextjs: "Next.js",
+  "next js": "Next.js",
+  wasm: "WebAssembly",
+  nixos: "Nix",
+  "spring boot": "Spring",
+  js: "JavaScript",
+  ts: "TypeScript",
+  cpp: "C++",
+  "c++11": "C++",
+  "c++14": "C++",
+  "c++17": "C++",
+  "c++20": "C++",
+  "c++23": "C++",
+  "c sharp": "C#",
+  csharp: "C#",
+  python3: "Python",
+  "objective c": "Objective-C",
+  tailwind: "Tailwind CSS",
+  tailwindcss: "Tailwind CSS",
+  shadcn: "shadcn/ui",
+  d3: "D3.js",
+  "tanstack query": "TanStack",
+  "tanstack router": "TanStack",
+  "tanstack table": "TanStack",
+  "react query": "TanStack",
+  "nuxt.js": "Nuxt",
+  "solid.js": "SolidJS",
+  stimulusjs: "Stimulus",
+  "phoenix liveview": "Phoenix",
+  "temporal.io": "Temporal",
+  "nest.js": "NestJS",
+  "express.js": "Express",
+  mssql: "SQL Server",
+  "microsoft sql server": "SQL Server",
+  cosmosdb: "Cosmos DB",
+  timescale: "TimescaleDB",
+  "digital ocean": "DigitalOcean",
+  "google cloud platform": "GCP",
+  "microsoft azure": "Azure",
+  "azure cloud": "Azure",
+  "microsoft .net": ".NET",
+  "amazon web services": "AWS",
+  lambda: "AWS Lambda",
+  ecs: "AWS ECS",
+  eks: "AWS EKS",
+  fargate: "AWS Fargate",
+  ec2: "AWS EC2",
+  rds: "AWS RDS",
+  "aws s3": "S3",
+  "amazon s3": "S3",
+  "amazon ec2": "AWS EC2",
+  "amazon rds": "AWS RDS",
+  "amazon sqs": "SQS",
+  "google pub/sub": "Pub/Sub",
+  cdk: "AWS CDK",
+  argocd: "Argo CD",
+  "argo-cd": "Argo CD",
+  "gitlab ci/cd": "GitLab CI",
+  "github copilot": "GitHub Copilot",
+  otel: "OpenTelemetry",
+  "sci-kit learn": "scikit-learn",
+  sklearn: "scikit-learn",
+  "scikit learn": "scikit-learn",
+  scikitlearn: "scikit-learn",
+  powerbi: "Power BI",
+  threejs: "Three.js",
+  "node js": "Node.js",
+  pydanticai: "Pydantic AI",
+  huggingface: "Hugging Face",
+  "huggingface transformers": "Hugging Face Transformers",
+  alpinejs: "Alpine.js",
+  "alpine js": "Alpine.js",
+  "apache iceberg": "Iceberg",
+  "react.native": "React Native",
+  "openai sdk": "OpenAI API",
+  "anthropic sdk": "Anthropic API",
+  "gemini sdk": "Gemini API",
+  "model context protocol": "MCP",
+  ros2: "ROS",
+  "ros 2": "ROS",
+  dotnet: ".NET",
+  "asp.net": ".NET",
+  "asp.net core": ".NET",
+  ".net core": ".NET",
 }
 
 const ROLE_ALIASES: Record<string, Role> = {
@@ -219,6 +515,44 @@ export function normalizeLanguage(value: unknown): Language | null {
   return technology && (LANGUAGE_NAMES as readonly Technology[]).includes(technology)
     ? (technology as Language)
     : null
+}
+
+export function technologyMentions(
+  text: string,
+): Array<{ technology: Technology; mention: string; start: number; end: number }> {
+  const names = new Set([...TECHNOLOGY_NAMES, ...Object.keys(TECHNOLOGY_ALIASES)])
+  const matches = [...names].flatMap((name) => {
+    const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+    const pattern = new RegExp(`(?<![\\p{L}\\p{N}_])${escaped}(?![\\p{L}\\p{N}_+#&])`, "giu")
+    return [...text.matchAll(pattern)].map((match) => ({
+      technology: normalizeTechnology(name) as Technology,
+      mention: match[0],
+      start: match.index,
+      end: match.index + match[0].length,
+      canonical: TECHNOLOGY_NAMES.some(
+        (technology) => technology.toLowerCase() === name.toLowerCase(),
+      ),
+    }))
+  })
+  const unique = new Map(
+    matches.map((match) => [`${match.start}:${match.end}:${match.technology}`, match]),
+  )
+  return [...unique.values()]
+    .filter(
+      (match) =>
+        !matches.some(
+          (other) =>
+            (other.canonical ||
+              normalizeLanguage(other.technology) ||
+              !normalizeLanguage(match.technology)) &&
+            other.technology !== match.technology &&
+            other.start <= match.start &&
+            other.end >= match.end &&
+            other.end - other.start > match.end - match.start,
+        ),
+    )
+    .sort((a, b) => a.start - b.start || b.end - a.end)
+    .map(({ technology, mention, start, end }) => ({ technology, mention, start, end }))
 }
 
 export function normalizeRole(value: unknown): Role | null {
@@ -319,6 +653,15 @@ const ExperienceLevelSchema = z.object({
   pct: pctSchema,
 })
 
+const UnmappedTechnologySchema = z.object({
+  mention: z.string().trim().min(1).max(100),
+  quote: z.string().trim().min(1).max(300),
+})
+
+const TechnologyEvidenceSchema = UnmappedTechnologySchema.extend({
+  technology: TechnologyValueSchema,
+})
+
 const ClassifiedJobBaseSchema = z.object({
   id: z.int(),
   languages: LanguageListSchema.default([]),
@@ -328,6 +671,8 @@ const ClassifiedJobBaseSchema = z.object({
   remote: z.enum(["fully_remote", "hybrid", "onsite_only", "not_mentioned"]),
   equity_mentioned: z.boolean(),
   ai_ml_mentioned: z.boolean(),
+  evidence: z.array(TechnologyEvidenceSchema).optional(),
+  unmapped_technologies: z.array(UnmappedTechnologySchema).optional(),
 })
 
 const ClassifiedJobVariants = [
@@ -338,11 +683,35 @@ const ClassifiedJobVariants = [
   ClassifiedJobBaseSchema.extend({ salary_mentioned: z.literal(false), salary_band: z.null() }),
 ] as const
 
-export const ClassifiedJobSchema = z.union(ClassifiedJobVariants)
+export const ClassifiedJobSchema = z.union(ClassifiedJobVariants).transform((job) => ({
+  ...job,
+  languages: [
+    ...new Set([
+      ...job.languages,
+      ...job.technologies.flatMap((technology) => {
+        const language = normalizeLanguage(technology)
+        return language ? [language] : []
+      }),
+    ]),
+  ],
+  technologies: job.technologies.filter((technology) => !normalizeLanguage(technology)),
+}))
 
 const BatchClassifiedJobSchema = z.union([
-  ClassifiedJobVariants[0].extend({ languages: LanguageListSchema, is_job: z.boolean() }),
-  ClassifiedJobVariants[1].extend({ languages: LanguageListSchema, is_job: z.boolean() }),
+  ClassifiedJobVariants[0]
+    .omit({ languages: true, technologies: true, evidence: true, unmapped_technologies: true })
+    .extend({
+      is_job: z.boolean(),
+      evidence_ids: z.array(z.int().min(0)),
+      unmapped_mentions: z.array(z.string().trim().min(1).max(100)),
+    }),
+  ClassifiedJobVariants[1]
+    .omit({ languages: true, technologies: true, evidence: true, unmapped_technologies: true })
+    .extend({
+      is_job: z.boolean(),
+      evidence_ids: z.array(z.int().min(0)),
+      unmapped_mentions: z.array(z.string().trim().min(1).max(100)),
+    }),
 ])
 
 export const BatchResponseSchema = z.object({
@@ -374,19 +743,30 @@ export const AnalysisSchema = z.object({
   experience_levels: z.array(ExperienceLevelSchema),
   ai_ml_mentioned_pct: pctSchema,
   generated_at: isoTimestampSchema,
+  classification: z
+    .object({
+      model: z.string().trim(),
+      taxonomy_version: z.string().trim(),
+      prompt_version: z.string().trim(),
+    })
+    .optional(),
 })
 
 // ==============================================================================
 // classified.json — per-job LLM classifications
 // ==============================================================================
 
-export const ClassifiedDataSchema = z.object({
-  schema_version: z.literal("1.0"),
-  date: z.string().trim(),
-  run_id: z.string().trim(),
-  jobs: z.array(ClassifiedJobSchema),
-  classified_at: z.string().trim().datetime(),
-})
+export const ClassifiedDataSchema = z
+  .object({
+    schema_version: z.literal("1.0"),
+    date: z.string().trim(),
+    run_id: z.string().trim(),
+    jobs: z.array(ClassifiedJobSchema),
+    classified_at: z.string().trim().datetime(),
+  })
+  .refine((data) => new Set(data.jobs.map((job) => job.id)).size === data.jobs.length, {
+    error: "Duplicate classified job IDs",
+  })
 
 // ==============================================================================
 // Index files — manifest, history, tech/role trends
@@ -443,9 +823,63 @@ export type RawData = z.infer<typeof RawDataSchema>
 export type BatchResponse = z.infer<typeof BatchResponseSchema>
 export type Analysis = z.infer<typeof AnalysisSchema>
 export type ClassifiedJob = z.infer<typeof ClassifiedJobSchema>
+export type TechnologyEvidence = z.infer<typeof TechnologyEvidenceSchema>
 export type ClassifiedData = z.infer<typeof ClassifiedDataSchema>
 export type ManifestRun = z.infer<typeof ManifestRunSchema>
 export type Manifest = z.infer<typeof ManifestSchema>
 export type HistoryRun = z.infer<typeof HistoryRunSchema>
 export type History = z.infer<typeof HistorySchema>
 export type TrendSeries = z.infer<typeof TrendSeriesSchema>
+
+export const API_TECHNOLOGIES = ["OpenAI API", "Anthropic API", "Gemini API"]
+export const API_EVIDENCE_PATTERN =
+  /\b(?:APIs?|SDKs?|endpoints?|integrat(?:e|es|ed|ing|ion|ions))\b/i
+
+export function validateTechnologyEvidence(job: ClassifiedJob, text: string): void {
+  const entries = job.evidence
+  if (entries === undefined) return
+  const technologies = new Set([...job.languages, ...job.technologies])
+  const evidenceNames = new Set(entries.map((evidence) => evidence.technology))
+  const missing = [...technologies].filter((technology) => !evidenceNames.has(technology))
+  const extra = [...evidenceNames].filter((technology) => !technologies.has(technology))
+  if (
+    evidenceNames.size !== technologies.size ||
+    [...technologies].some((technology) => !evidenceNames.has(technology))
+  ) {
+    throw new Error(
+      `Job ${job.id}: each technology must have source evidence; missing=${missing.join(", ")}, extra=${extra.join(", ")}`,
+    )
+  }
+  for (const evidence of entries) {
+    if (!text.includes(evidence.quote)) {
+      throw new Error(
+        `Job ${job.id}: ${evidence.technology} quote not found in source: ${JSON.stringify(evidence.quote)}. Copy an exact excerpt or omit the tag.`,
+      )
+    }
+    const supported = technologyMentions(evidence.quote).some(
+      ({ technology, mention }) =>
+        technology === evidence.technology && mention === evidence.mention,
+    )
+    if (!supported)
+      throw new Error(
+        `Job ${job.id}: unsupported evidence for ${evidence.technology}; mention=${JSON.stringify(evidence.mention)}, quote=${JSON.stringify(evidence.quote)}. Use the complete source name or alias.`,
+      )
+    if (
+      API_TECHNOLOGIES.includes(evidence.technology) &&
+      !API_EVIDENCE_PATTERN.test(evidence.quote)
+    ) {
+      throw new Error(
+        `Job ${job.id}: ${evidence.technology} evidence must explicitly describe API or SDK usage`,
+      )
+    }
+  }
+  for (const evidence of job.unmapped_technologies ?? []) {
+    if (
+      !text.includes(evidence.quote) ||
+      !evidence.quote.includes(evidence.mention) ||
+      normalizeTechnology(evidence.mention)
+    ) {
+      throw new Error(`Job ${job.id}: invalid unmapped technology ${evidence.mention}`)
+    }
+  }
+}

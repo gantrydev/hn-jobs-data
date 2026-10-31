@@ -15,32 +15,19 @@
 
 import fs from "node:fs/promises"
 import path from "node:path"
-import { SALARY_BANDS, type SalaryBand } from "./schemas.js"
+import {
+  ClassifiedDataSchema,
+  SALARY_BANDS,
+  type ClassifiedJob,
+  type SalaryBand,
+  type RawData,
+  validateTechnologyEvidence,
+} from "./schemas.js"
+import { prepareJobText } from "./utils.js"
 
 // ==============================================================================
 // Types
 // ==============================================================================
-
-interface ClassifiedJob {
-  id: number
-  languages: string[]
-  technologies: string[]
-  role: string
-  experience_level: string
-  remote: string
-  salary_mentioned: boolean
-  salary_band: SalaryBand | null
-  equity_mentioned: boolean
-  ai_ml_mentioned: boolean
-}
-
-interface ClassifiedData {
-  schema_version: string
-  date: string
-  run_id: string
-  jobs: ClassifiedJob[]
-  classified_at: string
-}
 
 interface CooccurrenceEntry {
   tech: string
@@ -148,10 +135,19 @@ async function loadAllClassified(): Promise<Array<{ date: string; jobs: Classifi
   for (const date of dates) {
     const filePath = path.join(RUNS_DIR, date, "classified.json")
     try {
-      const data = await readJSON<ClassifiedData>(filePath)
+      const data = ClassifiedDataSchema.parse(await readJSON<unknown>(filePath))
+      if (data.jobs.some((job) => job.evidence !== undefined)) {
+        const raw = await readJSON<RawData>(path.join(RUNS_DIR, date, "raw.json"))
+        for (const job of data.jobs) {
+          const source = raw.jobs.find((source) => source.id === job.id)
+          if (!source) throw new Error(`${date}: classified job ${job.id} has no source posting`)
+          validateTechnologyEvidence(job, prepareJobText(source.text))
+        }
+      }
       results.push({ date, jobs: data.jobs })
       console.log(`  Loaded ${date}: ${data.jobs.length} jobs`)
-    } catch {
+    } catch (err) {
+      if (!(err instanceof Error) || !("code" in err) || err.code !== "ENOENT" || !("path" in err) || err.path !== filePath) throw err
       console.log(`  Skipping ${date}: no classified.json`)
     }
   }
@@ -246,7 +242,7 @@ function buildCooccurrenceMatrix(
 // 2. Tech Stack Clustering
 // ==============================================================================
 
-function buildClusters(
+export function buildClusters(
   allData: Array<{ date: string; jobs: ClassifiedJob[] }>,
 ): ClusterResult {
   // Use only the latest run for clustering (snapshot of current landscape)
@@ -365,7 +361,7 @@ function buildClusters(
       id: clusters.length, label,
       top_techs: techCluster, top_roles: topRoles,
       size,
-      pct: Math.round((size / jobs.length) * 1000) / 10,
+      pct: Math.round((size / latest.jobs.length) * 1000) / 10,
       avg_salary_mentioned: Math.round(avgSalary * 100),
       salary_sample_size: salaryJobs.length,
       salary_ranges: salaryRanges,
@@ -526,11 +522,24 @@ interface TechMonthDatum {
   pct: number
 }
 
-function buildMomentum(allData: Array<{ date: string; jobs: ClassifiedJob[] }>): MomentumResult {
+export function buildMomentum(
+  allData: Array<{ date: string; jobs: ClassifiedJob[] }>,
+): MomentumResult {
+  const latestByMonth = new Map<string, { date: string; jobs: ClassifiedJob[] }>()
+  for (const run of allData) {
+    const month = run.date.slice(0, 7)
+    const existing = latestByMonth.get(month)
+    if (!existing || run.date > existing.date) latestByMonth.set(month, run)
+  }
+  const monthlyData = [...latestByMonth.values()].sort((a, b) => a.date.localeCompare(b.date))
+  const technologies = new Set(
+    monthlyData.flatMap(({ jobs }) => jobs.flatMap((job) => job.technologies)),
+  )
+
   // Build per-tech per-month time series
   const techMonths = new Map<string, TechMonthDatum[]>()
 
-  for (const { date, jobs } of allData) {
+  for (const { date, jobs } of monthlyData) {
     const totalJobs = jobs.length
     const techCounts = new Map<string, number>()
 
@@ -540,13 +549,14 @@ function buildMomentum(allData: Array<{ date: string; jobs: ClassifiedJob[] }>):
       }
     }
 
-    for (const [tech, count] of techCounts) {
+    for (const tech of technologies) {
+      const count = techCounts.get(tech) ?? 0
       const series = techMonths.get(tech) ?? []
       series.push({
         date,
         count,
         totalJobs,
-        pct: Math.round((count / totalJobs) * 1000) / 10,
+        pct: totalJobs === 0 ? 0 : Math.round((count / totalJobs) * 1000) / 10,
       })
       techMonths.set(tech, series)
     }
@@ -559,7 +569,7 @@ function buildMomentum(allData: Array<{ date: string; jobs: ClassifiedJob[] }>):
     if (series.length < 2) continue
 
     // Convert dates to numeric months from epoch
-    const x: number[] = series.map((s) => new Date(s.date).getTime() / (1000 * 60 * 60 * 24 * 30))
+    const x = series.map((s) => Number(s.date.slice(0, 4)) * 12 + Number(s.date.slice(5, 7)))
     const y: number[] = series.map((s) => s.pct)
 
     const n = x.length

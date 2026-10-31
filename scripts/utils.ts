@@ -1,5 +1,34 @@
 import fs from "node:fs/promises"
 import path from "node:path"
+import { convert } from "html-to-text"
+import {
+  API_EVIDENCE_PATTERN,
+  API_TECHNOLOGIES,
+  technologyMentions,
+  type TechnologyEvidence,
+} from "./schemas.js"
+
+export function prepareJobText(text: string): string {
+  return convert(text, {
+    wordwrap: false,
+    selectors: [{ selector: "a", options: { ignoreHref: true } }],
+  })
+    .replace(/\s+/g, " ")
+    .trim()
+}
+
+export function technologyEvidence(text: string): TechnologyEvidence[] {
+  return technologyMentions(text)
+    .map(({ technology, mention, start, end }) => ({
+      technology,
+      mention,
+      quote: text.slice(Math.max(0, start - 100), end + 100).trim(),
+    }))
+    .filter(
+      ({ technology, quote }) =>
+        !API_TECHNOLOGIES.includes(technology) || API_EVIDENCE_PATTERN.test(quote),
+    )
+}
 
 export function getRunMetadata(): { runId: string; date: string; runDir: string } {
   const now = new Date()

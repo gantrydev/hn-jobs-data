@@ -2,16 +2,16 @@
 
 > Monthly tech-hiring trends mined from Hacker News "Who is hiring?" threads. Every job posting is classified (role, technologies, experience level, remote policy, compensation) and aggregated per month. All data is served as JSON; this file indexes it for LLMs.
 
-Latest run: 2026-10-28 — 263 jobs analyzed. Generated 2026-10-28T16:26:08.970Z.
+Latest run: 2026-10-28 — 263 jobs analyzed. Generated 2026-10-31T20:23:24.087Z.
 
 ## Latest snapshot
 
 - Jobs analyzed: 263
-- Top technologies: React (21.7%), PostgreSQL (18.6%), AWS (11.8%), Kubernetes (11%), SQL (7.2%), Node.js (6.1%), Terraform (6.1%), Linux (5.7%)
-- Top roles: Software Engineer (19.8%), Other (18.3%), Full Stack Engineer (12.9%), Senior Software Engineer (9.5%), AI Engineer (8.7%), ML Engineer (4.9%)
-- Fully remote: 47.1%
-- Salary mentioned: 38%
-- AI/ML mentioned: 65%
+- Top technologies: React (20.5%), PostgreSQL (17.9%), Kubernetes (9.9%), AWS (9.5%), Terraform (5.7%), SQL (5.7%), Node.js (5.3%), MCP (4.6%)
+- Top roles: Software Engineer (20.5%), Other (19.8%), Senior Software Engineer (11%), Full Stack Engineer (9.5%), AI Engineer (8%), Backend Engineer (5.3%)
+- Fully remote: 44.5%
+- Salary mentioned: 36.5%
+- AI/ML mentioned: 64.3%
 
 ## Index files
 
@@ -26,24 +26,24 @@ Latest run: 2026-10-28 — 263 jobs analyzed. Generated 2026-10-28T16:26:08.970Z
 Each run exposes `raw.json` (original postings), `classified.json` (per-job labels), and `analysis.json` (aggregated metrics).
 
 - [2026-10-28](/runs/2026-10-28/analysis.json): 263 jobs — Ask HN: Who is hiring? (October 2026)
-- [2026-10-03](/runs/2026-10-03/analysis.json): 179 jobs — Ask HN: Who is hiring? (October 2026)
-- [2026-09-28](/runs/2026-09-28/analysis.json): 269 jobs — Ask HN: Who is hiring? (September 2026)
+- [2026-10-03](/runs/2026-10-03/analysis.json): 178 jobs — Ask HN: Who is hiring? (October 2026)
+- [2026-09-28](/runs/2026-09-28/analysis.json): 268 jobs — Ask HN: Who is hiring? (September 2026)
 - [2026-09-03](/runs/2026-09-03/analysis.json): 217 jobs — Ask HN: Who is hiring? (September 2026)
 - [2026-08-28](/runs/2026-08-28/analysis.json): 250 jobs — Ask HN: Who is hiring? (August 2026)
-- [2026-08-22](/runs/2026-08-22/analysis.json): 247 jobs — Ask HN: Who is hiring? (August 2026)
-- [2026-07-28](/runs/2026-07-28/analysis.json): 283 jobs — Ask HN: Who is hiring? (July 2026)
-- [2026-07-03](/runs/2026-07-03/analysis.json): 197 jobs — Ask HN: Who is hiring? (July 2026)
-- [2026-06-28](/runs/2026-06-28/analysis.json): 330 jobs — Ask HN: Who is hiring? (June 2026)
+- [2026-08-22](/runs/2026-08-22/analysis.json): 246 jobs — Ask HN: Who is hiring? (August 2026)
+- [2026-07-28](/runs/2026-07-28/analysis.json): 289 jobs — Ask HN: Who is hiring? (July 2026)
+- [2026-07-03](/runs/2026-07-03/analysis.json): 199 jobs — Ask HN: Who is hiring? (July 2026)
+- [2026-06-28](/runs/2026-06-28/analysis.json): 331 jobs — Ask HN: Who is hiring? (June 2026)
 - [2026-06-11](/runs/2026-06-11/analysis.json): 309 jobs — Ask HN: Who is hiring? (June 2026)
-- [2026-06-03](/runs/2026-06-03/analysis.json): 247 jobs — Ask HN: Who is hiring? (June 2026)
-- [2026-05-28](/runs/2026-05-28/analysis.json): 337 jobs — Ask HN: Who is hiring? (May 2026)
-- [2026-05-05](/runs/2026-05-05/analysis.json): 278 jobs — Ask HN: Who is hiring? (May 2026)
-- [2026-05-03](/runs/2026-05-03/analysis.json): 211 jobs — Ask HN: Who is hiring? (May 2026)
-- [2026-04-28](/runs/2026-04-28/analysis.json): 354 jobs — Ask HN: Who is hiring? (April 2026)
-- [2026-04-17](/runs/2026-04-17/analysis.json): 363 jobs — Ask HN: Who is hiring? (April 2026)
-- [2026-03-15](/runs/2026-03-15/analysis.json): 328 jobs — Ask HN: Who is hiring? (March 2026)
-- [2026-02-01](/runs/2026-02-01/analysis.json): 416 jobs — Ask HN: Who is hiring? (February 2026)
-- [2026-01-01](/runs/2026-01-01/analysis.json): 253 jobs — Ask HN: Who is hiring? (January 2026)
+- [2026-06-03](/runs/2026-06-03/analysis.json): 246 jobs — Ask HN: Who is hiring? (June 2026)
+- [2026-05-28](/runs/2026-05-28/analysis.json): 341 jobs — Ask HN: Who is hiring? (May 2026)
+- [2026-05-05](/runs/2026-05-05/analysis.json): 280 jobs — Ask HN: Who is hiring? (May 2026)
+- [2026-05-03](/runs/2026-05-03/analysis.json): 212 jobs — Ask HN: Who is hiring? (May 2026)
+- [2026-04-28](/runs/2026-04-28/analysis.json): 359 jobs — Ask HN: Who is hiring? (April 2026)
+- [2026-04-17](/runs/2026-04-17/analysis.json): 360 jobs — Ask HN: Who is hiring? (April 2026)
+- [2026-03-15](/runs/2026-03-15/analysis.json): 336 jobs — Ask HN: Who is hiring? (March 2026)
+- [2026-02-01](/runs/2026-02-01/analysis.json): 420 jobs — Ask HN: Who is hiring? (February 2026)
+- [2026-01-01](/runs/2026-01-01/analysis.json): 254 jobs — Ask HN: Who is hiring? (January 2026)
 
 ## Analysis schema
 

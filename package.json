@@ -15,6 +15,7 @@
     "reprocess": "node --env-file-if-exists=.env --import tsx/esm scripts/run-reprocess.ts",
     "index": "node --import tsx/esm scripts/run-index.ts",
     "analytics": "node --import tsx/esm scripts/analytics.ts",
+    "test": "node --import tsx/esm --test scripts/*.test.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
@@ -22,10 +23,12 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "html-to-text": "^10.0.1",
     "zod": "^4.3.6"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/html-to-text": "^9.0.4",
     "@types/node": "^25.5.0",
     "eslint": "^10.0.3",
     "eslint-config-prettier": "^10.1.8",

@@ -1,0 +1,3 @@
+/indexes/*.json linguist-generated=true
+/runs/**/*.json linguist-generated=true
+/llms.txt linguist-generated=true

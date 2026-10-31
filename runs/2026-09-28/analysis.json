@@ -2,27 +2,22 @@
   "schema_version": "1.0",
   "date": "2026-09-28",
   "run_id": "2026-09-28-refresh",
-  "job_count": 269,
+  "job_count": 268,
   "languages": [
     {
       "name": "Python",
-      "count": 72,
-      "pct": 26.8
+      "count": 69,
+      "pct": 25.7
     },
     {
       "name": "TypeScript",
-      "count": 52,
-      "pct": 19.3
-    },
-    {
-      "name": "JavaScript",
-      "count": 25,
-      "pct": 9.3
+      "count": 51,
+      "pct": 19
     },
     {
       "name": "Rust",
-      "count": 22,
-      "pct": 8.2
+      "count": 19,
+      "pct": 7.1
     },
     {
       "name": "Go",
@@ -30,32 +25,32 @@
       "pct": 5.6
     },
     {
+      "name": "JavaScript",
+      "count": 14,
+      "pct": 5.2
+    },
+    {
       "name": "C++",
-      "count": 13,
-      "pct": 4.8
+      "count": 12,
+      "pct": 4.5
     },
     {
       "name": "Java",
-      "count": 9,
-      "pct": 3.3
-    },
-    {
-      "name": "C",
-      "count": 7,
-      "pct": 2.6
-    },
-    {
-      "name": "Ruby",
-      "count": 7,
-      "pct": 2.6
+      "count": 8,
+      "pct": 3
     },
     {
       "name": "C#",
-      "count": 7,
-      "pct": 2.6
+      "count": 6,
+      "pct": 2.2
     },
     {
-      "name": "Swift",
+      "name": "C",
+      "count": 4,
+      "pct": 1.5
+    },
+    {
+      "name": "Ruby",
       "count": 4,
       "pct": 1.5
     },
@@ -65,22 +60,42 @@
       "pct": 1.1
     },
     {
-      "name": "Elixir",
+      "name": "Swift",
       "count": 3,
       "pct": 1.1
     },
     {
-      "name": "Scala",
+      "name": "Elixir",
       "count": 2,
       "pct": 0.7
     },
     {
-      "name": "R",
+      "name": "Haskell",
       "count": 1,
       "pct": 0.4
     },
     {
-      "name": "PHP",
+      "name": "F#",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Julia",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Bash",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Clojure",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Scala",
       "count": 1,
       "pct": 0.4
     }
@@ -88,66 +103,46 @@
   "technologies": [
     {
       "name": "React",
-      "count": 48,
-      "pct": 17.8
+      "count": 44,
+      "pct": 16.4
     },
     {
       "name": "PostgreSQL",
-      "count": 42,
-      "pct": 15.6
+      "count": 39,
+      "pct": 14.6
     },
     {
       "name": "AWS",
-      "count": 36,
-      "pct": 13.4
+      "count": 31,
+      "pct": 11.6
     },
     {
       "name": "Kubernetes",
-      "count": 30,
-      "pct": 11.2
-    },
-    {
-      "name": "Docker",
-      "count": 25,
-      "pct": 9.3
+      "count": 26,
+      "pct": 9.7
     },
     {
       "name": "Node.js",
       "count": 24,
-      "pct": 8.9
+      "pct": 9
     },
     {
-      "name": "Linux",
-      "count": 22,
-      "pct": 8.2
-    },
-    {
-      "name": "Terraform",
+      "name": "Docker",
       "count": 19,
       "pct": 7.1
     },
     {
-      "name": "OpenAI API",
-      "count": 15,
-      "pct": 5.6
+      "name": "Linux",
+      "count": 16,
+      "pct": 6
     },
     {
-      "name": "GitHub Actions",
+      "name": "Terraform",
       "count": 14,
       "pct": 5.2
     },
     {
       "name": "GCP",
-      "count": 13,
-      "pct": 4.8
-    },
-    {
-      "name": "Git",
-      "count": 13,
-      "pct": 4.8
-    },
-    {
-      "name": "CUDA",
       "count": 12,
       "pct": 4.5
     },
@@ -157,52 +152,32 @@
       "pct": 4.5
     },
     {
-      "name": "Next.js",
-      "count": 12,
-      "pct": 4.5
-    },
-    {
       "name": "SQL",
-      "count": 12,
-      "pct": 4.5
-    },
-    {
-      "name": "PyTorch",
       "count": 11,
       "pct": 4.1
+    },
+    {
+      "name": "Next.js",
+      "count": 10,
+      "pct": 3.7
+    },
+    {
+      "name": "Claude Code",
+      "count": 10,
+      "pct": 3.7
     },
     {
       "name": "MCP",
-      "count": 11,
-      "pct": 4.1
-    },
-    {
-      "name": "React Native",
-      "count": 9,
-      "pct": 3.3
+      "count": 10,
+      "pct": 3.7
     },
     {
       "name": "Redis",
-      "count": 9,
-      "pct": 3.3
-    },
-    {
-      "name": "Kafka",
       "count": 8,
       "pct": 3
     },
     {
-      "name": "Rails",
-      "count": 8,
-      "pct": 3
-    },
-    {
-      "name": "Anthropic API",
-      "count": 8,
-      "pct": 3
-    },
-    {
-      "name": "Azure",
+      "name": "React Native",
       "count": 7,
       "pct": 2.6
     },
@@ -212,14 +187,14 @@
       "pct": 2.6
     },
     {
-      "name": "LangChain",
+      "name": "Kafka",
       "count": 7,
       "pct": 2.6
     },
     {
-      "name": "Spark",
-      "count": 6,
-      "pct": 2.2
+      "name": "Rails",
+      "count": 7,
+      "pct": 2.6
     },
     {
       "name": "Vue",
@@ -227,7 +202,22 @@
       "pct": 2.2
     },
     {
-      "name": "Airflow",
+      "name": "Grafana",
+      "count": 6,
+      "pct": 2.2
+    },
+    {
+      "name": "Azure",
+      "count": 5,
+      "pct": 1.9
+    },
+    {
+      "name": ".NET",
+      "count": 5,
+      "pct": 1.9
+    },
+    {
+      "name": "PyTorch",
       "count": 5,
       "pct": 1.9
     },
@@ -242,7 +232,7 @@
       "pct": 1.9
     },
     {
-      "name": "Hugging Face",
+      "name": "iOS",
       "count": 4,
       "pct": 1.5
     },
@@ -262,12 +252,17 @@
       "pct": 1.5
     },
     {
-      "name": "WebRTC",
+      "name": "Git",
       "count": 4,
       "pct": 1.5
     },
     {
-      "name": "Cloudflare",
+      "name": "LangChain",
+      "count": 4,
+      "pct": 1.5
+    },
+    {
+      "name": "LangGraph",
       "count": 4,
       "pct": 1.5
     },
@@ -277,17 +272,22 @@
       "pct": 1.5
     },
     {
-      "name": "TensorFlow",
+      "name": "Pandas",
       "count": 4,
       "pct": 1.5
     },
     {
-      "name": "CSS",
-      "count": 3,
-      "pct": 1.1
+      "name": "Cursor",
+      "count": 4,
+      "pct": 1.5
     },
     {
-      "name": "iOS",
+      "name": "Prometheus",
+      "count": 4,
+      "pct": 1.5
+    },
+    {
+      "name": "Ansible",
       "count": 3,
       "pct": 1.1
     },
@@ -297,32 +297,37 @@
       "pct": 1.1
     },
     {
+      "name": "LlamaIndex",
+      "count": 3,
+      "pct": 1.1
+    },
+    {
+      "name": "WebRTC",
+      "count": 3,
+      "pct": 1.1
+    },
+    {
       "name": "Nix",
       "count": 3,
       "pct": 1.1
     },
     {
-      "name": "S3",
+      "name": "Airflow",
       "count": 3,
       "pct": 1.1
     },
     {
-      "name": "WebSockets",
+      "name": "Datadog",
       "count": 3,
       "pct": 1.1
     },
     {
-      "name": "Gemini API",
+      "name": "Pydantic AI",
       "count": 3,
       "pct": 1.1
     },
     {
-      "name": "eBPF",
-      "count": 2,
-      "pct": 0.7
-    },
-    {
-      "name": "Svelte",
+      "name": "Expo",
       "count": 2,
       "pct": 0.7
     },
@@ -337,22 +342,122 @@
       "pct": 0.7
     },
     {
+      "name": "OpenTofu",
+      "count": 2,
+      "pct": 0.7
+    },
+    {
+      "name": "Cloudflare Workers",
+      "count": 2,
+      "pct": 0.7
+    },
+    {
+      "name": "SwiftUI",
+      "count": 2,
+      "pct": 0.7
+    },
+    {
+      "name": "Ray",
+      "count": 2,
+      "pct": 0.7
+    },
+    {
       "name": "ROS",
       "count": 2,
       "pct": 0.7
     },
     {
-      "name": "SQLite",
+      "name": "Playwright",
       "count": 2,
       "pct": 0.7
     },
     {
-      "name": "Vercel",
+      "name": "NumPy",
       "count": 2,
       "pct": 0.7
+    },
+    {
+      "name": "Pulumi",
+      "count": 2,
+      "pct": 0.7
+    },
+    {
+      "name": "S3",
+      "count": 2,
+      "pct": 0.7
+    },
+    {
+      "name": "AWS Lambda",
+      "count": 2,
+      "pct": 0.7
+    },
+    {
+      "name": "Argo CD",
+      "count": 2,
+      "pct": 0.7
+    },
+    {
+      "name": "CSS",
+      "count": 2,
+      "pct": 0.7
+    },
+    {
+      "name": "Codex",
+      "count": 2,
+      "pct": 0.7
+    },
+    {
+      "name": "Dagster",
+      "count": 2,
+      "pct": 0.7
+    },
+    {
+      "name": "D3.js",
+      "count": 2,
+      "pct": 0.7
+    },
+    {
+      "name": "Langfuse",
+      "count": 2,
+      "pct": 0.7
+    },
+    {
+      "name": "GitHub Actions",
+      "count": 2,
+      "pct": 0.7
+    },
+    {
+      "name": "OpenStack",
+      "count": 1,
+      "pct": 0.4
     },
     {
       "name": "WebAssembly",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "eBPF",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Tailwind CSS",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Astro",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Svelte",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "WireGuard",
       "count": 1,
       "pct": 0.4
     },
@@ -362,7 +467,42 @@
       "pct": 0.4
     },
     {
+      "name": "Azure DevOps",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Electron",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Helm",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Scaleway",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
       "name": "Supabase",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "ONNX",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "CockroachDB",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Databricks",
       "count": 1,
       "pct": 0.4
     },
@@ -372,7 +512,122 @@
       "pct": 0.4
     },
     {
+      "name": "Phoenix",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "SQLAlchemy",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Nuxt",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "SvelteKit",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "AWS ECS",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Figma",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Tailscale",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "AWS EKS",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "AWS Fargate",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Cloudflare",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "HTML",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Terragrunt",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "CloudFormation",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "dbt",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "BigQuery",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Redshift",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Spark",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Iceberg",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Prefect",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "TensorFlow",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Hugging Face Transformers",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "OpenTelemetry",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
       "name": "gRPC",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "SolidJS",
       "count": 1,
       "pct": 0.4
     },
@@ -382,12 +637,127 @@
       "pct": 0.4
     },
     {
+      "name": "CircleCI",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "OpenSearch",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Unreal Engine",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
       "name": "Jenkins",
       "count": 1,
       "pct": 0.4
     },
     {
-      "name": "NestJS",
+      "name": "Vercel",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "DynamoDB",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "PostGIS",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Flux",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Loki",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "WebGPU",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Polars",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "scikit-learn",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Stimulus",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Hotwire",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Alpine.js",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "DigitalOcean",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Semantic Kernel",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Hugging Face",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "MQTT",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "vLLM",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "TensorRT",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "DuckDB",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "SQLite",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "UIKit",
+      "count": 1,
+      "pct": 0.4
+    },
+    {
+      "name": "Mapbox",
       "count": 1,
       "pct": 0.4
     }
@@ -395,71 +765,76 @@
   "roles": [
     {
       "name": "Software Engineer",
-      "count": 60,
-      "pct": 22.3
+      "count": 63,
+      "pct": 23.5
     },
     {
       "name": "Other",
-      "count": 42,
-      "pct": 15.6
+      "count": 36,
+      "pct": 13.4
     },
     {
       "name": "Full Stack Engineer",
       "count": 35,
-      "pct": 13
+      "pct": 13.1
     },
     {
       "name": "Senior Software Engineer",
-      "count": 26,
-      "pct": 9.7
-    },
-    {
-      "name": "AI Engineer",
-      "count": 18,
-      "pct": 6.7
-    },
-    {
-      "name": "DevOps / SRE",
-      "count": 16,
-      "pct": 5.9
-    },
-    {
-      "name": "Staff Engineer",
-      "count": 13,
-      "pct": 4.8
+      "count": 34,
+      "pct": 12.7
     },
     {
       "name": "Backend Engineer",
-      "count": 13,
-      "pct": 4.8
+      "count": 15,
+      "pct": 5.6
     },
     {
-      "name": "ML Engineer",
+      "name": "AI Engineer",
+      "count": 15,
+      "pct": 5.6
+    },
+    {
+      "name": "DevOps / SRE",
+      "count": 13,
+      "pct": 4.9
+    },
+    {
+      "name": "Staff Engineer",
       "count": 12,
       "pct": 4.5
     },
     {
       "name": "Engineering Manager",
-      "count": 11,
-      "pct": 4.1
+      "count": 10,
+      "pct": 3.7
     },
     {
       "name": "Product Manager",
+      "count": 10,
+      "pct": 3.7
+    },
+    {
+      "name": "ML Engineer",
       "count": 8,
       "pct": 3
     },
     {
-      "name": "Data Engineer",
-      "count": 4,
-      "pct": 1.5
+      "name": "Data Scientist",
+      "count": 5,
+      "pct": 1.9
     },
     {
-      "name": "Data Scientist",
-      "count": 4,
-      "pct": 1.5
+      "name": "Mobile Engineer",
+      "count": 3,
+      "pct": 1.1
     },
     {
       "name": "Principal Engineer",
+      "count": 3,
+      "pct": 1.1
+    },
+    {
+      "name": "Data Engineer",
       "count": 3,
       "pct": 1.1
     },
@@ -472,77 +847,77 @@
       "name": "Frontend Engineer",
       "count": 1,
       "pct": 0.4
-    },
-    {
-      "name": "Mobile Engineer",
-      "count": 1,
-      "pct": 0.4
     }
   ],
   "compensation": {
-    "salary_mentioned_count": 107,
-    "salary_mentioned_pct": 39.8,
+    "salary_mentioned_count": 99,
+    "salary_mentioned_pct": 36.9,
     "ranges": [
       {
-        "band": "$150k-$200k",
-        "count": 40
-      },
-      {
         "band": "$200k+",
-        "count": 28
+        "count": 37
       },
       {
-        "band": "<$100k",
-        "count": 21
+        "band": "$150k-$200k",
+        "count": 32
       },
       {
         "band": "$100k-$150k",
-        "count": 18
+        "count": 17
+      },
+      {
+        "band": "<$100k",
+        "count": 13
       }
     ],
-    "equity_mentioned_count": 70,
-    "equity_mentioned_pct": 26
+    "equity_mentioned_count": 69,
+    "equity_mentioned_pct": 25.7
   },
   "remote": {
     "fully_remote": {
-      "count": 119,
-      "pct": 44.2
+      "count": 115,
+      "pct": 42.9
     },
     "hybrid": {
-      "count": 64,
-      "pct": 23.8
+      "count": 60,
+      "pct": 22.4
     },
     "onsite_only": {
-      "count": 76,
-      "pct": 28.3
+      "count": 74,
+      "pct": 27.6
     },
     "not_mentioned": {
-      "count": 10,
-      "pct": 3.7
+      "count": 19,
+      "pct": 7.1
     }
   },
   "experience_levels": [
     {
       "level": "Not specified",
-      "count": 122,
-      "pct": 45.4
+      "count": 128,
+      "pct": 47.8
     },
     {
       "level": "Senior",
-      "count": 116,
-      "pct": 43.1
+      "count": 107,
+      "pct": 39.9
     },
     {
       "level": "Junior",
-      "count": 16,
-      "pct": 5.9
+      "count": 17,
+      "pct": 6.3
     },
     {
       "level": "Mid",
-      "count": 15,
-      "pct": 5.6
+      "count": 16,
+      "pct": 6
     }
   ],
-  "ai_ml_mentioned_pct": 68.8,
-  "generated_at": "2026-09-28T17:57:47.792Z"
+  "ai_ml_mentioned_pct": 67.9,
+  "generated_at": "2026-10-31T20:19:41.377Z",
+  "classification": {
+    "model": "openai/gpt-6-luna",
+    "taxonomy_version": "2026-10-31",
+    "prompt_version": "2026-10-31"
+  }
 }
